@@ -12,6 +12,7 @@ body {
 .entete header {
   width: 100%;
   background-color: blue;
+  flex: 1;
 }
 
 .entete nav {
