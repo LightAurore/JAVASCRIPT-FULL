@@ -22,6 +22,11 @@ body {
   z-index: 9999;
 }
 
+marquee {
+  background-color: #000;
+  color: #8e44ad;
+}
+
 .logo {
   height: 50px;
   float: left;
