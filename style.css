@@ -40,6 +40,7 @@ main {
   width: 80%;
   height: 100%;
   margin-right: 24px;
+  background-color: #fff;
 
   float: right;
 }
