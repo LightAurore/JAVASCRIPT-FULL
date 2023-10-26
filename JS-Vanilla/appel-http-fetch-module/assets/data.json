@@ -1,0 +1,39 @@
+{
+    "_id" : "kg,rbrgbnth5n54htn5.37",
+    "index": 0,
+    "guid": "kvv,rvlammmmmmmrg,45",
+    "IsActive": false,
+    "balance": "$3,789.23",
+    "picture": "http://placehold.it/32x32",
+    "age": 39,
+    "eyeColor": "blue",
+    "name": "Schneider Cherry",
+    "gender":"male",
+    "company":"PETEWIRE",
+    "email":"fnlvjke@fkehb.com",
+    "phone":"+1 (940) 472-3012",
+    "adresse": "963 Bergen Street, Wauhillau, Arizona, 8725",
+    "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos nisi facilis qui eum. Dignissimos velit suscipit excepturi corporis explicabo debitis!",
+    "registered": "2019-02-01T04:20:11 -01:00",
+    "latitude": -18.4789,
+    "longitude": -110.7854120,
+    "tags":[
+        "Lorem", "ipsum", "dolor", "sit"
+    ],
+    "friends":[
+        {
+            "id":0,
+            "name": "Carey Chanbers"
+        },
+        {
+            "id":1,
+            "name": "Hardin Gross"
+        },
+        {
+            "id":2,
+            "name": "Hart Good"
+        }
+    ],
+    "greeting": "Hello, Shneider Cherryl! You have 5 unread message.",
+    "FavoritFruit": "Strewberry"
+}

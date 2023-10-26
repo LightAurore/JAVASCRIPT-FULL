@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appel http</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="en-tete"></div>
+    <!-- header -->
+    <header>
+        <h1>Appel HTTP avec Fetch</h1>
+    </header>
+    <!-- navigation -->
+    <nav></nav>
+    <!-- principal -->
+    <div id="container">
+        <aside></aside>
+        <main></main>
+    </div>
+    
+    <!-- footer -->
+    <footer></footer>
+    <!-- divers -->
+    <div id="pied-page"></div>
+
+</body>
+<script src="./js/script.js"></script>
+<script type="module">
+    import { sum as somme, hello, default as lireObj } from './js/array.js';
+    // import * as A from './js/array.js';
+
+
+    // console.log(A.sum([12, 23, 19]));
+    // A.hello();
+    console.log(somme([12, 23, 19]));
+
+    const object1 = {
+        nom: "Maurice",
+        prenom: "Jean",
+        a: 'somestring',
+        b: 42,
+    };
+    lireObj(object1);
+</script>
+
+<script type="module">
+    import inverserMot from './js/myFonction.js';
+    // import loreObj1 from './js/myFonction.js';
+    // import { inverserMot, lireObj } from './js/myFonction.js';
+
+    console.log(inverserMot("Le pain est chaud"));
+    // lireObj1(object1);
+
+</script>
+
+<script type="module">
+    // interroger le module
+    /* console.log(import('./js/carree.js').then((...args) => {
+        console.log(args);
+    })) */
+    // demander ce qui nous interresse
+    console.log(import('./js/carree.js').then(({ carree }) => {
+        carree(10);
+    }))
+</script>
+
+<script type="module">
+        (
+            async function () {
+                const { soustraction } = await import('./js/carree.js');
+                soustraction(45, 10);
+            }
+        )()
+
+</script>
+<script src="./js/scriptJson.js"></script>
+
+</html>

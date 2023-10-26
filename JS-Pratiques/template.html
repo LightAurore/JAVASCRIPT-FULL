@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./assets/illustration/favicon.png" type="image/x-icon">
+
+    <title>Template js full stack</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./cssPropre.css">
+</head>
+
+<body>
+    <div class="global">
+        <div class="entete">
+            <img class="logo" src="./assets/illustration/solart_1.png" alt="logo">
+            <a href="#" onclick="displayChapitres();">Chapitres</a>
+            <nav>
+                <span onclick="noneChapitres()">✖️</span>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <h1>Template js full stack</h1>
+        <marquee behavior="" direction="">Alain Developpeur web</marquee>
+
+        <div class="box">
+            <div class="illustation">
+                <img src="" alt="">
+            </div>
+            <div class="contenu" >
+                <a href="javascript:void(document.body.style.backgroundColor='green');">Color</a>
+                <h2>Mon contenu</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum pariatur corporis nesciunt, eos
+                    delectus molestias, tenetur omnis, harum maiores commodi quos. Animi temporibus voluptatum sequi
+                    ullam
+                    vel, nam esse! Facilis dicta hic fugit harum nihil in magni labore at quibusdam dolorem ipsa
+                    voluptatibus, maiores debitis cum optio enim sapiente impedit necessitatibus odit vel quas
+                    cupiditate?
+                    Dolore ducimus repellendus laudantium soluta, esse praesentium cumque explicabo blanditiis
+                    necessitatibus in tempora dicta nostrum recusandae nulla nemo quidem odio assumenda consequatur.
+                    Harum
+                    autem nihil nam porro odit dolorem est magnam recusandae, tenetur, quae nobis? Quas quibusdam nobis
+                    est
+                    perferendis dolorum sequi distinctio illo quasi.
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+<script>
+    function displayChapitres() {
+        const chap = document.querySelector('nav');
+        chap.style.display = "flex";
+    }
+    function noneChapitres() {
+        const chap = document.querySelector('nav');
+        chap.style.display = "none";
+    }
+
+    let x = document.body.firstChild.innerHTML;
+    console.log(x);
+
+    const c = document.body.childNodes;
+    console.log(c);
+
+    const d = document.querySelector(".contenu").attributes.length;
+    console.log(d);
+
+
+</script>
+
+</html>

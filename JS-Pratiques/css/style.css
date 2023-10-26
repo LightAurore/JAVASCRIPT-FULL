@@ -1,0 +1,143 @@
+.entete nav span {
+  display: grid;
+  place-items: center;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+.box .illustration {
+  flex: 1 1 200px;
+  background-color: 0;
+  height: 250px;
+}
+.box .contenu {
+  flex: 2 1 300px;
+}
+
+.grid {
+  display: grid;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px 20px;
+  background-color: #1aa;
+}
+
+.global {
+  margin: 10px;
+  background-color: #fff;
+}
+
+h1 {
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+marquee {
+  height: 50px;
+  margin-block: 10px;
+  background-color: #eff;
+  font-size: 2rem;
+  padding-block: 5px;
+  color: brown;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 4px;
+  line-height: 50px;
+}
+
+.entete {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 50px;
+  width: 100%;
+  background-color: red;
+}
+.entete .logo {
+  height: 50px;
+}
+.entete > a {
+  position: relative;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  margin: 0px;
+  background-color: deepskyblue;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  z-index: 99;
+}
+.entete > a::before {
+  position: absolute;
+  top: -7;
+  left: -7;
+  content: "";
+  width: 135px;
+  height: 35px;
+  background-color: deepskyblue;
+  border: 4px solid red;
+  border-radius: 15% 15% 15% 15%/50% 50%;
+  z-index: -1;
+}
+.entete nav {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(198, 198, 218);
+}
+.entete nav span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  padding: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.entete nav ul {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 5px;
+}
+.entete nav ul > * {
+  content: "onglets";
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: green;
+}
+
+/*# sourceMappingURL=style.css.map */

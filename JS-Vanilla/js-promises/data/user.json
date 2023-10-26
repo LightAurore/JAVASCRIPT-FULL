@@ -1,0 +1,35 @@
+[
+    {
+        "username": "John Doe",
+        "age": 32,
+        "job": "dev web",
+        "hobbies": [
+            "sport",
+            "informatique",
+            "musique",
+            "repos"
+        ]
+    },
+    {
+        "username": "Johnny Docke",
+        "age": 32,
+        "job": "design web",
+        "hobbies": [
+            "sport",
+            "informatique",
+            "musique",
+            "repos"
+        ]
+    },
+    {
+        "username": "Jeanine Dockters",
+        "age": "32",
+        "job": "ui design",
+        "hobbies": [
+            "sport",
+            "informatique",
+            "musique",
+            "repos"
+        ]
+    }
+]

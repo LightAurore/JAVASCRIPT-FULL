@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Json</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+</head>
+
+<body>
+    <!-- <input type="file" onclick="fileUpload(event)" /> -->
+
+    <p id="hash"></p>
+</body>
+<script src="./js/scriptJson.js"></script>
+
+<script>
+    function fileUpload(event) {
+        var file = event.target.files[0];
+
+        const fileReader = new FileReader();
+
+        fileReader.addEventListener("loadend", (evt) => {
+            if (evt.target.readyState == FileReader.DONE) {
+                const hash = CryptoJS.SHA256(fileReader.result);
+                // console.log(hash.toString());
+            }
+        });
+
+        fileReader.readAsDataURL(file);
+    }
+    const hasher = CryptoJS.SHA256(["adbc", "erto", "koggjoj", "frerfeffere"]);
+    // document.getElementById('hash').innerHTML = hasher.toString();
+    // console.log(hasher.toString());
+</script>
+
+</html>

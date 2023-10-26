@@ -1,0 +1,28 @@
+
+´%center_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin center_position($classe){
+    position:relative;
+    .classe{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+}
+
+%center_grid{
+    display: grid;
+    place-items: center;
+}
+
+@mixin center_grid_container($classe){
+    display: grid;
+
+    .classe{
+        margin: auto;
+    }
+}

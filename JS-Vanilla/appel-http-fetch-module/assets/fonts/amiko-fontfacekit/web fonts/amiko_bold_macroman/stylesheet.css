@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'amikobold';
+    src: url('Amiko-Bold-webfont.eot');
+    src: url('Amiko-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Amiko-Bold-webfont.woff2') format('woff2'),
+         url('Amiko-Bold-webfont.woff') format('woff'),
+         url('Amiko-Bold-webfont.ttf') format('truetype'),
+         url('Amiko-Bold-webfont.svg#amikobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

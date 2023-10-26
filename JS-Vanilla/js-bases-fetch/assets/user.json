@@ -1,0 +1,35 @@
+[
+    {
+        "username": "françois",
+        "password": "789erty",
+        "lastConnexion": "date",
+        "duration": 12,
+        "comment": [
+            "gfbvgbgbgrf",
+            "gergra",
+            "bvgfbvfgvb"
+        ]
+    },
+    {
+        "username": "Didier",
+        "password": "789654",
+        "lastConnexion": "date",
+        "duration": 120,
+        "comment": [
+            "gfbvgbgbgrf",
+            "gergra",
+            "bvgfbvfgvb"
+        ]
+    },
+    {
+        "username": "Paul",
+        "password": "789654azerty",
+        "lastConnexion": "date",
+        "duration": 22,
+        "comment": [
+            "gfbvgbgbgrf",
+            "gergra",
+            "bvgfbvfgvb"
+        ]
+    }
+]

@@ -1,0 +1,17 @@
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    .illustration{
+        flex: 1 1 200px;
+        background-color: blue($color: #000000); //blue
+        height: 250px;
+    }
+    .contenu{
+        flex: 2 1 300px;
+    }
+}
+
+.grid{
+    display: grid;
+}

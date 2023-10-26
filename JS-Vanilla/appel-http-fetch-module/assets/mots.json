@@ -1,0 +1,18 @@
+
+
+   {
+    "Name" : <data item name> : string,
+    "ItemQualifier" : <item qualifier> : string,
+    "DataType" : <data type like PICTURE clause of COBOL> : string,
+    "DataAttribute" : <data attribute like USAGE clause of COBOL> : string,
+    "SourceInputValue" : <data> : string,
+    "SourceInputHexValue" : <hexadecimal data> : string,
+    "DestInputValue" : <data> : string,
+    "DestInputHexValue" : <hexadecimal data> : string,
+    "SourceOutputValue" : <data> : string,
+    "SourceOutputHexValue" : <hexadecimal data> : string,
+    "DestOutputValue" : <data> : string,
+    "DestOutputHexValue" : <hexadecimal data> : string,
+    "Skipped" : <test skipped or not> : boolean,
+    "TestPassed" : <test passed or not> : boolean
+} 
