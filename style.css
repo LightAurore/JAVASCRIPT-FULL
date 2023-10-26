@@ -1,6 +1,7 @@
 body {
   background-color: #e74c3c;
   width: 100%;
+  min-height: 100vh;
 }
 
 .entete {
@@ -25,6 +26,8 @@ body {
 marquee {
   background-color: #000;
   color: #8e44ad;
+  font-size: 2rem;
+  font-weight: 900;
 }
 
 .logo {
