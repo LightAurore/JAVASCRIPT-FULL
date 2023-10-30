@@ -6,6 +6,52 @@
 
 body{
     display: flex;
+    flex-direction: column;
     width: 100%;
     min-height: 110vh;
+    background-color: #F5F7F8;
+}
+
+body > *{
+    width: 100%;
+}
+
+Header{
+    height: 250px;
+}
+
+nav{
+    height: 75px;
+}
+
+.contenu-container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+    min-height: 700px;
+}
+
+.result, .explication{
+    display: flex;
+    width: 100%;
+}
+
+.result-affiche{
+    background-color: black;
+    width: 50%;
+    height: 400px;
+}
+.result-syntaxe{
+    background-color: #fff;
+    width: 50%;
+    height: 400px;
+    border: 1px solid rgb(175, 217, 252);
+}
+.explication{
+    background-color: rgb(175, 217, 252);
+    height: 450px;
+}
+
+footer{
+    height: 350px;
 }
