@@ -38,18 +38,26 @@ nav{
 
 .result-affiche{
     background-color: black;
+    color: #fff;
     width: 50%;
     height: 400px;
+    border-radius: 41% 59% 48% 52% / 44% 24% 76% 56% ;
+    margin: -6px -7px -10px -4px;
+    mix-blend-mode: multiply;
 }
 .result-syntaxe{
     background-color: #fff;
     width: 50%;
     height: 400px;
     border: 1px solid rgb(175, 217, 252);
+    border-radius: 59% 41% 27% 73% / 22% 24% 76% 78% ;
+    mix-blend-mode: multiply;
 }
 .explication{
-    background-color: rgb(175, 217, 252);
+    background-color: rgb(200, 226, 247);
     height: 450px;
+    border-radius: 44% 56% 27% 73% / 62% 66% 34% 38% ;
+    mix-blend-mode: multiply;
 }
 
 footer{
