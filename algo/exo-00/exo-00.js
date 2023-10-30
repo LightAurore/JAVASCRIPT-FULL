@@ -1,3 +1,1 @@
-const afficher = () => {
-    let message = "Bienvenue"
-}
+let resultat = document.getElementById("resultat-contenu");

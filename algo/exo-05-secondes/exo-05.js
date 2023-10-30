@@ -1,14 +1,20 @@
 
-const secondes = 4856923;
+// const secondes = 4561;
 
-let jr = (secondes/(60*60*24*1000))
-console.log(jr);
+const secondes = parseInt(prompt("entrez les milliSecondes : "));
 
-let hr = (secondes/(60*60*1000))
-console.log(hr);
+function afficherTemps(){
+    let jr = Math.floor((secondes/(60*60*24))) %30;
 
-let min = (secondes/(60*1000)) % 60
-console.log(min);
+    let hr = Math.floor((secondes/(60*60))) %24;
 
-let sec = (secondes % 60)
-console.log(sec);
+    let min = Math.floor((secondes/(60)) ) % 60;
+
+    let sec = secondes % 60;
+    const temps = document.getElementById('temps');
+
+    temps.innerHTML = `<span>${jr}</span>Jr <span>${hr} </span>Hr <span>${min}</span>Min<span>${sec}</span>Sec `
+}
+
+
+afficherTemps(secondes );

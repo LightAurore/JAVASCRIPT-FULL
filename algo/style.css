@@ -37,6 +37,10 @@ nav{
 }
 
 .result-affiche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     background-color: black;
     color: #fff;
     width: 50%;
