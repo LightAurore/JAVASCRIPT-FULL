@@ -17,7 +17,9 @@ body > *{
 }
 
 Header{
-    height: 250px;
+    height: 150px;
+
+    border-bottom: 2px solid blue;
 }
 
 nav{
@@ -29,6 +31,11 @@ nav{
     grid-template-columns: 20% 80%;
 
     min-height: 700px;
+}
+
+aside{
+    margin-right: 20px;
+    border-right: 1px solid black;
 }
 
 .result, .explication{
@@ -56,6 +63,7 @@ nav{
     border: 1px solid rgb(175, 217, 252);
     border-radius: 59% 41% 27% 73% / 22% 24% 76% 78% ;
     mix-blend-mode: multiply;
+    z-index: -5;
 }
 .explication{
     background-color: rgb(200, 226, 247);
