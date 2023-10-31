@@ -10,15 +10,10 @@ let nb = 0;
 let operation;
 
 
-const touche = () => {
-    boutons.forEach(btn => {
-        btn.addEventListener('click',()=>console.log(btn.innerHTML));
-    });
-}
 
-do{
-    touche()
-}while(operator != "=")
+boutons.forEach(btn => {
+    btn.addEventListener('click',()=>console.log(btn.innerHTML));
+});
 
 // console.log(boutons);
 
