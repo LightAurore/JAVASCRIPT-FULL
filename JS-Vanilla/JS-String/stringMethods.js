@@ -1,6 +1,5 @@
 var str = " Hello ";
 
-
 console.log(str.charAt(4));
 
 console.log(str.concat("", "world"));
@@ -42,3 +41,26 @@ console.log(str.trim());
 console.log(str.trimStart());
 
 console.log(str.trimEnd());
+
+const fruits = ["🥭", "🍎", "🍓", "🍒", "🍑", "🍐", "🍅", "🍏"];
+
+let str1 = fruits.toString();
+console.log(str1);
+
+let ajout = fruits.push("🍍");
+console.log(ajout);
+
+let retrait = fruits.pop();
+console.log(retrait);
+
+let contient = fruits.includes("🍌");
+console.log(contient);
+
+let index = fruits.indexOf("🍒");
+console.log(index);
+
+let clone = fruits.copyWithin();
+console.log(clone);
+console.log(clone.join("+"));
+console.log(clone.slice(1, 4));
+console.log(clone.splice(0, 6, ["🍌", "🍍"]));
