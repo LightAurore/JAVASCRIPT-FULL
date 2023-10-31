@@ -18,39 +18,39 @@ boutons.forEach(btn => {
     });
 });
  */
+
 /* 
-boutons.forEach(btn => {
-        btn.addEventListener('click',()=>console.log(btn.innerHTML));
+boutons.forEach((btn) => {
+  btn.addEventListener("click", () => console.log(btn.innerHTML));
 });
-
-const touche = () => {
-    boutons.forEach(btn => {
-        btn.addEventListener('click',()=>{
-            console.log(btn.innerHTML);
-            res.innerText = btn.innerText;
-        });
-    });
-}
-
-touche();
  */
 
-// console.log(boutons);
+const touche = () => {
+  boutons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      console.log(btn.innerHTML);
+      res.innerText = btn.innerText;
+    });
+  });
+};
 
-// console.log(resultat);
+/* 
+console.log(boutons);
 
-// resultat.onclick = (e) => {
-//     console.log(e);
-//     console.log(boutons[1].innerText);
-// }
+console.log(resultat);
 
-// res.onclick = () =>{
-//     console.log(res.innerHTML)
-// }
+resultat.onclick = (e) => {
+  console.log(e);
+  console.log(boutons[1].innerText);
+};
 
+res.onclick = () => {
+  console.log(res.innerHTML);
+};
+ */
 
 /* Prompt */
-
+/* 
 const faireUnCalcul = () => {
 
 let nbr1 = parseFloat(prompt("Entrer le premier nombre :"));
@@ -99,4 +99,55 @@ do{
 
 }
 
-faireUnCalcul();
+faireUnCalcul(); 
+*/
+
+const faireUnCalcul = () => {
+  let hasError = false;
+  do {
+    switch (operateur) {
+      case "/":
+        if (nb2 == 0) {
+          hasError = true;
+          message = "Division avec zéro est impossible";
+        } else {
+          message = nbr1 / nb2;
+        }
+        break;
+      case "*":
+        message = nbr1 * nb2;
+        break;
+      case "-":
+        message = nbr1 - nb2;
+        break;
+      case "+":
+        message = nbr1 + nb2;
+        break;
+      case "%":
+        if (nb2 == 0) {
+          hasError = true;
+          message = "Modulo zéro est impossible";
+        } else {
+          message = nbr1 % nb2;
+        }
+        break;
+    }
+    operateur = touche();
+
+    if (operateur == "=") {
+      alert(message);
+      res.innerHTML += ` ${message}`;
+    } else {
+      nbr1 = message;
+      nb2 = parseFloat(touche());
+    }
+  } while (operateur != "=" && hasError);
+};
+
+do {
+  let nbr1 = parseFloat(touche());
+  let operateur = touche();
+  let nb2 = parseFloat(touche());
+  let hasError = false;
+  faireUnCalcul();
+} while (hasError);
