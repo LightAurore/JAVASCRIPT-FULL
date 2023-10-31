@@ -51,32 +51,37 @@ touche();
 
 /* Prompt */
 
-let nb1 = parseFloat(prompt("Entrer le premier nombre :"));
+const faireUnCalcul = () => {
+
+let nbr1 = parseFloat(prompt("Entrer le premier nombre :"));
 let operateur = prompt("Entrer l'opérateur");
 let nb2 = parseFloat(prompt("Entrer le second nombre :"));
+let hasError = false;
 do{
     switch (operateur) {
         case "/":
             if(nb2 == 0){
+                hasError = true;
                 message = "Division avec zéro est impossible";
             }else{
-                message = nb1 / nb2;
+                message = nbr1 / nb2;
             }
             break;
         case "*":
-            message = nb1 * nb2;
+            message = nbr1 * nb2;
             break;
         case "-":
-            message = nb1 - nb2;
+            message = nbr1 - nb2;
             break;
         case "+":
-            message = nb1 + nb2;
+            message = nbr1 + nb2;
             break;
         case "%":
             if(nb2 == 0){
+                hasError = true;
                 message = "Modulo zéro est impossible";
             }else{
-                message = nb1 % nb2;
+                message = nbr1 % nb2;
             }
             break;
     }
@@ -87,12 +92,11 @@ do{
         res.innerHTML += ` ${message}`
     }
     else{
-        nb1 = message;
+        nbr1 = message;
         nb2 = parseFloat(prompt("Entrer le second nombre :"));
     }
-}while(operateur != "=");
+}while(operateur != "=" && hasError);
 
+}
 
-
-alert(message);
-
+faireUnCalcul();
