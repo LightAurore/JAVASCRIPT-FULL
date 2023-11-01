@@ -119,12 +119,17 @@ button {
   mix-blend-mode: multiply;
 }
 .result-syntaxe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   width: 50%;
   height: 400px;
   border: 1px solid rgb(175, 217, 252);
   border-radius: 59% 41% 27% 73% / 22% 24% 76% 78%;
   mix-blend-mode: multiply;
+
+  font-size: 2rem;
   z-index: -5;
 }
 .explication {
