@@ -27,4 +27,4 @@ let isCarEmpty = () => {
     }
 }
 
-isCarEmpty()
+

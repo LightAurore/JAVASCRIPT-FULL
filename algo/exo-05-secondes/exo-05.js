@@ -1,9 +1,8 @@
 
 // const secondes = 4561;
-
+function afficherTemps(){
 const secondes = parseInt(prompt("entrez les milliSecondes : "));
 
-function afficherTemps(){
     let jr = Math.floor((secondes/(60*60*24))) %30;
 
     let hr = Math.floor((secondes/(60*60))) %24;
@@ -17,4 +16,3 @@ function afficherTemps(){
 }
 
 
-afficherTemps(secondes );

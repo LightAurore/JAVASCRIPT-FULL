@@ -27,8 +27,10 @@ Header {
 }
 
 .navigation {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px;
   background-color: blue;
 }
 
@@ -53,9 +55,14 @@ ul li a {
   place-items: center;
   gap: 20px;
   width: 80%;
-  margin: 0 auto;
+  margin-left: 200px;
+  padding: 20px;
 
-  background-color: rgb(34, 147, 246);
+  background-color: rgb(191, 204, 216);
+
+  border-radius: 15px;
+
+  box-shadow: 0 0 15px black;
 }
 
 nav {
@@ -73,6 +80,19 @@ aside {
   margin-right: 20px;
   border-right: 1px solid black;
   background-color: aqua;
+}
+
+button {
+  width: 75px;
+  height: 50px;
+  margin: 20px;
+  background-color: #ddffcc;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .result,
@@ -111,8 +131,10 @@ aside {
 }
 
 footer {
-  height: 350px;
-  border-top: 10px ridge goldenrod;
+  height: 150px;
   background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='60' height='30' patternTransform='scale(2) rotate(90)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 13%, 74%, 1)'/><path d='M1-6.5v13h28v-13H1zm15 15v13h28v-13H16zm-15 15v13h28v-13H1z'  stroke-width='1' stroke='none' fill='hsla(259, 3%, 3%, 1)'/><path d='M31-6.5v13h28v-13H31zm-45 15v13h28v-13h-28zm60 0v13h28v-13H46zm-15 15v13h28v-13H31z'  stroke-width='1' stroke='none' fill='hsla(340, 4%, 7%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
   background-position: 0 0;
+  border-top: 10px ridge goldenrod;
+  box-shadow: -5px 0 15px;
+  z-index: 99;
 }
