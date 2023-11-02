@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Edu_TAS";
+  src: url("./assets/Edu_TAS_Beginner/EduTASBeginner-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Playpen_Sans";
+  src: url("./assets/fonts/Playpen_Sans/static/PlaypenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Nunito_Sans";
+  src: url("./assets/fonts/Nunito_Sans/static/NunitoSans_10pt-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 110vh;
+
+  background-color: #fecda6;
+
+  font-family: "Playpen_Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+p {
+  font-family: "Edu_TAS";
+  font-size: 1.4rem;
+}
+
+.global {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.global > *,
+.entete > *,
+.onglets > * {
+  width: 100%;
+}
+/* En-tête */
+.entete {
+  height: 350px;
+}
+
+header {
+  height: 150px;
+}
+nav {
+  height: 200px;
+  border-block: 1px solid #192655;
+}
+
+.onglets {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: 100%;
+}
+
+.onglets a {
+  height: 25%;
+  margin: 2px;
+  border: 1px solid black;
+  text-decoration: none;
+  text-shadow: 0 0 2px black;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+.onglets a:nth-child(1) {
+  background-color: #f7efe5;
+}
+.onglets a:nth-child(2) {
+  background-color: #c3acd0;
+}
+.onglets a:nth-child(3) {
+  background-color: #7743db;
+}
+.onglets a:nth-child(4) {
+  background-color: #2b3499;
+}
+
+/* Corps de la page */
+.corps {
+  display: grid;
+  grid-template-columns: 15% 95%;
+  gap: 2px;
+  min-height: 80vh;
+  background-color: #ff6c22;
+}
+
+aside {
+  background-color: #ff9209;
+}
+
+main {
+  background-color: #ffd099;
+  padding: 20px;
+
+  font-family: "Nunito_Sans";
+}
+
+main > * {
+  background-color: #fffbf5;
+  width: 100%;
+  min-height: 250px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.tag-fieldset fieldset {
+  display: flex;
+  flex-direction: column;
+}
+.tag-fieldset fieldset * > {
+  margin: 5px;
+}
+
+/* Pied de page */
+.piedPage {
+  border-top: 1px solid #192655;
+  height: 150px;
+}
+
+/* Mes classes */
+.monoline {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipse;
+}

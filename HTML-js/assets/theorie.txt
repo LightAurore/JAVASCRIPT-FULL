@@ -1,0 +1,3 @@
+header  : logo, bannière, slogan, nom du site
+
+hyperliens - securité : target="noreferrer";

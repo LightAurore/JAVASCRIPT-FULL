@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction à HTML</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .tag-liste {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .tag-liste h2 {
+            grid-column: span 3;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Images */
+        .tag-img {
+            min-height: 400px;
+        }
+
+        .t-images {
+            display: flex;
+            padding: 10px;
+            min-height: 400px;
+        }
+
+        .t-images figure {
+            width: 500px;
+            min-height: 400px;
+            padding: 5px;
+            margin: 10px;
+
+            border: 1px solid black;
+            box-shadow: 0 0 5px black;
+        }
+
+        .t-images figure img {
+            height: auto;
+            width: 100%;
+        }
+
+        .t-images figure figcaption {
+            margin: 20px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="global">
+        <div class="entete">
+            <header>
+                <div id="mon-header"></div>
+                <h1>Elements html</h1>
+            </header>
+            <nav>
+                <div class="onglets">
+                    <a href="./elements.html">Elements html</a>
+                    <a href="./formulaires.html">Formulaires</a>
+                    <a href="./tableaux.html">Tableaux</a>
+                    <a href="./css-responsive.html">CSS- Responsive</a>
+                </div>
+            </nav>
+        </div>
+        <div class="corps">
+            <aside>
+                <ul>
+                    <li><a href="#images">Images</a></li>
+                    <li><a href="#paragraphes">Paragraphes</a></li>
+                    <li><a href="#listes">Listes</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </aside>
+            <main>
+                <section class="tag-img">
+                    <h2 id="images">Images</h2>
+                    <fieldset class="t-images">
+                        <figure>
+                            <img src="./assets/images/flowers.jpg" alt="">
+                            <figcaption>Une couchée de Soleil</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/images/wheat.jpg" alt="">
+                            <figcaption>Une couchée de Soleil</figcaption>
+                        </figure>
+                    </fieldset>
+                </section>
+                <section class="tag-fieldset">
+                    <fieldset>
+                        <legend></legend>
+                        <h2 id="paragraphes">Les paragraphes</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae maxime sint dolor
+                            earum voluptatum!
+                        </p>
+                        <em>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae maxime sint dolor
+                                earum voluptatum!
+                            </p>
+                        </em>
+                        <strong>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae maxime sint dolor
+                                earum voluptatum!
+                            </p>
+                        </strong>
+                        <mark>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae maxime sint dolor
+                                earum voluptatum!
+                            </p>
+                        </mark>
+                        <b>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae maxime sint dolor
+                                earum voluptatum!
+                            </p>
+                        </b>
+                    </fieldset>
+                </section>
+
+                <section class="tag-liste">
+                    <h2 id="listes" style="column-span: span 3;">Listes</h2>
+                    <div class="liste-non-ordonnee">
+                        <h3>Liste non ordonnée</h3>
+                        <ul>
+                            <li>Pain</li>
+                            <li>Fromage</li>
+                            <li>Yaourt</li>
+                            <li>Cookie</li>
+                        </ul>
+                    </div>
+                    <div class="liste-non-ordonnee">
+                        <h3>Liste ordonnée</h3>
+                        <ol>
+                            <li>Lait</li>
+                            <li>Farine</li>
+                            <li>Sucre</li>
+                            <li>Oeuf</li>
+                        </ol>
+                    </div>
+                    <div class="liste-definition">
+                        <h3>Liste de définitions</h3>
+                        <dl>
+                            <dt>Pomme</dt>
+                            <dd>Fruit vert</dd>
+
+                            <dt>Mangue</dt>
+                            <dd>Fruit tropical</dd>
+
+                            <dt>Kiwi</dt>
+                            <dd>Fruit exotic</dd>
+
+                            <dt>Framboise</dt>
+                            <dd>Fruit de bois</dd>
+                        </dl>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="piedPage">
+            <footer></footer>
+            <div class="cgu"></div>
+        </div>
+    </div>
+
+</body>
+<script src="./html.js"></script>
+
+</html>
