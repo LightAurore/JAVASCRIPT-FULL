@@ -63,21 +63,24 @@ const array_sum = function (drink_array) {
   return sum;
 };
 
-let boissons = [
-  { name: "eau", stock: 0 },
-  { name: "soda", stock: 5 },
-  { name: "orangeade", stock: 3 },
-  { name: "citronnade", stock: 1 },
-];
+function distributeur() {
+  let boissons = [
+    { name: "eau", stock: 0 },
+    { name: "soda", stock: 5 },
+    { name: "orangeade", stock: 3 },
+    { name: "citronnade", stock: 1 },
+  ];
 
-while (array_sum(boissons) > 0) {
-  let choix = parseInt(
-    prompt(
-      "Choisissez une boisson :\n1. Eau\n2. Soda\n3. Orangeade\n4. Citronnade"
-    )
-  );
-  if (choix > 0 && choix <= boissons.length) distribution(boissons[choix - 1]);
-  else alert("Choix indisponible...");
+  while (array_sum(boissons) > 0) {
+    let choix = parseInt(
+      prompt(
+        "Choisissez une boisson :\n1. Eau\n2. Soda\n3. Orangeade\n4. Citronnade"
+      )
+    );
+    if (choix > 0 && choix <= boissons.length)
+      distribution(boissons[choix - 1]);
+    else alert("Choix indisponible...");
+  }
+
+  resultat.innerHTML = `Merci d'avoir utiliser distributeur 3000`;
 }
-
-resultat.innerHTML = `Merci d'avoir utiliser distributeur 3000`;

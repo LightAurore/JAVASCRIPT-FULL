@@ -54,6 +54,9 @@ p {
 }
 
 header {
+  display: flex;
+  place-items: center;
+  text-align: center;
   height: 150px;
 }
 nav {
@@ -94,7 +97,7 @@ nav {
 /* Corps de la page */
 .corps {
   display: grid;
-  grid-template-columns: 15% 95%;
+  grid-template-columns: 15% 85%;
   gap: 2px;
   min-height: 80vh;
   background-color: #ff6c22;
