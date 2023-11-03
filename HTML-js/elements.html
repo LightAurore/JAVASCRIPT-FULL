@@ -49,8 +49,82 @@
             font-size: 1.5rem;
         }
 
+        /* 
         :visited {
             background-color: blue;
+        } */
+
+        /*La balise DIV */
+        .tag-div {
+            position: relative;
+            display: flex;
+        }
+
+        .tag-div div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+            background-color: #8ff;
+        }
+
+        .tag-div div:last-child {
+            order: -4;
+            margin-right: 20px;
+            background-color: #af1;
+
+        }
+
+        .tag-div div:first-child {
+            order: 4;
+            margin-right: 40px;
+            background-color: #fe1;
+        }
+
+        .tag-div div:first-child:hover {
+            /* position: absolute;
+            left: 50px;
+            top: -250px; */
+            border: 10px solid green;
+            border-radius: 50%;
+            order: 2;
+            z-index: 10;
+            background-color: #fef;
+        }
+
+        #box {
+            height: 100px;
+            width: 250px;
+            text-align: center;
+            background-color: #833921;
+            box-shadow: 15px 15px 5px 5px black;
+            /* x y densité color  */
+            animation: 2s translation 2s infinite ease-in-out;
+        }
+
+        @keyframes translation {
+            0% {
+                position: absolute;
+                left: 5px;
+                top: -2px;
+                transform: translateX(0px);
+            }
+
+            50% {
+                position: absolute;
+                left: 50px;
+                top: -20px;
+                transform: translateX(100%);
+            }
+
+            10% {
+                position: absolute;
+                left: 5px;
+                top: -2px;
+                transform: translateX(0px);
+            }
         }
     </style>
 </head>
@@ -161,6 +235,16 @@
                             <dt>Framboise</dt>
                             <dd>Fruit de bois</dd>
                         </dl>
+                    </div>
+                </section>
+
+                <section class="tag-div">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>
+                        <div id="box">5</div>
                     </div>
                 </section>
             </main>
