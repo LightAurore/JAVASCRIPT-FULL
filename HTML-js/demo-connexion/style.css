@@ -1,26 +1,70 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(74, 83, 83, 0.683);
-}
-
-body > * {
+.formulaire-connexion {
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 100%;
   height: 500px;
   padding: 10px;
 
   border-radius: 10px;
+  background-color: #fff;
+}
 
-  background-color: #eff;
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > * {
+  width: 100%;
+  padding: 10px;
+  margin-inline: 10px;
+}
+
+fieldset {
+  width: 100%;
+}
+
+#coo-nom,
+#coo-tel,
+#coo-email,
+#coo-action {
+  width: 100%;
+  padding: auto auto;
+  margin-block: 5px;
+}
+
+fieldset div input:nth-child(1),
+#coo-action input:nth-child(1) {
+  float: left;
+  width: 49%;
+}
+fieldset div > input,
+#coo-action > input {
+  float: right;
+  width: 49%;
+  padding: 5px;
+}
+
+#coo-majeur span,
+#coo-sexe span {
+  display: flex;
+  margin-inline: 25px;
+}
+
+#coo-majeur,
+#coo-sexe {
+  display: flex;
+}
+
+#coo-sexe span > * {
+  margin-inline: 2px;
+}
+
+#coo-email input {
+  width: 100%;
+  padding: 5px;
+}
+
+.clear {
+  clear: both;
 }

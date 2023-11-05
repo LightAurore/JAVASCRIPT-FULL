@@ -6,58 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./cv.css">
 </head>
 
 <body>
-    <div class="formulaire-connexion">
-        <h1>Inscription</h1>
-        <fieldset>
-            <legend>
-                <h2>Coordonnées</h2>
-            </legend>
+    <main>
+        <div class="formulaire-connexion">
+            <h1>Formulaire de contact</h1>
             <form>
-                <div id="coo-nom">
-                    <!-- <label for="login">Login : </label> -->
-                    <input type="text" id="login" placeholder="Login" name="login" required>
+                <fieldset>
+                    <legend>
+                        <h2>Coordonnées</h2>
+                    </legend>
+                    <div id="coo-nom">
+                        <!-- <label for="login">Login : </label> -->
+                        <!-- <input type="text" id="login" placeholder="Login" name="login" required> -->
 
-                    <label for="nom">Nom :</label>
-                    <input type="text" name="nom">
+                        <!-- <label for="nom">Nom :</label> -->
+                        <input type="text" name="nom" placeholder="Nom">
 
-                    <label for="prenom">Prénom :</label>
-                    <input type="text" name="prenom">
-                </div>
+                        <!-- <label for="prenom">Prénom :</label> -->
+                        <input type="text" name="prenom" placeholder="Prénom">
+                    </div>
 
-                <p>Êtes-vous majeur ?</p>
-                <div id="coo-majeur">
-                    <span>
-                        <label for="sais-pas">Je ne sais pas </label>
-                        <input type="radio" name="mineur-majeur" id="sais-pas" checked>
-                    </span>
-                    <span>
-                        <label for="mineur">Mineur</label>
-                        <input type="radio" name="mineur-majeur" id="mineur">
-                    </span>
-                    <span>
-                        <label for="majeur">Majeur</label>
-                        <input type="radio" name="mineur-majeur" id="majeur">
-                    </span>
-                </div>
+                    <hr class="clear">
+                    <div id="coo-majeur">
+                        <p>Êtes-vous majeur ?</p>
+                        <span>
+                            <label for="sais-pas">Je ne sais pas </label>
+                            <input type="radio" name="mineur-majeur" id="sais-pas" checked>
+                        </span>
+                        <span>
+                            <label for="mineur">Mineur</label>
+                            <input type="radio" name="mineur-majeur" id="mineur">
+                        </span>
+                        <span>
+                            <label for="majeur">Majeur</label>
+                            <input type="radio" name="mineur-majeur" id="majeur">
+                        </span>
+                    </div>
+                    <div id="coo-sexe">
+                        <p>Sexe : </p>
+                        <span>
+                            <label for="homme">Homme </label>
+                            <input type="radio" name="sexe-homme" id="homme" checked>
+                        </span>
+                        <span>
+                            <label for="femme">Femme</label>
+                            <input type="radio" name="sexe-femme" id="femme">
+                        </span>
+                        <span>
+                            <label for="autre">Autre</label>
+                            <input type="radio" name="sexe-autre" id="autre">
+                        </span>
+                    </div>
 
-                <div id="coo-email">
-                    <input type="email" name="name" placeholder="Test@gmail.com">
-                </div>
+                    <div id="coo-email">
+                        <input type="email" name="name" placeholder="Test@gmail.com">
+                    </div>
 
-                <div id="coo-description">
-                    <textarea name="description" placeholder="Description du profil" rows="10" cols="50"></textarea>
-                </div>
+                    <div id="coo-tel">
+                        <input type="tel" name="name" placeholder="N° Mobile">
+                        <input type="tel" name="name" placeholder="N° Tel">
+                    </div>
 
+                </fieldset>
+                <fieldset class="inscription">
+                    <legend>
+                        <h2>Mes inscriptions</h2>
+                    </legend>
+                    <select>
+                        <optgroup label="FRONT-END">
+                            <option value="html">HTML</option>
+                            <option value="xml">XML</option>
+                            <option value="css">CSS</option>
+                            <option value="javascript">JAVASCRIPT</option>
+                        </optgroup>
+                        <optgroup label="BACK-END">
+                            <option value="php">PHP</option>
+                            <option value="C++">C++</option>
+                            <option value="c#">C#</option>
+                            <option value="python">PYTHON</option>
+                            <option value="sql">SQL</option>
+                            <option value="api">API</option>
+                        </optgroup>
+                    </select>
+
+                    <div id="coo-description">
+                        <textarea name="description" placeholder="Description du profil" rows="10" cols="50"></textarea>
+                    </div>
+                </fieldset>
                 <div id="coo-action">
                     <input type="submit" value="Envoyer">
                     <input type="reset" value="Reset">
                 </div>
+                <div id="coo-cv">
+                    <a href="./cv.html" type="button">Retour au C.V.</a>
+                </div>
+
             </form>
-        </fieldset>
-    </div>
+
+        </div>
+    </main>
 </body>
 
 </html>
