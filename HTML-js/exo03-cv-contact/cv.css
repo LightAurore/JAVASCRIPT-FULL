@@ -1,4 +1,9 @@
 /*  */
+@font-face {
+  font-family: "Anders";
+  src: url("../assets/Anders/Anders.ttf");
+}
+
 
 * {
   margin: 0;
@@ -15,6 +20,7 @@ body {
   background-size: cover;
   padding: 0 auto;
   overflow: hidden;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -27,6 +33,11 @@ h1 {
 h2 {
   text-align: center;
   margin: auto 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: uppercase;
+}
+p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main {
@@ -139,6 +150,7 @@ form div a,
 
 form div {
   width: 100%;
+
 }
 #coo-cv a,
 #coo-contact a {
@@ -147,4 +159,8 @@ form div {
   width: 100%;
   place-content: center;
   place-items: center;
+}
+
+#coo-contact{
+  margin-top: 10px;
 }

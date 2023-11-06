@@ -10,41 +10,22 @@
 </head>
 
 <body>
+    <a href="../../index.html"><button>retour</button></a>
     <main>
         <div class="formulaire-connexion">
             <h1>Formulaire de contact</h1>
-            <form>
+            <form method="post">
                 <fieldset>
                     <legend>
                         <h2>Coordonnées</h2>
                     </legend>
                     <div id="coo-nom">
-                        <!-- <label for="login">Login : </label> -->
-                        <!-- <input type="text" id="login" placeholder="Login" name="login" required> -->
-
-                        <!-- <label for="nom">Nom :</label> -->
-                        <input type="text" name="nom" placeholder="Nom">
-
-                        <!-- <label for="prenom">Prénom :</label> -->
+                        <input type="text" name="nom" placeholder="Nom" required>
                         <input type="text" name="prenom" placeholder="Prénom">
                     </div>
 
                     <hr class="clear">
-                    <div id="coo-majeur">
-                        <p>Êtes-vous majeur ?</p>
-                        <span>
-                            <label for="sais-pas">Je ne sais pas </label>
-                            <input type="radio" name="mineur-majeur" id="sais-pas" checked>
-                        </span>
-                        <span>
-                            <label for="mineur">Mineur</label>
-                            <input type="radio" name="mineur-majeur" id="mineur">
-                        </span>
-                        <span>
-                            <label for="majeur">Majeur</label>
-                            <input type="radio" name="mineur-majeur" id="majeur">
-                        </span>
-                    </div>
+
                     <div id="coo-sexe">
                         <p>Sexe : </p>
                         <span>
@@ -66,8 +47,8 @@
                     </div>
 
                     <div id="coo-tel">
-                        <input type="tel" name="name" placeholder="N° Mobile">
-                        <input type="tel" name="name" placeholder="N° Tel">
+                        <input type="tel" name="tel_mobile" placeholder="N° Mobile" required>
+                        <input type="tel" name="tel_fixe" placeholder="N° Fixe">
                     </div>
 
                 </fieldset>
@@ -75,7 +56,8 @@
                     <legend>
                         <h2>Mes inscriptions</h2>
                     </legend>
-                    <select>
+                    <select name="need" required>
+                        <option value="" disabled selected>Veuillez selectionner une option</option>
                         <optgroup label="FRONT-END">
                             <option value="html">HTML</option>
                             <option value="xml">XML</option>

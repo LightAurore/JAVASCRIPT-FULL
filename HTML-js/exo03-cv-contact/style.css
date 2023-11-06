@@ -17,7 +17,6 @@ form {
 form > * {
   width: 100%;
   padding: 10px;
-  margin-inline: 10px;
 }
 
 fieldset {
@@ -31,6 +30,13 @@ fieldset {
   width: 100%;
   padding: auto auto;
   margin-block: 5px;
+}
+
+#coo-sexe{
+  padding: 10px;
+}
+#coo-email{
+  margin-bottom: 10px;
 }
 
 fieldset div input:nth-child(1),
@@ -47,13 +53,13 @@ fieldset div > input,
 
 #coo-majeur span,
 #coo-sexe span {
-  display: flex;
+  display:inline;
   margin-inline: 25px;
 }
 
 #coo-majeur,
 #coo-sexe {
-  display: flex;
+  display: inline;
 }
 
 #coo-sexe span > * {
