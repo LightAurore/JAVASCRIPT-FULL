@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabbleau 2</title>
+    <link rel="stylesheet" href="./tabs.css">
+
+    <style>
+       
+
+        td{
+            height: 40px;
+        }
+
+        #cel-a{
+            background-color: green;
+            text-align: start;
+            vertical-align: bottom;
+        }
+        #cel-g{
+            background-color: skyblue;
+            text-align: end;
+            vertical-align: center;
+            height: 30px;
+        }
+        #cel-b{
+            background-color: yellow;
+            text-align: center;
+            vertical-align: top;
+
+        }
+
+        #cel-e{
+            text-align: center;
+            vertical-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table>
+            <caption><h2>Tableau 2</h2></caption>
+            <tr>
+                <td rowspan="2" id="cel-a">A</td>
+                <td id="cel-b">B</td>
+            </tr>
+            <tr>
+                
+                <td id="cel-e">E</td>
+            </tr>
+            <tr>
+                
+                <td colspan="2" id="cel-g">G</td>
+            </tr>
+        </table>
+    </main>
+    <div class="autres-tableaux">
+        <a href="./tableau1.html">tableau 1</a>
+        <a href="./tableau2.html">tableau 1</a>
+        <a href="./tableau3.html">tableau 3</a>
+    </div>
+</body>
+</html>

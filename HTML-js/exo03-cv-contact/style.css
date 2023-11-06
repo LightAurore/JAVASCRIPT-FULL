@@ -53,7 +53,7 @@ fieldset div > input,
 
 #coo-majeur span,
 #coo-sexe span {
-  display:inline;
+  display:-moz-inline-stack;
   margin-inline: 25px;
 }
 
