@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Query</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #dfdff0;
+        }
+
+        body {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            flex-direction: column;
+            background-color: #fff;
+            border: 2px solid green;
+            margin-block: 20px;
+        }
+
+        /* 
+        section:nth-child(1) {}
+
+        section:nth-child(2) {}
+
+        section:nth-child(3) {}
+ */
+        .card-container {
+            container-type: inline-size;
+            container-name: card;
+            width: 100%;
+
+        }
+
+        .card {
+            display: flex;
+            border-radius: 8px;
+            height: 250px;
+            overflow: hidden;
+            margin: 10px;
+        }
+
+        .card img {
+            height: 100%;
+        }
+
+        @container card (max-width: 500px) {
+            .card {
+                flex-direction: column;
+            }
+
+            .card img {
+                width: 100%;
+                min-height: 200px;
+            }
+        }
+
+        @container card (max-width: 300px) {
+            .card {
+                flex-direction: column;
+            }
+
+            .card h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div class="card">
+            <img src="./space.png" alt="">
+            <div class="content">
+                <h2>Space</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates natus cum omnis vel dignissimos.
+                    Debitis!
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./space.png" alt="">
+            <div class="content">
+                <h2>Space</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates natus cum omnis vel dignissimos.
+                    Debitis!
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./space.png" alt="">
+            <div class="content">
+                <h2>Space</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates natus cum omnis vel dignissimos.
+                    Debitis!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="card-container">
+            <div class="card">
+                <img src="./space.png" alt="">
+                <div class="content">
+                    <h2>Space</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates natus cum omnis vel
+                        dignissimos.
+                        Debitis!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="./space.png" alt="">
+                <div class="content">
+                    <h2>Space</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates natus cum omnis vel
+                        dignissimos.
+                        Debitis!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="./space.png" alt="">
+                <div class="content">
+                    <h2>Space</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates natus cum omnis vel
+                        dignissimos.
+                        Debitis!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="card-container">
+            <div class="card">
+                <img src="./space.png" alt="">
+                <div class="content">
+                    <h2>Space</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates natus cum omnis vel
+                        dignissimos.
+                        Debitis!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

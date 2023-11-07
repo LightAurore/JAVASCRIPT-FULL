@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            /* align-content: center; */
+            align-tracks: content-position;
+            width: 80%;
+            height: 50vh;
+            margin: 50px auto 0;
+            box-shadow: 0 0 2px green;
+            border-radius: 20px;
+        }
+
+        section>div {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            place-content: center;
+            place-items: center;
+            background-color: blanchedalmond;
+            border-radius: 15px;
+            box-shadow: 0 0 5px black;
+            margin: 10px;
+        }
+
+        section>div:nth-child(even) {
+            height: 200px;
+        }
+
+        section:nth-child(2)>div:nth-child(2n) {
+            flex-grow: 5;
+        }
+
+        section:nth-child(2) {
+            container-type: inline-size;
+            container-name: exemple;
+        }
+
+        section:nth-child(3) {
+            container-type: inline-size;
+            container-name: transformation;
+            flex-wrap: wrap;
+            align-items: self-end;
+            padding: 10px auto;
+            height: fit-content;
+            background-color: azure;
+        }
+
+        section:nth-child(3)>div {
+            flex-shrink: 2;
+            flex-basis: 200px;
+            width: 200px;
+            height: 200px;
+        }
+
+        section:nth-child(3)>div:nth-child(3n+2) {
+            flex-grow: 1;
+            background-color: cornflowerblue;
+        }
+
+        img {
+            height: 100%;
+        }
+
+        @container exemple (max-width: 500px) {
+            div.box-a4 {
+                background-color: red;
+            }
+        }
+
+        @container transformation (min-width: 500px) {
+            div:nth-child(odd) {
+                animation: 2s rotation 0.2s infinite ease-in-out;
+            }
+
+            @keyframes rotation {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+
+            }
+
+            div:nth-child(even) {
+                animation: 2s skewy 0.2s infinite ease-in-out;
+            }
+
+            @keyframes skewy {
+                to {
+                    transform: skew(360deg);
+                }
+            }
+
+
+
+            div img {
+                animation: 2s grossir 0.01s infinite ease;
+            }
+
+
+            @keyframes grossir {
+                0% {
+                    transform: scale(1.5);
+                }
+
+                25% {
+                    transform: scale(0.8);
+                }
+
+                50% {
+                    transform: scale(1.5);
+                }
+
+                75% {
+                    transform: scale(0.8);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="flex-box">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+        <div class="box-4">4</div>
+        <div class="box-5">5</div>
+    </section>
+
+    <section>
+        <div class="box-a1">div 1</div>
+        <div class="box-a2">div 2</div>
+        <div class="box-a3">div 3</div>
+        <div class="box-a4">div 4</div>
+        <div class="box-a5">div 5</div>
+    </section>
+
+    <section>
+        <div class="shrink-1">shrink-1</div>
+        <div class="shrink-2">shrink-2</div>
+        <div class="shrink-3">shrink-3</div>
+        <div class="shrink-4">shrink-4</div>
+        <div class="shrink-5">shrink-5</div>
+        <div class="shrink-6">shrink-6</div>
+        <div class="shrink-7">shrink-7</div>
+        <div class="shrink-8">shrink-8</div>
+        <div class="shrink-9">shrink-9</div>
+        <div class="shrink-10">shrink-10</div>
+        <div class="shrink-11">shrink-11</div>
+        <div class="shrink-12">shrink-12</div>
+        <div class="shrink-13">shrink-13</div>
+        <div class="shrink-14">shrink-14</div>
+        <div class="shrink-15">shrink-15</div>
+        <div class="shrink-16">shrink-16</div>
+        <div class="shrink-17">shrink-17</div>
+        <div class="shrink-18">shrink-18</div>
+        <div class="shrink-19">shrink-19</div>
+        <div class="shrink-20">shrink-20</div>
+        <div class="shrink-21">shrink-21</div>
+        <div class="shrink-22">shrink-22</div>
+        <div class="shrink-23">shrink-23</div>
+        <div class="shrink-24">shrink-24</div>
+        <div class="shrink-25">shrink-25</div>
+        <div class="shrink-26">shrink-26</div>
+        <div class="shrink-27">shrink-27</div>
+        <div class="shrink-28">shrink-28</div>
+        <div class="shrink-29">shrink-29</div>
+        <div class="shrink-30">shrink-30</div>
+        <div class="shrink-31">shrink-31</div>
+        <div class="shrink-32">shrink-32</div>
+        <div class="shrink-33">shrink-33</div>
+        <div class="shrink-34">shrink-34</div>
+        <div class="shrink-35">shrink-35</div>
+        <div class="shrink-36">shrink-36</div>
+        <div class="shrink-37">shrink-37</div>
+        <div class="shrink-38">shrink-38</div>
+        <div class="shrink-39">shrink-39</div>
+        <div class="shrink-40">shrink-40</div>
+        <div class="shrink-41">shrink-41</div>
+        <div class="shrink-42">shrink-42</div>
+        <div class="shrink-43">shrink-43</div>
+        <div class="shrink-44">shrink-44</div>
+        <div class="shrink-45">shrink-45</div>
+        <div class="shrink-46">shrink-46</div>
+        <div class="shrink-47">shrink-47</div>
+        <div class="shrink-48">shrink-48</div>
+        <div class="shrink-49">shrink-49</div>
+        <div class="shrink-50">shrink-50</div>
+    </section>
+
+</body>
+<script>
+    let mesDiv = document.querySelectorAll("section:nth-child(3) > div");
+    /* 
+        for (let i = 0; i < mesDiv.length; i++) {
+            let html_img = document.createElement("img");
+            html_img.src = "./space.png";
+            console.log(html_img);
+            mesDiv[i].insertAdjacentHTML("afterbegin", html_img);
+        }
+         */
+    mesDiv.forEach(div => {
+        let html_img = document.createElement("img");
+        html_img.src = "./space.png";
+        div.innerHTML = "";
+        div.appendChild(html_img)
+    });
+    console.log(mesDiv);
+
+
+</script>
+
+</html>
