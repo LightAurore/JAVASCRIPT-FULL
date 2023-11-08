@@ -12,7 +12,7 @@ const fs = require("fs");
 
 console.log(fs);
 
-const readStream = fs.createReadStream("largeFile.text");
+const readStream = fs.createReadStream("./largeFile.text");
 
 readStream.on("end", (chunk) => {});
 readStream.close("end", () => {

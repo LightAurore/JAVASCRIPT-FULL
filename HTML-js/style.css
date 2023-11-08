@@ -122,11 +122,53 @@ main > * {
   margin: 10px;
 }
 
+div.atome{
+  position: relative;
+  width: 250px;
+  height: 500px;
+  border: 4px solid blue;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+div.atome::after{
+  position: absolute;
+  content: " ";
+  width: 250px;
+  height: 500px;
+  border: 4px solid rgb(136, 255, 0);
+  border-radius: 50%;
+  background-color: transparent;
+  transform: rotate(-60deg);
+}
+div.atome::before{
+  position: absolute;
+  content: " ";
+  width: 250px;
+  height: 500px;
+  border: 4px solid rgb(255, 0, 21);
+  border-radius: 50%;
+  background-color: transparent;
+  transform: rotate(60deg);
+/*   transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+ */}
+div.atome::before::before{
+  position: absolute;
+  content: " ";
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgb(255, 0, 21);
+  border-radius: 50%;
+  background-color: blue;
+}
+
 .tag-fieldset fieldset {
   display: flex;
   flex-direction: column;
 }
-.tag-fieldset fieldset * > {
+.tag-fieldset fieldset * > {                                    
   margin: 5px;
 }
 
