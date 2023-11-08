@@ -122,7 +122,7 @@ main > * {
   margin: 10px;
 }
 
-div.atome{
+div.atome {
   position: relative;
   width: 250px;
   height: 500px;
@@ -131,9 +131,9 @@ div.atome{
   background-color: transparent;
 }
 
-div.atome::after{
+div.atome::after {
   position: absolute;
- left: 0%;
+  left: 0%;
   content: " ";
   width: 250px;
   height: 500px;
@@ -142,7 +142,7 @@ div.atome::after{
   background-color: transparent;
   transform: rotate(-60deg);
 }
-div.atome::before{
+div.atome::before {
   position: absolute;
   content: " ";
   width: 250px;
@@ -151,16 +151,17 @@ div.atome::before{
   border-radius: 50%;
   background-color: transparent;
   transform: rotate(60deg);
-/*   transform: translate(-50%, -50%);
+  /*   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
- */}
+ */
+}
 
 .tag-fieldset fieldset {
   display: flex;
   flex-direction: column;
 }
-.tag-fieldset fieldset * > {                                    
+.tag-fieldset fieldset * > {
   margin: 5px;
 }
 
@@ -175,13 +176,10 @@ div.atome::before{
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipse;
-  flex-wrap: ;
+  flex-wrap: nowrap;
 }
 
-
-
 /* Responsive */
-
 
 /* Flex Box */
 
@@ -191,12 +189,12 @@ div.atome::before{
   align-items: center;
 }
 
-.responsives-container section{
+.responsives-container section {
   width: 100%;
   min-height: 150px;
 }
 
-.responsives-container > section > article.elements-flex > div{
+.responsives-container > section > article.elements-flex > div {
   width: 250px;
   height: 80px;
   background-color: rgb(65, 157, 42);
@@ -209,57 +207,103 @@ div.atome::before{
 
 /*  */
 
-.elements-grid{
+.elements-grid {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 100px repeat(3, 50px) 25px;
   gap: 5px;
 }
-.elements-grid div, .elements-grid-1 div{
+.elements-grid div,
+.elements-grid-1 div {
   background-color: peachpuff;
 }
-.elements-grid elem1{
+.elements-grid elem1 {
   grid-row: 1;
   grid-column: 1 / 3;
 }
 
 /*  */
-.elements-grid-1{
+.elements-grid-1 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 75px);
+  grid-template-areas:
+    "header header header"
+    "aside main main"
+    "aside main main"
+    " footer footer footer";
 
   width: 100%;
 }
 
-.elements-grid-1 #elem1{
-  grid-area: e;
-  background-color: cadetblue;
-}
-.elements-grid-1 #elem2{
-  grid-area: e;
-  background-color: cadetblue;
-}
-.elements-grid-1 #elem3{
-  grid-area: e;
-  background-color: cadetblue;
-}
-.elements-grid-1 #elem4{
-  grid-area: e;
-  background-color: cadetblue;
+.elements-grid-1 div {
+  height: 150px;
 }
 
+.elements-grid-1 #elem1 {
+  grid-area: header;
+  background-color: cadetblue;
+}
+.elements-grid-1 #elem2 {
+  grid-area: header;
+  background-color: cadetblue;
+}
+.elements-grid-1 #elem3 {
+  grid-area: header;
+  background-color: cadetblue;
+}
+.elements-grid-1 #elem4 {
+  grid-area: aside;
+  background-color: rgb(95, 97, 160);
+}
+.elements-grid-1 #elem5 {
+  grid-area: aside;
+  background-color: rgb(95, 97, 160);
+}
+.elements-grid-1 #elem6 {
+  grid-area: aside;
+  background-color: rgb(95, 97, 160);
+}
+.elements-grid-1 #elem7 {
+  grid-area: main;
+  background-color: rgb(241, 235, 246);
+}
+.elements-grid-1 #elem8 {
+  grid-area: main;
+  background-color: rgb(241, 235, 246);
+}
+.elements-grid-1 #elem9 {
+  grid-area: main;
+  background-color: rgb(241, 235, 246);
+}
+.elements-grid-1 #elem10 {
+  grid-area: footer;
+  background-color: rgb(20, 38, 39);
+  color: rgb(241, 235, 246);
+}
 
 /* grid column */
-.grid-col article .card{
+.grid-col article .card {
   width: 250px;
   height: 250px;
   align-self: center;
+  float: left;
+  flex: 1;
 }
 
-#texte-content{
+.card figure {
+  width: 250px;
+}
+.card figure > img {
+  width: 100%;
+  height: 100%;
+}
+
+#texte-content {
+  float: right;
+  columns: 2;
+  column-rule: 75px double green;
+}
+#texte-content-1 {
+  clear: both;
   columns: 4;
-
 }
-
