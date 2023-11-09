@@ -1,0 +1,153 @@
+/* Font */
+@font-face {
+    font-family: "italico";
+    src: url("../assets/fonts/italico/Italico_700.ttf");
+}
+
+/* initiation */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2{
+    font-family: "italico";
+}
+
+ul> li, ol>li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input[type="button"],input[type="submit"], input[type="reset"]{
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 0.5ch;
+    color: rgb(80, 127, 255);
+    font-weight: bold;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* classes object */
+
+
+
+
+/* générale */
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(80, 127, 255);
+
+    height: 3rem;
+    width: 100vw;
+    align-items: center;
+    padding: 1ch;
+}
+
+.site-id{
+    display: none;
+}
+
+header > nav{
+    flex-grow: 1;
+}
+
+
+header> nav > ul{
+    display: flex;
+    font-display: row;
+    gap: 1ch;
+}
+
+header> nav > ul > li{
+    color: #eff;
+    transition: color 0.5s ease-in;
+    
+}
+header> nav > ul > li:hover{
+    color: whitesmoke;
+
+}
+
+#btn-connexion{
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+    color: rgb(80, 127, 255);
+}
+
+/*? main */
+main{
+    padding: 0.5rem;
+    /* width: 70%; */
+    /* margin: 0 auto; */
+    flex-grow: 1;
+}
+
+main > section:first-child{
+    margin-bottom: 1rem;
+}
+
+/*? Cards  */
+
+.card-image{
+    width: 175px;
+}
+
+.card-image > img{
+    display: flex;
+    width: 100%;
+}
+
+#parrot-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+}
+
+.card{
+    display: flex;
+    background-color: burlywood;
+}
+.card-container{
+    container-type: inline-size;
+    container-name: card;
+}
+
+.card-container:nth-child(odd) .card{
+    flex-direction: row-reverse;
+}
+
+.contenu{
+    padding: 0.5ch;
+}
+
+.contenu p{
+    flex-grow: 1;
+    text-align: justify;
+    padding-block: auto 0;
+}
+
+/* Container query */
+@container card(min-widht : 400px){
+
+}
+
+/* Responsive desktop */
+@media screen and (min-width: 400px) {
+    .card{
+        flex-direction: column;
+    }
+}
+
