@@ -14,3 +14,5 @@ https://stateofcss.com/en-US
 
 ## uninstall node
 npm cache clean --force
+
+where node

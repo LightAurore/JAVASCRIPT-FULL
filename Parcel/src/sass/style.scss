@@ -1,5 +1,12 @@
-$color-primary: gray;
-$color-secondary: lightgray;
+$color-primary: navy;
+$color-secondary: darkturquoise;
+
+$color-on-primary: hotpink;
+$color-on-secondary: plum;
+
+$color-white: whitesmoke ;
+$color-success: chartreuse;
+$color-error: red;
 
 *{
     box-sizing: border-box;
@@ -11,7 +18,77 @@ h1{
     color: $color-primary;
     font-size: 3rem;
 }
+
 h2{
     color: $color-secondary;
     font-size: 2rem;
+
+    + p{
+        font-style: oblique;
+    }
+
+    &:not(:first-child){
+        margin-top: 0.5rem;
+    }
+}
+
+.btn{
+    padding: 0.5ch 1ch;
+    border: none;
+    border-radius: 0.7em;
+
+    background-color: $color-primary;
+    color: $color-on-primary;
+    margin: 0.1rem;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+
+    &-success, &-error{
+        color: $color-white;
+    }
+
+    &-success{
+        background-color: $color-success;
+    }
+    &-error{
+        background-color: $color-error;
+    }
+
+    /* 
+    &{
+        &success, &error{
+        color: $color-white;
+    }
+
+    &success{
+        background-color: $color-success;
+    }
+    &error{
+        background-color: $color-error;
+    }
+
+    }
+    */
+}
+
+$color-link: #098df8;
+$color-link-hover:#2299fa; 
+$color-link-visited: #afd7f8;
+
+
+a{
+    text-decoration: none;
+    color: $color-link;
+
+    &:visited{
+        color: $color-link-visited;
+    }
+    &:focus, &:hover{
+        color: $color-link-hover;
+    }
+    &:active{
+        font-weight: bold;
+    }
 }

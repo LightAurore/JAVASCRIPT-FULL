@@ -5,13 +5,69 @@
 }
 
 h1 {
-  color: gray;
+  color: navy;
   font-size: 3rem;
 }
 
 h2 {
-  color: lightgray;
+  color: darkturquoise;
   font-size: 2rem;
+}
+h2 + p {
+  font-style: oblique;
+}
+h2:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+.btn {
+  padding: 0.5ch 1ch;
+  border: none;
+  border-radius: 0.7em;
+  background-color: navy;
+  color: hotpink;
+  margin: 0.1rem;
+  /* 
+  &{
+      &success, &error{
+      color: $color-white;
+  }
+
+  &success{
+      background-color: $color-success;
+  }
+  &error{
+      background-color: $color-error;
+  }
+
+  }
+  */
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+.btn-success, .btn-error {
+  color: whitesmoke;
+}
+.btn-success {
+  background-color: chartreuse;
+}
+.btn-error {
+  background-color: red;
+}
+
+a {
+  text-decoration: none;
+  color: #098df8;
+}
+a:visited {
+  color: #afd7f8;
+}
+a:focus, a:hover {
+  color: #2299fa;
+}
+a:active {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
