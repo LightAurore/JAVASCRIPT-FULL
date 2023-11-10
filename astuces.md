@@ -8,3 +8,9 @@ vim logiciel
 
 https://developer.mozilla.org/fr/docs/Web/HTML/Microdata
 
+https://stateofjs.com/en-US
+
+https://stateofcss.com/en-US
+
+## uninstall node
+npm cache clean --force

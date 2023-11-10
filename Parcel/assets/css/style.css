@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: gray;
+  font-size: 3rem;
+}
+
+h2 {
+  color: lightgray;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
