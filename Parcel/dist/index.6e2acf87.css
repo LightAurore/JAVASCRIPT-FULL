@@ -1,11 +1,199 @@
-body:before {
-  white-space: pre;
-  content: "Error: Expected \"from\".\a     ╷\a 233 │ @for $size in $bloc-size{\d \a     │            ^\a     ╵\a   src\\sass\\style.scss 233:12  root stylesheet";
-  border-bottom: 2px solid #000;
-  margin-bottom: 1em;
-  padding: 1em;
-  font-family: Source Code Pro, SF Mono, Monaco, Inconsolata, Fira Mono, Droid Sans Mono, monospace;
-  display: block;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding: 20px;
+  display: flex;
+}
+
+h1 {
+  color: navy;
+  font-size: 3rem;
+}
+
+h2 {
+  color: #00ced1;
+  font-size: 2rem;
+}
+
+h2 + p {
+  font-style: oblique;
+}
+
+h2:not(:first-child) {
+  margin-top: .5rem;
+}
+
+.btn {
+  color: #ff69b4;
+  background-color: navy;
+  border: none;
+  border-radius: .7em;
+  margin: .1rem;
+  padding: .5ch 1ch;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.btn-success, .btn-error {
+  color: #f5f5f5;
+}
+
+.btn-success {
+  background-color: #7fff00;
+}
+
+.btn-error {
+  background-color: red;
+}
+
+a {
+  color: #098df8;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #6cbbfb;
+}
+
+a:focus, a:hover {
+  color: #0671c8;
+}
+
+a:active {
+  font-weight: bold;
+}
+
+#elemts {
+  --col: 1;
+  grid-template-columns: repeat(var(--col), 1fr);
+  gap: .5ch;
+  display: grid;
+}
+
+@media screen and (width >= 425px) {
+  #elemts {
+    --col: 2;
+  }
+}
+
+@media screen and (width >= 768px) {
+  #elemts {
+    --col: 5;
+  }
+}
+
+#elemts .elem {
+  color: #f5f5f5;
+  padding: 10px;
+}
+
+#extend-elem .base, #extend-elem .variant, #extend-elem .other {
+  color: #faebd7;
+  text-align: center;
+  background-color: #d2691e;
+  border: .5ch solid plum;
+  border-radius: 1em;
+  width: 100px;
+  height: 50px;
+  padding: 1rem;
+}
+
+#extend-elem .variant, #extend-elem .other {
+  color: gold;
+  border-color: gold;
+  margin-top: 10px;
+}
+
+#mixin-elem #mixin1, #mixin-elem #mixin2 {
+  width: 100px;
+  padding: 1rem;
+}
+
+#mixin-elem #mixin1 {
+  background-color: #0ff;
+  border: 5px solid #d2de32;
+  border-radius: 1em;
+}
+
+#mixin-elem #mixin2 {
+  background-color: #228b22;
+  border: 20px solid #ffc436;
+  border-radius: 1em;
+  margin-top: 10px;
+}
+
+.elem1 {
+  background-color: #0ff;
+}
+
+.elem2 {
+  background-color: red;
+}
+
+.elem3 {
+  background-color: #228b22;
+}
+
+.elem4 {
+  background-color: plum;
+}
+
+.elem5 {
+  background-color: navy;
+}
+
+.elem6 {
+  background-color: gold;
+}
+
+.size-10 {
+  width: 10%;
+}
+
+.size-25 {
+  width: 25%;
+}
+
+.size-33 {
+  width: 33%;
+}
+
+.size-50 {
+  width: 50%;
+}
+
+.size-66 {
+  width: 66%;
+}
+
+.size-100 {
+  width: 100%;
+}
+
+#size-elem {
+  background-color: #2299fa;
+  flex-wrap: wrap-reverse;
+  width: 100%;
+  display: flex;
+}
+
+#size-elem > div {
+  background-color: #f0f8ff;
+  place-content: center;
+  place-items: center;
+  height: 75px;
+  margin: 2ch 0;
+  display: flex;
+  box-shadow: 0 0 5px green;
 }
 
 /*# sourceMappingURL=index.6e2acf87.css.map */

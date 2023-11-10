@@ -1,17 +1,204 @@
-/* Error: Expected "from".
- *     ,
- * 233 | @for $size in $bloc-size{
- *     |            ^
- *     '
- *   src\sass\style.scss 233:12  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: Expected "from".\a     \2577 \a 233 \2502  @for $size in $bloc-size{\d\a     \2502             ^\a     \2575 \a   src\\sass\\style.scss 233:12  root stylesheet';
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding: 20px;
+}
+h1 {
+  color: navy;
+  font-size: 3rem;
+}
+
+h2 {
+  color: darkturquoise;
+  font-size: 2rem;
+}
+h2 + p {
+  font-style: oblique;
+}
+h2:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+.btn {
+  padding: 0.5ch 1ch;
+  border: none;
+  border-radius: 0.7em;
+  background-color: navy;
+  color: hotpink;
+  margin: 0.1rem;
+  /* 
+  &{
+      &success, &error{
+      color: $color-white;
+  }
+
+  &success{
+      background-color: $color-success;
+  }
+  &error{
+      background-color: $color-error;
+  }
+
+  }
+  */
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+.btn-success, .btn-error {
+  color: whitesmoke;
+}
+.btn-success {
+  background-color: chartreuse;
+}
+.btn-error {
+  background-color: red;
+}
+
+a {
+  text-decoration: none;
+  color: #098df8;
+}
+a:visited {
+  color: #6cbbfb;
+}
+a:focus, a:hover {
+  color: #0671c8;
+}
+a:active {
+  font-weight: bold;
+}
+
+/* 
+    Mobile     :  moins de 425px (1 elmt par ligne)
+    Tablette    : entre 426px & 768px    (2 elmts par ligne)
+    Desktop     : plus de 769px (5 elts par ligne)
+*/
+#elemts {
+  /*  ▼ */
+  --col: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--col), 1fr);
+  gap: 0.5ch;
+}
+@media screen and (min-width: 425px) {
+  #elemts {
+    --col: 2;
+  }
+}
+@media screen and (min-width: 768px) {
+  #elemts {
+    --col: 5;
+  }
+}
+#elemts .elem {
+  color: whitesmoke;
+  padding: 10px;
+}
+
+#extend-elem .base, #extend-elem .variant, #extend-elem .other {
+  background-color: chocolate;
+  color: antiquewhite;
+  width: 100px;
+  height: 50px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1em;
+  border: 0.5ch solid plum;
+}
+#extend-elem .variant, #extend-elem .other {
+  border-color: gold;
+  color: gold;
+  margin-top: 10px;
+}
+#mixin-elem #mixin1, #mixin-elem #mixin2 {
+  padding: 1rem;
+  width: 100px;
+}
+#mixin-elem #mixin1 {
+  background-color: aqua;
+  border: 5px solid #D2DE32;
+  border-radius: 1em;
+}
+#mixin-elem #mixin2 {
+  background-color: forestgreen;
+  border: 20px solid #FFC436;
+  border-radius: 1em;
+  margin-top: 10px;
+}
+
+.elem1 {
+  background-color: aqua;
+}
+
+.elem2 {
+  background-color: red;
+}
+
+.elem3 {
+  background-color: forestgreen;
+}
+
+.elem4 {
+  background-color: plum;
+}
+
+.elem5 {
+  background-color: navy;
+}
+
+.elem6 {
+  background-color: gold;
+}
+
+.size-10 {
+  width: 10%;
+}
+
+.size-25 {
+  width: 25%;
+}
+
+.size-33 {
+  width: 33%;
+}
+
+.size-50 {
+  width: 50%;
+}
+
+.size-66 {
+  width: 66%;
+}
+
+.size-100 {
+  width: 100%;
+}
+
+#size-elem {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap-reverse;
+  width: 100%;
+  background-color: #2299fa;
+}
+#size-elem > div {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  height: 75px;
+  margin: 2ch;
+  box-shadow: 0 0 5px green;
+  background-color: aliceblue;
+}
+
+/*# sourceMappingURL=style.css.map */
