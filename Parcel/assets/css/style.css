@@ -1,73 +1,17 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* Error: Expected "from".
+ *     ,
+ * 233 | @for $size in $bloc-size{
+ *     |            ^
+ *     '
+ *   src\sass\style.scss 233:12  root stylesheet */
 
-h1 {
-  color: navy;
-  font-size: 3rem;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Expected "from".\a     \2577 \a 233 \2502  @for $size in $bloc-size{\d\a     \2502             ^\a     \2575 \a   src\\sass\\style.scss 233:12  root stylesheet';
 }
-
-h2 {
-  color: darkturquoise;
-  font-size: 2rem;
-}
-h2 + p {
-  font-style: oblique;
-}
-h2:not(:first-child) {
-  margin-top: 0.5rem;
-}
-
-.btn {
-  padding: 0.5ch 1ch;
-  border: none;
-  border-radius: 0.7em;
-  background-color: navy;
-  color: hotpink;
-  margin: 0.1rem;
-  /* 
-  &{
-      &success, &error{
-      color: $color-white;
-  }
-
-  &success{
-      background-color: $color-success;
-  }
-  &error{
-      background-color: $color-error;
-  }
-
-  }
-  */
-}
-.btn:hover {
-  transform: scale(1.2);
-}
-.btn-success, .btn-error {
-  color: whitesmoke;
-}
-.btn-success {
-  background-color: chartreuse;
-}
-.btn-error {
-  background-color: red;
-}
-
-a {
-  text-decoration: none;
-  color: #098df8;
-}
-a:visited {
-  color: #afd7f8;
-}
-a:focus, a:hover {
-  color: #2299fa;
-}
-a:active {
-  font-weight: bold;
-}
-
-/*# sourceMappingURL=style.css.map */

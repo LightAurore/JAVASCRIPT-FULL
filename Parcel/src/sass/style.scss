@@ -14,6 +14,17 @@ $color-error: red;
     padding: 0;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding: 20px;
+
+    & > *{
+    }
+}
+
 h1{
     color: $color-primary;
     font-size: 3rem;
@@ -74,8 +85,8 @@ h2{
 }
 
 $color-link: #098df8;
-$color-link-hover:#2299fa; 
-$color-link-visited: #afd7f8;
+$color-link-hover: #2299fa; 
+$color-link-visited:  #afd7f8;
 
 
 a{
@@ -83,12 +94,145 @@ a{
     color: $color-link;
 
     &:visited{
-        color: $color-link-visited;
+        color: lighten($color-link, 20%);
     }
     &:focus, &:hover{
-        color: $color-link-hover;
+        color: darken($color-link, 10%);
     }
     &:active{
         font-weight: bold;
+    }
+}
+
+
+/* 
+    Mobile     :  moins de 425px (1 elmt par ligne)
+    Tablette    : entre 426px & 768px    (2 elmts par ligne)
+    Desktop     : plus de 769px (5 elts par ligne)
+*/
+
+$breakpoint-tablet: 425px;
+$breakpoint-desktop: 768px;
+
+// #elemts{
+//     // variable sass local
+//     $gap-elem : 0.5ch;
+//     $dim-elem: calc(100% - 0.5ch);
+//     /*  ▼ */
+//     --col: 100%;
+//     // :root{
+//     //     --test:2;
+//     // }
+
+//     display: flex;
+//     flex-flow: row wrap;
+//     gap : $gap-elem;
+
+//     @media screen and (min-width: $breakpoint-tablet){
+//         --col: calc($dim-elem / 2);
+//     }
+    
+//     @media screen and (min-width: $breakpoint-desktop){
+//         --col: calc($dim-elem / 5);
+//     } 
+
+//     .elem{
+//         background-color: #ca907e;
+//         flex-basis: var(--col); 
+//         flex: 1;
+//     }
+// }
+
+#elemts{
+    // variable sass local
+    $gap-elem : 0.5ch;
+    $dim-elem: calc(100% - 0.5ch);
+    /*  ▼ */
+    --col: 1;
+    // :root{
+    //     --test:2;
+    // }
+
+    display: grid;
+    grid-template-columns: repeat(var(--col), 1fr);
+    gap : $gap-elem;
+
+    @media screen and (min-width: $breakpoint-tablet){
+        --col: 2;
+    }
+    
+    @media screen and (min-width: $breakpoint-desktop){
+        --col: 5;
+    } 
+
+    .elem{
+        background-color: #ca907e;
+    }
+}
+
+#extend-elem{
+    .base{
+        background-color: chocolate;
+        color: antiquewhite;
+        width: 100px;
+        height: 50px;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 1em;
+        border: 0.5ch solid plum;
+    }
+    .variant{
+        @extend .base;
+        border-color: gold;
+        color: gold;
+        margin-top: 10px;
+    }
+
+    .other{
+        @extend .variant;
+    }
+}
+
+@mixin custom-border($color, $size: 5px){
+    border: $size solid $color;
+    border-radius: 1em;
+}
+
+#mixin-elem{
+
+    #mixin1, #mixin2{
+        padding: 1rem;
+        width: 100px;
+    }
+
+    #mixin1{
+        background-color: aqua;
+        @include custom-border(#D2DE32);
+    }
+    #mixin2{
+        background-color: forestgreen;
+        @include custom-border(#FFC436, 20px);
+        margin-top: 10px;
+    }
+
+}
+
+$elem-colors : (aqua, red, forestgreen, plum, navy, gold);
+
+@for $jo from 1 through 6 {
+    // #elem#($jo){
+    
+        .elem#{$jo}{
+        color: nth($elem-colors, $jo);
+    }
+
+}
+
+$block-sizes: (10, 25, 33, 50, 66, 100);
+
+@for $size in $bloc-size{
+
+    .size-#{$size}{
+        width: percentaage;
     }
 }
