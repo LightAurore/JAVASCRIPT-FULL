@@ -1,0 +1,27 @@
+
+@mixin container($width){
+	width: clamp(46vw, #{$width}, 100vw);
+	margin: 0 auto;
+}
+@mixin flex-center($direction){
+	display: flex;
+	/* flex-direction: column; */
+	flex-direction: #{$direction};
+	justify-content: center;
+	align-items: center;
+}
+
+
+$light: #eee;
+$dark: #333;
+
+@mixin theme($light-theme: true){
+	@if($light-theme){
+	color: $dark;
+	background-color: $light;
+	}
+	@else{
+	color: $light;
+	background-color: $dark;
+	}
+}

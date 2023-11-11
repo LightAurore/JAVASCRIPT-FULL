@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="/connexion.8ea35f5b.css">
+    <link rel="stylesheet" href="/HTML-js/exo03-cv-contact/cv.32ad9296.css">
+</head>
+
+<body>
+    <a href="/index.html"><button>retour</button></a>
+    <main>
+        <div class="formulaire-connexion">
+            <h1>Formulaire de contact</h1>
+            <form method="post">
+                <fieldset>
+                    <legend>
+                        <h2>Coordonnées</h2>
+                    </legend>
+                    <div id="coo-nom">
+                        <input type="text" name="nom" placeholder="Nom" required="">
+                        <input type="text" name="prenom" placeholder="Prénom">
+                    </div>
+
+                    <hr class="clear">
+
+                    <div id="coo-sexe">
+                        <p>Sexe : </p>
+                        <span>
+                            <label for="homme">Homme </label>
+                            <input type="radio" name="sexe-homme" id="homme" checked="">
+                        </span>
+                        <span>
+                            <label for="femme">Femme</label>
+                            <input type="radio" name="sexe-femme" id="femme">
+                        </span>
+                        <span>
+                            <label for="autre">Autre</label>
+                            <input type="radio" name="sexe-autre" id="autre">
+                        </span>
+                    </div>
+
+                    <div id="coo-email">
+                        <input type="email" name="name" placeholder="Test@gmail.com">
+                    </div>
+
+                    <div id="coo-tel">
+                        <input type="tel" name="tel_mobile" placeholder="N° Mobile" required="">
+                        <input type="tel" name="tel_fixe" placeholder="N° Fixe">
+                    </div>
+
+                </fieldset>
+                <fieldset class="inscription">
+                    <legend>
+                        <h2>Mes inscriptions</h2>
+                    </legend>
+                    <select name="need" required="">
+                        <option value="" disabled="" selected="">Veuillez selectionner une option</option>
+                        <optgroup label="FRONT-END">
+                            <option value="html">HTML</option>
+                            <option value="xml">XML</option>
+                            <option value="css">CSS</option>
+                            <option value="javascript">JAVASCRIPT</option>
+                        </optgroup>
+                        <optgroup label="BACK-END">
+                            <option value="php">PHP</option>
+                            <option value="C++">C++</option>
+                            <option value="c#">C#</option>
+                            <option value="python">PYTHON</option>
+                            <option value="sql">SQL</option>
+                            <option value="api">API</option>
+                        </optgroup>
+                    </select>
+
+                    <div id="coo-description">
+                        <textarea name="description" placeholder="Description du profil" rows="10" cols="50"></textarea>
+                    </div>
+                </fieldset>
+                <div id="coo-action">
+                    <input type="submit" value="Envoyer">
+                    <input type="reset" value="Reset">
+                </div>
+                <div id="coo-cv">
+                    <a href="/HTML-js/exo03-cv-contact/cv.html" type="button">Retour au C.V.</a>
+                </div>
+
+            </form>
+
+        </div>
+    </main>
+<script src="/connexion.409cdc3c.js"></script></body>
+
+</html>

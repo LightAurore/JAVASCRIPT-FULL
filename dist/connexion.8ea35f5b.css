@@ -1,0 +1,72 @@
+.formulaire-connexion {
+  background-color: #fff;
+  border-radius: 10px;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+  display: flex;
+}
+
+form {
+  flex-direction: column;
+  display: flex;
+}
+
+form > * {
+  width: 100%;
+  padding: 10px;
+}
+
+fieldset {
+  width: 100%;
+}
+
+#coo-nom, #coo-tel, #coo-email, #coo-action {
+  width: 100%;
+  margin-block: 5px;
+  padding: auto;
+}
+
+#coo-sexe {
+  padding: 10px;
+}
+
+#coo-email {
+  margin-bottom: 10px;
+}
+
+fieldset div input:first-child, #coo-action input:first-child {
+  float: left;
+  width: 49%;
+}
+
+fieldset div > input, #coo-action > input {
+  float: right;
+  width: 49%;
+  padding: 5px;
+}
+
+#coo-majeur span, #coo-sexe span {
+  display: -moz-inline-stack;
+  margin-inline: 25px;
+}
+
+#coo-majeur, #coo-sexe {
+  display: inline;
+}
+
+#coo-sexe span > * {
+  margin-inline: 2px;
+}
+
+#coo-email input {
+  width: 100%;
+  padding: 5px;
+}
+
+.clear {
+  clear: both;
+}
+
+/*# sourceMappingURL=connexion.8ea35f5b.css.map */

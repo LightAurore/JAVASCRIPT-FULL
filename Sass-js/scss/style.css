@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/*
+ (valeurs RGB) : adjust-color(couleur, $red: nombre, $green: nombre, $blue: nombre, $alpha: nombre) ou comme cela (valeurs HSL) : adjust-color(couleur, $hue: nombre, $saturation: nombre, $lightness: nombre, $alpha: nombre) */
+/*
+
+    @if et @else permettent d’exécuter un bloc de code SI (if) une condition est remplie ou d’exécuter un autre code SINON (else) ;
+
+    @each évalue un bloc pour chaque élément d’une liste ou chaque paire d’une map (le mapping correspond au fait de lier certaines données entre elles) ;
+
+    @for évalue un bloc un nombre de fois précisé lors de la création de la règle (le nombre d’évaluation est connu à l’avance) ;
+
+    @while évalue un bloc jusqu’à ce qu’une certaine condition de sortie soit remplie (le nombre d’évaluation n’est pas connu à l’avance).
+
+    opérateurs:
+    opérateurs arithmétiques, 
+
+    opérateurs logiques,  and, or, not
+
+    opérateurs de concaténation, + - /
+
+    opérateurs de conparaison,  ==, !=, <, >, <=, >= 
+    etc. 
+
+    https://www.pierre-giraud.com/sass-apprendre-cours-complet/sass-import/
+*/
+li:nth-child(4n+1) {
+  background-color: #f9c63f;
+}
+
+li:nth-child(4n+2) {
+  background-color: #face57;
+}
+
+li:nth-child(4n+3) {
+  background-color: #fad570;
+}
+
+li:nth-child(4n+4) {
+  background-color: #fbdc89;
+}
+
+.paragraphe-1 {
+  font-size: 10px;
+  color: rgb(25, 255, 1);
+}
+
+.paragraphe-2 {
+  font-size: 20px;
+  color: rgb(25, 255, 2);
+}
+
+.paragraphe-3 {
+  font-size: 30px;
+  color: rgb(25, 255, 3);
+}
+
+.paragraphe-4 {
+  font-size: 40px;
+  color: rgb(25, 255, 4);
+}
+
+.paragraphe-5 {
+  font-size: 50px;
+  color: rgb(25, 255, 5);
+}
+
+.paragraphe-6 {
+  font-size: 60px;
+  color: rgb(25, 255, 6);
+}
+
+.paragraph-1 {
+  height: 50px;
+}
+
+.paragraph-2 {
+  height: 100px;
+}
+
+.paragraph-3 {
+  height: 150px;
+}
+
+.paragraph-4 {
+  height: 200px;
+}
+
+.paragraph-5 {
+  height: 250px;
+}
+
+.paragraph-6 {
+  height: 300px;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: box-border;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  min-height: 200vh;
+  background-color: rgb(106, 194, 160);
+  margin: 0 14px;
+  padding: 12px;
+}
+
+nav {
+  height: 50px;
+}
+nav ul {
+  display: flex;
+  /* flex-direction: column; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  width: 150px;
+  margin: 10px 2px;
+  padding-block: 5px;
+  text-align: center;
+  list-style: none;
+  height: 35px;
+}
+
+.carrees {
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+}
+
+.carrees .carrees__anim {
+  width: 33%;
+  height: 33%;
+  background-color: #f7ba14;
+  float: left;
+  animation: shrink 1.3s infinite ease-in-out;
+}
+
+@keyframes shrink {
+  0%, 70%, 100% {
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    transform: scale3D(0, 0, 1);
+  }
+}
+article {
+  width: 80%;
+  margin-inline: auto;
+}
+article div {
+  height: 50px;
+  margin-block: 12px;
+  text-align: center;
+}
+article div:hover {
+  background-color: teal;
+}
+
+main {
+  display: flex;
+  /* flex-direction: column; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(193, 193, 201, 0.5647058824);
+  height: 720px;
+  width: 80%;
+  margin: 10px auto;
+  flex: 1;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  /* @incude container();  */
+  @incude container(25%);
+}
+
+.card {
+  display: flex;
+  /* flex-direction: column; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #00800d;
+}
+.card:hover {
+  filter: blur(1px);
+  transform: scale(1.1);
+}
+.card__title {
+  margin-bottom: 2rem;
+}
+.card__img {
+  border-radius: 40px;
+  backdrop-filter: hue-rotate(90%);
+  flex: 1;
+}
+.card__bouton {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-block: 12px;
+}
+.card__bouton input {
+  width: 75px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: blue;
+}
+
+.blue-background {
+  background-color: blue;
+}
+
+.yellow-background {
+  background-color: yellow;
+}
+
+.tomato-background {
+  background-color: tomato;
+}
+
+.gray-background {
+  background-color: gray;
+}
+
+.title-2, .title-1 {
+  font-family: sans-serif;
+  color: hsl(170, 35%, 40%);
+}
+
+.title-1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.title-2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+footer {
+  color: #333;
+  background-color: #eee;
+  height: 250px;
+  display: flex;
+  /* flex-direction: column; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+footer span {
+  color: #eee;
+  background-color: #333;
+}
+footer #lineDrawing {
+  width: 100%;
+  height: 200px;
+}
+
+/*# sourceMappingURL=style.css.map */
