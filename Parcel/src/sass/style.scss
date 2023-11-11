@@ -233,7 +233,6 @@ $elem-colors : (aqua, red, forestgreen, plum, navy, gold);
 $block-sizes: (10, 25, 33, 50, 66, 100);
 
 @each $size in $block-sizes{
-
     .size-#{$size}{
         width: percentage($size/100);
     }
@@ -255,5 +254,4 @@ $block-sizes: (10, 25, 33, 50, 66, 100);
         box-shadow: 0 0 5px green;
         background-color: aliceblue;
     }
-
 }
