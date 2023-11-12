@@ -223,7 +223,6 @@ $elem-colors : (aqua, red, forestgreen, plum, navy, gold);
 
 @for $jo from 1 through 6 {
     // #elem#($jo){
-    
         .elem#{$jo}{
         background-color: nth($elem-colors, $jo);
     }

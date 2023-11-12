@@ -181,7 +181,7 @@ a:active {
 
 #size-elem {
   background-color: #2299fa;
-  flex-wrap: wrap-reverse;
+  flex-flow: column-reverse wrap-reverse;
   width: 100%;
   display: flex;
 }
@@ -191,7 +191,7 @@ a:active {
   place-content: center;
   place-items: center;
   height: 75px;
-  margin: 2ch 0;
+  margin: 2ch;
   display: flex;
   box-shadow: 0 0 5px green;
 }
