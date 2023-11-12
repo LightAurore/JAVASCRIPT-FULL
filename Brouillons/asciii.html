@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asciii</title>
+    <style>
+        main {
+            width: 100%;
+            height: 100vh;
+        }
+
+        main>div {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: wheat;
+            width: 100%;
+            min-height: 250px;
+            padding: 6px;
+            margin: 12px;
+            flex: 1;
+        }
+
+        main>div>* {
+            display: grid;
+            width: 50px;
+            height: 50px;
+            padding: 0 auto;
+            margin: 6px;
+            place-content: center;
+            text-align: center;
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="ascii"></div>
+        <div id="asciiMaj"></div>
+        <div id="caracSpec"></div>
+        <div id="caracSpecAsscii"></div>
+        <div id="autresCar"></div>
+    </main>
+
+</body>
+<script>
+    const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+    let assciiChar = document.getElementById("ascii");
+    let assciiCharMaj = document.getElementById("asciiMaj");
+    let caracSpec = document.getElementById("caracSpec");
+    let caracSpecAsscii = document.getElementById("caracSpecAsscii");
+    let autresCar = document.getElementById("autresCar");
+
+    function monAscii(item) {
+        let coder = item.charCodeAt();
+        assciiChar.innerHTML += `
+        <p>${coder}</p>`
+    }
+    function monAsciiSpec(item) {
+        let coder = item.charCodeAt();
+        caracSpecAsscii.innerHTML += `
+        <p>${coder}</p>`
+    }
+    function majusculeArr(item) {
+        let coder = item.toUpperCase();
+        let majCoder = coder.charCodeAt();
+        assciiCharMaj.innerHTML += `
+        <p>${majCoder}</p>`
+    }
+
+    alphabet.forEach(monAscii);
+
+    let majuscule = alphabet.forEach(majusculeArr);
+
+    for (let i = 64; i > 0; i--) {
+        if (i > 31) {
+            let car = String.fromCharCode(i);
+            // console.log(car, i);
+        }
+    }
+
+    let carSpec = ["¼", "³", "♂", "♀", "♪", "♫", "☼", "►", "◄", "↕", "‼", "◙", "¶", "§", "▬", "↨", "↑", "↓", "→", "←", "∟", "↔", "▲", "▼", "€", "$"];
+    for (let i = 0; i < carSpec.length; i++) {
+        caracSpec.innerHTML += `<p>${carSpec[i]}</p>`;
+    }
+
+    carSpec.forEach(monAsciiSpec);
+
+    for (let i = 400; i > 122; i--) {
+        let a = String.fromCharCode(i);
+        autresCar.innerHTML += `<p>${a} : ${i}</p>`;
+    }
+
+
+</script>
+
+</html>
