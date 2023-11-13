@@ -1,0 +1,20 @@
+
+
+// Variables
+
+//colors
+$main-color: hsl(170,35%,40%);
+
+/*
+ (valeurs RGB) : adjust-color(couleur, $red: nombre, $green: nombre, $blue: nombre, $alpha: nombre) ou comme cela (valeurs HSL) : adjust-color(couleur, $hue: nombre, $saturation: nombre, $lightness: nombre, $alpha: nombre) */
+
+$secondary-color: adjust-color(green, $blue: random(55), $red: -105 );
+
+$body-backgroud-color: rgb(random(255),random(255),random(255));
+
+$dark-main-color: #c1c1c990; // 90% d'opacité
+$light-main-color: lighten(#c1c1c9, 80%); // 20% d'opacité
+
+
+//Tailles
+$largeur: 1440;

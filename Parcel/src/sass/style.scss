@@ -166,7 +166,9 @@ $breakpoint-desktop: 768px;
     } 
 
     .elem{
-        background-color: #ca907e;
+        // background-color: #ca907e;
+        color: whitesmoke;
+        padding: 10px;
     }
 }
 
@@ -223,16 +225,33 @@ $elem-colors : (aqua, red, forestgreen, plum, navy, gold);
     // #elem#($jo){
     
         .elem#{$jo}{
-        color: nth($elem-colors, $jo);
+        background-color: nth($elem-colors, $jo);
     }
 
 }
 
 $block-sizes: (10, 25, 33, 50, 66, 100);
 
-@for $size in $bloc-size{
-
+@each $size in $block-sizes{
     .size-#{$size}{
-        width: percentaage;
+        width: percentage($size/100);
+    }
+}
+
+#size-elem{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    background-color: #2299fa;
+
+    & > div{
+        display: flex;
+        place-content: center;
+        place-items: center;
+        height: 75px;
+        margin: 2ch;
+        box-shadow: 0 0 5px green;
+        background-color: aliceblue;
     }
 }

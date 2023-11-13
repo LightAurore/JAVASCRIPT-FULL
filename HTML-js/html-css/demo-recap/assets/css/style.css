@@ -1,0 +1,184 @@
+/** Page Reset ******************************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul > li, ol > li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input[type="button"], input[type="submit"], input[type="reset"] {
+    border-radius: 5px;
+    border: 1px solid rgb(80, 127, 255);
+    padding: 0.5ch;
+    background-color: rgb(80, 127, 255);
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/** Css Base ********************************/
+/*? Header **/
+header {
+    background-color: rgb(80, 127, 255);
+    display: flex;
+    flex-direction: row;
+
+    height: 3rem;
+    width: 100vw;
+    align-items: center;
+    padding: 1ch;
+    gap: 1rem;
+}
+
+#logo-site {
+    display: none;
+}
+
+header > nav {
+    flex-grow: 1;
+}
+
+header > nav > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1ch;
+}
+
+header > nav > ul > li {
+    color: #f5f5f5ca;
+    transition: color 0.5s ease-in ;
+}
+
+header > nav > ul > li:hover {
+    color: whitesmoke;
+}
+
+#btn-connection {
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+    color: rgb(80, 127, 255);
+}
+
+/*? Main **/
+main { 
+    padding: 0.5rem;
+    flex-grow: 1;
+    min-width: 450px;
+}
+
+main > section:first-child {
+    margin-bottom: 1rem;
+}
+
+/*? Cards **/
+#duck-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1rem;
+    
+}
+
+.container-card {
+    container-type: inline-size;
+    container-name: my-card;
+}
+
+.card {
+    background-color: burlywood;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    border: solid 1px black;
+    border-radius: 2ch;
+}
+
+.card > img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card > div {
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+@container my-card (max-width: 400px) {
+    .card {
+        background-color: blanchedalmond;
+        flex-direction: column;
+    }
+
+    .card > img {
+        width: 80%;
+        height: 250px;
+        margin: 0 auto;
+        object-position: top;
+    }
+
+    .card > div {
+        padding: 1rem 0.5rem 0.5rem 0.5rem;
+    }
+}
+
+
+
+/*! Responsive **/
+@media screen and (max-width: 680px) {
+    .card {
+        border: none;
+        border-radius: unset;
+    }
+
+    .container-card:nth-child(2n) > .card {
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    #duck-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 820px) {
+
+    #logo-site {
+        display: flex;
+        height: 100%;
+        gap: 1ch;
+    }
+
+    #logo-site > img {
+        object-fit: contain;
+        max-width: 50px;
+    }
+
+    #logo-site > span {
+        align-self: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    #duck-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

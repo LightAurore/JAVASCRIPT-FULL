@@ -1,0 +1,74 @@
+@import "normalize";
+
+
+
+body{
+    width: 1024px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 1020px;
+    height: 400px;
+
+    background-color: rgb(172, 233, 29);
+    nav{
+
+        div{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(94, 190, 158);
+                width: 450px;
+                height: 40px;
+                border: 1px solid black;
+                border-radius: 20px;
+                
+                input{
+                    margin: 0;
+                    padding: 0;
+                    border-style: none;
+                    background-color: rgb(94, 190, 158);
+                }
+            .un{
+                width: 350px;
+                height: 30px;
+                
+            }
+            .deux{
+                width: 50px;
+                height: 30px;
+                border-left: 1px solid black;
+            }
+
+        }
+
+    }
+}
+
+main{
+    width: 800px;
+    height: 400px;
+    .art1{
+        .haut{
+            background-color: hsla(192, 78%, 74%, 0.365);
+            height: 200px;
+            width: 300px;
+            border-top-left-radius: 250px 350px;
+            border-top-right-radius: 250px 350px;
+            margin: 10px;
+        }
+        .bas{
+            background-color: hsla(56, 90%, 73%, 0.404);
+            height: 200px;
+            width: 300px;
+            border-bottom-left-radius: 500% 1000%;
+            border-bottom-right-radius: 500% 1000%;
+            margin: 10px;
+        }
+
+    }
+}

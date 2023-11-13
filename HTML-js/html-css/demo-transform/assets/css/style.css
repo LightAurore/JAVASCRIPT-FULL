@@ -1,0 +1,28 @@
+.test {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    margin-bottom: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 1s linear;
+}
+
+#test1:hover {
+    transform: rotate(45deg);
+}
+
+#test2:hover {
+    transform: scale(0.5);
+}
+
+#test3:hover {
+    transform: translate(10px, -10px);
+}
+
+#test4:hover {
+    transform: skew(-10deg, 0deg);
+}

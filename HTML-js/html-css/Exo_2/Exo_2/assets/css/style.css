@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+}
+
+body{
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+dt{
+    width: 130px;
+    text-align: left;
+    font-style: oblique;
+    color: goldenrod;
+    padding: 5px;
+}
+
+dd{
+    margin: 0 0 0 30px;
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    color: goldenrod;
+
+    text-shadow: 1px 1px 2px gold;
+}
+
+h1 + p{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+
+    border-top: 1px solid gold;
+    border-bottom: 1px solid gold;
+    
+    background-color: lightyellow;
+}
+
+#contenu{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    height: 100%;
+    min-width: 650px;
+    overflow-y: auto;
+    overflow-x: none;
+    padding: 50px 30px;
+}
+
+.cv-desc{
+    width: 50%;
+    float: left;
+}
+
+.cv-info{
+    width: 45%;
+    margin: 2%;
+    float: right;
+    border: 1px solid gold;
+    border-top: none;
+}
+
+#photo{
+    width: 250px;
+    display: block;
+    margin: auto;
+    padding: Opx;
+}
+
+.cv-info li{
+    list-style: circle;
+    text-align: justify;
+}
+
+.cv-info p{
+    padding: 5px 10px;
+    text-align: justify;
+}
+
+#cv-forma{
+    width: 96%;
+}

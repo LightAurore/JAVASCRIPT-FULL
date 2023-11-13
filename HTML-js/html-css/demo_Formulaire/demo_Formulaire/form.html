@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Inscription</h1>
+        <fieldset>
+            <legend>
+                <h2>Coordonnées</h2>
+            </legend>
+            <form>
+                <div id="coo-nom">
+                    <!-- <label for="login">Login : </label> -->
+                    <input type="text" id="login" placeholder="Login" name="login" required>
+
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom">
+
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom">
+                </div>
+
+                <p>Êtes-vous majeur ?</p>
+                <div id="coo-majeur">
+                    <span>
+                        <label for="sais-pas">Je ne sais pas </label>
+                        <input type="radio" name="mineur-majeur" id="sais-pas" checked>
+                    </span>
+                    <span>
+                        <label for="mineur">Mineur</label>
+                        <input type="radio" name="mineur-majeur" id="mineur">
+                    </span>
+                    <span>
+                        <label for="majeur">Majeur</label>
+                        <input type="radio" name="mineur-majeur" id="majeur">
+                    </span>
+                </div>
+
+                <div id="coo-email">
+                    <input type="email" name="name" placeholder="Test@gmail.com">
+                </div>
+
+                <div id="coo-description">
+                    <textarea name="description" placeholder="Description du profil" rows="10" cols="50"></textarea>
+                </div>
+
+                <div id="coo-action">
+                    <input type="submit" value="Envoyer">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </fieldset>
+    </body>
+</html>

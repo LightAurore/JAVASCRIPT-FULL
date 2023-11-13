@@ -1,0 +1,157 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: navy;
+  font-size: 3rem;
+}
+
+h2 {
+  color: darkturquoise;
+  font-size: 2rem;
+}
+h2 + p {
+  font-style: oblique;
+}
+h2:not(:first-of-type) {
+  margin-top: 0.5rem;
+}
+
+.btn {
+  padding: 0.5ch 1ch;
+  border: none;
+  border-radius: 0.7em;
+  background-color: navy;
+  color: pink;
+  margin: 0.1rem;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+.btn-success, .btn-error {
+  color: whitesmoke;
+}
+.btn-success {
+  background-color: #3D6;
+}
+.btn-error {
+  background-color: #C03;
+}
+
+a {
+  text-decoration: none;
+  color: #0369A1;
+}
+a:visited {
+  color: #42bafb;
+}
+a:hover, a:focus {
+  color: #01283d;
+}
+a:active {
+  font-weight: bold;
+}
+
+#elems {
+  /* ↓ Variable CSS */
+  --col: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--col), 1fr);
+  gap: 0.5ch;
+}
+@media screen and (min-width: 425px) {
+  #elems {
+    --col: 2;
+  }
+}
+@media screen and (min-width: 768px) {
+  #elems {
+    --col: 5;
+  }
+}
+#elems .elem {
+  background-color: #CA907E;
+}
+
+#extend-elems .base, #extend-elems .other, #extend-elems .variant {
+  background-color: chocolate;
+  color: plum;
+  width: 100px;
+  padding: 1em;
+  text-align: center;
+  border: 0.5ch solid plum;
+  border-radius: 1em;
+}
+#extend-elems .variant {
+  border-color: gold;
+  color: gold;
+}
+#mixin-elems #mix1,
+#mixin-elems #mix2 {
+  padding: 1rem;
+  width: 100px;
+}
+#mixin-elems #mix1 {
+  background-color: aqua;
+  border: 5px solid red;
+  border-radius: 1em;
+}
+#mixin-elems #mix2 {
+  background-color: forestgreen;
+  border: 10px solid chartreuse;
+  border-radius: 1em;
+}
+
+.elem1 {
+  color: aqua;
+}
+
+.elem2 {
+  color: red;
+}
+
+.elem3 {
+  color: forestgreen;
+}
+
+.elem4 {
+  color: plum;
+}
+
+.elem5 {
+  color: navy;
+}
+
+.elem6 {
+  color: gold;
+}
+
+.size-10 {
+  width: 10%;
+}
+
+.size-25 {
+  width: 25%;
+}
+
+.size-33 {
+  width: 33%;
+}
+
+.size-50 {
+  width: 50%;
+}
+
+.size-66 {
+  width: 66%;
+}
+
+.size-100 {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
