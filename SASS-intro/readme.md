@@ -18,3 +18,10 @@ npx sass <dossier SASS>:<dossier CSS>
 
 ## ?
 sass --watch a.scss:a.css --style compressed
+
+## break points
+Mobile     :   425px
+
+Tablette    :  426px & 768px
+
+Desktop     : 769px
