@@ -80,6 +80,7 @@ main section div::after {
   height: 140px;
   border: 40px solid #FFFCDF;
   background-color: transparent;
+  transform: rotate(45deg);
 }
 
 .un::before, .un::after{
