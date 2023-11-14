@@ -48,7 +48,7 @@ main section {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 400px;
+  min-height: 600px;
   padding: 6px;
   background-color: #9c57a8;
 }
@@ -70,6 +70,69 @@ main section div::after {
   left: 0;
 }
 
+/* Le 1 novembre 2023 */
+#un-nov-2023{
+  background-color: #813131;
+}
+
+.un{
+  width: 140px;
+  height: 140px;
+  border: 40px solid #FFFCDF;
+  background-color: transparent;
+  transform: rotate(45deg);
+}
+
+.un::before, .un::after{
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: #FFFCDF;
+  box-shadow: 200px 0 #FFFCDF;
+}
+.un::before{
+  top: -100px;
+  left: -100px;
+}
+.un::after{
+  top: 100px;
+  left: -100px;
+}
+
+/* Le 2 novembre 2023 */
+#deux-nov-2023{
+  background-color: #763258;
+}
+.deux{
+  width: 140px;
+  height: 140px;
+  /* border: 40px solid #FAD5E5; */
+  background-color: #FAD5E5;
+}
+.deux::before{
+  width: 140px;
+  height: 140px;
+  /* border: 40px solid #FAD5E5; */
+  background-color: #FAD5E5;
+
+  top: -140px;
+  left: -140px;
+  box-shadow: 0 280px #F067A6, 280px 0 #F067A6, 280px 280px #FAD5E5;
+}
+.deux::after{
+  top: -70px;
+  left: -140px;
+  /* box-shadow: 0 -280px #F067A6; */
+  width: 70px;
+  height: 70px;
+  background-color: #763258;
+  box-shadow: 0 280px #763258, 280px 0 #763258, 280px 280px #763258, 140px 140px #763258 ;
+
+}
+
+
+
+/* Le 5 novembre 2023 */
 .cinq,
 .cinq::before,
 .cinq::after {
