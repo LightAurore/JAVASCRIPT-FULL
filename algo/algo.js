@@ -3,6 +3,7 @@ const monHeader = document.querySelector("header");
 const html_nav = document.createElement("div");
 
 const monMenu = `<ul id="menu">
+<li><a href="../../index.html">HOME</a></li>
 <li><a href="../exo-00/exo00.html">Intro Algo</a></li>
 <li><a href="../exo-01-inverser-deux-variables/exo01.html">Exo 1</a></li>
 <li><a href="../exo-02/exo02.html">Exo 2</a></li>
