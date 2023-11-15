@@ -13,28 +13,64 @@
 <body>
     <header>
         <figure>
-            <img src="./assets/images/glass.jpg" alt="" class="logo-site">
+            <img src="./assets/images/logo.png" alt="" class="logo-site">
         </figure>
         <h1 id="site-titre"></h1>
         <div id="recherche"><input type="search"><button>🔍</button></div>
     </header>
     <nav>
-        <a href="#" id="site-home"><img src="./assets/images/glass.jpg" alt="" id="icone-home"></a>
+        <div class="site">
+            <a href="./index.html" id="site-home" title="Accueil">🏠</a>
+            <a href="./about.html" class="user-onglets" title="Contact">A-propos</a>
+        </div>
         <div id="produits-menu">
-            <a href="#" id="produits"></a>
+            <a href="./produits.html" id="produits">
+                <h2>Articles</h2>
+            </a>
             <ul>
                 <li>
-                    <h2></h2>
+                    <a href="#"></a>
+                    <h2>Enfant</h2></a>
                     <ul>
-                        <li><a href=""></a></li>
+                        <li><a href="#">Bagues</a></li>
+                        <li><a href="#">Bracelets</a></li>
+                        <li><a href="#">Chainettes</a></li>
+                        <li><a href="#">Montres</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Homme</h2>
+                    <ul>
+                        <li><a href="#">Bagues</a></li>
+                        <li><a href="#">Bracelets</a></li>
+                        <li><a href="#">Chainettes</a></li>
+                        <li><a href="#">Montres</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Femme</h2>
+                    <ul>
+                        <li><a href="#">Bagues</a></li>
+                        <li><a href="#">Bracelets</a></li>
+                        <li><a href="#">Chainettes</a></li>
+                        <li><a href="#">Montres</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Nouvelles collections</h2>
+                    <ul>
+                        <li><a href="#">Bagues</a></li>
+                        <li><a href="#">Bracelets</a></li>
+                        <li><a href="#">Chainettes</a></li>
+                        <li><a href="#">Montres</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
         <div id="user-space">
-            <a href="#" class="user-onglets"></a>
-            <a href="#" class="user-onglets"></a>
-            <a href="#" class="user-onglets"></a>
+            <a href="#" class="user-onglets">💟</a>
+            <a href="#" class="user-onglets">🙍🏿‍♂️</a>
+            <a href="#" class="user-onglets">🛒</a>
         </div>
     </nav>
     <div class="contenu-principal">
@@ -42,9 +78,16 @@
         <main>
             <section id="presentation-homme">
                 <div class="introduction">
-                    <h2></h2>
-                    <h3></h3>
-                    <p></p>
+                    <h2>La Crinière dorée</h2>
+                    <h3>
+                        Une Bijouterie qui est ancrée dans une tradition ancestrale et des techniques morderne de
+                        confection d'oeuvres ornémentales.
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam sit praesentium,
+                        assumenda incidunt, minus, provident dolorum sed amet possimus veritatis a exercitationem
+                        deserunt non id nesciunt fugiat sapiente excepturi.
+                    </p>
                 </div>
                 <div class="faq">
                     <detail>
@@ -60,18 +103,36 @@
                 <form action="" method="post">
                     <div id="user-product">
                         <fieldset id="data-user">
+                            <legend>Coordonnées</legend>
                             <div class="user-info">
-                                <label for="nom"></label><input type="text" id="nom">
-                                <label for="prenom"></label><input type="text" id="prenom">
-                                <label for="mail"></label><input type="email" name="mail" id="mail">
+                                <label for="nom">Nom</label><input type="text" id="nom">
+                                <label for="prenom">Prénom</label><input type="text" id="prenom">
+                                <label for="mail">Email</label><input type="email" name="mail" id="mail">
                             </div>
                         </fieldset>
-                        <fieldset id="data-product"></fieldset>
+                        <fieldset id="data-product">
+                            <legend>Article</legend>
+                            <div class="article-details">
+                                <label for="article">Collection</label><input type="text" id="article">
+                                <label for="modele">Modèle</label><input type="text" id="modele">
+                                <label for="prix-article">Prix</label><input type="text" id="prix-article">
+                                <label for="quantite">Quantité :</label><input type="number" id="quantite">
+                            </div>
+                            <div class="taile">
+                                <label for="">S : </label><input type="checkbox">
+                                <label for="">M : </label><input type="checkbox">
+                                <label for="">L : </label><input type="checkbox">
+                                <label for="">XL : </label><input type="checkbox">
+                            </div>
+                        </fieldset>
                     </div>
                     <div class="user-comment">
-                        <label for="object"></label><input type="text" id="object">
+                        <label for="object">Object du message</label><input type="text" id="object">
                         <textarea name="" id="" cols="30" rows="10" id="message"
                             placeholder="description..."></textarea>
+                    </div>
+                    <div class="soumettre">
+                        <button type="submit">Envoyer</button><button type="reset">Effacer</button>
                     </div>
                 </form>
             </section>

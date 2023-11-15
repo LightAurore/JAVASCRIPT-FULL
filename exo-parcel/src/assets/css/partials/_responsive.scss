@@ -1,0 +1,49 @@
+/* Tablette */
+// 
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    body{
+        background-color: darkmagenta;
+    }
+    .contenu-principal{
+        width: 100%;
+    }
+    aside{
+        display: none;
+    }
+    .contenu-principal main{
+        width: 100%;
+    }
+} 
+
+
+
+/* mobile */
+@media screen and (min-width: 406px) and (max-width: 600px) {
+    body{
+        background-color: red;
+    }
+    .contenu-principal{
+        width: 100%;
+    }
+    aside{
+        display: none;
+    }
+    .contenu-principal main{
+        width: 100%;
+    }
+} 
+/* mobile */
+@media screen and (max-width: 405px) {
+    body{
+        background-color: red;
+    }
+    .contenu-principal{
+        width: 100%;
+    }
+    aside{
+        display: none;
+    }
+    .contenu-principal main{
+        width: 100%;
+    }
+} 

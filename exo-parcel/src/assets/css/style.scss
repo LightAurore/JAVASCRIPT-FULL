@@ -1,6 +1,9 @@
 @use './partials/variables';
 @use './partials/mixins';
 @use './partials/base';
+@use './partials/apropos';
+@use './partials/articles';
+@use './partials/responsive';
 
 
 img{
@@ -23,6 +26,7 @@ a{
     margin: 6px;
     border-radius: 12px;
     border: 1px solid #8aa8d3;
+    background-color: #fff;
 
     > h3{
         text-align: center;

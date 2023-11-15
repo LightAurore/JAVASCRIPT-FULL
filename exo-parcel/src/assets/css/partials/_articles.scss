@@ -1,0 +1,50 @@
+.collection{
+    display: flex;
+    flex-direction: column;
+
+    > *{
+        width: 100%;
+    }
+
+    > h2{
+        height: 35px;
+        text-align: center;
+        background-color: lighten(darkorange,45);
+    }
+
+    .collection-info{
+        display: flex;
+        height: 100px;
+        margin: 0 auto;
+
+        img{
+            background-color: dodgerblue;
+            height: 100%;
+            width: auto;
+            
+
+-webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 0, 100% 100%, 80% 90%, 50% 100%, 20% 90%, 0 100%, 0 0, 20% 10%); clip-path: polygon(50% 0%, 80% 10%, 100% 0, 100% 100%, 80% 90%, 50% 100%, 20% 90%, 0 100%, 0 0, 20% 10%);
+
+
+            margin: 6px;
+        }
+
+        .text{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .presentoire{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+
+        padding: 3px auto;
+        margin-block: 24px;
+
+        img{
+            width: 200px;
+        }
+    }
+}

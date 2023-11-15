@@ -96,7 +96,7 @@ nav{
 
     > aside{
         width: 20%;
-        background-color: chocolate;
+        border-right: solid chocolate;
     }
     > main{
         width: 80%;
@@ -111,6 +111,7 @@ main{
         width: 100%;
         min-height: 250px;
         display: flex;
+        background-color: #fff;
     }
 }
 

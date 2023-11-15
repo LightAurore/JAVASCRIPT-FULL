@@ -1,0 +1,101 @@
+
+#presentation-homme{
+    display: flex;
+    border: 1px solid gold;
+    margin: 12px;
+    border-radius: 18px;
+
+    > *{
+        width: 100%;
+    }
+}
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin: 6px 24px 6px 6px;
+
+    > h2{
+        color: #7785fd;
+        margin-bottom: 12px;
+    }
+
+    > h3{
+        color: rgb(23, 20, 0);
+        margin-bottom: 6px;
+    }
+
+    > p{
+        text-align: justify;
+    }
+}
+
+/* Formulaire */
+#contact > form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 12px;
+    margin: 24px auto;
+    background-color: #fff;
+
+    border: 1px solid grey;
+    border-radius: 18px;
+    box-shadow: 0 0 1px gold;
+
+    #user-product{
+        display: flex;
+        width: 100%;
+        
+        fieldset{
+            width: 48%;
+            padding: 6px;
+            margin: 6px;
+
+            div > input::not(input[type="checkbox"],input[type="number"]){
+                width: 100%;
+                margin: 12px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+#data-user{
+    display: flex;
+    flex-direction: column;
+} 
+
+
+.user-comment{
+    display: flex;
+    flex-direction: column;
+
+    padding: 6px;
+    margin: 6px;
+
+    > *{
+        margin-block: 3px;
+    }
+
+    > textarea{
+        resize: none;
+    }
+}
+
+.soumettre{
+    display: flex;
+    justify-content: space-evenly;
+
+    > button{
+        width: 150px;
+        height: 40px;
+    }
+    > button[type="submit"]:hover{
+        background-color: greenyellow;
+    }
+    > button[type="reset"]:hover{
+        background-color: red;
+    }
+}
