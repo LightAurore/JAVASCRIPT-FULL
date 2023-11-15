@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+}
+
+body > header, body > footer {
+  color: #000;
+  padding: 1rem;
+}
+
+body > header {
+  color: #000;
+  background-color: #ffbe01;
+}
+
+body > main {
+  flex-grow: 1;
+  width: 90vw;
+  margin: auto;
+  padding: 2rem;
+}
+
+body > main > img {
+  width: 100%;
+}
+
+body > footer {
+  background-color: #ffe59a;
+}
+
+app-title {
+  color: #ffbe01;
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.fcb00f34.css.map */

@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+
+    > *{
+        width: 100%;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-inline: 48px;
+    background-color: #fffef0;
+
+    > figure {
+        width: 100px;
+
+        > img{
+            width: 100%;
+        }
+
+        
+    }
+    > h1{
+            color: #32d35a; 
+        
+        }
+
+        > #recherche{
+            display: flex;
+        }
+}
+
+nav{
+    position:relative;
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    background-color: rgb(228, 249, 249);
+
+    border-top: 4px solid gold;
+
+    > a{
+        width: 40px;
+        height: 40px;
+        
+    }
+
+    #produits-menu{
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        
+    }
+}
+
+#produits-menu{
+
+    > a{
+        background-color: #32d35a;
+        border-radius: 0 0 12px 12px;
+        text-align: center;
+    }
+    > ul{
+        
+        display: none;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: red;
+        width: 100%;
+
+        li{
+            place-content: center;
+        }
+    }
+}
+
+
+.contenu-principal{
+    display: flex;
+    width: 100%;
+    min-height: 600px;
+
+    
+    flex-grow: 1;
+
+    > aside{
+        width: 20%;
+        background-color: chocolate;
+    }
+    > main{
+        width: 80%;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+
+    section{
+        width: 100%;
+        min-height: 250px;
+        display: flex;
+    }
+}
+
+.event{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 10px;
+
+    figure{
+        display: flex;
+        height: 75px;
+        margin: 6px;
+        background-color: azure;
+        box-shadow: 0 0 10px gray;
+        border-radius: 6px;
+
+        > img{
+            height: 100%;
+            width: auto;
+        }
+
+        > figcaption{
+            padding: 6px;
+        }
+    }
+}
+
+/* Footer */
+footer{
+    height: 150px;
+    background-color: cornflowerblue;
+}

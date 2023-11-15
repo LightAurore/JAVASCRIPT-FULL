@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$primary-color: #FFBE01;
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    > header, > footer{
+        color: black;
+        padding: 1rem;
+    }
+
+    > header{
+        background-color: $primary-color;
+        color: black;
+    }
+
+    > main{
+        flex-grow: 1;
+        width: 90vw;
+        margin: auto;
+        padding: 2rem;
+
+        > img{
+            width: 100%;
+        }
+    }
+
+    > footer{
+    background-color: lighten($primary-color, 30);
+    }
+}

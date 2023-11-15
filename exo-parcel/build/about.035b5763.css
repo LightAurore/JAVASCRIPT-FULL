@@ -1,0 +1,2 @@
+*{box-sizing:border-box;margin:0;padding:0}body{flex-direction:column;width:100%;min-height:100vh;display:flex}body>*{width:100%}header{background-color:#fffef0;justify-content:space-between;align-items:center;padding-inline:48px;display:flex}header>figure{width:100px}header>figure>img{width:100%}header>figure>h1{color:#32d35a}
+/*# sourceMappingURL=about.035b5763.css.map */

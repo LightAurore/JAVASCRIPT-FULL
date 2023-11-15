@@ -1,0 +1,10 @@
+@use './base';
+
+app-title{
+    color: base.$primary-color;
+}
+
+app-title{
+    width: 100%
+}
+

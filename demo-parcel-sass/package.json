@@ -1,0 +1,13 @@
+{
+    "name": "demo-parcel-sass",
+    "scripts": {
+        "start": "parcel src/index.html --open",
+        "build": "parcel build src/index.html --dist-dir build"
+    },
+    "dependencies": {
+        "parcel": "^2.10.3"
+    },
+    "devDependencies": {
+        "@parcel/transformer-sass": "^2.10.3"
+    }
+}
