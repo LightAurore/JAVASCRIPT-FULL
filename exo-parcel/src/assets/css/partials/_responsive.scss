@@ -1,3 +1,17 @@
+
+.card-container{
+    container-type: inline-size;
+    container-name: card;
+}
+
+
+
+@container (min-width: 601px){
+    .card{
+        color: red;
+    }
+}
+
 /* Tablette */
 // 
 @media screen and (min-width: 601px) and (max-width: 768px) {

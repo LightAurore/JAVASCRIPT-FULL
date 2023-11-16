@@ -31,6 +31,31 @@
     }
 }
 
+.faq{
+    display: flex;
+    flex-direction: column;
+}
+
+details{
+    margin: 12px;
+}
+
+details > summary {
+    padding: 4px;
+    width: 100%;
+    background-color: #eeeeee;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
+  }
+  
+  details > p {
+    background-color: #eeeeee;
+    padding: 4px;
+    margin: 0;
+    box-shadow: 1px 1px 2px #bbbbbb;
+  }
+
 /* Formulaire */
 #contact > form{
     display: flex;
@@ -61,6 +86,8 @@
         }
     }
 }
+
+
 
 #data-user{
     display: flex;

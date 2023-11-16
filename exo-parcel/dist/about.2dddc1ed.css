@@ -166,6 +166,31 @@ footer {
   text-align: justify;
 }
 
+.faq {
+  flex-direction: column;
+  display: flex;
+}
+
+details {
+  margin: 12px;
+}
+
+details > summary {
+  cursor: pointer;
+  background-color: #eee;
+  border: none;
+  width: 100%;
+  padding: 4px;
+  box-shadow: 1px 1px 2px #bbb;
+}
+
+details > p {
+  background-color: #eee;
+  margin: 0;
+  padding: 4px;
+  box-shadow: 1px 1px 2px #bbb;
+}
+
 #contact > form {
   background-color: #fff;
   border: 1px solid gray;
@@ -276,6 +301,16 @@ footer {
 
 .collection .presentoire img {
   width: 200px;
+}
+
+.card-container {
+  container: card / inline-size;
+}
+
+@container (width >= 601px) {
+  .card {
+    color: red;
+  }
 }
 
 @media screen and (width >= 601px) and (width <= 768px) {
