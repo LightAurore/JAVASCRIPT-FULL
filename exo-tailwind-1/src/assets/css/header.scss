@@ -1,0 +1,14 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    header{
+        @apply w-full h-[4rem] bg-stone-50  flex justify-around items-center;
+
+        figure{
+            @apply w-16 rounded-sm;
+        }
+    }
+}

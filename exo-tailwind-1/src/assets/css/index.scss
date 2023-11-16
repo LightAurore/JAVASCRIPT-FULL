@@ -1,0 +1,45 @@
+@use "./header.scss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base{
+    body{
+        @apply min-h-screen w-full bg-slate-500;
+    }
+
+    nav{
+        @apply w-full h-10 bg-slate-200 flex justify-between px-11 bg-orange-400;
+    }
+    ul{
+        @apply flex justify-start mx-4;
+
+        li{
+            @apply mx-1 hover:bg-slate-800 text-gray-50 p-1 ;
+        }
+    }
+
+    
+
+    marquee{
+        @apply bg-zinc-200 text-red-700 font-bold;
+    }
+
+
+    main{
+        @apply w-full h-[600px] bg-yellow-50 grow;
+    }
+
+    footer{
+        @apply w-full h-24 bg-emerald-950;
+    }
+    
+}
+
+
+@layer components{
+
+}
