@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    dl{
+        @apply w-full bg-slate-50 p-4 m-2 border border-indigo-600;
+    }
+    dt{
+        @apply w-full border-b-8 text-blue-600;
+    }
+    dd{
+        @apply ml-4 ;
+    }
+
+}
+
+@layer components{
+    .accueil{
+        @apply grid grid-cols-1 md:grid-cols-accueil p-10 gap-3;
+        .une{
+            @apply w-full min-h-fit flex flex-col bg-white rounded-lg box-decoration-slice shadow-md p-10;
+            .sangola{
+                @apply min-h-fit ;
+            }
+        }
+    }
+
+    .bref{
+        @apply w-full h-auto flex flex-col bg-white rounded-lg box-decoration-slice shadow-md p-10 border-l-8 border-indigo-500;
+    }
+
+    .internationale{
+        @apply flex flex-col mt-1;
+
+        .local, .people, .eco, .global{
+            @apply rounded-lg box-decoration-slice shadow-md p-10 bg-white;
+            
+            h2{
+                @apply border-b-4 border-indigo-500 bg-emerald-200 text-center text-slate-950 text-2xl;
+            }
+        }
+        .people, .eco{
+            @apply mt-2;
+        }
+    }
+}

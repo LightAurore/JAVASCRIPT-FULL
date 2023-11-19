@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    header{
+        @apply w-full h-[4rem] bg-stone-50  flex justify-around items-center;
+        h1{
+            @apply hidden sm:flex;
+        }
+        figure{
+            @apply w-16 rounded-sm;
+        }
+        div{
+            @apply hidden sm:flex rounded-3xl;
+
+            input{
+                @apply rounded-l-3xl p-2 bg-orange-100 border;
+            }
+            button{
+                @apply rounded-r-3xl p-2 bg-orange-100;
+            }
+        }
+    }
+}
