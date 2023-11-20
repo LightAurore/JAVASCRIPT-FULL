@@ -3,6 +3,30 @@
 @tailwind utilities;
 
 @layer components{
+    .accordeon-contact{
+        @apply w-11/12 max-w-screen-md my-auto;
+
+        h1{
+            @apply font-bold leading-5 text-clamp;
+        }
+        h2{
+            @apply text-[#999];
+
+            & + *{
+                @apply mt-6;
+            }
+        }
+
+        summary{
+            @apply bg-white relative cursor-pointer px-2 py-4 list-none hover:bg-[#f2f5f9];
+
+            div{
+                @apply flex items-center;
+            }
+        }
+    }
+
+
     .titre-contact{
         @apply h-10 bg-green-600 text-center text-white;
     }

@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontSize: {
+        clamp: "clamp(1.125rem, 2.5vw, 1.25rem)",
+      },
       colors: {
         tomato: "#ff6347",
 
@@ -14,7 +17,10 @@ module.exports = {
       },
       fontFamily: {
         paragraphe: ["Helvetica, Arial, sans-serif"],
-        titre1: "Lato"
+        lato: "Lato",
+        Inter: "Inter",
+        Roboto: "Roboto",
+        Kdam: "Kdam",
       },
       gridTemplateColumns: {
         // Simple 16 column grid

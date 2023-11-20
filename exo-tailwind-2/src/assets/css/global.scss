@@ -1,6 +1,9 @@
 @use "./header.scss";
 @use "./mainAccueil.scss";
+@use "./national.scss";
 @use "./contact.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lato:ital,wght@0,400;0,900;1,400&family=Roboto+Mono:ital,wght@0,100;0,400;0,700;1,400&display=swap');
 
@@ -40,12 +43,10 @@
         }
     }
     
-
     marquee{
         @apply bg-zinc-200 text-red-700 font-bold sm:hidden
         ;
     }
-
 
     main{
         @apply w-full md:w-[80%] min-h-fit  bg-primary-100 grow mx-auto;
@@ -67,7 +68,6 @@
 
 
 @layer components{
-
     .sangola{
         @apply w-[450px] min-h-fit flex flex-col ;
 

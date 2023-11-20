@@ -232,7 +232,8 @@ nav ul a {
 }
 
 main {
-  height: 83.3333%;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 
 *, :before, :after, ::backdrop {
@@ -327,6 +328,10 @@ main {
   background-color: rgb(255 99 71 / var(--tw-bg-opacity));
 }
 
+.font-monscript {
+  font-family: DancingScript;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -340,11 +345,16 @@ main {
   text-decoration-line: underline;
 }
 
+@font-face {
+  font-family: DancingScript;
+  src: url("DancingScript-VariableFont_wght.9e1b8b14.ttf");
+}
+
 @layer compenents {
   .card-container {
     --tw-bg-opacity: 1;
     background-color: rgb(248 250 252 / var(--tw-bg-opacity));
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     width: 83.3333%;
