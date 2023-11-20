@@ -6,7 +6,10 @@ module.exports = {
   theme: {
     // Extend permet de garder les thèmes de base
     extend: {
-
+      fontFamily: {
+        monscript: "DancingScript"
+      }
+      ,
       colors: {
         tomato: "#ff6347",
         primary :{
