@@ -10,15 +10,15 @@
     }
 
     nav{
-        @apply w-full h-12 flex flex-row;
+        @apply w-full h-12 flex flex-row bg-violet-400 p-auto;
 
         a{
-            @apply text-center no-underline bg-violet-400 h-full p-5 text-yellow-400 font-medium;
+            @apply flex justify-center items-center text-center no-underline bg-violet-400 hover:font-normal hover:bg-orange-300 hover:text-violet-900 h-full p-5 text-yellow-400 font-medium;
         }
     }
 
     header{
-        @apply w-full h-60 bg-green-300;
+        @apply w-full h-28 bg-green-300;
 
         h1{
             @apply text-orange-500 font-black text-center m-auto;
@@ -26,11 +26,15 @@
     }
 
     main{
-        @apply w-full min-h-fit bg-slate-400;
+        @apply w-full min-h-fit bg-slate-400 grow my-1;
+
+        h2{
+            @apply text-lg font-semibold;
+        }
     }
 
     footer{
-        @apply w-full h-60 bg-green-300;
+        @apply w-full h-60 bg-green-300 border-t-2 border-solid border-gray-800;
     }
     
 }
