@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply p-0 m-0 box-border;
+  }
+  body {
+    @apply flex flex-col w-full min-h-screen;
+  }
+
+  h1 {
+    @apply text-3xl font-extrabold font-display after:content-[""] before:bg-red-950 before:text-yellow-500 before:w-0 hover:before:w-full before:h-1.5 hover:text-[#eff];
+  }
+  h2 {
+    @apply text-2xl font-bold;
+  }
+  h3 {
+    @apply text-xl font-semibold capitalize;
+  }
+  h4 {
+    @apply text-lg font-medium mb-4 underline underline-offset-[10px] decoration-2 decoration-double decoration-[#16DB93];
+  }
+
+  p {
+    @apply line-clamp-3 leading-snug indent-9;
+  }
+  li {
+    /* list-image-[url(checkmark.png)] */
+    @apply list-image-pomme list-inside pl-4 italic text-[#587291] block align-middle;
+  }
+
+  nav {
+    @apply flex justify-start space-x-4 after:content-['*'] after:ml-0.5 after:text-red-500;
+    span {
+      @apply relative before:bottom-0 before:left-0 before:absolute before:content-[""] before:w-0 hover:before:w-full before:h-1 before:bg-red-400;
+      a {
+        @apply font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900;
+      }
+    }
+  }
+
+  header {
+    @apply w-full h-24 bg-turquoise bg-fixed flex justify-center items-center align-[4px];
+  }
+}
+
+@layer components {
+  .titre-article {
+    @apply text-center hover:scale-110;
+  }
+}
