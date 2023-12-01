@@ -1,139 +1,154 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    width: 100%;
-    min-height: 110vh;
+body {
+  width: 100%;
+  min-height: 110vh;
 }
 
-body > *{
-    width: 100%;
+body > * {
+  width: 100%;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
+}
+
+b {
+  color: rgb(6, 253, 6);
+}
+
+em {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(107, 107, 248) e;
+}
+strong {
+  font-size: 1.2rem;
+  color: orange;
+  font-weight: 700;
 }
 
 /* Header */
 
-header{
-    height: 150px;
-    background-color: blue;
+header {
+  height: 150px;
+  background-color: blue;
 }
 
 /* Navigation */
-nav{
-    height: 50px;
-    background-color: blueviolet;
+nav {
+  height: 50px;
+  background-color: blueviolet;
 }
 
 /* Corps de la page */
-.corps{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    gap: calc((6px/16px)*1rem);
-    flex: 1;
-    min-height: 50vh;
-    background-color: rgb(177, 245, 245);
+.corps {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: calc((6px / 16px) * 1rem);
+  flex: 1;
+  min-height: 50vh;
+  background-color: rgb(177, 245, 245);
 }
 
-.corps > *{
-    background-color: #fff;
+.corps > * {
+  background-color: #fff;
 }
 
-.corps > aside{
-    border-right: 6px solid blue;
+.corps > aside {
+  border-right: 6px solid blue;
 }
-.corps > main{
-    display: flex;
-    flex-direction: column;
-    margin-left: 6px;
+.corps > main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6px;
 }
-.corps > main > *{
-    width: 100%;
-    margin-bottom: 6px;
+.corps > main > * {
+  width: 100%;
+  margin-bottom: 6px;
 }
-.corps > main > * h3{
-    background-color: cornflowerblue;
-    text-align: center;
-
+.corps > main > * h3 {
+  background-color: rgb(3, 53, 148);
+  text-align: center;
 }
 /* main verbe */
-.verbe{
-    color: aliceblue;
+.verbe {
+  color: aliceblue;
 }
-.verbe h2{
-    color: aliceblue;
-    background-color: black;
-    text-align: center;
-    padding-block: 6px;
+.verbe h2 {
+  color: aliceblue;
+  background-color: black;
+  text-align: center;
+  padding-block: 6px;
 }
-.verbe dl{
-    border-top: 1px solid sandybrown;
-    border-bottom: 4px double sandybrown;
-    padding: 0.5rem;
+.verbe dl {
+  border-top: 1px solid sandybrown;
+  border-bottom: 4px double sandybrown;
+  padding: 0.5rem;
 }
-.verbe dl dt{
-    color: brown;
-    margin-left: 3px;
-    text-transform: uppercase;
+.verbe dl dt {
+  color: brown;
+  margin-left: 3px;
+  text-transform: uppercase;
 }
-.verbe dl dd{
-    color: #0f0f0f;
-    margin-left: 12px;
+.verbe dl dd {
+  color: #0f0f0f;
+  margin-left: 12px;
 }
 
 /* main indicatif */
-.indicatif{
-    display: flex;
-    flex-direction: column;
+.indicatif {
+  display: flex;
+  flex-direction: column;
 }
 
-.indicatif h3{
-    text-align: center;
+section h3 {
+  text-align: center;
+  color: rgb(242, 205, 205);
+  padding-block: 6px;
 }
 
-.container-temps{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+.container-temps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
-.container-temps article{
-    display: flex;
-    flex-direction: column;
-    min-width: 100px;
-    height: fit-content;
-    padding: 6px;
-}
-
-.container-temps article h4{
-    text-decoration: underline orange;
-    text-align: left;
+.container-temps article {
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+  height: fit-content;
+  padding: 6px;
 }
 
-.verbe-conjuguer{
-    border-right: 1px solid turquoise;
-    padding-inline: 6px;
-    margin-left: 6px;
-    margin-bottom: 6px;
+.container-temps article h4 {
+  text-decoration: underline orange;
+  text-align: left;
 }
 
+.verbe-conjuguer {
+  border-right: 1px solid turquoise;
+  padding-inline: 6px;
+  margin-left: 6px;
+  margin-bottom: 6px;
+}
 
 /* Footer */
-footer{
-    display: grid;
-    grid-template-columns: repeat(8, 150px);
-    min-height: 150px;
-    background-color: darkblue;
+footer {
+  display: grid;
+  grid-template-columns: repeat(8, 150px);
+  min-height: 150px;
+  background-color: darkblue;
 }
-footer pre{
-    padding: 12px;
-    height: 50px;
-    color: rgb(248, 248, 250);
+footer pre {
+  padding: 12px;
+  height: 50px;
+  color: rgb(248, 248, 250);
 }
