@@ -1,0 +1,25 @@
+
+
+.dark{
+        background-color: darkslateblue;
+        color: antiquewhite;
+
+        .bouton-jour{
+    
+            &::before{
+                content: "🌙 Nuit";
+            }
+        }
+}
+
+.bouton-jour{
+        
+    &::before{
+        content: "🌞 Jour";
+    }
+}
+
+.h2-color{
+    color: turquoise;
+}
+
