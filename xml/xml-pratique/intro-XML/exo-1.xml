@@ -1,0 +1,16 @@
+<?xml version="1.0" encodeing="UTF-8"?>
+
+<books>
+    <book>
+        <titre>Le nom du vent</titre>
+        <auteur>
+            <name firstname="Patrick" lastname="Rothfuss" />
+            <birthdate format="dd/mm/yyyy">06/06/1973<birthdate>
+            <gender>m<gender>
+        </auteur>
+        <genre>Fantasy</genre>
+        <dateDePublication>2007</dateDePublication>
+        <serie number="1">Chronique du tueur de roi</serie>
+    </book>
+
+</books>

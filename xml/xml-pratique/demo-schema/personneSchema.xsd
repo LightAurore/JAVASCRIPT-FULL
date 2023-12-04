@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<wab:schema xmlns:wab="http://www.w3.org/2001/XMLSchema">
+<!-- 
+    <wab:simpleType name="required=string">
+        <wab:restriction base="wab:string">
+
+        </wab:restriction>
+    </wab:simpleType> -->
+
+    <wab:element name="person">
+        <wab:complexType>
+            <wab:sequence>
+
+                <wab:element name="firstname">
+                    <wab:complexType>
+                        <wab:simpleContent>
+                            <wab:extension base="wab:string">
+                                <wab:attribute name="pseudo" type="wab:string" use="optional"/>
+                            </wab:extension>
+                        </wab:simpleContent>
+                    </wab:complexType>
+                </wab:element>
+
+                <wab:element name="lastname" type="wab:string"/>
+                <wab:element name="gender">
+                    <wab:simpleType>
+                        <wab:restriction base="wab:string">
+                            <wab:enumeration value="m"/>
+                            <wab:enumeration value="f"/>
+                            <wab:enumeration value="x"/>
+                        </wab:restriction>
+                    </wab:simpleType>
+                </wab:element>
+            </wab:sequence>
+        </wab:complexType>
+    </wab:element>
+
+</wab:schema>

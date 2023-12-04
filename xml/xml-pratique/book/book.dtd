@@ -1,0 +1,19 @@
+<!ELEMENT books (book*)>
+
+<!ELEMENT book (title,author,genre,publication,serie?)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (name, birthdate, gender)>
+
+<!ELEMENT name EMPTY >
+<!ATTLIST name firstname CDATA #REQUIRED>
+<!ATTLIST name lastname CDATA #REQUIRED>
+
+<!ELEMENT birthdate (#PCDATA) >
+<!ATTLIST birthdate format CDATA #FIXED "dd/mm/yyyy">
+
+<!ELEMENT gender (#PCDATA) >
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT publication (#PCDATA)>
+
+<!ELEMENT serie (#PCDATA)>
+<!ATTLIST serie number CDATA #REQUIRED>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encodeing="UTF-8" ?>
+
+<livre version="1" key="azerty-01">
+    <titre>Dr Stone</titre>
+    <auteur>
+        <nom>Riichirō</nom> 
+        <prenom>Inagaki</prenom>
+    </auteur>
+    <type>shōnen manga</type>
+    <serie>
+        <saison></saison>
+        <episode></episode>
+        <episodePrecedent>
+            <titre></titre>
+        <episodePrecedent>
+    </serie>
+    <dateDePublication format="dd/mm/yyyy">
+        
+    <dateDePublication>
+    <dateDePublication>
+        <jour></jour>
+        <mois></mois>
+        <annee></annee>
+    <dateDePublication>
+</livre>

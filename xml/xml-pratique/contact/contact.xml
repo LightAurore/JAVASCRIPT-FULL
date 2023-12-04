@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"  standalone="no"?>
+
+<contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./contactSchema.xsd">
+
+<!-- <!DOCTYPE books SYSTEM "./contact.dtd"> -->
+    <contact gender="f">
+        <name>
+            <firstname>Della</firstname>
+            <lastname>Duck</lastname>
+        </name>
+        <address>
+            <street>Rue de bruxelles</street>
+            <number>42</number>
+            <city>Namur</city>
+            <zip>5000</zip>
+            <country>Belgique</country>
+        </address>
+        <phones>
+            <phone type="gsm">+32 412 34 56</phone>
+            <phone type="fix">+32 542 96 85</phone>
+        </phones>
+        <emails>
+            <email>della.duck@gmail.com</email>
+        </emails>
+    </contact>
+    <contact gender="m">
+        <name>
+            <firstname>Balthazar</firstname>
+            <lastname>Picsou</lastname>
+        </name>
+        <address>
+            <street>Rue de Liège</street>
+            <number>13</number>
+            <city>Bruxelles</city>
+            <zip>1190</zip>
+            <country>Belgique</country>
+        </address>
+        <phones>
+            <phone type="gsm">+32 532 45 36</phone>
+            <phone type="gsm">+32 42 53 75</phone>
+            <phone type="fix">+32 426 75 36</phone>
+        </phones>
+        <emails>
+            <email type="perso">balthazar.picsou@outlook.com</email>
+            <email type="pro">b.picou@money.org</email>
+        </emails>
+    </contact>
+</contacts>

@@ -1,0 +1,595 @@
+<liveboard version="1.2" timestamp="1701159688">
+    <station locationX="4.336531" locationY="50.835707" id="BE.NMBS.008814001"
+        URI="http://irail.be/stations/NMBS/008814001" standardname="Brussel-Zuid/Bruxelles-Midi">
+        Brussels-South/Brussels-Midi</station>
+    <departures number="62">
+        <departure id="0" delay="2580" canceled="0" left="0" isExtra="0">
+            <station locationX="3.264549" locationY="50.824506" id="BE.NMBS.008896008"
+                URI="http://irail.be/stations/NMBS/008896008" standardname="Kortrijk">Kortrijk</station>
+            <time formatted="2023-11-28T08:47:00">1701157620</time>
+            <vehicle shortname="IC3230" number="3230" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC3230">BE.NMBS.IC3230</vehicle>
+            <platform normal="0">12</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC3230</departureConnection>
+        </departure>
+        <departure id="1" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.142966" locationY="51.171472" id="BE.NMBS.008894508"
+                URI="http://irail.be/stations/NMBS/008894508" standardname="Sint-Niklaas">
+                Sint-Niklaas</station>
+            <time formatted="2023-11-28T09:17:00">1701159420</time>
+            <vehicle shortname="IC3207" number="3207" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC3207">BE.NMBS.IC3207</vehicle>
+            <platform normal="1">8</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC3207</departureConnection>
+        </departure>
+        <departure id="2" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.421101" locationY="51.2172" id="BE.NMBS.008821006"
+                URI="http://irail.be/stations/NMBS/008821006" standardname="Antwerpen-Centraal">
+                Antwerp-Central</station>
+            <time formatted="2023-11-28T09:19:00">1701159540</time>
+            <vehicle shortname="IC4508" number="4508" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC4508">BE.NMBS.IC4508</vehicle>
+            <platform normal="0">19</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC4508</departureConnection>
+        </departure>
+        <departure id="3" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.91666700" locationY="52.3500000" id="BE.NMBS.008400058"
+                URI="http://irail.be/stations/NMBS/008400058" standardname="Amsterdam CS">Amsterdam
+                CS</station>
+            <time formatted="2023-11-28T09:22:00">1701159720</time>
+            <vehicle shortname="EUR9106" number="9106" type="EUR" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/EUR9106">BE.NMBS.EUR9106</vehicle>
+            <platform normal="1">5</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/EUR9106</departureConnection>
+        </departure>
+        <departure id="4" delay="120" canceled="0" left="0" isExtra="0">
+            <station locationX="3.81441" locationY="50.869102" id="BE.NMBS.008895208"
+                URI="http://irail.be/stations/NMBS/008895208" standardname="Zottegem">Zottegem</station>
+            <time formatted="2023-11-28T09:23:00">1701159780</time>
+            <vehicle shortname="S32280" number="2280" type="S3" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/S32280">BE.NMBS.S32280</vehicle>
+            <platform normal="1">9</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/S32280</departureConnection>
+        </departure>
+        <departure id="5" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.482076" locationY="50.896456" id="BE.NMBS.008819406"
+                URI="http://irail.be/stations/NMBS/008819406"
+                standardname="Brussels Airport - Zaventem">Brussels Airport - Zaventem</station>
+            <time formatted="2023-11-28T09:23:00">1701159780</time>
+            <vehicle shortname="IC2306" number="2306" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC2306">BE.NMBS.IC2306</vehicle>
+            <platform normal="0">16</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC2306</departureConnection>
+        </departure>
+        <departure id="6" delay="180" canceled="0" left="0" isExtra="0">
+            <station locationX="3.68608" locationY="50.410103" id="BE.NMBS.008884335"
+                URI="http://irail.be/stations/NMBS/008884335" standardname="Quievrain">Quievrain</station>
+            <time formatted="2023-11-28T09:25:00">1701159900</time>
+            <vehicle shortname="IC1730" number="1730" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC1730">BE.NMBS.IC1730</vehicle>
+            <platform normal="1">18</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC1730</departureConnection>
+        </departure>
+        <departure id="7" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.335065" locationY="50.599641" id="BE.NMBS.008814209"
+                URI="http://irail.be/stations/NMBS/008814209" standardname="Nivelles">Nivelles</station>
+            <time formatted="2023-11-28T09:25:00">1701159900</time>
+            <vehicle shortname="S11980" number="1980" type="S1" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/S11980">BE.NMBS.S11980</vehicle>
+            <platform normal="1">21</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/S11980</departureConnection>
+        </departure>
+        <departure id="8" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="6.958823" locationY="50.942721" id="BE.NMBS.008015458"
+                URI="http://irail.be/stations/NMBS/008015458" standardname="Köln Hbf">Köln Hbf</station>
+            <time formatted="2023-11-28T09:25:00">1701159900</time>
+            <vehicle shortname="EUR9411" number="9411" type="EUR" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/EUR9411">BE.NMBS.EUR9411</vehicle>
+            <platform normal="1">4</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/EUR9411</departureConnection>
+        </departure>
+        <departure id="9" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.421101" locationY="51.2172" id="BE.NMBS.008821006"
+                URI="http://irail.be/stations/NMBS/008821006" standardname="Antwerpen-Centraal">
+                Antwerp-Central</station>
+            <time formatted="2023-11-28T09:26:00">1701159960</time>
+            <vehicle shortname="IC3309" number="3309" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC3309">BE.NMBS.IC3309</vehicle>
+            <platform normal="1">19</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC3309</departureConnection>
+        </departure>
+        <departure id="10" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.715866" locationY="50.88228" id="BE.NMBS.008833001"
+                URI="http://irail.be/stations/NMBS/008833001" standardname="Leuven">Leuven</station>
+            <time formatted="2023-11-28T09:28:00">1701160080</time>
+            <vehicle shortname="IC408" number="408" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC408">BE.NMBS.IC408</vehicle>
+            <platform normal="1">8</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC408</departureConnection>
+        </departure>
+        <departure id="11" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="3.285188" locationY="51.339894" id="BE.NMBS.008891660"
+                URI="http://irail.be/stations/NMBS/008891660" standardname="Knokke">Knokke</station>
+            <time formatted="2023-11-28T09:29:00">1701160140</time>
+            <vehicle shortname="IC2830" number="2830" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC2830">BE.NMBS.IC2830</vehicle>
+            <platform normal="1">6</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC2830</departureConnection>
+        </departure>
+        <departure id="12" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.715866" locationY="50.88228" id="BE.NMBS.008833001"
+                URI="http://irail.be/stations/NMBS/008833001" standardname="Leuven">Leuven</station>
+            <time formatted="2023-11-28T09:30:00">1701160200</time>
+            <vehicle shortname="S23658" number="3658" type="S2" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/S23658">BE.NMBS.S23658</vehicle>
+            <platform normal="1">17</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/S23658</departureConnection>
+        </departure>
+        <departure id="13" delay="360" canceled="0" left="0" isExtra="0">
+            <station locationX="4.172451" locationY="50.408764" id="BE.NMBS.008882362"
+                URI="http://irail.be/stations/NMBS/008882362" standardname="Binche">Binche</station>
+            <time formatted="2023-11-28T09:30:00">1701160200</time>
+            <vehicle shortname="IC3430" number="3430" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC3430">BE.NMBS.IC3430</vehicle>
+            <platform normal="1">20</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC3430</departureConnection>
+        </departure>
+        <departure id="14" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="6.133331" locationY="49.599996" id="BE.NMBS.008200100"
+                URI="http://irail.be/stations/NMBS/008200100" standardname="Lëtzebuerg">Lëtzebuerg</station>
+            <time formatted="2023-11-28T09:33:00">1701160380</time>
+            <vehicle shortname="IC2109" number="2109" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC2109">BE.NMBS.IC2109</vehicle>
+            <platform normal="1">10</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC2109</departureConnection>
+        </departure>
+        <departure id="15" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.937415" locationY="51.322032" id="BE.NMBS.008821907"
+                URI="http://irail.be/stations/NMBS/008821907" standardname="Turnhout">Turnhout</station>
+            <time formatted="2023-11-28T09:34:00">1701160440</time>
+            <vehicle shortname="IC3408" number="3408" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC3408">BE.NMBS.IC3408</vehicle>
+            <platform normal="1">18</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC3408</departureConnection>
+        </departure>
+        <departure id="16" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.137662" locationY="50.605079" id="BE.NMBS.008883006"
+                URI="http://irail.be/stations/NMBS/008883006" standardname="Braine-le-Comte">
+                Braine-le-Comte</station>
+            <time formatted="2023-11-28T09:34:00">1701160440</time>
+            <vehicle shortname="S23680" number="3680" type="S2" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/S23680">BE.NMBS.S23680</vehicle>
+            <platform normal="1">16</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/S23680</departureConnection>
+        </departure>
+        <departure id="17" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.482076" locationY="50.896456" id="BE.NMBS.008819406"
+                URI="http://irail.be/stations/NMBS/008819406"
+                standardname="Brussels Airport - Zaventem">Brussels Airport - Zaventem</station>
+            <time formatted="2023-11-28T09:36:00">1701160560</time>
+            <vehicle shortname="IC2808" number="2808" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC2808">BE.NMBS.IC2808</vehicle>
+            <platform normal="1">11</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC2808</departureConnection>
+        </departure>
+        <departure id="18" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="3.264549" locationY="50.824506" id="BE.NMBS.008896008"
+                URI="http://irail.be/stations/NMBS/008896008" standardname="Kortrijk">Kortrijk</station>
+            <time formatted="2023-11-28T09:37:00">1701160620</time>
+            <vehicle shortname="IC430" number="430" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC430">BE.NMBS.IC430</vehicle>
+            <platform normal="1">9</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC430</departureConnection>
+        </departure>
+        <departure id="19" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="5.566695" locationY="50.62455" id="BE.NMBS.008841004"
+                URI="http://irail.be/stations/NMBS/008841004" standardname="Liège-Guillemins">
+                Liège-Guillemins</station>
+            <time formatted="2023-11-28T09:38:00">1701160680</time>
+            <vehicle shortname="IC1708" number="1708" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC1708">BE.NMBS.IC1708</vehicle>
+            <platform normal="1">14</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC1708</departureConnection>
+        </departure>
+        <departure id="20" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.421101" locationY="51.2172" id="BE.NMBS.008821006"
+                URI="http://irail.be/stations/NMBS/008821006" standardname="Antwerpen-Centraal">
+                Antwerp-Central</station>
+            <time formatted="2023-11-28T09:38:00">1701160680</time>
+            <vehicle shortname="S11958" number="1958" type="S1" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/S11958">BE.NMBS.S11958</vehicle>
+            <platform normal="0">18</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/S11958</departureConnection>
+        </departure>
+        <departure id="21" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="3.264549" locationY="50.824506" id="BE.NMBS.008896008"
+                URI="http://irail.be/stations/NMBS/008896008" standardname="Kortrijk">Kortrijk</station>
+            <time formatted="2023-11-28T09:39:00">1701160740</time>
+            <vehicle shortname="IC2332" number="2332" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC2332">BE.NMBS.IC2332</vehicle>
+            <platform normal="1">17</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC2332</departureConnection>
+        </departure>
+        <departure id="22" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.101427" locationY="51.022781" id="BE.NMBS.008893401"
+                URI="http://irail.be/stations/NMBS/008893401" standardname="Dendermonde">Dendermonde</station>
+            <time formatted="2023-11-28T09:40:00">1701160800</time>
+            <vehicle shortname="S32258" number="2258" type="S3" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/S32258">BE.NMBS.S32258</vehicle>
+            <platform normal="0">4</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/S32258</departureConnection>
+        </departure>
+        <departure id="23" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.615745" locationY="50.669793" id="BE.NMBS.008811676"
+                URI="http://irail.be/stations/NMBS/008811676" standardname="Louvain-la-Neuve">
+                Louvain-la-Neuve</station>
+            <time formatted="2023-11-28T09:42:00">1701160920</time>
+            <vehicle shortname="S86559" number="6559" type="S8" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/S86559">BE.NMBS.S86559</vehicle>
+            <platform normal="1">15</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/S86559</departureConnection>
+        </departure>
+        <departure id="24" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="3.81441" locationY="50.869102" id="BE.NMBS.008895208"
+                URI="http://irail.be/stations/NMBS/008895208" standardname="Zottegem">Zottegem</station>
+            <time formatted="2023-11-28T09:43:00">1701160980</time>
+            <vehicle shortname="S83980" number="3980" type="S8" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/S83980">BE.NMBS.S83980</vehicle>
+            <platform normal="1">16</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/S83980</departureConnection>
+        </departure>
+        <departure id="25" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="5.47328" locationY="50.784405" id="BE.NMBS.008831310"
+                URI="http://irail.be/stations/NMBS/008831310" standardname="Tongeren">Tongeren</station>
+            <time formatted="2023-11-28T09:44:00">1701161040</time>
+            <vehicle shortname="IC2208" number="2208" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC2208">BE.NMBS.IC2208</vehicle>
+            <platform normal="1">11</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC2208</departureConnection>
+        </departure>
+        <departure id="26" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="3.264549" locationY="50.824506" id="BE.NMBS.008896008"
+                URI="http://irail.be/stations/NMBS/008896008" standardname="Kortrijk">Kortrijk</station>
+            <time formatted="2023-11-28T09:45:00">1701161100</time>
+            <vehicle shortname="IC3231" number="3231" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC3231">BE.NMBS.IC3231</vehicle>
+            <platform normal="1">9</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC3231</departureConnection>
+        </departure>
+        <departure id="27" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.438567" locationY="50.40471" id="BE.NMBS.008872009"
+                URI="http://irail.be/stations/NMBS/008872009" standardname="Charleroi-Central">
+                Charleroi-Central</station>
+            <time formatted="2023-11-28T09:45:00">1701161100</time>
+            <vehicle shortname="IC4530" number="4530" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC4530">BE.NMBS.IC4530</vehicle>
+            <platform normal="1">21</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC4530</departureConnection>
+        </departure>
+        <departure id="28" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.50000000" locationY="51.9166670" id="BE.NMBS.008400530"
+                URI="http://irail.be/stations/NMBS/008400530" standardname="Rotterdam CS">Rotterdam
+                CS</station>
+            <time formatted="2023-11-28T09:45:00">1701161100</time>
+            <vehicle shortname="IC9227" number="9227" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC9227">BE.NMBS.IC9227</vehicle>
+            <platform normal="1">13</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC9227</departureConnection>
+        </departure>
+        <departure id="29" delay="1200" canceled="0" left="0" isExtra="0">
+            <station locationX="3.710675" locationY="51.035896" id="BE.NMBS.008892007"
+                URI="http://irail.be/stations/NMBS/008892007" standardname="Gent-Sint-Pieters">
+                Ghent-Sint-Pieters</station>
+            <time formatted="2023-11-28T09:49:00">1701161340</time>
+            <vehicle shortname="IC3632" number="3632" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC3632">BE.NMBS.IC3632</vehicle>
+            <platform normal="1">17</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC3632</departureConnection>
+        </departure>
+        <departure id="30" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.451314" locationY="51.462767" id="BE.NMBS.008821402"
+                URI="http://irail.be/stations/NMBS/008821402" standardname="Essen">Essen</station>
+            <time formatted="2023-11-28T09:49:00">1701161340</time>
+            <vehicle shortname="IC2008" number="2008" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC2008">BE.NMBS.IC2008</vehicle>
+            <platform normal="1">18</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC2008</departureConnection>
+        </departure>
+        <departure id="31" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.482076" locationY="50.896456" id="BE.NMBS.008819406"
+                URI="http://irail.be/stations/NMBS/008819406"
+                standardname="Brussels Airport - Zaventem">Brussels Airport - Zaventem</station>
+            <time formatted="2023-11-28T09:51:00">1701161460</time>
+            <vehicle shortname="IC1908" number="1908" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC1908">BE.NMBS.IC1908</vehicle>
+            <platform normal="1">12</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC1908</departureConnection>
+        </departure>
+        <departure id="32" delay="1380" canceled="0" left="0" isExtra="0">
+            <station locationX="0.12380800" locationY="51.5304000" id="BE.NMBS.007015400"
+                URI="http://irail.be/stations/NMBS/007015400"
+                standardname="London Saint Pancras International">London Saint Pancras International</station>
+            <time formatted="2023-11-28T09:51:00">1701161460</time>
+            <vehicle shortname="EUR9119" number="9119" type="EUR" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/EUR9119">BE.NMBS.EUR9119</vehicle>
+            <platform normal="1">3</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/EUR9119</departureConnection>
+        </departure>
+        <departure id="33" delay="420" canceled="0" left="0" isExtra="0">
+            <station locationX="4.91666700" locationY="52.3500000" id="BE.NMBS.008400058"
+                URI="http://irail.be/stations/NMBS/008400058" standardname="Amsterdam CS">Amsterdam
+                CS</station>
+            <time formatted="2023-11-28T09:52:00">1701161520</time>
+            <vehicle shortname="EUR9315" number="9315" type="EUR" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/EUR9315">BE.NMBS.EUR9315</vehicle>
+            <platform normal="1">4</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/EUR9315</departureConnection>
+        </departure>
+        <departure id="34" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.071825" locationY="50.891925" id="BE.NMBS.008895802"
+                URI="http://irail.be/stations/NMBS/008895802" standardname="Denderleeuw">Denderleeuw</station>
+            <time formatted="2023-11-28T09:53:00">1701161580</time>
+            <vehicle shortname="S61581" number="1581" type="S6" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/S61581">BE.NMBS.S61581</vehicle>
+            <platform normal="1">20</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/S61581</departureConnection>
+        </departure>
+        <departure id="35" delay="480" canceled="0" left="0" isExtra="0">
+            <station locationX="3.133864" locationY="51.312432" id="BE.NMBS.008891405"
+                URI="http://irail.be/stations/NMBS/008891405" standardname="Blankenberge">
+                Blankenberge</station>
+            <time formatted="2023-11-28T09:53:00">1701161580</time>
+            <vehicle shortname="IC1531" number="1531" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC1531">BE.NMBS.IC1531</vehicle>
+            <platform normal="1">16</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC1531</departureConnection>
+        </departure>
+        <departure id="36" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="6.03711" locationY="50.635157" id="BE.NMBS.008844628"
+                URI="http://irail.be/stations/NMBS/008844628" standardname="Eupen">Eupen</station>
+            <time formatted="2023-11-28T09:55:00">1701161700</time>
+            <vehicle shortname="IC508" number="508" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC508">BE.NMBS.IC508</vehicle>
+            <platform normal="1">8</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC508</departureConnection>
+        </departure>
+        <departure id="37" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.421101" locationY="51.2172" id="BE.NMBS.008821006"
+                URI="http://irail.be/stations/NMBS/008821006" standardname="Antwerpen-Centraal">
+                Antwerp-Central</station>
+            <time formatted="2023-11-28T09:56:00">1701161760</time>
+            <vehicle shortname="IC3109" number="3109" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC3109">BE.NMBS.IC3109</vehicle>
+            <platform normal="1">19</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC3109</departureConnection>
+        </departure>
+        <departure id="38" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="3.942542" locationY="50.453854" id="BE.NMBS.008881000"
+                URI="http://irail.be/stations/NMBS/008881000" standardname="Mons">Mons</station>
+            <time formatted="2023-11-28T09:56:00">1701161760</time>
+            <vehicle shortname="IC3730" number="3730" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC3730">BE.NMBS.IC3730</vehicle>
+            <platform normal="1">9</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC3730</departureConnection>
+        </departure>
+        <departure id="39" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.378636" locationY="50.878513" id="BE.NMBS.008811007"
+                URI="http://irail.be/stations/NMBS/008811007" standardname="Schaarbeek/Schaerbeek">
+                Schaarbeek/Schaerbeek</station>
+            <time formatted="2023-11-28T09:57:00">1701161820</time>
+            <vehicle shortname="IC5108" number="5108" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC5108">BE.NMBS.IC5108</vehicle>
+            <platform normal="1">13</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC5108</departureConnection>
+        </departure>
+        <departure id="40" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.039653" locationY="50.942813" id="BE.NMBS.008895000"
+                URI="http://irail.be/stations/NMBS/008895000" standardname="Aalst">Aalst</station>
+            <time formatted="2023-11-28T09:59:00">1701161940</time>
+            <vehicle shortname="S102059" number="2059" type="S10" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/S102059">BE.NMBS.S102059</vehicle>
+            <platform normal="1">7</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/S102059</departureConnection>
+        </departure>
+        <departure id="41" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.335065" locationY="50.599641" id="BE.NMBS.008814209"
+                URI="http://irail.be/stations/NMBS/008814209" standardname="Nivelles">Nivelles</station>
+            <time formatted="2023-11-28T10:00:00">1701162000</time>
+            <vehicle shortname="S11780" number="1780" type="S1" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/S11780">BE.NMBS.S11780</vehicle>
+            <platform normal="1">21</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/S11780</departureConnection>
+        </departure>
+        <departure id="42" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.715866" locationY="50.88228" id="BE.NMBS.008833001"
+                URI="http://irail.be/stations/NMBS/008833001" standardname="Leuven">Leuven</station>
+            <time formatted="2023-11-28T10:00:00">1701162000</time>
+            <vehicle shortname="S23759" number="3759" type="S2" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/S23759">BE.NMBS.S23759</vehicle>
+            <platform normal="1">18</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/S23759</departureConnection>
+        </departure>
+        <departure id="43" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="5.570453" locationY="50.646349" id="BE.NMBS.008841525"
+                URI="http://irail.be/stations/NMBS/008841525" standardname="Liège-Saint-Lambert">
+                Liège-Saint-Lambert</station>
+            <time formatted="2023-11-28T10:02:00">1701162120</time>
+            <vehicle shortname="IC2410" number="2410" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC2410">BE.NMBS.IC2410</vehicle>
+            <platform normal="1">12</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC2410</departureConnection>
+        </departure>
+        <departure id="44" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.421101" locationY="51.2172" id="BE.NMBS.008821006"
+                URI="http://irail.be/stations/NMBS/008821006" standardname="Antwerpen-Centraal">
+                Antwerp-Central</station>
+            <time formatted="2023-11-28T10:03:00">1701162180</time>
+            <vehicle shortname="S11759" number="1759" type="S1" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/S11759">BE.NMBS.S11759</vehicle>
+            <platform normal="1">19</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/S11759</departureConnection>
+        </departure>
+        <departure id="45" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.137662" locationY="50.605079" id="BE.NMBS.008883006"
+                URI="http://irail.be/stations/NMBS/008883006" standardname="Braine-le-Comte">
+                Braine-le-Comte</station>
+            <time formatted="2023-11-28T10:03:00">1701162180</time>
+            <vehicle shortname="S23780" number="3780" type="S2" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/S23780">BE.NMBS.S23780</vehicle>
+            <platform normal="1">17</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/S23780</departureConnection>
+        </departure>
+        <departure id="46" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="2.925809" locationY="51.228212" id="BE.NMBS.008891702"
+                URI="http://irail.be/stations/NMBS/008891702" standardname="Oostende">Oostende</station>
+            <time formatted="2023-11-28T10:04:00">1701162240</time>
+            <vehicle shortname="IC531" number="531" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC531">BE.NMBS.IC531</vehicle>
+            <platform normal="1">9</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC531</departureConnection>
+        </departure>
+        <departure id="47" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.101427" locationY="51.022781" id="BE.NMBS.008893401"
+                URI="http://irail.be/stations/NMBS/008893401" standardname="Dendermonde">Dendermonde</station>
+            <time formatted="2023-11-28T10:06:00">1701162360</time>
+            <vehicle shortname="S103880" number="3880" type="S10" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/S103880">BE.NMBS.S103880</vehicle>
+            <platform normal="1">8</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/S103880</departureConnection>
+        </departure>
+        <departure id="48" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="3.264549" locationY="50.824506" id="BE.NMBS.008896008"
+                URI="http://irail.be/stations/NMBS/008896008" standardname="Kortrijk">Kortrijk</station>
+            <time formatted="2023-11-28T10:07:00">1701162420</time>
+            <vehicle shortname="IC5131" number="5131" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC5131">BE.NMBS.IC5131</vehicle>
+            <platform normal="1">14</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC5131</departureConnection>
+        </departure>
+        <departure id="49" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.482076" locationY="50.896456" id="BE.NMBS.008819406"
+                URI="http://irail.be/stations/NMBS/008819406"
+                standardname="Brussels Airport - Zaventem">Brussels Airport - Zaventem</station>
+            <time formatted="2023-11-28T10:09:00">1701162540</time>
+            <vehicle shortname="IC3709" number="3709" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC3709">BE.NMBS.IC3709</vehicle>
+            <platform normal="1">12</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC3709</departureConnection>
+        </departure>
+        <departure id="50" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.378636" locationY="50.878513" id="BE.NMBS.008811007"
+                URI="http://irail.be/stations/NMBS/008811007" standardname="Schaarbeek/Schaerbeek">
+                Schaarbeek/Schaerbeek</station>
+            <time formatted="2023-11-28T10:10:00">1701162600</time>
+            <vehicle shortname="S61558" number="1558" type="S6" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/S61558">BE.NMBS.S61558</vehicle>
+            <platform normal="1">16</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/S61558</departureConnection>
+        </departure>
+        <departure id="51" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="5.497685" locationY="50.967057" id="BE.NMBS.008831765"
+                URI="http://irail.be/stations/NMBS/008831765" standardname="Genk">Genk</station>
+            <time formatted="2023-11-28T10:11:00">1701162660</time>
+            <vehicle shortname="IC1508" number="1508" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC1508">BE.NMBS.IC1508</vehicle>
+            <platform normal="1">13</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC1508</departureConnection>
+        </departure>
+        <departure id="52" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="3.396942" locationY="50.613134" id="BE.NMBS.008885001"
+                URI="http://irail.be/stations/NMBS/008885001" standardname="Tournai">Tournai</station>
+            <time formatted="2023-11-28T10:13:00">1701162780</time>
+            <vehicle shortname="IC1931" number="1931" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC1931">BE.NMBS.IC1931</vehicle>
+            <platform normal="1">15</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC1931</departureConnection>
+        </departure>
+        <departure id="53" delay="1020" canceled="0" left="0" isExtra="0">
+            <station locationX="2.33333300" locationY="48.8666670" id="BE.NMBS.008727100"
+                URI="http://irail.be/stations/NMBS/008727100" standardname="Paris Nord">Paris Nord</station>
+            <time formatted="2023-11-28T10:13:00">1701162780</time>
+            <vehicle shortname="EUR9322" number="9322" type="EUR" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/EUR9322">BE.NMBS.EUR9322</vehicle>
+            <platform normal="0">4</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/EUR9322</departureConnection>
+        </departure>
+        <departure id="54" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="2.33333300" locationY="48.8666670" id="BE.NMBS.008727100"
+                URI="http://irail.be/stations/NMBS/008727100" standardname="Paris Nord">Paris Nord</station>
+            <time formatted="2023-11-28T10:13:00">1701162780</time>
+            <vehicle shortname="EUR9422" number="9422" type="EUR" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/EUR9422">BE.NMBS.EUR9422</vehicle>
+            <platform normal="1">2</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/EUR9422</departureConnection>
+        </departure>
+        <departure id="55" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="5.07966" locationY="50.747927" id="BE.NMBS.008833605"
+                URI="http://irail.be/stations/NMBS/008833605" standardname="Landen">Landen</station>
+            <time formatted="2023-11-28T10:15:00">1701162900</time>
+            <vehicle shortname="IC3607" number="3607" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC3607">BE.NMBS.IC3607</vehicle>
+            <platform normal="1">10</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC3607</departureConnection>
+        </departure>
+        <departure id="56" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.438567" locationY="50.40471" id="BE.NMBS.008872009"
+                URI="http://irail.be/stations/NMBS/008872009" standardname="Charleroi-Central">
+                Charleroi-Central</station>
+            <time formatted="2023-11-28T10:15:00">1701162900</time>
+            <vehicle shortname="IC2031" number="2031" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC2031">BE.NMBS.IC2031</vehicle>
+            <platform normal="1">21</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC2031</departureConnection>
+        </departure>
+        <departure id="57" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="3.92428293" locationY="43.59518401" id="BE.NMBS.008777301"
+                URI="http://irail.be/stations/NMBS/008777301"
+                standardname="Montpellier-Sud-de-France">Montpellier-Sud-de-France</station>
+            <time formatted="2023-11-28T10:17:00">1701163020</time>
+            <vehicle shortname="TGV9826" number="9826" type="TGV" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/TGV9826">BE.NMBS.TGV9826</vehicle>
+            <platform normal="0">5</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/TGV9826</departureConnection>
+        </departure>
+        <departure id="58" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.142966" locationY="51.171472" id="BE.NMBS.008894508"
+                URI="http://irail.be/stations/NMBS/008894508" standardname="Sint-Niklaas">
+                Sint-Niklaas</station>
+            <time formatted="2023-11-28T10:18:00">1701163080</time>
+            <vehicle shortname="IC3208" number="3208" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC3208">BE.NMBS.IC3208</vehicle>
+            <platform normal="1">7</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC3208</departureConnection>
+        </departure>
+        <departure id="59" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="3.710675" locationY="51.035896" id="BE.NMBS.008892007"
+                URI="http://irail.be/stations/NMBS/008892007" standardname="Gent-Sint-Pieters">
+                Ghent-Sint-Pieters</station>
+            <time formatted="2023-11-28T10:19:00">1701163140</time>
+            <vehicle shortname="IC2231" number="2231" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC2231">BE.NMBS.IC2231</vehicle>
+            <platform normal="1">13</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC2231</departureConnection>
+        </departure>
+        <departure id="60" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.421101" locationY="51.2172" id="BE.NMBS.008821006"
+                URI="http://irail.be/stations/NMBS/008821006" standardname="Antwerpen-Centraal">
+                Antwerp-Central</station>
+            <time formatted="2023-11-28T10:19:00">1701163140</time>
+            <vehicle shortname="IC4509" number="4509" type="IC" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/IC4509">BE.NMBS.IC4509</vehicle>
+            <platform normal="1">20</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/IC4509</departureConnection>
+        </departure>
+        <departure id="61" delay="0" canceled="0" left="0" isExtra="0">
+            <station locationX="4.615745" locationY="50.669793" id="BE.NMBS.008811676"
+                URI="http://irail.be/stations/NMBS/008811676" standardname="Louvain-la-Neuve">
+                Louvain-la-Neuve</station>
+            <time formatted="2023-11-28T10:20:00">1701163200</time>
+            <vehicle shortname="S83959" number="3959" type="S8" locationX="0" locationY="0"
+                URI="http://irail.be/vehicle/S83959">BE.NMBS.S83959</vehicle>
+            <platform normal="1">12</platform>
+            <departureConnection>http://irail.be/connections/8814001/20231128/S83959</departureConnection>
+        </departure>
+    </departures>
+</liveboard>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<demo:schema xmlns:demo="http://www.w3.org/2001/XMLSchema">
+    
+    <demo:element name="person">
+        <demo:complexType>
+            <demo:sequence>
+                <demo:element name="firstname" type="demo:string" />
+                <demo:element name="lastname" type="demo:string" />
+                <demo:element name="gender">
+                    <demo:simpleType>
+                        <demo:restriction base="demo:string">
+                            <demo:enumeration value="m" />
+                            <demo:enumeration value="f" />
+                            <demo:enumeration value="x" />
+                        </demo:restriction>
+                    </demo:simpleType>
+                </demo:element>
+            </demo:sequence>
+        </demo:complexType>
+    </demo:element>
+
+</demo:schema>
