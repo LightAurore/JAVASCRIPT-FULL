@@ -43,7 +43,8 @@ operareur_puissance.addEventListener('click',function(){
     nombre02.value = "";
 })
 operareur_division_entiere.addEventListener('click',function(){
-    let result = parseFloat(parseFloat(nombre01.value) / parseFloat(nombre02.value));
+    // let result = parseFloat(parseFloat(nombre01.value) / parseFloat(nombre02.value));
+    let result = parseFloat(parseFloat(nombre01.value - (parseFloat(nombre01.value) % parseFloat(nombre02.value))) / parseFloat(nombre02.value));
     nombre01.value = result;
     nombre02.value = "";
 })

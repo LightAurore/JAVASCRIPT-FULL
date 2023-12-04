@@ -26,7 +26,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 25vh;
+    min-height: 25vh;
     padding: 12px;
     margin: 24px auto;
     background-color: #fff;
@@ -35,6 +35,7 @@ main{
 
     & > div{
             height: calc(100%/3);
+            margin-block: 6px;
             button, label, input{
                 border:none;
                 outline: none;
