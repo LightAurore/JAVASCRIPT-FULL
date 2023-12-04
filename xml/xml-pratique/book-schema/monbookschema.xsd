@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lib:schema xmlns:lib="http://www.w3.org/2001/XMLSchema">
+
+<!-- 
+
+    <lib:element name="books">
+
+        <lib:complexType>
+
+            <lib:all>
+
+                <lib:element name="book" maxOccurs="unbounded">
+
+                    <lib:complexType>
+                        <lib:sequence>
+                            <lib:element name="title" type="lib:string"/>
+
+                            <lib:element name="author">
+                                <lib:complexType>
+
+                                </lib:complexType>
+                            </lib:element>
+
+                            <lib:element name="genre" type="lib:string"/>
+
+                            <lib:element name="publication" type="lib:integer"/>
+
+                            <lib:element name="serie">
+                                <lib:complexType>
+                                    <lib:simpleContent>
+                                        <lib:extension base="lib:string">
+                                            <lib:attribute name="number" type="lib:integer"/>
+                                        </lib:extension>
+                                    </lib:simpleContent>
+                                </lib:complexType>
+                            </lib:element>
+
+                        </lib:sequence>
+                    </lib:complexType>
+                </lib:element>
+            </lib:all>
+        </lib:complexType>
+
+
+    </lib:element> -->
+
+    <!-- type -->
+    <lib:simpleType name="date-format">
+        <lib:restriction base="lib:string">
+            <lib:enumeration value="dd/mm/yyyy" />
+            <lib:enumeration value="mm/dd/yyyy" />
+            <lib:enumeration value="yyyy/mm/dd" />
+        </lib:restriction>
+    </lib:simpleType>
+    <lib:simpleType name="gender">
+        <lib:restriction base="lib:string">
+            <lib:enumeration value="m" />
+            <lib:enumeration value="f" />
+            <lib:enumeration value="x" />
+        </lib:restriction>
+    </lib:simpleType>
+
+
+    <!-- element -->
+    <lib:element name="name">
+        <lib:complexType>
+            <lib:attribute name="firstname" type="lib:string" use="required" />
+            <lib:attribute name="lastname" type="lib:string" use="required" />
+        </lib:complexType>
+    </lib:element>
+
+    <lib:element name="birthdate">
+        <lib:complexType>
+            <lib:simpleContent>
+                <lib:extension base="lib:string">
+                    <lib:attribute name="format" type="date-format"/>
+                </lib:extension>
+            </lib:simpleContent>
+        </lib:complexType>
+    </lib:element>
+
+
+    <lib:element name="author">
+        <lib:complexType>
+            <lib:all>
+                <lib:element ref="name"/>
+                <lib:element ref="birthdate"/>
+                <lib:element name="gender" type="gender"/>
+            </lib:all>
+        </lib:complexType>
+    </lib:element>
+
+    <lib:element name="serie">
+        <lib:complexType>
+            <lib:simpleContent>
+                <lib:extension base="lib:string">
+                    <lib:attribute name="number" type="lib:positiveInteger" />
+                </lib:extension>
+            </lib:simpleContent>
+        </lib:complexType>
+    </lib:element>
+    
+    <lib:element name="book">
+        <lib:complexType>
+            <lib:sequence>
+                <lib:element name="title" type="lib:string" />
+                <lib:element ref="author" />
+                <lib:element name="genre" type="lib:string" />
+                <lib:element name="publication" type="lib:string" />
+                <lib:element ref="serie" minOccurs="0" />
+            </lib:sequence>
+        </lib:complexType>
+    </lib:element>
+
+    <lib:element name="books">
+        <lib:complexType>
+            <lib:sequence>
+                <lib:element ref="book" maxOccurs="unbounded" />
+            </lib:sequence>
+        </lib:complexType>
+    </lib:element>
+
+
+</lib:schema>

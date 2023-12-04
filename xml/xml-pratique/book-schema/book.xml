@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./monbookschema.xsd">
+    <book>
+        <title>Le Nom du vent</title>
+        <author>
+            <name firstname="Patrick" lastname="Rothfuss" />
+            <birthdate format="dd/mm/yyyy">06/06/1973</birthdate>
+            <gender>m</gender>
+        </author>
+        <genre>Fantasy</genre>
+        <publication>2007</publication>
+        <serie number="1">Chronique du tueur de roi</serie>
+    </book>
+    <book>
+        <title>Le Petit Prince</title>
+        <author>
+            <name firstname="Antoine" lastname="de Saint-Exupéry" />
+            <birthdate format="dd/mm/yyyy">29/06/1900</birthdate>
+            <gender>m</gender>
+        </author>
+        <genre>Conte philosophique</genre>
+        <publication>1943</publication>
+    </book>
+    <book>
+        <title>Harry Potter à l’école des sorciers</title>
+        <author>
+            <name firstname="J.K." lastname="Rowling" />
+            <birthdate format="dd/mm/yyyy">31/07/1965</birthdate>
+            <gender>f</gender>
+        </author>
+        <genre>Fantasy</genre>
+        <publication>1997</publication>
+        <serie number="2">Harry Potter</serie>
+    </book>
+    <book>
+        <title>La Servante écarlate</title>
+        <author>
+            <name firstname="Margaret" lastname="Atwood" />
+            <birthdate format="dd/mm/yyyy">18/11/1939</birthdate>
+            <gender>f</gender>
+        </author>
+        <genre>Science-fiction dystopique</genre>
+        <publication>1985</publication>
+        <serie number="3">Le Testament</serie>
+    </book>
+    <book>
+        <title>Harry Potter et la chambre des secrets</title>
+        <author>
+            <name firstname="J.K." lastname="Rowling" />
+            <birthdate format="dd/mm/yyyy">31/07/1965</birthdate>
+            <gender>f</gender>
+        </author>
+        <genre>Fantasy</genre>
+        <publication>1998</publication>
+        <serie number="4">Harry Potter</serie>
+    </book>
+</books>

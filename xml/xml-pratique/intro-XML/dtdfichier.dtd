@@ -1,0 +1,5 @@
+<!ELEMENT demo(#PCDATA)>
+
+<!ELEMENT name(firstname, lastname)>
+<!ELEMENT firstname(#PCDATA)>
+<!ELEMENT lastname(#PCDATA)>

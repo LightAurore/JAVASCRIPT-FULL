@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"></xsd:schema> -->
+<!-- <mml:math xmlns:mml="http://www.w3.org/1999/Math/MathML"></mml:math> -->
+
+<person xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="personneSchema.xsd">
+    <firstname pseudo="Bella">Della</firstname>
+    <lastname>Elfy</lastname>
+    <gender>f</gender>
+
+</person>

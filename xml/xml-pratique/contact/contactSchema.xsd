@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- Elements -->
+<xs:element name="name">
+    <xs:complexType>
+        <xs:all>
+            <xs:element name="firstname" type="xs:string" />
+            <xs:element name="lastname" type="xs:string" />
+        </xs:all>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="address">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="street" type="xs:string" maxOccurs="2"/>
+            <xs:element name="number" type="xs:integer" />
+            <xs:element name="city" type="xs:string" />
+            <xs:element name="zip" type="xs:integer" />
+            <xs:element name="country" type="xs:string" />
+
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<!-- type -->
+<xs:simpleType name="phone-type">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="gsm" />
+        <xs:enumeration value="fix" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="email-type">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="perso" />
+        <xs:enumeration value="pro" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="gender-type">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="m" />
+            <xs:enumeration value="f" />
+            <xs:enumeration value="x" />
+        </xs:restriction>
+</xs:simpleType>
+
+<!--fin type -->
+
+<xs:element name="phone">
+    <xs:complexType>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="type" type="phone-type"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="phones">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="phone" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="email">
+    <xs:complexType>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="type"  type="email-type"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="emails">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="email"   minOccurs="1" maxOccurs="2"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="contact">
+    <xs:complexType>
+            <xs:all>
+                <xs:element ref="name"/>
+                <xs:element ref="address"/>
+                <xs:element ref="phones"/>
+                <xs:element ref="emails"/>
+            </xs:all>
+            <xs:attribute name="gender" type="gender-type" />
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="contacts">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="contact" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

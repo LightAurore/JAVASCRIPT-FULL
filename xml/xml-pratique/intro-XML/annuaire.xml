@@ -1,0 +1,86 @@
+<?xml version="1.0" encodeing="UTF-8"?>
+<contacts>
+    <individu key="phi-417-math014">
+        <nom>Kant</nom>
+        <prenom>Emmanuel</prenom>
+        <sexe>m</sexe>
+        <addresse pays="Allemagne">
+            <rue numero="01" boite="01">Rue Lavoisier</rue>
+            <commune codePostal="1050">Ixelles</commune>
+            <ville city="Liège"/>
+        </addresse>
+        <telephones>
+            <telephone type="portable">+32 479 45 63 21</telephone>
+            <telephone type="fixe">+32 01 78 45 12</telephone>
+            <telephone type="bureau">+32 10 32 14 78</telephone>
+        </telephones>
+        <courriels>
+            <mel type="privé" default="1" >manu.kant@hotmail.com</mel>
+            <mel type="professionnel">e.kant@hotmail.com</mel>
+            <mel type="gaming">azerty@gmail.com</mel>
+        </courriels>
+    </individu>
+
+    <individu key="phi-417-math028">
+        <nom>Leibniz</nom>
+        <prenom>Wilhelm</prenom>
+        <sexe>m</sexe>
+        <addresse pays="Allemagne">
+            <rue numero="01" boite="01">Rue du Pommier</rue>
+            <commune codePostal="1050">elsenes</commune>
+            <ville city="Leipzig"/>
+        </addresse>
+        <telephones>
+            <telephone type="portable">+32 486 63 41 52</telephone>
+            <telephone type="fixe">+32 2 678 45 12</telephone>
+            <telephone type="bureau">+32 2 632 14 78</telephone>
+        </telephones>
+        <courriels>
+            <mel type="privé" default="1" >wil.Leibniz@hotmail.com</mel>
+            <mel type="professionnel">w.Leibniz@hotmail.com</mel>
+            <mel type="gaming" >qwerty@gmail.com</mel>
+        </courriels>
+    </individu>
+
+    <individu key="phi-417-math042 ">
+        <nom>Spinoza</nom>
+        <prenom>Baruch</prenom>
+        <sexe>m</sexe>
+        <addresse pays="Hollande">
+            <rue numero="01" boite="01">Avenue Point Carrée</rue>
+            <commune codePostal="1160">Audergheme</commune>
+            <ville city="Amsterdam"/>
+        </addresse>
+        <telephones>
+            <telephone type="portable">+32 486 63 41 52</telephone>
+            <telephone type="fixe">+32 2 678 45 12</telephone>
+            <telephone type="bureau">+32 2 632 14 78</telephone>
+        </telephones>
+        <courriels>
+            <mel type="privé" default="1">bar.Spinoza@hotmail.com</mel>
+            <mel type="professionnel" >b.Spinoza@hotmail.com</mel>
+            <mel type="gaming" >poiuy@gmail.com</mel>
+        </courriels>
+    </individu>
+
+    <individu key="phi-417-math056 ">
+        <nom>Spinoza</nom>
+        <prenom>Cassandre</prenom>
+        <sexe>f</sexe>
+        <addresse pays="Hollande">
+            <rue numero="01" boite="01">Avenue Point Carrée</rue>
+            <commune codePostal="1160">Audergheme</commune>
+            <ville city="Amsterdam"/>
+        </addresse>
+        <telephones>
+            <telephone type="portable">+32 486 63 41 52</telephone>
+            <telephone type="fixe">+32 2 678 45 12</telephone>
+            <telephone type="bureau">+32 2 632 14 78</telephone>
+        </telephones>
+        <courriels>
+            <mel type="privé" default="1">bar.Spinoza@hotmail.com</mel>
+            <mel type="professionnel" >b.Spinoza@hotmail.com</mel>
+            <mel type="gaming" >poiuy@gmail.com</mel>
+        </courriels>
+    </individu>
+</contacts>
