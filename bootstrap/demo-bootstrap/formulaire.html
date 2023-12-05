@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+  <body  class="p-2 m-0 border-0 bd-exemple-row flex-cols">
+
+      <form>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3 form-check">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+            
+                    <div class="mb-3 form-check">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control form-control-lg" id="exampleInputPassword1">
+                    </div>
+                
+                    <div class="form-check">
+                        <label for="exampleDataList" class="form-label">Datalist example</label>
+                        <input class="form-control form-control-lg form-control-paintext" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                        <datalist id="datalistOptions">
+                        <option value="San Francisco">
+                        <option value="New York">
+                        <option value="Seattle">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                        </datalist>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="d-grid gap-2 form-check form-check-inline">
+                <button type="submit" class="btn btn btn-outline-success w-50">Submit</button>
+                <button type="reset" class="btn btn-outline-warning w-">Reset</button>
+            </div>
+        </div>
+        
+</form>
+</body>
+<script src="./assets/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
