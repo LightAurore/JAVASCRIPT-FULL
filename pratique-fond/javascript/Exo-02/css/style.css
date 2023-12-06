@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 150vh;
+
+    background-color: coral;
+}
+
+h1{
+    background-color: #fff;
+    
+    width: 100%;
+    position: fixed;
+
+    margin: 0 2rem;
+    text-align: center;
+    color: rgb(19, 7, 7);
+    box-shadow: 0 0 15px rgb(70, 55, 55);
+}

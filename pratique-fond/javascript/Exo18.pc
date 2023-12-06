@@ -1,0 +1,39 @@
+Algorithme Exo18 - Calculatrice FAIRE TANTQUE
+
+
+Variable operateur, message : Chaine
+Variable nombre1, nombre2 : Reel
+Variable noError : Booleen
+
+DEBUT
+    noError <- Vrai
+    Ecrire("Veuillez insérer le premier nombre :")
+    Lire(nombre1)
+    message <- nombre1
+    FAIRE
+        FAIRE
+            Ecrire("Veuillez choisir un opérateur (+ - / * =) :")
+            Lire(operateur)
+        TANTQUE operateur != "+" ET operateur !="-" ET operateur !="/" ET operateur !="*" ET operateur != "=" FINTQ
+        SI operateur != "=" ALORS
+            Ecrire("Veuillez insérer le second nombre :")
+            Lire(nombre2)
+            message <- message + " " + operateur + " " +nombre2
+            SI NON(operateur == "/" ET nombre2 == 0) ALORS
+                SELONQUE operateur VAUT
+                    "+" : nombre1 <- nombre1 + nombre2
+                    "-" : nombre1 <- nombre1 - nombre2
+                    "/" : nombre1 <- nombre1 / nombre2
+                    SINON : nombre1 <- nombre1 * nombre2
+                FINSQ
+            SINON
+                message <- "Division par 0 impossible"
+                noError <- Faux
+            FINSI
+        SINON
+            message <- message + " " + operateur + " " + nombre1
+        FINSI
+    TANTQUE operateur != "=" ET noError FINTQ
+    
+    Ecrire(message)
+FIN

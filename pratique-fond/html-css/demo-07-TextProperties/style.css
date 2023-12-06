@@ -1,0 +1,63 @@
+
+
+h1.pixel{
+    font-size: 64px;
+}
+h1.percent{
+    font-size: 200%;
+}
+h1.rel_em{
+    font-size: 2em;
+}
+h1.rel_rem{
+    font-size: 2rem;
+}
+
+.double{
+    font-size: 32px;
+    color: darkblue;
+    text-transform: uppercase;
+}
+
+p{
+    text-align: justify;
+}
+
+.gras{
+    font-weight: 600; /* En times new Roman, il n'y a pas de 600. La valeur normale est de 700, il va donc être en gras */
+    color: hwb(180 14% 59%);
+}
+
+.penche{
+    font-style: oblique;
+    color: orange;
+    text-decoration: underline double rgb(0, 255, 128) 0.1em;
+
+    
+}
+
+.souligne{
+    text-decoration: underline wavy rgb(0, 255, 128) 0.1em;
+}
+
+a{
+    text-decoration: none;
+}
+
+.notification{
+    width: 25%;
+    height: 64px;
+    overflow: auto;
+    overflow-wrap: break-word;
+    margin-bottom: 24px;
+    background-color: cornflowerblue;
+    color-scheme: light;
+    color: aliceblue;
+    padding: 6px;
+}
+
+.monoligne{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

@@ -1,0 +1,54 @@
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    width: 600px;
+    
+}
+
+
+
+table#t_football{
+    /* text-align: center;
+
+    border: 1px solid rgb(2, 218, 38); */
+    background-color: rgb(80, 156, 4);
+    color: aliceblue;
+     border-collapse: collapse;
+}
+
+#t_football thead{
+    background-color: yellow;
+    color: red;
+   
+}
+
+#t_football td, #t_football th{
+    padding: 2px 4px;
+}
+#t_football tbody tr:hover{
+    border-bottom: 3px double white;
+}
+
+#t_football tbody tr:nth-child(even){
+    background-color: #ffffff22;
+}
+
+
+#t_contact{
+ margin-top: 60px;
+}
+#t_contact td,
+#t_contact th{
+    border: 1px solid black;
+}
+#t_contact{
+
+}
+

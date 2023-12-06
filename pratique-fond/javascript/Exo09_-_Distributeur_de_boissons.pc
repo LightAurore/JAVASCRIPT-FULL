@@ -1,0 +1,34 @@
+Algorithme Exo09 - Distributeur de boissons
+
+Variable choix, stock_1, stock_2, stock_3, stock_4 : Entier
+
+DEBUT
+
+    stock_1 <- 0
+    stock_2 <- 3
+    stock_3 <- 0
+    stock_4 <- 5
+    SI stock_1 < 1 ET stock_2 < 1 ET stock_3 < 1 ET stock_4 <1 ALORS
+        Ecrire("Distributeur vide")
+    SINON 
+        Ecrire("Sélectionner une boisson : 1 - Eau, 2 - Soda, 3 - Orangeade, 4 - Citronnade")
+        Lire(choix)
+        SI choix > 4 OU choix < 1 ALORS
+            Ecrire("Choix non disponible.")  
+        SINONSI choix == 1 ET stock_1 > 0 ALORS
+            stock_1 <- stock_1 - 1
+            Ecrire("Voici votre eau.")
+        SINONSI choix == 2 ET stock_2 > 0 ALORS
+            stock_2 <- stock_2 - 1
+            Ecrire("Voici votre soda.")
+        SINONSI choix == 3 ET stock_3 > 0 ALORS
+            stock_3 <- stock_3 - 1
+            Ecrire("Voici votre orangeade.")
+        SINONSI choix == 4 ET stock_4 > 0 ALORS
+            stock_4 <- stock_4 - 1
+            Ecrire("Voici votre citronnade.")
+        SINON
+            Ecrire("Le stock est épuisé, veuillez sélectionner une autre boisson.")    
+        FINSI
+    FINSI
+FIN

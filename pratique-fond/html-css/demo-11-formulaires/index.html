@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="./css/main.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Démonstration 10 : Les formulaires</title>
+</head>
+<body>
+    <header>
+        <h1>Démonstration 10 : Les formulaires</h1>
+        <form action="">
+            <input type="search" name="cherche" id="cherche">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </header>
+
+    
+    <form action="" method="post">
+        <div>
+        <h2>Se connecter</h2>
+        <input type="email" name="email" id="" placeholder="Votre adresse email" required>
+        <input type="password" name="password" id="" placeholder="Votre mot de passe" required minlength="8" maxlength="32">
+        <button type="submit">⛩ valider</button>
+        </div>
+    </form>
+
+    <form action="" method="get">
+        <h2>Se plaindre</h2>
+        <fieldset>
+            <legend>Informations contact</legend>
+        <label for="lastname">Nom :</label>
+        <input type="text" name="lname" id="lastname" minlength="2" maxlength="16" required>
+        <fieldset>
+            <legend>Genre :</legend>
+            <input type="radio" name="gender" id="g_female" value="f">
+            <label for="g_female">Femme</label>
+            <input type="radio" name="gender" id="g_male" value="h">
+            <label for="g_male">Homme</label>
+            <input type="radio" name="gender" id="g_other" value="o" checked>
+            <label for="g_other">Autre</label>
+        </fieldset>
+        <label for="phone">Téléphone :</label>
+        <input type="tel" name="phone" id="phone">
+    </fieldset>
+    <fieldset>
+        <legend>Ma plainte</legend>
+        <label for="subject">Description</label>
+        <select name="subject" id="subject">
+            <optgroup label="Agression">
+                <option value="agr_pilote">Aggression sur le conducteur</option>
+                <option value="agr_pass">Aggression sur un passager</option>
+                <option value="agr_self">Aggression sur moi-même</option>
+            </optgroup>
+            <optgroup label="Horaire">
+                <option value="late">Retard sur l'horaire</option>
+                <option value="miss">Transport pas passé</option>
+            </optgroup>
+            <option value="lost">Perte d'un bien</option>
+            <option value="other">Autre ...</option>
+        </select>
+
+        <label for="message">Votre plainte</label>
+        <textarea name="message" id="message" cols="50" rows="10" placeholder="Veuillez écrire votre plainte" required minlength="42" maxlength="512"></textarea>
+        </fieldset>
+        <div>
+            <!-- Avec l'attribut checked, la sace est déjà coché -->
+        <input type="checkbox" name="consent" id="consent" checked required> 
+        <label for="consent">
+                En cochant cette case, je déclare avoir lu et et accepté <a href="#cg">les conditions générales</a> de l'entreprise
+        </label>
+        </div>
+        <button type="reset">Enregistrer la plainte</button>
+        <button type="submit"><i class="fa-regular fa-paper-plane"></i> Enregistrer la plainte</button>
+        <!-- <input type="button" value="✔ Enregistrer plainte"> -->
+    </form>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+Algorithme ExoSup1 - Mot de passe
+
+Variable motDePasse : Chaine
+Variable tentative : Entier
+Constante MDP = "1234="
+
+DEBUT    
+    Ecrire("Bonjour, veuillez introduire votre mot de passe :")
+    Lire(motDePasse)
+    tentative <- 1
+    TANTQUE motDePasse != MDP ET tentative < 3 FAIRE
+        Ecrire("Erreur!")
+        Ecrire("Veuillez introduire votre mot de passe :")
+        Lire(motDePasse)
+        tentative <- tentative + 1
+    FINTQ
+    SI motDePasse == MDP ALORS
+        Ecrire("Bienvenue!")
+    SINON
+        Ecrire("Vous avez dépassé le nombre de tentatives autorisés, veuillez contacter votre administrateur")
+    FINSI
+FIN

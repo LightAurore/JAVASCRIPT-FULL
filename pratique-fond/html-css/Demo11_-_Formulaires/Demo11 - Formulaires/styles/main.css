@@ -1,0 +1,82 @@
+form{
+    width : 80%;
+    padding : 48px;
+    margin: 40px auto;
+    background-color: rgb(52, 52, 107);
+    color: white;
+    border-radius: 20px;
+}
+
+form h2{
+    margin-top: 0;
+}
+
+form input{
+    display: block;
+    margin-bottom: 20px;
+    border-width: 0;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color : white;
+}
+
+form input::placeholder{
+    color :rgb(232, 232, 232);
+    font-size: 0.5em;
+}
+
+form input:focus{
+    background-color:#ffffff22; 
+    outline: none;
+}
+
+form input:focus::placeholder{
+    font-size: 1em;
+    transition: 500ms;
+}
+
+form div{
+    width : 50%;
+    margin : 0 auto;
+}
+
+form button{
+    border-radius: 16px;
+    border-width : 0;
+    color : white;
+}
+
+form button[type="submit"]{
+    background-color: rgb(86, 204, 86);
+}
+form button[type="reset"]{
+    background-color: rgb(204, 86, 86);
+}
+
+form textarea{
+    resize: vertical;
+    border: 1px solid rgb(168, 168, 206);
+}
+
+form input[type="checkbox"], form input[type="radio"] {
+    display: inline-block;
+    margin : 0;
+}
+
+input[type="checkbox"]+label {
+    text-align: justify;
+}
+
+label a{
+    color: white;
+}
+
+form select{
+    display: block;
+}
+
+fieldset{
+    border-radius: 5px;
+    background-color: #cbc4ff22;
+    border-width:0 ;
+}

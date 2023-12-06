@@ -1,0 +1,28 @@
+Algorithme Exo05 - Convertisseur secondes
+
+Variable nbrSecondes, secondes, minutes, heures, jours : Entier
+
+DEBUT
+    Ecrire("Veuillez introduire le nombre de secondes :")
+    Lire(nbrSecondes)                                       //90561
+    secondes <- nbrSecondes MOD 60                          //90561 div.entière 60 donne 76 reste 1
+    minutes <- (nbrSecondes DIV 60) MOD 60                  //1509 div.entière 60 donne 1 reste 16
+    heures <- (nbrSecondes DIV (60*60)) MOD 24              //1
+    jours <- (nbrSecondes DIV (60*60*24))                   //1
+    Ecrire("Le nombre de ",nbrSecondes," secondes donnent ",jour," jour(s) ",heures, " heure(s) ", minutes, " minute(s) et ", secondes, " seconde(s).")
+FIN
+
+----------------------------------------------------------------------
+Algorithme Exo05 - Convertisseur secondes V2
+
+Variable nbrSecondes, secondes, minutes, heures, jours : Entier
+
+DEBUT
+    Ecrire("Veuillez introduire le nombre de secondes :")
+    Lire(nbrSecondes)                                       //4561
+    jours <- nbrSecondes DIV 86400                          //0 jours  -- 86400 nombres de secondes dans une journée 
+    heures <- (nbrSecondes MOD 86400) DIV 3600              //1 heures
+    minutes <- (nbrSecondes MOD 3600) DIV 60                //16 minutes
+    secondes <- nbrSecondes MOD 60                          //1 secondes
+    Ecrire("Le nombre de ",nbrSecondes," secondes donnent ",jour," jour(s) ",heures, " heure(s) ", minutes, " minute(s) et ", secondes, " seconde(s).")
+FIN

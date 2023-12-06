@@ -1,0 +1,35 @@
+Algorithme ExoSup2 - Triangle etoile
+
+Variable nombre, i : Entier
+Variable text : Chaine
+
+DEBUT
+    
+    Ecrire("Combien de ligne voulez-vous :")
+    Lire(nombre)
+    text <- ""
+    i <- 1
+    TANTQUE i <= nombre FAIRE
+        text <- text + "*"
+        i <- i + 1
+        Ecrire(text)
+    FINTQ
+FIN
+------------------------------------------------
+Algorithme ExoSup2 - Triangle etoile
+
+Variable nombre, i : Entier
+Variable text : Chaine
+
+DEBUT
+    
+    Ecrire("Combien de ligne voulez-vous :")
+    Lire(nombre)
+    text <- ""
+    i <- 0
+    TANTQUE i < nombre FAIRE
+        text <- text + "*"
+        i <- i + 1
+        Ecrire(text)
+    FINTQ
+FIN

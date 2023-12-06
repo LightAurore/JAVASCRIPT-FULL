@@ -1,0 +1,16 @@
+#block{
+    width : 512px;
+    height : 512px;
+    border: 1px solid black;
+}
+
+#smallBlock{
+    position: absolute;
+    width : 16px;
+    height : 16px;
+    border: 1px solid black;
+}
+
+.activate{
+    background-color: red;
+}

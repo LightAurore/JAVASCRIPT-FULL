@@ -1,0 +1,15 @@
+Algorithme Exo13 - Multiplication par 2
+
+Constante TABLE = 2
+Variable multiplicateur : Entier
+
+DEBUT
+    
+    multiplicateur <- 1
+    TANTQUE multiplicateur <= 10 FAIRE
+        Ecrire(multiplicateur + " X " + TABLE + " = " + TABLE*multiplicateur)
+        multiplicateur <- multiplicateur + 1
+    FINTQ
+    
+
+FIN

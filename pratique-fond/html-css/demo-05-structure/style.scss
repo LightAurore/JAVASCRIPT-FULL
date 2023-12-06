@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+%flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flex-rows-between{
+    display: flex;
+    justify-content: space-between;
+}
+%flex-rows-around{
+    display: flex;
+    justify-content: space-around;
+}
+%flex-rows-evenly{
+    display: flex;
+    justify-content: space-evenly
+}
+
+
+
+body{
+    @extend %flex-column;
+    width: 100vw;
+    min-height: 100vh;
+
+    padding: 24px;
+}
+
+header{
+    @extend %flex-rows-between;
+
+}
+

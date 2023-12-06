@@ -1,0 +1,95 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(227,227 , 227);
+    font-size: 1.4rem;
+}
+
+h1{
+    margin-top: 10px;
+    background-image: linear-gradient(to left, red, green, blue);
+
+    background-clip: text;
+    color: transparent;
+}
+
+#time{
+    border-top: 2px ridge turquoise;
+}
+#time:hover{
+    animation: 2s vibes 0.2s ease-in-out;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes vibes {
+    100%, 0%{
+        /* transform: rotateX(0deg) rotateY(38deg);
+        transform-style: preserve-3d; */
+    border-bottom: 2px ridge turquoise;
+    border-top: 0;
+    }
+    
+}
+
+#form_conteneur{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    min-height: 200px;
+    background-color: azure;
+    background-image: url("../assets/images/pattern-1.jpg");
+    background-size: cover;
+
+    box-shadow: inset 0 0 5px rgb(93, 86, 86);
+}
+
+.left{
+    float: left;
+}
+.left{
+    float: right;
+}
+.clear{
+    display: none;
+    clear: both;
+}
+
+#form_conteneur div{
+    width: 80%;
+    margin-block: 10px;
+    box-shadow: 0 0 5px rgb(93, 86, 86);
+    /* border: 1px solid blueviolet; */
+    background-color: aquamarine;
+    padding: 10px;
+}
+#form_conteneur div:not(last-child){
+    margin-bottom: 10px;
+}
+
+#form_conteneur label{
+    flex: 1;
+    width: 500px;
+    padding: 5px;
+    
+}
+#form_conteneur input, #form_conteneur textarea{
+    flex: 2;
+}
+
+#boutons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#form_conteneur  button{
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgb(93, 86, 86);
+    border: none;
+}

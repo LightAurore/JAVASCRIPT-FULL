@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Hamburger Heaven";
+    src: url("../assets/fonts/HamburgerHeaven.TTF");
+}
+
+h1, h2, h3{
+    font-family: "Hamburger Heaven";
+}
+
+h1.pixel{
+    font-size: 64px;
+}
+
+h1.percent{
+    font-size: 200%;
+}
+
+h1.rel_em{
+    font-size: 2em;
+}
+
+h1.rel_rem{
+    font-size: 2rem;
+}
+
+.double{
+    font-size : 2em;
+    text-transform: uppercase;
+}
+
+.gras{
+    font-weight: 600;   /* En Times new Roman, il n'y a pas de 600, la valeur la plus proche est 700, il va donc être en gras */
+}
+
+.penche{
+    font-style: italic;
+}
+
+p{
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.sousligne{
+    text-decoration: underline double blue 0.1em;
+}
+
+.notification{
+    width : 25%;
+    height: 64px;
+    overflow: auto;
+}
+
+.alert{
+    background-color: pink;
+}
+
+.notification p{
+    overflow-wrap: break-word;
+}
+
+.monoligne{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

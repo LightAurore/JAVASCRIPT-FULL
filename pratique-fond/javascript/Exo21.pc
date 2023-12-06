@@ -1,0 +1,33 @@
+Algorithme Exo21 - Plus ou moins
+
+Variable juste_prix, proposition, tentative : Entier
+
+DEBUT
+    Ecrire("Bienvenu dans le jeu du juste prix!")
+    Ecrire("🎶🎵🎶🎵")
+    Ecrire("Un nombre aléatoire entre 1 et 100 a été défini ! ")
+    Lire(juste_prix)                    //Lire() récupère une valeur aléatoire entre 1 et 100
+    Ecrire("Joueur! Quel est votre proposition ?")
+    Lire(proposition)
+    TANTQUE proposition < 1 OU proposition > 100 FAIRE
+        Ecrire("Veuillez indiquer une valeur entre 1 et 100 :")
+        Lire(proposition)
+    FINTQ
+    
+    tentative <- 1
+    TANTQUE proposition != juste_prix FAIRE
+        SI proposition > juste_prix ALORS
+            Ecrire("C'est moins...")
+        SINON
+            Ecrire("C'est plus!")
+        FINSI
+        Lire(proposition)
+        TANTQUE proposition < 1 OU proposition > 100 FAIRE
+            Ecrire("Veuillez indiquer une valeur entre 1 et 100 :")
+            Lire(proposition)
+        FINTQ
+        tentative <- tentative + 1
+    FINTQ
+    
+    Ecrire("Bravo! Après",tentative,"tentatives, vous avez remporté la somme de",proposition)
+FIN

@@ -1,0 +1,18 @@
+div {
+  background-color: #6cd4ff88;
+  /* opacity: 0.5; Mauvaise idée, le contenu devient aussi transparent!*/
+}
+
+body {
+  background-color: #f40;
+  background-image: url("../assets/imgs/pattern.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* background-position-x: center;
+    background-position-y: top; */
+  background-position: center bottom;
+  /*background: 
+    no-repeat url("../assets/imgs/pattern.jpg") fixed center bottom,
+    no-repeat url("../assets/imgs/pattern.jpg") fixed left center;*/
+  background-size: 25%;
+}

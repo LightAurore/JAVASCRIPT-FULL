@@ -1,0 +1,41 @@
+p   /* le sélecteur p correspond au nom de la balise: seul les paragraphes seront touché par cette règle */
+{
+    color:darkmagenta;
+}
+
+.premier   /* le sélecteur .premier correspond aux balises ayant l'attribut class "premier" peut importe le type de balise*/
+{
+    color: magenta;
+}
+
+#conclusion /* le sélecteur #conclusion correspond à la seule balise ayant l'attribut id "conclusion" peut importe le type de balise*/
+{
+    color: darkred;
+}
+
+li.premier  /* le sélecteur li.premier correspond aux balises ayant l'attribut class "premier" et de type de balise "li"*/
+{
+    color : blue
+}
+
+*  /* le sélecteur * correspond à toutes balises du document*/
+{
+    border : 1px solid black;
+}
+
+ul > li{
+    color:darkorchid;
+}
+
+article + article{
+    color : yellow;
+}
+
+h2 + *
+{
+    color: greenyellow;
+}
+
+*[alt="chat"] {
+    border:3px dotted darkblue;
+}

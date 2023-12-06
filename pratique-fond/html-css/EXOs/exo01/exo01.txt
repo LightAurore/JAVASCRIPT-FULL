@@ -1,0 +1,14 @@
+Exo01 :
+
+Créez un document HTML avec pour but de vous décrire.
+
+
+Placez dans un titre important votre nom + prenom
+
+A la suite un paragraphe expliquant votre motivation pour la formation.
+
+Dans ce paragraphe , ajoutez un mot important et une citation.
+
+Ensuite ajouter une liste de 3 hobbies avec un déscriptif de chacun.
+
+

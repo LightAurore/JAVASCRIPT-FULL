@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 02 Structure</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        
+
+        
+
+        
+
+        article {}
+
+        article div {
+            margin: 4px;
+            padding: 12px;
+
+            width: 24%;
+
+            background-color: blanchedalmond;
+
+            border-radius: 12px;
+        }
+
+        #cat {
+            box-shadow: 0.1px 0.1px 0.5px 1px blue;
+        }
+
+        #cat li {
+            margin: 6px;
+            list-style: none;
+        }
+
+        
+    </style>
+
+
+</head>
+
+<body>
+    <!-- En-tête -->
+    <header id="entete">
+        <img src="" alt="Logo">
+        <h2 style="color:blue">Just buy that, better price</h2>
+        <nav>
+            <ul>
+                <li><a href="">👤 Profil</a></li>
+                <li><a href="">🛒Panier</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Principal -->
+    <main>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Produits</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Collections</a></li>
+                    <li><a href="">Faq</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section>
+            <header>
+                <h1>Articles en promotion</h1>
+            </header>
+            <ul style="display: flex;">
+                <li>
+                    <article>
+                        <img src="" alt="promo01">
+                        <h2>Nom Promo 01</h2>
+                        <h4>Catégorie</h4>
+                        <h3>0.99 £</h3>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="" alt="promo01">
+                        <h2>Nom Promo 01</h2>
+                        <h4>Catégorie</h4>
+                        <h3>0.99 £</h3>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="" alt="promo01">
+                        <h2>Nom Promo 01</h2>
+                        <h4>Catégorie</h4>
+                        <h3>0.99 £</h3>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="" alt="promo01">
+                        <h2>Nom Promo 01</h2>
+                        <h4>Catégorie</h4>
+                        <h3>0.99 £</h3>
+                    </article>
+                </li>
+            </ul>
+            <!-- <article style="display: flex;">
+                <div>
+                    <img src="" alt="Photo article">
+                    <h2>Nom article</h2>
+                    <h4>Catégorie</h4>
+                    <h3>Prix</h3>
+                </div>
+                <div>
+                    <img src="" alt="Photo article">
+                    <h2>Nom article</h2>
+                    <h4>Catégorie</h4>
+                    <h3>Prix</h3>
+                </div>
+                <div>
+                    <img src="" alt="Photo article">
+                    <h2>Nom article</h2>
+                    <h4>Catégorie</h4>
+                    <h3>Prix</h3>
+                </div>
+                <div>
+                    <img src="" alt="Photo article">
+                    <h2>Nom article</h2>
+                    <h4>Catégorie</h4>
+                    <h3>Prix</h3>
+                </div>
+            </article> -->
+        </section>
+        <section>
+
+            <article style="display: flex;">
+                <header>
+                    <h1>Articles en vente</h1>
+                    <!-- <nav>
+                <ul style="display: flex;" id="cat" width="100%">
+                    <li><a href="">Vente Flash</a></li>
+                    <li><a href="">Meilleurs ventes</a></li>
+                    <li><a href="">Articles les plus recherchés</a></li>
+                    <li><a href="">Prix les plus bas</a></li>
+                </ul>
+            </nav> -->
+                </header>
+                <div>
+                    <img src="" alt="Photo article">
+                    <h2>Nom article</h2>
+                    <h4>Catégorie</h4>
+                    <h3>Prix</h3>
+                </div>
+                <div>
+                    <img src="" alt="Photo article">
+                    <h2>Nom article</h2>
+                    <h4>Catégorie</h4>
+                    <h3>Prix</h3>
+                </div>
+                <div>
+                    <img src="" alt="Photo article">
+                    <h2>Nom article</h2>
+                    <h4>Catégorie</h4>
+                    <h3>Prix</h3>
+                </div>
+                <div>
+                    <img src="" alt="Photo article">
+                    <h2>Nom article</h2>
+                    <h4>Catégorie</h4>
+                    <h3>Prix</h3>
+                </div>
+            </article>
+        </section>
+        <section>
+            <header>
+                <h1>Produits en vente</h1>
+            </header>
+            <aside>
+                <form action="">
+                    <label for="">Prix</label>
+                    <input type="number" min="0" placeholder="0£">
+                    <input type="number" max="2000£" placeholder="2000£">
+                    <button type="submit"></button>
+                </form>
+            </aside>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <address>
+            rue xxxxxxx, 1111 <br>
+            415263 star-galaxy <br>
+            Cosmos lointain
+        </address>
+        <form action="">
+            <label for="">sujet</label>
+            <input type="text">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </footer>
+
+</body>
+
+</html>

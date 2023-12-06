@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Exo 03 : Les variables</title>
+</head>
+<body>
+    <h1>
+        Exo 03 : Les variables
+    </h1>
+
+    <div class="conteneur">
+        <p id="time"></p>
+    </div>
+
+    <form action="" method="post" id="form_conteneur">
+        <div><label for="categorie" class="right">Catégorie</label><input type="text" id="categorie" name="categorie" class="left" required></div>
+        <hr class="clear">
+        <div><label for="choix" class="right">Choix</label><input type="radio" id="choix" name="choix" class="left" required></div>
+        <hr class="clear">
+        <div><label for="condition" class="right">CGV</label><input type="checkbox" id="condition" name="condition" class="left" required></div>
+        <hr class="clear">
+        <div><label for="prix" class="right">Prix</label><input id="prix" name="prix" type="range" minlength="0" maxlength="100" class="left"  min="0" max="16" value="7" step="2" required></div>
+        <hr class="clear">
+        <div id="text" class="right"><label for="message" class="textarea">Message</label> <textarea class="left" name="message" id="message" cols="30" rows="10" required></textarea></div>
+        <div id="boutons">
+            <button type="reset">Effacer</button>
+            <button type="submit">Soumettre</button>
+        </div>
+        <hr class="clear">
+    </form>
+
+    <!-- 
+        Les attributs des INPUTS: 
+
+        accept, alt, checked, dirname, 
+        formaction, formenctype, formmethod, 
+        formnovalidate, formtarget, height, 
+        maxlength, minlength, multiple, 
+        pattern, placeholder, readonly, 
+        required, size, src, et width. 
+     -->
+    
+</body>
+<script type="text/javascript" src="./js/script.js"></script>
+</html>

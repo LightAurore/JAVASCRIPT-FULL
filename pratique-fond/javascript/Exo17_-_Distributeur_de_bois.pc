@@ -1,0 +1,52 @@
+Algorithme Exo17 - Distributeur de boissons
+
+Variable choix, stock_1, stock_2, stock_3, stock_4 : Entier
+Variable encore : Booleen
+
+DEBUT
+
+    stock_1 <- 0
+    stock_2 <- 3
+    stock_3 <- 0
+    stock_4 <- 5
+
+    SI stock_1 < 1 ET stock_2 < 1 ET stock_3 < 1 ET stock_4 <1 ALORS
+        Ecrire("Distributeur vide")
+    SINON 
+        FAIRE
+            Ecrire("Sélectionner une boisson : 1 - Eau, 2 - Soda, 3 - Orangeade, 4 - Citronnade")
+            Lire(choix)
+
+            SELONQUE choix VAUT
+                1 : SI stock_1 > 0 ALORS
+                        stock_1 <- stock_1 - 1
+                        Ecrire("Voici votre eau.")
+                    SINON
+                        Ecrire("Le stock est épuisé, veuillez sélectionner une autre boisson.")
+                    FINSI
+                2 : SI stock_2 > 0 ALORS
+                        stock_2 <- stock_2 - 1
+                        Ecrire("Voici votre soda.")
+                    SINON
+                        Ecrire("Le stock est épuisé, veuillez sélectionner une autre boisson.")
+                    FINSI
+                3 : SI stock_3 > 0 ALORS
+                        stock_3 <- stock_3 - 1
+                        Ecrire("Voici votre orangeade.")
+                    SINON
+                        Ecrire("Le stock est épuisé, veuillez sélectionner une autre boisson.")
+                    FINSI
+                4 :SI stock_4 > 0 ALORS
+                        stock_4 <- stock_4 - 1
+                        Ecrire("Voici votre citronnade.")
+                    SINON
+                        Ecrire("Le stock est épuisé, veuillez sélectionner une autre boisson.")
+                    FINSI
+                SINON : Ecrire("Choix non disponible.")
+            FINSQ
+            Ecrire("Voulez-vous une autre boisson?")
+            Lire(encore)
+        TANTQUE encore ET NON(stock_1 < 1 ET stock_2 < 1 ET stock_3 < 1 ET stock_4 <1) FINTQ
+        Ecrire("Merci d'avoir choisi distributeur 3000")
+    FINSI
+FIN

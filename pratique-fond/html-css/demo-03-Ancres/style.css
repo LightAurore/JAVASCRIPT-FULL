@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    min-height: 110vh;
+
+    padding: 24px;
+}
+
+h1{
+    margin-bottom: 40px;
+}
+
+ul{
+    margin-bottom: 24px;
+}
+
+body a{
+    text-decoration: none;
+    margin-top: 24px;
+}
+
+body > p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 24px;
+    padding: 6px;
+    border: 1px solid black;
+    box-shadow: 0.1px 0.1px 0.5px rgb(25, 22, 29);
+}
+
+
+

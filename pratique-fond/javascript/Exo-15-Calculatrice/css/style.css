@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+}
+
+body > *{
+    margin: 20px;
+}
+
+
+
+.calculatrice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    width: 320px;
+    min-height: 300px;
+
+    background-color: rgb(215, 235, 235);
+    border: 3px ridge gray;
+
+    border-radius: 5px;
+}
+
+.calculatrice div#affichage{
+    width: 300px;
+   min-height: 50px;
+    margin-bottom: 20px;
+    background-color: aqua;
+    box-shadow: inset 0 0 12px rgb(151, 150, 150);
+    color: rgb(10, 11, 11);
+    text-align: right;
+    padding: 10px;
+}
+
+.calculatrice div#affichage > *{
+    width: 100%;
+    margin-top: 6px;
+}
+.calculatrice div#affichage h1{
+    height: 50px;
+}
+.calculatrice div#affichage>p{
+    height: 10px;
+   
+}
+
+.calculatrice div#touches{
+    display: grid;
+    width: 306px;
+    min-height: 300px;
+    margin:0 auto;
+    grid-template-columns: repeat(4,75px);
+    gap: 2px;
+    grid-template-rows: repeat(4,75px);
+}
+
+#touches span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    box-shadow: 2px 2px 10px rgb(93, 91, 91);
+    border-radius: 40%;
+    font-size: 2rem;
+}
+#touches span:hover{
+    box-shadow: 0px 0px 5px rgb(151, 150, 150);
+}

@@ -1,0 +1,24 @@
+Algorithme Exo08 - Lanceur de balle
+
+Variable pret, panier_vide : Booleen
+
+DEBUT
+
+    Ecrire("Veuillez indiquer si le panier est vide :")
+    Lire(panier_vide)
+
+    SI panier_vide ALORS
+        Ecrire("Veuiller remplir le panier.")
+    SINON
+        Ecrire("Êtes-vous prêt?")
+        Lire(pret)
+        SI pret ALORS
+            Ecrire("En voici une rapide!")
+            lancerBalle()
+        SINON
+            Ecrire("Dépêche toi, d'autres attendent...")
+        FINSI    
+    FINSI
+    
+    
+FIN

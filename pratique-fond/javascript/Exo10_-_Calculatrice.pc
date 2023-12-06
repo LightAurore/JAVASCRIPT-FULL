@@ -1,0 +1,105 @@
+Algorithme Exo10 - Calculatrice
+
+Variable nb1, nb2 : Reel
+Variable operateur : Chaine
+
+DEBUT
+
+    Ecrire("Veuillez entrer un premier nombre :")
+    Lire(nb1)
+    Ecrire("Veuillez introduire un opérateur :")
+    Lire(operateur)
+    Ecrire("Veuillez entrer un second nombre :")
+    Lire(nb2)
+    
+    SI operateur != "+" ET operateur != "-" ET operateur != "*" ET operateur != "/" ALORS
+        Ecrire("Opérateur invalide")
+    SI operateur == "+" ALORS
+        Ecrire(nb1,operateur,nb2,"=",nb1+nb2)
+    SINONSI operateur == "-" ALORS
+        Ecrire(nb1,operateur,nb2,"=",nb1-nb2)
+    SINONSI operateur == "*" ALORS
+        Ecrire(nb1,operateur,nb2,"=",nb1*nb2)
+    SINONSI operateur == "/" ET nb2 != 0 ALORS
+        Ecrire(nb1,operateur,nb2,"=",nb1/nb2)
+    SINONSI operateur == "/" ET nb2 == 0 ALORS
+        Ecrire("La division par 0 tend vers l'infini et au delà.")
+    FINSI
+    
+FIN
+----------------------------------------------------------------------------
+Algorithme Exo10 - Calculatrice V2
+
+Variable nb1, nb2, resultat : Reel
+Variable operateur : Chaine
+Variable erreur : Booleen
+
+DEBUT
+    erreur <- Faux
+
+    Ecrire("Veuillez entrer un premier nombre :")
+    Lire(nb1)
+    Ecrire("Veuillez introduire un opérateur :")
+    Lire(operateur)
+    Ecrire("Veuillez entrer un second nombre :")
+    Lire(nb2)
+    
+    SI operateur != "+" ET operateur != "-" ET operateur != "*" ET operateur != "/" ALORS
+        erreur <- Vrai
+    SINONSI operateur == "+" ALORS
+        resultat <- nb1 + nb2
+    SINONSI operateur == "-" ALORS
+        resultat <- nb1 - nb2
+    SINONSI operateur == "*" ALORS
+        resultat <- nb1 * nb2
+    SINONSI operateur == "/" ET nb2 != 0 ALORS
+        resultat <- nb1 / nb2
+    SINONSI operateur == "/" ET nb2 == 0 ALORS
+        erreur <- Vrai
+    FINSI
+
+    SI erreur == Vrai ALORS
+        Ecrire("Erreur")
+    SINON
+        Ecrire(nb1,operateur,nb2,"=",resultat)
+    FINSI
+    
+FIN
+----------------------------------------------------------------------------
+Algorithme Exo10 - Calculatrice V3
+
+Variable nb1, nb2, resultat : Reel
+Variable operateur : Chaine
+Variable noError : Booleen
+
+DEBUT
+    noError <- Vrai
+
+    Ecrire("Veuillez entrer un premier nombre :")
+    Lire(nb1)
+    Ecrire("Veuillez introduire un opérateur :")
+    Lire(operateur)
+    Ecrire("Veuillez entrer un second nombre :")
+    Lire(nb2)
+    
+    SI operateur != "+" ET operateur != "-" ET operateur != "*" ET operateur != "/" ALORS
+        Ecrire("Opérateur invalide")
+        noError <- Faux
+    SINONSI operateur == "/" ET nb2 == 0 ALORS
+        Ecrire("La division par 0 tend vers l'infini et au delà.")
+        noError <- Faux
+    SINONSI operateur == "+" ALORS
+        resultat <- nb1 + nb2
+    SINONSI operateur == "-" ALORS
+        resultat <- nb1 - nb2
+    SINONSI operateur == "*" ALORS
+        resultat <- nb1 * nb2
+    SINONSI operateur == "/" ALORS
+        resultat <- nb1 / nb2
+    FINSI
+
+    SI noError == Vrai ALORS
+        Ecrire(nb1,operateur,nb2,"=",resultat)
+    FINSI
+    
+FIN

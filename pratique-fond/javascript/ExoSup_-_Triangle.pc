@@ -1,0 +1,71 @@
+//Enoncé
+
+// Réalisez un algorithme, permettant à un mathématicien de connaitre la forme d'un triangle avec pour seules informations la taille de ses 3 côtés.
+// Le type du triangle doit correspondre aussi bien à la taille de ses côté, mais aussi à l'amplitude de ses angles.
+// Attention aux erreurs de données.
+
+Algorithme Triangle de Meyrs
+
+Variable coteA, coteB, coteC : Entier
+
+DEBUT
+    
+    Ecrire("Veuillez introduire les tailles des différents côtés de votre triangle:")
+    Lire(coteA)
+    Lire(coteB)
+    Lire(coteC)
+    //Un triangle est impossible si l'un de ses côtés mesure 0.
+    SI (coteA == 0 OU coteA == B OU coteC == 0) ALORS
+        Ecrire("Triangle impossible")
+    SINON
+    //Détection des côtés à valeurs négatives et y faire la valeur absolue
+        SI coteA < 0 ALORS
+            coteA <- coteA * -1
+        FINSI
+        SI coteB < 0 ALORS
+            coteB <- coteB * -1
+        FINSI
+        SI coteC < 0 ALORS
+            coteC <- coteC * -1
+        FINSI            
+    //Faisons en sorte de trouver le plus grand côté et de le placer dans "coteC"
+        SI coteA > coteB ET coteA > coteC ALORS
+            coteA <- coteA + coteC
+            coteC <- coteA - coteC
+            coteA <- coteA - coteC
+        SINONSI coteB > coteA ET coteB > coteC ALORS
+            coteB <- coteB + coteC
+            coteC <- coteB - coteC
+            coteB <- coteB - coteC
+        FINSI
+    //Si la somme des 2 plus petits côtés est plus petits et égale que le plus grand, alors impossible
+        SI coteA + coteB <= coteC ALORS
+            Ecrire("Triangle impossible")
+        SINON
+    //Détection du triangle
+    //Triangle équilatérale : 3 côtés identiques => 3 angles à 60°
+            SI coteA == coteC ET coteB == coteC ALORS
+                Ecrire("Trianlge équilatérale accutangle.")
+    //Triangle isoscèle : 2 côtés les mêmes => si le plus grand côté égale un autre, alors angle aigu
+            SINONSI coteA == coteC OU coteB == coteC ALORS
+                Ecrire("Triangle isoscèle accutangle.")
+    //Triangle isoscèle : 2 côtés les mêmes => si les 2 côtés égaux sont les plus petits, alors possible rectanle ou obtu
+            SINON
+                SI coteA == coteB ALORS
+                    Ecrire("Triangle isocèle")
+                SINON
+                    Ecrire("Triangle quelconque")
+                FINSI
+                SI ((coteA*coteA) + (coteB*coteB)) > (coteC*coteC) ALORS
+                    Ecrire("accutangle")
+                SINONSI ((coteA*coteA) + (coteB*coteB)) == (coteC*coteC) ALORS
+                    Ecrire("rectangle")
+                SINON
+                    Ecrire("obtusangle")
+                FINSI
+            FINSI
+        FINSI    
+    FINSI
+    
+
+FIN

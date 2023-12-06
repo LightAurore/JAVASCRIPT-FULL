@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "1942 report";
+    src: url("../assets/fonts/1942.ttf");
+}
+
+p
+{
+    font-family: "1942 report", "Courier new";
+    text-align: justify;
+}
+
+blockquote
+{
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color :darkgrey ;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 64px;
+    text-align: justify;
+}
+
+h1, blockquote p {
+    font-family: 'Kanit', sans-serif;
+}
+
+main{
+    column-count: 5;
+    column-gap: 24px;
+    column-rule: 1px dashed black;
+}

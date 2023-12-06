@@ -1,0 +1,43 @@
+body{
+    padding: 0;
+    margin :0;
+    background-color: #f6dcf1;
+    color: #182931;;
+}
+
+header{
+    background-color: #d388c4;
+}
+
+#menu-mobile ul{
+    list-style: none;
+    max-height: 0;
+}
+
+#menu-mobile li{
+    padding: 5px 0px;
+}
+
+#menu-mobile a{
+    text-decoration: none;
+    color: #f6dcf1;
+}
+
+#menu-mobile:hover ul{
+    max-height: 500px;
+}
+
+@media(min-width:768px) {
+    #menu-mobile>img{
+        display : none;
+    }
+
+    #menu-mobile ul {
+        max-height: 500px;
+    }
+
+    #menu-mobile li{
+        display: inline-block;
+        padding: 5px 15px;
+    }
+}

@@ -1,0 +1,34 @@
+Algorithme Exo07 - Année bissextile
+
+Variable annee : Entier
+
+DEBUT
+
+    Ecrire("Veuillez introduire une année :")
+    Lire(annee)
+    SI annee MOD 400 == 0 ALORS
+        Ecrire("Cette année est bissextile.")
+    SINONSI annee MOD 4 == 0 ET annee MOD 100 != 0 ALORS
+        Ecrire("Cette année est bissextile.")
+    SINON
+        Ecrire("Cette année est pas bissextile.")
+    FINSI
+    
+FIN
+
+---------------------------------------------------------
+Algorithme Exo07 - Année bissextile V2
+
+Variable annee : Entier
+
+DEBUT
+
+    Ecrire("Veuillez introduire une année :")
+    Lire(annee)
+    SI (annee MOD 4 == 0 ET annee MOD 100 != 0) OU (annee MOD 400 == 0) ALORS
+        Ecrire("Cette année est bissextile.")
+    SINON
+        Ecrire("Cette année est pas bissextile.")
+    FINSI
+    
+FIN

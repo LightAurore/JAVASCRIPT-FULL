@@ -1,0 +1,85 @@
+.height-fix{
+    height: 256px;
+}
+
+.height-min{
+    min-height: 256px;
+}
+
+
+.height-max{
+    max-height: 512px;
+}
+
+
+section{
+    background-color: green;
+}
+
+article{
+    background-color: yellowgreen;
+    width : 25%;
+    overflow: auto;
+    margin : 5px 15px;
+    padding : 10px;
+    border-bottom: 2px solid blue;
+    border-top-width : 5px;
+    border-top-style : dotted;
+    border-top-color: green ;
+    border-radius : 10px;
+}
+
+.align{
+    display: inline-block;
+}
+
+.block{
+    width: 128px;
+    height: 128px;
+}
+
+hr{
+    clear: both;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.circle{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border:2px solid white;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.45);
+}
+
+.circle img {
+    position: relative;
+    top: -25px;
+    left: -38px;
+    width: 250%;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color: white;
+    text-shadow: 0px 0px 5px red;
+}
+
+#last_section{
+    padding : 32px 0%;
+}
+
+.container{
+    width: 80%;
+    margin : 0 auto;
+}

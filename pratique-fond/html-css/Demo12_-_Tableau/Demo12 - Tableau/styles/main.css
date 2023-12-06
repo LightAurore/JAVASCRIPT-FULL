@@ -1,0 +1,26 @@
+#t_football{
+    background-color: rgb(64, 145, 64);
+    color: white;
+    border-collapse: collapse;
+}
+
+#t_football thead{
+    background-color: yellow;
+    color: red;
+}
+
+#t_football td,#t_football th{
+    padding: 2px 4px;
+}
+
+#t_football tbody tr:hover {
+    border-bottom: 3px double white;
+}
+
+#t_football tbody tr:nth-child(even){
+    background-color: #ffffff22;
+}
+
+#t_contact td, #t_contact th {
+    border: 1px solid black;
+}

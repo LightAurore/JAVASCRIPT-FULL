@@ -1,0 +1,130 @@
+
+.BOOM{
+    color: blue;
+}
+
+.BOOM:hover{
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.container-box{
+    border: 1px solid black;
+    padding: 32px;
+    width: fit-content;
+}
+.container-box:hover .transform-circle{
+    border-radius: 50%;
+}
+
+.box{
+    display: inline-block;
+    background-color: red;
+    width: 128px;
+    height: 128px;
+}
+
+
+.container-box:hover .blue{
+    transition : 2s ease-in-out;
+    transform: rotate(360deg);
+    background-image: linear-gradient(red, blue, yellow);
+}
+
+.container-box:hover .red{
+    transition: 5s;
+    filter: hue-rotate(20rad);
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+    
+}
+
+.accordeon{
+    margin-top: 24px;
+    width: 256px;
+}
+
+.accordeon div{
+    border: 1px solid black;
+}
+
+.accord-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.2s ease-in;
+}
+
+.accord-info:hover .accord-content{
+    max-height: 1024px;
+    transition: 1s ease-in;
+}
+
+.accordeon .accord-info:first-child{
+    background-color: burlywood;
+}
+.accordeon .accord-info:last-child{
+    background-color: aqua;
+}
+
+.accordeon .accord-info:only-child{
+    background-color: gray;
+}
+
+.accordeon .accord-info:nth-child(3n){ /* tous les multiple de trois */
+    background-color: blueviolet;
+}
+
+.accordeon .accord-info:nth-child(2n+1){ /* tous les multiple de trois */
+    background-color: rgb(43, 226, 125);
+}
+
+.accord-info:first-of-type{
+    border-color: orange;
+}
+.accord-info:last-of-type{
+    border-color: blue;
+}
+.accord-info:only-of-type{
+    border-color: yellow;
+}
+
+
+
+
+
+
+
+p *:link { /* p a {} */
+    color: rgb(0, 255, 76);
+    text-decoration: underline 1px wavy blue;
+}
+p *:visited { /* p a {} */
+    color: rgb(255, 0, 221);
+    text-decoration: underline 1px wavy rgb(255, 0, 0);
+}
+p *:hover { /* p a {} */
+    color: rgb(255, 0, 221);
+    text-decoration: underline 1px wavy rgb(255, 0, 0);
+    font-weight: bolder;
+}
+p *:active { /* p a {} */
+    color: rgb(255, 0, 221);
+    text-decoration: underline 2px double rgb(255, 0, 0);
+}
+
+*:target{
+    color: yellowgreen;
+}
+
+
+div:not(.box){
+    font-size: 1em;
+}

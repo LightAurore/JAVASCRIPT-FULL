@@ -1,0 +1,32 @@
+
+
+div{
+
+    display: flex;
+    background-color: #6cd4ff;
+    opacity: 1;
+    /* width: 25%; */
+    
+}
+
+div p{
+    margin-trim: in flow;
+    margin-inline: 12px;
+}
+
+
+body{
+    /* background-image: url(../assets/images/pattern.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    background-position-x: center;
+    background-position-y: top;
+    background-position: center bottom; */
+    background: fixed url("./assets/images/pattern-1.jpg") no-repeat center bottom, fixed url("./assets/images/pattern-2.jpg") no-repeat left top;
+    background-size: 25% 100%;
+
+
+
+    
+}
+

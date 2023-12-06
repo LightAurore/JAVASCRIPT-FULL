@@ -1,0 +1,117 @@
+.BOOM{
+    color : blue;
+}
+
+.BOOM:hover{
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.box{
+    width : 128px;
+    height: 128px;
+    display: inline-block;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.container-box{
+    border: 1px solid black;
+    padding : 32px;
+}
+
+.container-box:hover .transform-circle{
+    border-radius: 50%;
+}
+
+.container-box:hover .blue{
+    transition: 5s ease-in-out;
+}
+.container-box:hover .red{
+    transition: 5s;
+}
+
+.accordeon{
+    width: 256px;
+}
+
+.accordeon div{
+    border: 1px solid black;
+}
+
+.accord-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s ease-out;
+}
+
+.accord-info:hover .accord-content{
+    max-height: 1024px;
+    transition: 1s ease-in;
+}
+
+p *:link {
+    color: green;
+    text-decoration: underline 1px wavy blue;
+}
+
+p *:visited {
+    color: violet;
+    text-decoration: underline 1px wavy red;
+}
+
+p *:link:hover {
+    color: violet;
+    font-weight: bolder;
+    text-decoration: underline 1px wavy red;
+}
+
+p *:active{
+    color: red;
+    font-weight: bolder;
+    text-decoration: underline 2px double red;
+}
+.accordeon .accord-info:nth-child(3n){
+    background-color: pink;
+}
+
+.accordeon .accord-info:first-child{
+    background-color: orange;
+}
+
+.accordeon .accord-info:last-child{
+    background-color: aqua;
+}
+
+.accordeon .accord-info:only-child{
+    background-color: gray;
+}
+
+
+*:target {
+    color : yellowgreen;
+}
+
+div:not(.box){
+    font-size:0.5em;
+}
+
+.accord-info:first-of-type{
+    border-color: orangered;
+}
+
+.accord-info:last-of-type{
+    border-color: blue;
+}
+
+.accord-info:only-of-type{
+    border-color: yellow;
+}

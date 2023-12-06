@@ -1,0 +1,56 @@
+@charset "UTF-8";
+* { /* Le sélecteur * correspond à toutes balises du document */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0.1px solid black;
+  margin: 2px;
+}
+
+body {
+  padding: 24px;
+}
+
+.premier { /* Le selecteur .premier correspond aux balises, seuls les paragraphes seront touché par cette règle */
+  color: magenta;
+}
+
+p { /* Le selecteur p correspond au nom de la balise, seuls les paragraphes seront touché par cette règle */
+  color: darkmagenta;
+}
+
+#conclusion { /* Le selecteur #conclusion correspond à la seule balise ayant l'attribut id "conclusion", seuls les paragraphes seront touché par cette règle */
+  color: darkred;
+}
+
+li.premier { /* Le selecteur li.premier correspond aux balises ayant l'attribut class "premier" et de type balise "li" */
+  color: blue;
+}
+
+li {
+  text-shadow: 0.5px 0.5px 1px 0.5px rgb(192, 183, 183);
+}
+
+ul > li {
+  color: rgb(140, 48, 245);
+}
+
+article + article {
+  color: yellow;
+}
+
+h2 + * {
+  color: greenyellow;
+}
+
+img[alt] {
+  border: 5px dashed burlywood;
+}
+
+img[alt=bee] {
+  border: 5px dotted rgb(98, 9, 241);
+}
+
+/*  https://developer.mozilla.org/fr/docs/Web/CSS/Attribute_selectors  */
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,110 @@
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+
+
+header > form{
+    width: 100%;
+    padding: 48px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+body> form{
+    width: 80%;
+    padding: 48px;
+    margin: 40px auto;
+    background-color: #25247e;
+    color: white;
+    border-radius: 20px;
+}
+
+form:not(:first-child){
+    margin-top: 24px;
+}
+
+form h2{
+    margin-top: 0;
+}
+
+form input{
+    display: block;
+    margin-bottom: 20px;
+    /* border-radius: 5px; */
+    border-width: 0;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+form input::placeholder{
+    color: rgb(223, 223, 223);
+    font-size: 0.5em;
+}
+
+form input:focus{
+    background-color: #b3b3b322;
+    outline: none;
+}
+form input:focus::placeholder{
+    transition: 500ms;
+    font-size: 1em;
+}
+
+form div{
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+form button{
+    background-color: rgb(142, 221, 23);
+    border-radius: 15px;
+    color: white;
+    border-width: 0;
+    padding: 6px;
+}
+form button[type="reset"]{
+    background-color: rgb(221, 23, 23);
+  
+}
+form button[type="submit"]{
+    background-color: rgb(142, 221, 23);
+    
+}
+
+form textarea{
+    resize: vertical;
+}
+
+form input[type="checkbox"], form input[type="radio"]{
+    display: inline-block;
+    margin: 0;
+}
+
+input[type="checkbox"] + label{
+    text-align: justify;
+}
+
+label a{
+    color: white;
+}
+
+form select{
+    display: block;
+}
+fieldset{
+    border-radius: 5px;
+    background-color: #3432a8;
+    border-width: 0;
+}

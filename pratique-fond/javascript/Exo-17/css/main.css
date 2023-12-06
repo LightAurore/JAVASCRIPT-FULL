@@ -1,0 +1,34 @@
+@font-face {
+    font-family: sunday_pizza;
+    src: url("../sunday_pizza/Sunday\ Pizza.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.liste_course{
+    list-style: none;
+    width: 150px;
+    height: 25px;
+    background-color: rgb(72, 0, 255);
+    margin-bottom: 5px;
+    color: aliceblue;
+    text-align: center;
+    margin: 2px auto;
+
+    font-weight: 900;
+    font-family: sunday_pizza;
+}
+
+body{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: #caf7f8;
+}
+

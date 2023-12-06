@@ -1,0 +1,70 @@
+Algorithme Projet juste prix
+
+Variable juste_prix, proposition, compteur, level, val_max : Entier
+Variable jouer : Booleen
+Variable choix : Chaine
+
+DEBUT
+    #Nettoyer console
+    Ecrire("Bienvenue au juste prix! Notre ordinateur choisi un nombre aléatoire pour vous! A vous de le deviner!")
+    jouer <- Vrai
+    TANTQUE jouer FAIRE
+        
+        level <- 0
+
+        TANTQUE level != 1 ET level != 2 ET level != 3 FAIRE
+            Ecrire("Choisissez votre niveau (10 essais seulement :)")     
+            Ecrire("1.FACILE : 1 à 10")
+            Ecrire("2.MOYEN : 1 à 100")
+            Ecrire("3.DIFFICILE : 1 à 1000")
+            Lire(level)            
+        FINTQ
+        
+        SI level == 1 ALORS
+            val_max <- 10
+            Ecrire("Niveau FACILE")
+        SINONSI level == 2 ALORS
+            val_max <- 100
+            Ecrire("Niveau MOYEN")
+        SINONSI level == 3 ALORS
+            val_max <- 1000
+            Ecrire("Niveau DIFFICILE")
+        FINSI
+        juste_prix <- random(1,val_max)
+        
+        Ecrire("Veuillez encoder une première proposition entre 1 et ",val_max,".")
+        Lire(proposition)
+        TANTQUE proposition < 1 OU proposition > val_max FAIRE
+            Ecrire("Proposition invalide, entrer un nombre entre 1 et ",val_max,".")
+            Lire(proposition)
+        FINTQ
+        compteur <- 1
+        
+        TANTQUE proposition != juste_prix ET compteur < 10 FAIRE
+            #Nettoyer console
+            SI proposition < juste_prix ALORS
+                Ecrire("C'est plus!")
+            SINON
+                Ecrire("C'est moins")            
+            FINSI
+                        
+            Ecrire("Veuillez entrer une nouvelle proposition entre 1 et ",val_max,".")
+            Lire(proposition)
+            TANTQUE proposition < 1 OU proposition > val_max FAIRE
+                Ecrire("Proposition invalide, entrer un nombre entre 1 et ",val_max,".")
+                Lire(proposition)
+            FINTQ
+            compteur <- compteur + 1
+        FINTQ
+        #Nettoyer console
+        SI proposition == juste_prix ALORS
+            Ecrire("C'est gagné! Vous avez remporté la somme de ",juste_prix,"€, après ",compteur," tentatives!")
+        SINON
+            Ecrire("Quel dommage! Vous avez dépassé votre nombre de ",compteur," tentatives. La somme a trouver était de ",juste_prix,"€!")
+        FINSI
+        Ecrire("Si vous souhaitez quitter le jeu, alors entrer 'Quitter'")
+        Lire(choix)
+        jouer <- choix != "Quitter"
+        #Nettoyer console
+    FINTQ
+FIN
