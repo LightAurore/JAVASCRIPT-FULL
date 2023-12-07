@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'amikosemibold';
+    src: url('Amiko-SemiBold-webfont.eot');
+    src: url('Amiko-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Amiko-SemiBold-webfont.woff2') format('woff2'),
+         url('Amiko-SemiBold-webfont.woff') format('woff'),
+         url('Amiko-SemiBold-webfont.ttf') format('truetype'),
+         url('Amiko-SemiBold-webfont.svg#amikosemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
