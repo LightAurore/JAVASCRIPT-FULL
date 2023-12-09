@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+    <style>
+        math {
+            math-style: normal;
+        }
+
+        .compact {
+            math-style: compact;
+            /* Keyword values */
+            math-depth: auto-add;
+
+            /* Relative values */
+            math-depth: add(2);
+            math-depth: add(-2);
+
+            /* Absolute value */
+            math-depth: 4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <p>
+                Normal height
+                <math>
+                    <mrow>
+                        <munderover>
+                            <mo>∑</mo>
+                            <mrow>
+                                <mi>n</mi>
+                                <mo>=</mo>
+                                <mn>1</mn>
+                            </mrow>
+                            <mrow>
+                                <mo>+</mo>
+                                <mn>∞</mn>
+                            </mrow>
+                        </munderover>
+                    </mrow>
+                </math>
+                and compact height
+                <math class="compact">
+                    <mrow>
+                        <munderover>
+                            <mo>∑</mo>
+                            <mrow>
+                                <mi>n</mi>
+                                <mo>=</mo>
+                                <mn>1</mn>
+                            </mrow>
+                            <mrow>
+                                <mo>+</mo>
+                                <mn>∞</mn>
+                            </mrow>
+                        </munderover>
+                    </mrow>
+                </math>
+                equations.
+            </p>
+        </section>
+        <section>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="turquoise">
+                <g transform="translate(-10, 20)">
+                    <g transform="scale(2)">
+                        <rect width="200" height="200" transform="rotate(45)" />
+                    </g>
+                </g>
+            </svg>
+        </section>
+    </main>
+
+</body>
+
+</html>

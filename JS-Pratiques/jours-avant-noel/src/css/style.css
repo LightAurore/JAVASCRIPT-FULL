@@ -57,7 +57,7 @@ main > .compte-rebours_container {
   background-color: #ffffff50;
   border-radius: 10% 20% 30% 40% / 60% 70% 80% 90%;
   /* backdrop-filter: blur(1000px); */
-  animation: 5s shaping 0.5s infinite linear;
+  animation: 5s shaping 0.1s infinite ease-in-out;
 }
 
 @keyframes shaping {

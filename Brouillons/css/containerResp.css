@@ -1,0 +1,17 @@
+.post {
+  container-type: inline-size; /* size / normal */
+  container-name: sidebar;
+  container: sidebar / inline-size;
+}
+
+.post .card {
+    width: 500px;
+}
+
+@container (min-width: 400px) {
+    .card {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+  

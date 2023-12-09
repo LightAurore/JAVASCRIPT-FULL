@@ -1,0 +1,92 @@
+.monContain {
+  /* Keyword values */
+  contain: none;
+  contain: strict;
+  contain: content;
+  contain: size;
+  contain: inline-size;
+  contain: layout;
+  contain: style;
+  contain: paint;
+
+  /* Multiple keywords */
+  contain: size paint;
+  contain: size layout paint;
+  contain: inline-size layout;
+
+  /* Global values */
+  contain: inherit;
+  contain: initial;
+  contain: revert;
+  contain: revert-layer;
+  contain: unset;
+}
+
+#contained_element-1 {
+  border: 2px solid green;
+  inline-size: 151px;
+  content-visibility: auto;
+
+  /* Keyword values */
+  contain-intrinsic-block-size: none;
+
+  /* <length> values */
+  contain-intrinsic-block-size: 1000px;
+  contain-intrinsic-block-size: 10rem;
+
+  /* auto <length> */
+  contain-intrinsic-block-size: auto 300px;
+  /* -------------------------------------- */
+
+  /* Keyword values */
+  contain-intrinsic-inline-size: none;
+
+  /* <length> values */
+  contain-intrinsic-inline-size: 1000px;
+  contain-intrinsic-inline-size: 10rem;
+
+  /* auto <length> */
+  contain-intrinsic-inline-size: auto 300px;
+}
+
+#contained_element-2 {
+  border: 2px solid green;
+  width: 151px;
+  content-visibility: auto;
+
+  /* -------------------------------------- */
+  /* <length> values */
+  contain-intrinsic-size: 1000px;
+  contain-intrinsic-size: 10rem;
+
+  /* width | height */
+  contain-intrinsic-size: 1000px 1.5em;
+
+  /* auto <length> */
+  contain-intrinsic-size: auto 300px;
+  contain-intrinsic-size: auto none;
+
+  /* auto width | auto height */
+  contain-intrinsic-size: auto 300px auto 4rem;
+  /* -------------------------------------- */
+  /* Keyword values */
+  contain-intrinsic-width: none;
+
+  /* <length> values */
+  contain-intrinsic-width: 1000px;
+  contain-intrinsic-width: 10rem;
+
+  /* auto <length> */
+  contain-intrinsic-width: auto 300px;
+  /* -------------------------------------- */
+
+  /* Keyword values */
+  contain-intrinsic-height: none;
+
+  /* <length> values */
+  contain-intrinsic-height: 1000px;
+  contain-intrinsic-height: 10rem;
+
+  /* auto <length> */
+  contain-intrinsic-height: auto 300px;
+}

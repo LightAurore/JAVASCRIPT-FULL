@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: azure;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 80%;
+  min-height: 50vh;
+
+  margin: 0 auto;
+  padding: 6px;
+}
+
+main > div {
+  padding: 0 12px;
+  background-color: #fff;
+  margin: 12px 0;
+}
+main > div > p {
+  border-radius: 1rem;
+  padding: 1rem;
+}
+main > div .col-1 {
+  column-count: auto; /* auto, nombre  */
+  column-fill: balance; /* auto | balance | balance-all   */
+  column-width: 60%; /* min-content / max-content / auto / nombre  */
+  background-color: salmon;
+}
+main > div .col-2 {
+  column-count: 2; /* auto, nombre  */
+  column-fill: balance; /* auto | balance | balance-all   */
+  column-gap: 24px; /* nombre */
+  column-rule-style: dotted;
+  column-rule-width: 8px;
+  column-rule-color: blue;
+  background-color: salmon;
+  column-span: none; /* all */
+  column-width: 40%; /* min-content / max-content / auto / nombre  */
+}
+main > div .col-3 {
+  column-count: 3; /* auto, nombre  */
+  column-fill: balance; /* auto | balance | balance-all   */
+  column-gap: 24px; /* nombre */
+  column-rule: 5px ridge blue; /* dashed groove inset outset hidden none double ridge */
+  background-color: salmon;
+  column-span: none; /* all */
+  column-width: 40%; /* min-content / max-content / auto / nombre  */
+}
+main > div .col-4 {
+  column-count: 4; /* auto, nombre  */
+  column-fill: balance; /* auto | balance | balance-all   */
+  column-gap: 24px; /* nombre */
+  column-rule-style: dotted;
+  column-rule-width: 8px;
+  column-rule-color: blue;
+  column-rule: thick inset blue;
+  background-color: salmon;
+  column-span: none; /* all */
+  column-width: 40%; /* min-content / max-content / auto / nombre  */
+}
+main > div > .col-5 {
+  border-radius: 1rem;
+  padding: 1rem;
+  min-height: 250px;
+  columns: 5;
+  /* columns: auto 12em; */
+  background-color: salmon;
+}
+main > div > .col-5 > h2 {
+  column-span: all;
+}

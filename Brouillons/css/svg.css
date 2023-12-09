@@ -1,0 +1,9 @@
+svg rect {
+    stroke: pink;
+    stroke-width: 16px;
+  }
+  
+  svg text {
+    fill: pink;
+    text-anchor: middle;
+  }

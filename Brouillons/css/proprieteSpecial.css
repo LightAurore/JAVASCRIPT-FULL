@@ -1,0 +1,64 @@
+:root{
+    color-scheme: normal;
+    color-scheme: light;
+    color-scheme: dark;
+    color-scheme: light dark;
+    color-scheme: only light;
+}
+
+.checkbox {
+  accent-color: #74992e;
+}
+
+select.none {
+  appearance: none;
+}
+
+img {
+  display: inline;
+  width: 200px;
+  border: 2px dashed red;
+  background-color: lime;
+  vertical-align: top;
+
+  aspect-ratio: 3/2 auto;
+}
+
+.box {
+  background-color: rgb(255 255 255 / 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* Classes that will show or hide the
+   three back faces of the "cube" */
+.showbf div {
+  backface-visibility: visible;
+  font: italic 0.6em sans-serif;
+}
+
+.hidebf div {
+  backface-visibility: hidden;
+}
+
+.exampleText {
+  writing-mode: vertical-rl;
+  background-color: yellow;
+  block-size: 200px;
+}
+
+.bouton {
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.top caption {
+  caption-side: top;
+}
+
+.bottom caption {
+  caption-side: bottom;
+}
+
+input.custom {
+  caret-color: red;
+}
