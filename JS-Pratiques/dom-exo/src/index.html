@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exo La manipulation du DOM</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <header></header>
     <main>
         <section class="table--container">
             <h2>Table de multiplication</h2>
-            <p id="table-details"></p>
-            <article>
+            <fieldset>
 
-                <div><label for="multiplicande">Multiplicande : </label><input type="text" id="multiplicande" required></div>
-                <div><label for="multiplicateur">Multiplicateur : </label><input type="text" id="multiplicateur" placeholder="10"></div>
-                <div><button id="multiplier">Multiplier</button></div>
+                <div><label for="multiplicande">Multiplicande : </label><input type="text" id="multiplicande" required>
+                </div>
+                <div><label for="multiplicateur">Multiplicateur : </label><input type="text" id="multiplicateur"
+                        placeholder="10"></div>
+            </fieldset>
+            <div><button id="multiplier">Multiplier</button></div>
+            <article>
+                <p id="table-details"></p>
                 <ul id="table">
-                    
+
                 </ul>
             </article>
         </section>
     </main>
-    <footer></footer>
-    
+
+
 </body>
 <script src="./assets/js/app.js"></script>
+
 </html>

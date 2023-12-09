@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compte à rebours jusqu'à Noël 2023</title>
+</head>
+<body>
+
+<h1>Compte à rebours jusqu'à Noël 2023</h1>
+<p id="countdown"></p>
+
+<script>
+// Définir la date de Noël 2023 (mois en JavaScript commence à 0, donc décembre est 11)
+const christmasDate = new Date(2023, 11, 25).getTime();
+
+// Mettre à jour le compte à rebours toutes les secondes
+const countdownInterval = setInterval(updateCountdown, 1000);
+
+function updateCountdown() {
+  // Obtenir la date et l'heure actuelles
+  const currentDate = new Date().getTime();
+
+  // Calculer la différence entre la date actuelle et la date de Noël
+  const timeDifference = christmasDate - currentDate;
+
+  // Calculer les jours, heures, minutes et secondes restants
+  const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+  // Afficher le compte à rebours dans l'élément avec l'ID "countdown"
+  document.getElementById('countdown').innerHTML = `${days} jours, ${hours} heures, ${minutes} minutes, ${seconds} secondes`;
+
+  // Vérifier si Noël est passé, et si oui, arrêter le compte à rebours
+  if (timeDifference < 0) {
+    clearInterval(countdownInterval);
+    document.getElementById('countdown').innerHTML = "Joyeux Noël !";
+  }
+}
+</script>
+
+</body>
+</html>
