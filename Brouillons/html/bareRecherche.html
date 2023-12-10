@@ -1,0 +1,54 @@
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Moteur de recherche</title>
+        <style>
+            #search-results {
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <label for="search-input">Recherche : </label>
+        <input type="text" id="search-input" oninput="search()" />
+
+        <div id="search-results"></div>
+
+        <script>
+            // Exemple de données
+            const documents = [
+                "JavaScript est un langage de programmation côté client.",
+                "HTML est utilisé pour structurer le contenu web.",
+                "CSS est utilisé pour styliser le contenu web."
+            ];
+
+            function search() {
+                const query = document.getElementById("search-input").value.toLowerCase();
+                const resultsContainer = document.getElementById("search-results");
+                resultsContainer.innerHTML = ""; // Effacer les résultats précédents
+
+                const results = documents.filter(doc => doc.toLowerCase().includes(query));
+
+                if (results.length > 0) {
+                    results.forEach(result => {
+                        const resultElement = document.createElement("p");
+                        resultElement.textContent = result;
+                        resultsContainer.appendChild(resultElement);
+                    });
+                } else {
+                    const noResultsElement = document.createElement("p");
+                    noResultsElement.textContent = "Aucun résultat trouvé.";
+                    resultsContainer.appendChild(noResultsElement);
+                }
+            }
+        </script>
+
+    </body>
+
+    </html>
