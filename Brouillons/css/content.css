@@ -54,9 +54,9 @@ div {
   content: linear-gradient(#639f, #c96a);
 }
 
-/* @supports (content: linear-gradient(#000, #fff) / "alt text") {
+@supports (content: linear-gradient(#000, #fff) / "alt text") {
   #replaced {
     content: repeating-linear-gradient(blue 0, orange 10%) /
       "Gradients and alt text are supported";
   }
-} */
+}

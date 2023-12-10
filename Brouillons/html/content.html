@@ -31,5 +31,11 @@
         </div>
     </main>
 </body>
+<script>
+    const text = "Mbi bara i zu !";
+    const utterance = new SpeechSynthesisUtterance(text);
+
+    window.speechSynthesis.speak(utterance);
+</script>
 
 </html>
