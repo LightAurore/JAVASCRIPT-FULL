@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo La manipulation du DOM</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="user--annif__container">
+            <h3>Veuillez entrez votre date d'anniversaire</h3>
+            <div class="encoder--annif">
+                <div class="date--input"><label for="jour">jour</label><input type="number" id="jour"></div>
+                <div class="date--input"><label for="mois">mois</label><input type="number" id="mois"></div>
+                <div class="date--input"><label for="annee">année</label><input type="number" id="annee"></div>
+            </div>
+            <div class="bouton" >
+                <button id="btn--date__annif">Envoyer</button>
+            </div>
+            <div id="afficher--date__anniversaire">
+                <p id="date__anniversaire"></p>
+                <ul id="trois--prochains__anniversaires"></ul>
+            </div>
+            
+        </section>
+    </main>
+
+
+</body>
+<script src="./assets/js/app.js"></script>
+
+</html>

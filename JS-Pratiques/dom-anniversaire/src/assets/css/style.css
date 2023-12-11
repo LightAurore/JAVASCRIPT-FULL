@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "alamain";
+  src: url("../fonts/alamain/alamain1.ttf");
+}
+@font-face {
+  font-family: "deuxieme_rang";
+  src: url("../fonts/deuxieme_rang/Deuxieme_Rang_Original.otf");
+}
+@font-face {
+  font-family: "ecolier";
+  src: url("../fonts/ecolier/ec.TTF");
+}
+@font-face {
+  font-family: "happy_day_at_school";
+  src: url("../fonts/happy_day_at_school/HappyDayatSchool.ttf");
+}
+@font-face {
+  font-family: "Kanit";
+  src: url("../fonts/Kanit/Kanit-Black.ttf");
+}
+@font-face {
+  font-family: "letter_blocks";
+  src: url("../fonts/letter_blocks/Letter Blocks Demo.otf");
+}
+@font-face {
+  font-family: "Lexend_Deca";
+  src: url("../fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "M_PLUS_1p";
+  src: url("../fonts/M_PLUS_1p/MPLUS1p-Regular.ttf");
+}
+@font-face {
+  font-family: "Mochiy_Pop_One";
+  src: url("../fonts/Mochiy_Pop_One/MochiyPopOne-Regular.ttf");
+}
+@font-face {
+  font-family: "roundabout";
+  src: url("../fonts/roundabout/Roundabout.ttf");
+}
+@font-face {
+  font-family: "scrabbles";
+  src: url("../fonts/scrabbles/Scrabbles.ttf");
+}
+@font-face {
+  font-family: "Shippori_Mincho";
+  src: url("../fonts/Shippori_Mincho/ShipporiMincho-Regular.ttf");
+}
+@font-face {
+  font-family: "Sticky";
+  src: url("../fonts/sticky_memos/Sticky Memos Demo.ttf");
+}
+@font-face {
+  font-family: "Sue_Ellen_Francisco";
+  src: url("../fonts/Sue_Ellen_Francisco/SueEllenFrancisco-Regular.ttf");
+}
+@font-face {
+  font-family: "Sunflower";
+  src: url("../fonts/Sunflower/Sunflower-Medium.ttf");
+}
+@font-face {
+  font-family: "Work_Sans";
+  src: url("../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 48px 12px 0;
+  background-color: #6a89cc;
+}
+body > * {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main > .user--annif__container {
+  display: flex;
+  flex-direction: column;
+  background-color: azure;
+}
+
+section {
+  width: 50%;
+  border-radius: 24px;
+}
+section > h3 {
+  width: 100%;
+  padding-top: 12px;
+  text-align: center;
+  font-family: "Mochiy_Pop_One";
+  text-transform: uppercase;
+}
+section > .encoder--annif {
+  padding: 48px;
+  margin-top: 12px;
+  display: flex;
+}
+
+.date--input {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 6px;
+  font-family: "Mochiy_Pop_One";
+}
+.date--input label {
+  margin-bottom: 6px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+.date--input input {
+  width: 100px;
+  height: 50px;
+  padding: 6px;
+  font-size: 2rem;
+  /* Firefox */
+  -moz-appearance: textfield;
+  /* Chrome */
+  /* Opéra*/
+}
+.date--input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.date--input input::-o-inner-spin-button {
+  -o-appearance: none;
+  margin: 0;
+}
+
+.bouton #btn--date__annif {
+  width: 370px;
+  height: 25px;
+  margin-top: 20px;
+  margin-left: 26px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 0 3px #b0a8b9;
+  background-color: #c34a36;
+}
+
+#afficher--date__anniversaire {
+  padding: 48px;
+  margin: 20px;
+  box-shadow: 0 0 12px #4b4453;
+  border-radius: 12px;
+}
+#afficher--date__anniversaire > p {
+  margin-block: 0 6px;
+  font-size: 1.5rem;
+  padding: 6px;
+  font-family: "M_PLUS_1p";
+  box-shadow: inset 0 0 3px #4ffbdf;
+}
+#afficher--date__anniversaire > ul {
+  display: flex;
+  flex-direction: column;
+}
+#afficher--date__anniversaire > ul > li {
+  list-style: none;
+  padding: 6px;
+}
+
+/*# sourceMappingURL=style.css.map */

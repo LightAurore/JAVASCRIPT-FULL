@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "alamain";
+  src: url("../fonts/alamain/alamain1.ttf");
+}
+@font-face {
+  font-family: "deuxieme_rang";
+  src: url("../fonts/deuxieme_rang/Deuxieme_Rang_Original.otf");
+}
+@font-face {
+  font-family: "ecolier";
+  src: url("../fonts/ecolier/ec.TTF");
+}
+@font-face {
+  font-family: "happy_day_at_school";
+  src: url("../fonts/happy_day_at_school/HappyDayatSchool.ttf");
+}
+@font-face {
+  font-family: "Kanit";
+  src: url("../fonts/Kanit/Kanit-Black.ttf");
+}
+@font-face {
+  font-family: "letter_blocks";
+  src: url("../fonts/letter_blocks/Letter Blocks Demo.otf");
+}
+@font-face {
+  font-family: "Lexend_Deca";
+  src: url("../fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "M_PLUS_1p";
+  src: url("../fonts/M_PLUS_1p/MPLUS1p-Regular.ttf");
+}
+@font-face {
+  font-family: "Mochiy_Pop_One";
+  src: url("../fonts/Mochiy_Pop_One/MochiyPopOne-Regular.ttf");
+}
+@font-face {
+  font-family: "roundabout";
+  src: url("../fonts/roundabout/Roundabout.ttf");
+}
+@font-face {
+  font-family: "scrabbles";
+  src: url("../fonts/scrabbles/Scrabbles.ttf");
+}
+@font-face {
+  font-family: "Shippori_Mincho";
+  src: url("../fonts/Shippori_Mincho/ShipporiMincho-Regular.ttf");
+}
+@font-face {
+  font-family: "Sticky";
+  src: url("../fonts/sticky_memos/Sticky Memos Demo.ttf");
+}
+@font-face {
+  font-family: "Sue_Ellen_Francisco";
+  src: url("../fonts/Sue_Ellen_Francisco/SueEllenFrancisco-Regular.ttf");
+}
+@font-face {
+  font-family: "Sunflower";
+  src: url("../fonts/Sunflower/Sunflower-Medium.ttf");
+}
+@font-face {
+  font-family: "Work_Sans";
+  src: url("../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding-inline: 12px;
+  background-color: #6a89cc;
+}
+body > * {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=style.css.map */
