@@ -36,7 +36,7 @@ btn_date_annif.addEventListener("click", function () {
       }
     }
     // 
-    if (aujourdhui.getDate() == anniversaire.getDate()) {
+    if (aujourdhui.getDate() == anniversaire.getDate() && (aujourdhui.getMonth() == anniversaire.getMonth())) {
       afficher_age.innerText = `Vous avez ${age_utilisateur} ans aujourd'hui, \n Joyeux anniversaire Myster Totot`;
     } else{
       afficher_age.innerText = `Vous avez ${age_utilisateur} ans aujourd'hui!`;
