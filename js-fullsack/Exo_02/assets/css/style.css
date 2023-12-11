@@ -1,0 +1,28 @@
+h1 {
+    color: forestgreen;
+}
+
+
+.dark {
+    background-color: navy;
+    color: hotpink;
+}
+
+.dark h1 {
+    color: gold;
+}
+
+.day-night::after {
+    content: '🎄';
+}
+
+.dark .day-night::after {
+    content: '🎅';
+}
+
+.title-alternate {
+    color: crimson;
+}
+.dark .title-alternate {
+    color: cyan;
+}
