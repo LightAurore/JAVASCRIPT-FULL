@@ -131,7 +131,7 @@ body {
             font-size: 1.8rem;
             font-weight: bolder;
             &:active {
-              animation: 2s btnFiltre 0.2s ease-in-out alternate;
+              animation: 2s btnFiltre 0.01s ease alternate;
             }
           }
         }
@@ -167,6 +167,15 @@ body {
   }
 }
 
+#inputs--name {
+  display: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: yellow;
+  text-align: left;
+}
+
 //
 @keyframes btnFiltre {
   from {
@@ -177,6 +186,7 @@ body {
     transform: rotate(360%);
     outline-color: #c1ebf6;
     outline-offset: 6px;
+    border: 3px solid orange;
   }
   to {
     transform: rotate(0%);

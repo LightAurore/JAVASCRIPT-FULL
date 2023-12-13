@@ -122,7 +122,7 @@ body .global {
   font-weight: bolder;
 }
 .global main .afficher--user .filtre--container .filtrer #btn--filtrer--name:active {
-  animation: 2s btnFiltre 0.2s ease-in-out alternate;
+  animation: 2s btnFiltre 0.01s ease alternate;
 }
 
 .nbr-inscrits {
@@ -151,6 +151,15 @@ body .global {
   background-color: #eff6fa;
 }
 
+#inputs--name {
+  display: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: yellow;
+  text-align: left;
+}
+
 @keyframes btnFiltre {
   from {
     transform: rotate(360%);
@@ -160,6 +169,7 @@ body .global {
     transform: rotate(360%);
     outline-color: #c1ebf6;
     outline-offset: 6px;
+    border: 3px solid orange;
   }
   to {
     transform: rotate(0%);

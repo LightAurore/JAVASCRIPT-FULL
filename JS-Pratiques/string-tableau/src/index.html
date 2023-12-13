@@ -15,6 +15,7 @@
                 <label for="user--name">Entrez votre nom</label>
                 <input type="text" id="user--name">
                 <button id="btn--user--name">Valider</button>
+                <input type="text" id="inputs--name" readonly>
             </section>
             <section class="afficher--user">
                 <aside class="users--inscrits">
@@ -25,9 +26,9 @@
 
                     <select name="" id="filtre--selecteur">
                         <option value="Votre filtre" readonly="true">Faites votre choix</option>
-                        <option value="premier" id="">premier</option>
-                        <option value="dernier" id="">dernier</option>
-                        <option value="quelconque" id="">quelconque</option>
+                        <option value=">" id="">plus de</option>
+                        <option value="==" id="">egal à</option>
+                        <option value="<" id="">moins de</option>
                     </select>
                     <div class="filtrer">
                         <input type="text" id="element-filtre">

@@ -4,7 +4,6 @@ const userName = document.getElementById("user--name");
 const btnValiderNom = document.getElementById("btn--user--name");
 const nombre_inscrits = document.getElementById("nb--users");
 let liste_users_inscrits = document.getElementById("users--inscrits");
-const dernier_user = document.getElementById("inputs--name");
 
 const btnFiltrerNom = document.getElementById("btn--filtrer--name");
 const nombre_filtres = document.getElementById("users--filtres");
@@ -34,11 +33,15 @@ btnValiderNom.addEventListener("click", function () {
   }
 
   const users_alpha_order = liste_eleves.sort();
-  const theLastName =
-    liste_eleves_ordre_entrer[liste_eleves_ordre_entrer.length - 1];
+  /* const users_alpha_order = liste_eleves.sort(function (a, b) {
+    // return a.value - b.value;
+    // return a.localeCompare(b);
+    return a - b;
+  }); */
 
-  dernier_user.value = theLastName;
-  dernier_user.style.display = "block";
+  /* const users_alpha_order = liste_eleves.toSorted(function (a, b) {
+    return a - b;
+  }); */
 
   for (let i = 0; i < users_alpha_order.length; i++) {
     let user = afficherUsers(users_alpha_order[i]);
@@ -60,10 +63,20 @@ btnValiderNom.addEventListener("click", function () {
 // Filtrer
 // Fonctions avec evenement
 btnFiltrerNom.addEventListener("click", function () {
+  console.clear();
   let ma_liste_filtree;
   let nb_filtre = 0;
   liste_a_filtres.innerHTML = "";
   nombre_filtres.innerText = "";
+
+  const theLastName =
+    liste_eleves_ordre_entrer[liste_eleves_ordre_entrer.length - 1];
+
+  const element_filtre_selection = liste_eleves_ordre_entrer.filter(function (
+    name
+  ) {
+    return name.length <= parseInt(elements_filtres.value);
+  });
 
   let op = document.getElementById("filtre--selecteur");
 
@@ -95,6 +108,7 @@ btnFiltrerNom.addEventListener("click", function () {
     }
   }
 
+  console.log(theLastName);
   if (liste_eleves_ordre_entrer.length > 0) {
     //   users_inscrits
     nombre_filtres.classList.add("nbr-inscrits");
