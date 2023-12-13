@@ -15,6 +15,7 @@ body {
 }
 body .global {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 90%;
@@ -123,6 +124,19 @@ body .global {
 }
 .global main .afficher--user .filtre--container .filtrer #btn--filtrer--name:active {
   animation: 2s btnFiltre 0.01s ease alternate;
+}
+
+.titre-page {
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  background-clip: text;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 6rem;
+  text-emphasis-position: under left;
+  text-emphasis: double-circle red;
+  text-rendering: geometricPrecision;
+  color: transparent;
+  word-spacing: 1cm;
+  letter-spacing: 12px;
 }
 
 .nbr-inscrits {
