@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo les Tableaux</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="global">
+        <header>
+            <h1 class="titre-page">La liste des stagiaires</h1>
+        </header>
+        <main>
+            <section class="input--name">
+                <label for="user--name">Entrez votre nom</label>
+                <input type="text" id="user--name">
+                <button id="btn--user--name">Valider</button>
+                <input type="text" id="inputs--name" readonly>
+            </section>
+            <section class="afficher--user">
+                <aside class="users--inscrits">
+                    <h3 id="nb--users"></h3>
+                    <ul id="users--inscrits"></ul>
+                </aside>
+                <div class="filtre--container">
+
+                    <select name="" id="filtre--selecteur">
+                        <option value="Votre filtre" readonly="true">Faites votre choix</option>
+                        <option value=">" id="">plus de</option>
+                        <option value="==" id="">egal à</option>
+                        <option value="<" id="">moins de</option>
+                    </select>
+                    <div class="filtrer">
+                        <input type="text" id="element-filtre">
+                        <button id="btn--filtrer--name">filtrer</button>
+                    </div>
+                </div>
+                <article class="nb--users__filter">
+                    <h3 id="users--filtres"></h3>
+                    <ul id="users--filter"></ul>
+                </article>
+            </section>
+        </main>
+    </div>
+
+</body>
+<script src="./js/app.js"></script>
+
+</html>

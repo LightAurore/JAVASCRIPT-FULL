@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - Manipulation du DOM</title>
+
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+    <h1>Manipulation du DOM</h1>
+    <h2>Modifier une page</h2>
+    <ul>
+        <li>Création d'element</li>
+        <li>Obtenir les elements enfants d'une balise</li>
+        <li>Ajouter et supprimer des elements</li>
+        <ul>
+            <li>Methode ES5</li>
+            <li>Nouvelle méthode</li>
+        </ul>
+    </ul>
+    
+    <h2>Demo</h2>
+    <div id="zone-demo">
+        <h3>Personnes</h3>
+        <ul id="people">
+            <li class="duck">Della Duck</li>
+            <li class="duck">Balthazar Picsou</li>
+            <li class="student">Tom Bik</li>
+            
+            <li class="duck" id="remove-this">Gontran Bonheur</li>
+            <li class="student">Naïm Saïdi</li>
+            <li class="duck">Zaza Vanderquack</li>
+        </ul>
+
+        <h3>Fruits</h3>
+        <ul id="fruits">
+            <li>Pomme</li>
+        </ul>
+
+        <h3>Input</h3>
+        <div>
+            <label for="input-firstname">Firstname : </label>
+            <input id="input-firstname" type="text">
+        </div>
+        <div>
+            <!-- ↓ A évité! Merci d'avance ♥ -->
+            <label>
+                Lastname : 
+                <input type="text">
+            </label>
+        </div>
+    </div>
+</body>
+</html>
