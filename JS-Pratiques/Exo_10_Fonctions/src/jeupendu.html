@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 10 : Jeu du Pendu</title>
+    <link rel="stylesheet" href="./assets/css/pendustyle.css">
+</head>
+
+<body>
+    <header>
+        <h1>JEU DU PENDU</h1>
+        <section class="jouer--container">
+            <div class="jouer--stop">
+                <button id="jouer">jouer</button>
+                <button id="stop">Stop</button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="mot--container">
+            <article class="mot--proposer">
+                <div class="mot">
+                    <p>Le mot à trouver : </p>
+                    <div id="mot-a-trouver">
+
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>essai 1</th>
+                            <th>essai 2</th>
+                            <th>essai 3</th>
+                            <th>essai 4</th>
+                            <th>essai 5</th>
+                            <th>essai 6</th>
+                            <th>essai 7</th>
+                            <th>essai 8</th>
+                            <th>essai 9</th>
+                            <th>essai 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>h</td>
+                            <td>l</td>
+                            <td>m</td>
+                            <td>n</td>
+                            <td>o</td>
+                            <td>p</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>
+                                <p id="">Nombre de tentatives restantes : </p>
+                                <span></span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+            <article id="pendu--container">
+
+            </article>
+        </section>
+        <section class="lettres--proposition__container">
+            <div class="label">Entrez votre proposition : </div>
+            <input type="text" id="lettre-proposition">
+        </section>
+    </main>
+
+</body>
+<script type="module" src="./assets/js/jeudupendu.js"></script>
+
+</html>

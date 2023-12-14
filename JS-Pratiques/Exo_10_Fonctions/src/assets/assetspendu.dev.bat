@@ -1,0 +1,1 @@
+npx tailwindcss -i ./scss/pendu.css -o ./css/pendustyle.css --watch
