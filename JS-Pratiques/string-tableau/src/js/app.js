@@ -32,8 +32,10 @@ btnValiderNom.addEventListener("click", function () {
     liste_eleves_ordre_entrer.push(userName.value.toLowerCase());
     liste_eleves.push(userName.value.toLowerCase());
   }
-
-  const users_alpha_order = liste_eleves.sort();
+// ordre alphabetique
+  // const users_alpha_order = liste_eleves.sort();
+  const users_alpha_order = liste_eleves.sort((a, b) => a.localeCompare(b, "fr", { ignorePunctuation: true }));
+  
   const theLastName =
     liste_eleves_ordre_entrer[liste_eleves_ordre_entrer.length - 1];
 
@@ -103,3 +105,20 @@ btnFiltrerNom.addEventListener("click", function () {
     } trouvé${nb_filtre > 1 ? "s" : ""}.`;
   }
 });
+
+
+function caracterePresent(){
+  let user_join = liste_eleves_ordre_entrer.join("");
+  console.log(user_join);
+
+  let nb_char_array = new Array();
+  for (let i = 0; i < user_join.length; i++) {
+    user_join.forEach((car) =>{
+      user_join[i]
+    } )
+    
+  }
+
+}
+
+caracterePresent();

@@ -1,0 +1,12 @@
+section {
+    width: 80%;
+    margin: auto;
+
+    border : 1px solid rgb(71, 66, 66);
+    border-radius: 1rem;
+
+    margin-bottom: 1rem;
+
+    padding: 1rem 2rem;
+}
+

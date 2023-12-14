@@ -58,7 +58,7 @@ body .global {
   border: none;
   background-image: linear-gradient(#0e0190, #938274, #1c0221);
   color: azure;
-  box-shadow: 5px 5px 2px #0000ff, 0px 10px 2px rgb(28, 100, 93);
+  box-shadow: 5px 5px 2px 1px #0000ff, 0px 10px 2px rgb(28, 100, 93);
   align-self: center;
   margin-block: 12px;
   font-weight: bolder;
