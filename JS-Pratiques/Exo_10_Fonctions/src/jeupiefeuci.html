@@ -10,7 +10,80 @@
 </head>
 
 <body>
+    <header>
+        <h1>
+            Bienvenu au relativement meilleur <strong>Pierre Feuille Ciseaux </strong> en toute objectivité
+        </h1>
+        <button id="jouer">jouer</button>
+    </header>
+    <main>
+        <section class="score-container">
+            <div class="score--box">
+                <span id="score-player">0</span>
+                <div name="" id="use-choice">
+                    <button value="pierre" selected><img src="./ressources/images/pierre.PNG" alt="pierre"></button>
+                    <button value="feuille"><img src="./ressources/images/feuille.PNG" alt="feuille"></button>
+                    <button value="ciseaux"><img src="./ressources/images/ciseaux.PNG" alt="ciseaux"></button>
+                </div>
+            </div>
+            <div id="resultat">victoire</div>
 
+            <div class="score--box">
+                <div id="computer-choice">
+                    <img src="./ressources/images/chifomi.png"/>
+                </div>
+                <span id="score-computer">0</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Règles du jeu : </h2>
+            <p>Cliquez sur des images pour jouer</p>
+            <div>
+                <figure>
+                    <img src="./ressources/images/pierre.PNG" alt="pierre">
+                    <figcaption>Pierre</figcaption>
+                </figure>
+                <p>
+                    La Pierre écrase les Ciseaux
+                </p>
+            </div>
+            <div>
+                <figure>
+                    <img src="./ressources/images/feuille.PNG" alt="feuille">
+                    <figcaption>Feuille</figcaption>
+                </figure>
+                <p>
+                    La Feuille enrobe la Pierre
+                </p>
+            </div>
+            <div>
+                <figure>
+                    <img src="./ressources/images/ciseaux.PNG" alt="ciseaux">
+                    <figcaption>Ciseaux</figcaption>
+                </figure>
+                <p>
+                    Les Ciseaux coupent la feuille
+                </p>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section class="stat">
+            <h2>Les statistiques de scores</h2>
+            <article class="flex flex-row" >
+                <div class="flex flex-col">
+                    <span>Score du player</span>
+                    <span id="user--stat"></span>
+                </div>
+                <div>
+                    <span>Score du pc</span>
+                    <span id="pc--stat"></span>
+                </div class="flex flex-col">
+            </article>
+        </section>
+    </main>
 </body>
+<script src="./assets/js/pierrepapier.js"></script>
 
 </html>

@@ -1,1 +1,1 @@
-sass --watch ./scss/piefeuci.scss -o  ./css/ppcstyle.css
+npx tailwindcss -i ./scss/piefeuci.css -o ./css/ppcstyle.css --watch
