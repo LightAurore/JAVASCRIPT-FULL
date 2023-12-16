@@ -1,0 +1,13 @@
+.reveal {
+  display: inline;
+  color: #cccccc;
+  background-image: linear-gradient(#cccccc, #cccccc);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 100% 100%;
+  transition: background-size 1000ms, color 700ms;
+}
+div:hover .reveal {
+  color: #121212;
+  background-size: 0% 100%;
+}
