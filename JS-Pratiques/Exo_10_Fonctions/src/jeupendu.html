@@ -24,11 +24,15 @@
             <article class="mot--proposer">
                 <div class="mot">
                     <p>Le mot à trouver : </p>
-                    <div id="mot-a-trouver">
+                    <div id="lettres-du-mot">
 
                     </div>
                 </div>
-                <table>
+                <div class="lettres--proposition__container">
+                    <h2 class="label">Entrez votre proposition : </h2>
+                    <input type="text" id="lettre-proposition" disabled>
+                </div>
+                <!-- <table>
                     <thead>
                         <tr>
                             <th>essai 1</th>
@@ -77,16 +81,21 @@
                             </td>
                         </tr>
                     </tfoot>
-                </table>
+                </table> -->
             </article>
-            <article id="pendu--container">
+            <article class="pendu" id="pendu--container">
+                <div id="poteau"><img src="./assets/pendu/poteau.png" alt=""></div>
+                <div id="tete"><img src="./assets/pendu/tete.png" alt=""></div>
+                <div id="tronc"><img src="./assets/pendu/tronc.png" alt=""></div>
+                <div id="bras-gauche"><img src="./assets/pendu/bras-g.png" alt=""></div>
+                <div id="bras-droit"><img src="./assets/pendu/bras-d.png" alt=""></div>
+                <div id="jambe-gauche"><img src="./assets/pendu/jambe-g.png" alt=""></div>
+                <div id="jambe-droite"><img src="./assets/pendu/jambe-d.png" alt=""></div>
+                <div id="herbes"><img src="./assets/pendu/herbes.png" alt=""></div>
 
             </article>
         </section>
-        <section class="lettres--proposition__container">
-            <div class="label">Entrez votre proposition : </div>
-            <input type="text" id="lettre-proposition">
-        </section>
+        
     </main>
 
 </body>
