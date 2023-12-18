@@ -22,64 +22,63 @@
   }
 }
 
-/* Header */
-.jouer--container {
-  @apply w-full h-full flex justify-center items-center bg-amber-400;
-}
-.jouer--stop {
-  @apply flex justify-center items-center w-full h-full;
-}
-#jouer {
-  @apply w-36 h-12 mr-6 border text-2xl text-sky-500 font-semibold font-sans rounded-3xl bg-green-400;
-}
-#stop {
-  @apply w-36 h-12 border text-2xl text-sky-500 font-semibold font-sans rounded-3xl bg-green-400;
-}
-
-
-/* main */
-.mot--container {
-  @apply grid grid-cols-2 gap-5 p-10 border border-orange-950;
-}
-
-.mot--container > *{
-  @apply w-full h-full;
-}
-
-.mot--proposer {
-  @apply flex flex-col ;
-
-}
-.mot--proposer > *{
-  @apply my-7;
-}
-.lettre {
-  @apply w-12 h-12 my-1.5 p-1.5 bg-sky-400 text-xl;
-
-}
-
-#lettres-du-mot{
-  @apply flex mt-4;
-
-  span{
-    @apply block text-center mx-1 w-8 p-2 bg-gray-400 opacity-50 text-lg rounded rounded-lg;
+@layer components {
+  /* Header */
+  .jouer--container {
+    @apply w-full h-full flex justify-center items-center bg-amber-400;
   }
-}
-
-/* input lettre */
-#lettre-proposition{
-  @apply w-24 h-24 text-5xl p-6 outline-none border-none rounded rounded-md-full caret-orange-700 text-orange-700;
-}
-
-#pendu--container {
-  @apply relative h-[550px] w-full;
-
-  div img {
-    @apply absolute w-full h-auto;
+  .jouer--stop {
+    @apply flex justify-center items-center w-full h-full;
   }
-}
+  #jouer {
+    @apply w-36 h-12 mr-6 border text-2xl text-sky-500 font-semibold font-sans rounded-3xl bg-green-400;
+  }
+  #stop {
+    @apply w-36 h-12 border text-2xl text-sky-500 font-semibold font-sans rounded-3xl bg-green-400;
+  }
 
-.partie-display{
-  display: block;
-  visibility: visible !important;
+  /* main */
+  .mot--container {
+    @apply grid grid-cols-2 gap-5 p-10 border border-orange-950;
+  }
+
+  .mot--container > * {
+    @apply w-full h-full;
+  }
+
+  .mot--proposer {
+    @apply flex flex-col;
+  }
+  .mot--proposer > * {
+    @apply my-7;
+  }
+  .lettre {
+    @apply w-12 h-12 my-1.5 p-1.5 bg-sky-400 text-xl;
+  }
+
+  #lettres-du-mot {
+    @apply flex mt-4;
+
+    span {
+      @apply block text-center mx-1 w-8 p-2 bg-gray-400 opacity-50 text-lg rounded rounded-lg;
+    }
+  }
+
+  /* input lettre */
+  #lettre-proposition {
+    @apply w-24 h-24 text-5xl p-6 outline-none border-none rounded rounded-md-full caret-orange-700 text-orange-700;
+  }
+
+  #pendu--container {
+    @apply relative h-[550px] w-full;
+
+    div img {
+      @apply absolute w-full h-auto;
+    }
+  }
+
+  .partie-display {
+    display: block;
+    visibility: visible !important;
+  }
 }
