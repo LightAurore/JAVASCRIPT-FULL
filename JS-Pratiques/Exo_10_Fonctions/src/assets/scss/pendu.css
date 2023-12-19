@@ -72,6 +72,7 @@
   #pendu--container {
     @apply relative h-[550px] w-full;
 
+<<<<<<< HEAD
     div img {
       @apply absolute w-full h-auto;
     }
@@ -80,5 +81,9 @@
   .partie-display {
     display: block;
     visibility: visible !important;
+=======
+  span{
+    @apply block text-center mx-1 w-8 p-2 bg-gray-400 opacity-50 text-lg text-gray-50 font-bold rounded rounded-xl;
+>>>>>>> dd8ae51c558d2963215843c7b171cdfb457b2191
   }
 }

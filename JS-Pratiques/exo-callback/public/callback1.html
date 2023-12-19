@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Les personnages de la série</title>
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <aside>
+      <div class="filtrer">
+        <button><img src="./assets/illustrations/filter.svg" alt=""></button>
+      </div>
+      <article>
+        <div>
+          <select name="" id="filtrer-divers">
+            <option value="" readonly>Faites votre choix ...</option>
+            <option value="a-z">A - Z</option>
+            <option value="z-a">Z - A</option>
+            <option value=">">Plus de</option>
+            <option value="==">Egale à</option>
+            <option value="<">Moins de</option>
+            <option value="une-lettre"><input type="text" id="lettre-input"></option>
+          </select>
+        </div>
+        <div class="px-5">
+          <button id="btn-letter" class="btn btn-primary m-2">lettre Z</button>
+          <button id="btn-lettre-same" class="btn btn-primary m-5">Plusieur ettre identique</button>
+          <button id="btn-lettre-unique" class="btn btn-primary m-5">La première lettre unique</button>
+        </div>
+      </article>
+      
+    </aside>
+    <main>
+      <h2>Mes personnages</h2>
+      <ul class="liste--personnage__container">
+        <li id="della">
+          <figure>
+            <img src="./assets/images/della.png" alt="">
+            <figcaption id="della-name"></figcaption>
+          </figure>
+          </li>
+          <li>
+          <figure id="balthazar">
+            <img src="./assets/images/balthazar.png" alt="">
+            <figcaption id="balthazar-name"></figcaption>
+          </figure>
+          </li>
+          <li>
+          <figure id="zaza">
+            <img src="./assets/images/zaza.png" alt="">
+            <figcaption id="zaza-name"></figcaption>
+          </figure>
+          </li>
+          <li>
+          <figure id="gontran">
+            <img src="./assets/images/gontran.png" alt="">
+            <figcaption id="gontran-name"></figcaption>
+          </figure>
+          </li>
+          <li>
+          <figure id="riri">
+            <img src="./assets/images/riri.png" alt="">
+            <figcaption id="riri-name"></figcaption>
+          </figure>
+        </li>
+      </ul>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="./src/js/filtre.js"></script>
+  <script src="./dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
