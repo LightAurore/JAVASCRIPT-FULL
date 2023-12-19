@@ -95,7 +95,7 @@ stopPlaying.addEventListener("click", () => {
 lettreProposition.addEventListener("change", function () {
 
   arrayProps.push(lettreProposition.value);
-  motArray = arrayProps.join('');
+  
 
   let proposition = mot_a_trouver.normalize("NFD").replace(/[\u0300-\u036f]/g, '');
 
@@ -103,14 +103,15 @@ lettreProposition.addEventListener("change", function () {
     let result = proposition.split("");
     let i = 0;
 
-    if(!proposition.includes(lettreProposition.value)){
-       
+    if(!saveLetters.includes(lettreProposition.value)){
       result.forEach((char) => {
       if (char == lettreProposition.value) {
+        
         const target = lettres_container.querySelectorAll("span")[i];
         target.innerText = mot_a_trouver[i];
         array[i] = mot_a_trouver[i];
         saveLetters = array.join('');
+          
         if(saveLetters == mot_a_trouver){
           alert("mot trouver");
           startToPlay.disabled = true;
@@ -119,17 +120,21 @@ lettreProposition.addEventListener("change", function () {
       }
       i -= -1;
       });
+
     }else{
-      alert("lettre déjà présente");
-    }
-    
+            alert("lettre déjà présente");
+          }
     console.log(result === mot_a_trouver);
   }else{
-    if(!motArray.includes(lettreProposition.value)){
+    if(motArray.includes(lettreProposition.value)){
       alert("lettre déjà proposée")
     }else{
       nbr_erreur -=- 1;
+      if(nbr_erreur >= 6){
+        alert("Tu as perdu !")
+      }
     }
+    motArray = arrayProps.join('');
     /* --------------------------------------- */
     // pendu, ajouter les parties
     if(nbr_erreur == 1){

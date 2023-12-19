@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 80%;
+  margin: 24px auto 0;
+}
+
+section {
+  display: flex;
+}
+section:not(:first-child) {
+  margin-top: 100px;
+}
+section > * {
+  margin-inline: 12px 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
