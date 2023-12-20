@@ -1,0 +1,80 @@
+.cartes {
+  background: conic-gradient(at 62.5% 12.5%, #3c3618 25%, #0000 0)
+      calc(44px / -8) calc(44px / 2),
+    conic-gradient(at 62.5% 12.5%, #3c3618 25%, #0000 0) calc(-3 * 44px / 8)
+      calc(44px / 4),
+    conic-gradient(at 87.5% 62.5%, #3c3618 25%, #0000 0) calc(3 * 44px / 8)
+      calc(44px / 4),
+    conic-gradient(at 87.5% 62.5%, #3c3618 25%, #0000 0) calc(44px / -8) 0,
+    conic-gradient(at 25% 12.5%, #3c3618 25%, #0000 0) 0 calc(44px / -4),
+    conic-gradient(at 25% 12.5%, #3c3618 25%, #0000 0) calc(44px / -4) 0,
+    conic-gradient(at 87.5% 87.5%, #3c3618 25%, #0000 0) calc(44px / 8) 0
+      #b4d6c8;
+  background-size: 44px 44px;
+}
+
+.cartes-1 {
+  background-image: linear-gradient(
+      30deg,
+      #15607f 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #15607f 87.5%,
+      #15607f
+    ),
+    linear-gradient(
+      150deg,
+      #15607f 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #15607f 87.5%,
+      #15607f
+    ),
+    linear-gradient(
+      30deg,
+      #15607f 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #15607f 87.5%,
+      #15607f
+    ),
+    linear-gradient(
+      150deg,
+      #15607f 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #15607f 87.5%,
+      #15607f
+    ),
+    linear-gradient(
+      60deg,
+      rgba(21, 96, 127, 0.5) 25%,
+      transparent 25.5%,
+      transparent 75%,
+      rgba(21, 96, 127, 0.5) 75%,
+      rgba(21, 96, 127, 0.5)
+    ),
+    linear-gradient(
+      60deg,
+      rgba(21, 96, 127, 0.5) 25%,
+      transparent 25.5%,
+      transparent 75%,
+      rgba(21, 96, 127, 0.5) 75%,
+      rgba(21, 96, 127, 0.5)
+    );
+  background-size: 52px 91px;
+  background-position: 0 0, 0 0, 26px 45.5px, 26px 45.5px, 0 0, 26px 45.5px;
+  background-color: #9fcaee;
+}
+
+.cartes-2 {
+  background: linear-gradient(315deg, transparent 75%, #1ca7ed 0)-13px 0,
+    linear-gradient(45deg, transparent 75%, #1ca7ed 0) 13px 0,
+    linear-gradient(135deg, #0c6897 50%, transparent 0) 0 0,
+    linear-gradient(45deg, #084868 50%, #042739 0) 0 0 #042739;
+  background-size: 26px 26px;
+}
+
+.carte-dos {
+  width: calc(100% / 6);
+}

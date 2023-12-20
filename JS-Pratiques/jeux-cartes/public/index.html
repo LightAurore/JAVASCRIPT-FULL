@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeu des paires</title>
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body class="d-flex flex-column align-items-center min-vh-100 w-100 bg-primary-subtle">
+    <header class="w-100 h-25">
+        <h1 class="text-info text-center ">Jeu des paires</h1>
+    </header>
+
+    <main class="container w-75 min-vh-50 border bg-danger">
+        <section id="cards-container" class="d-flex flex-wrap w-100">
+            <article id="card-1 w-25 h-25">
+                <!-- Force next columns to break to new line at md breakpoint and up -->
+                <div class="w-100 d-none d-md-block"></div>
+                <img class="w-100 img-fluid rounded-3 m-1 carte-dos" src="./src/images/dos-carte.jpeg"
+                    alt="Dos de carte">
+            </article>
+        </section>
+    </main>
+
+</body>
+<script src="./dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="./src/js/app.js"></script>
+
+</html>
