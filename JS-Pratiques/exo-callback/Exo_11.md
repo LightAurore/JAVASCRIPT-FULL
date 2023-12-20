@@ -25,10 +25,6 @@ Les différents scenarii à l'aide de bouton qui déclance la fonction avec son 
 Mettre en place un algorithme de trie dans une fonction.
 La fonction devra recevoir un callback qui permet de spécifier comment comparer les éléments
 
-Libre a vous de choisir l'algo à implémenté : https://fr.wikipedia.org/wiki/Algorithme_de_tri
-
-BONUS : Implémenter le « Tri fusion »
-
 ## 3) Réaliser une fonction qui permet d'effectuer le trie d'une collection d'élément
 Mettre en place un algorithme de trie dans une fonction.
 La fonction devra recevoir un callback qui permet de spécifier comment comparer les éléments
