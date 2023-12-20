@@ -1,6 +1,6 @@
 'use strict';
 
-const mots = ['quinze','stylo','tasse','vague','xérès','yogi','zeste','pomme','quatuor','roi','terre','un','vin','zéro'];
+const mots = ['vague','pomme','xérès','quinze','stylo','yogi','zeste','tasse','quatuor','roi','terre','un','vin','zéro'];
 
 // dom
 const btn_tri = document.getElementById('btn-trier');
@@ -17,28 +17,32 @@ const liste_resultat = document.getElementById('resultat');
  */
 
 function TriParLettre(strA, strB){
-    let a = strA.split(''); // copy et spliter
-    let b = strB.split('');
-    let _isOrderAlpha = true;
+    // let a = strA.split(''); // copy et spliter
+    // let b = strB.split('');
+    let _isOrderAlpha = false;
+
+    let iter = (strA.length > strB.length) ? strB.length : strA.length;
   
     let i = 0;
-    // console.log(a[i],b[i]);
-    do{
-        if((a[i] == b[i])){
-            console.log('ll : ' + a[i] + " " + b[i]);
-            console.log();
-            if(a[i + 1] > b[i + 1]){
-                _isOrderAlpha = false;
-            }else if((a[i + 1] == b[i + 1])){
-                _isOrderAlpha = true;
-            }
+    while( i < iter) {
+        
+        let sA = strA.charCodeAt(i);
+        let sB = strB.charCodeAt(i);
+        
+        if(sA > sB){
+             return _isOrderAlpha = false;
+        }
+        else if(sA == sB){
             i++;
-            
-        }else if((a[i] > b[i])){
-            _isOrderAlpha = false;
+        }
+        else{
+            _isOrderAlpha = true;
+            return _isOrderAlpha;
         }
         
-    }while(i < (a.length >= b.length) ? b.length : a.length || (a[i] == b[i])) 
+        
+    }
+
     return _isOrderAlpha;
   }
 
@@ -50,34 +54,40 @@ function TriParLettre(strA, strB){
    */
   function TriAZ(array){
     const result = [...array]; // copy
-    for(let i = 0; i < result.length - 1; i++){
-      let j = 0;
-      let a = result[i];
-      let b = result[i + 1];
 
-      console.log(a,b)
-      
-      if(TriParLettre(a, b) == false){
-          console.log('ok');
-          console.log(result[i], result[i + 1]);
-          [result[i], result[i + 1]] = [ b, a];
-          console.log(result[i], result[i + 1]);
+    for (let j = 0; j < array.length; j++) {
+        for(let i = 0; i < result.length - 1; i++){
+          let a = result[i];
+          let b = result[i + 1];
+          
+          if(TriParLettre(a, b) == false){
+              result[i]  = result[i + 1];
+              result[i + 1] = a;
+            }else{
+    
+            }
         }
-        console.log(result[i], result[i + 1]);
-      
     }
+
     return result;
   }
   
- 
-  console.log("lettre par lettre " + TriParLettre('strB', 'strA'));
-  console.log(mots);
 //   TriAZ(mots);
 
 
+console.log(mots);
 //   btn event
 
-btn_tri.addEventListener('click',() => {
-    console.log("clicker");
-    console.log(TriAZ(mots));
+btn_tri.addEventListener('mouseout',() => {
+    const listeAlphabetic = TriAZ(mots);
+    liste_resultat.innerHTML = "";
+
+    setTimeout(() => {
+        for (let k = 0; k < listeAlphabetic.length; k++) {
+        const html_li = document.createElement('li');
+        html_li.innerText = listeAlphabetic[k];
+        liste_resultat.append(html_li);
+    }
+    }, 5000);
+    
 })
