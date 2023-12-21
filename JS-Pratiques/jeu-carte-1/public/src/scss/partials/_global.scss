@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    @include flex-col-centrer;
+    background-color: $bgc-principale;
+
+    width: 100%;
+    height: 100vh;
+
+    & > *{
+        width: 100%;
+    }
+}
+// Header
+header{
+    @include flex-col-centrer;
+    height: 170px;
+    background-color:lighten($color: #1a1b1c50, $amount: 70) ; // $bgc-principale
+
+    figure{
+        display: flex;
+        place-content: center;
+        width: 50%;
+        margin: 12px auto 0;
+        
+
+        img{
+            display: block;
+            width: 100px;
+            filter: drop-shadow(0 0 10px black);
+        }
+
+        h1{
+            color: $color-h1;
+            font-size: 4rem;
+        }
+    }
+}
+
+// Main
+main{
+    @include flex-col-centrer;
+    width: 80%;
+    padding: 12px;
+    margin: 6px auto;
+    flex:1;
+    border: 5px solid turquoise;
+    
+    
+    & > section:nth-child(3),& > section:nth-child(1){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: red;
+        height: 50px;
+        width: 100%;
+        padding: 6px 24px;
+    }
+    & > section:nth-child(2){
+        position: relative;
+        min-height: 50vh;
+        flex: 1;
+
+        & > article{
+            width: 100%;
+            // min-height: 100%;
+            flex: 1;
+        }
+
+        & > div{
+            position: absolute;
+            display: none;
+            inset: 50%;
+            transform: translate(-50%,-50%);
+
+            height: 50px;
+            width: 250px;
+        }
+
+    }
+
+    & > section:nth-child(3){
+        justify-content: space-evenly;
+    }
+    
+}
+
+// Footer
+footer{
+    height: 50px;
+    background-color: darken($color: #1a1b1c50, $amount: 70);
+    color: bisque;
+    text-align: center;
+    padding-block: calc(20px / 2);
+}
+
+// Classe pour javascript
+
+.diplay{
+    display: block;
+}
+.no-diplay{
+    display: block;
+}
+

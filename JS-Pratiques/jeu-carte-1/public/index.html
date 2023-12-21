@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Jeu des paires</title>
+    <link rel="stylesheet" href="./dist/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <figure>
+        <img src="./assets/images/logo-1.png" />
+      </figure>
+      <h1>JEU DES PAIRES</h1>
+    </header>
+    <main>
+      <section>
+        <div class="niveau-contenair">
+          <span>Niveau : </span>
+          <span id="niveau">Moyen</span>
+        </div>
+        <div class="score-contenair">
+          <span>Votre score : </span>
+          <span id="score">0</span>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <select name="niveau" id="niveaux">
+            <option value="" aria-readonly="true" selected>
+              Choisir un niveau
+            </option>
+            <option value="1">Faible</option>
+            <option value="2">Moyen</option>
+            <option value="3">Fort</option>
+          </select>
+          <button>Jouer</button>
+          <button>Arrêter</button>
+        </div>
+
+        <article id="cartes-container"></article>
+        
+        <div>
+          <button>Rejouer</button>
+          <button>Réinitialiser</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="erreur-contenair">
+          <span>Erreur : </span>
+          <span id="erreur">0</span>
+        </div>
+        <div class="coups-container">
+          <span>Coups : </span>
+          <span id="coups">0</span>
+        </div>
+        <div class="temps-container">
+          <span>temps : </span>
+          <span id="temps-min">00</span>
+          <span id="temps-sec">00</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        "Créer, c'est dépasser les fondements confortables de la discipline
+        scientifique que nous pratiquons tous les jours."
+        <cite>Alexander Grothendieck</cite>
+      </p>
+    </footer>
+  </body>
+  <script src="./dist/js/game.js"></script>
+</html>
