@@ -13,7 +13,6 @@ function Random_Image(nbCarte) {
   const MAX = nbCarte;
   const MIN = 1;
   const random_nbr = Math.floor(Math.random() * (MAX - MIN)) + MIN;
-  //   console.log(random_nbr);
 
   return random_nbr;
 }
@@ -43,21 +42,14 @@ function Generer_Cartes(niveau = 2, parentNode) {
     if (i < nb_carte[niveau - 1] / 2) {
       img_index = Random_Image(nb_carte[niveau - 1]);
 
-      //   console.log(img_index_tb.has(img_index));
-
       while (img_index_tb.has(img_index)) {
         img_index = Random_Image(nb_carte[niveau - 1]);
       }
 
       img_index_tb.add(img_index);
-
-      //   console.log(img_index);
-      //   console.log(img_index_tb);
     } else {
-      //   console.log(img_index_tb);
       const tb_index = [];
       img_index_tb.forEach((elem, index) => {
-        // console.log("index de set : " + index);
         tb_index.push(index);
       });
 
@@ -90,8 +82,12 @@ function Retourner_Cartes(nodeArray) {
   let count = 1;
 
   cartes.forEach((carte, index) => {
-    if (!carte.disabled) {
-      carte.addEventListener("click", () => {
+    carte.addEventListener("click", () => {
+        if (carte.disabled) {
+          console.log('disabled');
+          return;
+        }
+
         carte.childNodes[1].classList.add("display");
         carte.childNodes[3].classList.add("no-display");
         carte.disabled = true;
@@ -108,8 +104,7 @@ function Retourner_Cartes(nodeArray) {
             cartes[index].disabled = false;
             cartes[indexCarte[indexCarte.length - 2]].disabled = false;
             setTimeout(() => {
-              // console.log(index, indexCarte[indexCarte.length - 2], count);
-              cartes[index].childNodes[1].classList.remove("display");
+               cartes[index].childNodes[1].classList.remove("display");
               cartes[index].childNodes[3].classList.remove("no-display");
               cartes[
                 indexCarte[indexCarte.length - 2]
@@ -124,9 +119,6 @@ function Retourner_Cartes(nodeArray) {
           }
         }
       });
-    } else {
-      console.log(carte.disabled);
-    }
   });
 
   Changer_ordre(cartes);

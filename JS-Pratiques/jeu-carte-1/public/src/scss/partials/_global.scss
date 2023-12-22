@@ -55,7 +55,7 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: red;
+        background-color: orange;
         height: 50px;
         width: 100%;
         padding: 6px 24px;
@@ -63,6 +63,7 @@ main{
     & > section:nth-child(2){
         position: relative;
         min-height: 50vh;
+        width: 100%;
         flex: 1;
 
         & > article{
@@ -104,6 +105,6 @@ footer{
     display: block;
 }
 .no-diplay{
-    display: block;
+    display: none;
 }
 
