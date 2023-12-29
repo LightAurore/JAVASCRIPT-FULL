@@ -1,0 +1,12 @@
+$btn-font: sans-serif;
+
+@mixin btn {
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+@mixin btn-success {
+  @include btn;
+  background-color: green;
+}

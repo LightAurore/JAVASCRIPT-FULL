@@ -1,0 +1,18 @@
+@use "./main.scss";
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+figure.img-wrapper {
+  @include main.width-height(210px, 280px);
+  @include main.btn-bgcSh(#3f2204);
+  border: 1px solid greenyellow;
+  margin: 3px;
+  //   flex: 0 1 1;
+}
+
+div.valider > button {
+  @include main.btn-success;
+}

@@ -1,0 +1,31 @@
+// @ for
+@for $i from 1 to 6 {
+  .paragraph-#{$i} {
+    font-size: 10px * $i;
+  }
+}
+
+// @each
+/* $colors is a map here */
+$colors: (
+  color1: blue,
+  color2: black,
+  color3: yellow,
+);
+
+@each $key, $value in $colors {
+  .#{$value}-background {
+    background-color: $value;
+    height: 50px;
+  }
+}
+
+// @while
+$x: 1;
+
+@while $x < 6 {
+  .paragraph-#{$x} {
+    font-size: 10px * $x;
+  }
+  $x: $x + 1;
+}

@@ -1,7 +1,126 @@
-body{
-    color: goldenrod;
+@use "./round";
 
-    main{
-        background-color: rgb(68, 0, 255);
+@use "./dimension" as dim;
+
+@use "./longHaut";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
+
+.blue-border {
+  @include borderstyle(blue, $round: false);
+}
+.red-border-round {
+  @include borderstyle(rgb(249, 13, 56), $round: true);
+  border: 4px solid;
+}
+
+.tilt {
+  // Oops, we typo'd "webkit" as "wekbit"!
+  @include prefix(transform, rotate(15deg), wekbit ms);
+}
+
+.micro {
+  width: minder(200px, 150px, 250px);
+  background-color: darkcyan;
+  z-index: 999;
+  border: 2px double;
+  align-self: center;
+  margin: 0 auto;
+}
+
+#box {
+  //   width: 150px;
+  //   height: 150px;
+  background-color: #b8554b;
+  /* calling the mixin */
+  @include border-stroke(heavy);
+}
+
+body {
+  // viser des elements par classe
+  @include custom-input(50px, "input.name", "input.address", "input.zip");
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  color: goldenrod;
+
+  & > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+  }
+}
+//theme
+.banner {
+  @include theme-colors($light-theme: true);
+  @include width-height(100%, 450px);
+  h1.dark & {
+    @include theme-colors($light-theme: false);
+  }
+}
+
+//
+nav {
+  // calling a mixin in simple style rule
+  & > ul {
+    @include inline-list;
+  }
+}
+
+aside {
+  @include customtextstyle(#999999, 16px);
+  //   @include setcssfloat(float, $top);
+  width: 17%;
+  background-color: hsl(219, 79%, 20%);
+}
+
+main {
+  border: 0 0 6px #4400ff;
+  width: 80%;
+  //   margin: 0 auto;
+  float: right;
+
+  section {
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 12px;
+
+    & > h2 {
+      display: grid;
+      height: 75px;
+      text-align: center;
+      align-items: center;
+      font-size: 2rem;
+      background-color: #791cf8;
+      color: hsl(35, 69%, 79%);
     }
+
+    & > div {
+      @include div-padding(2, 6);
+      width: 80%;
+      margin: 12px auto;
+      border-bottom: 1px solid;
+
+      button {
+        @include round.rounded(20px);
+        @include dim.dimPhi(50px);
+        @include text-effect(danger);
+        font-size: 1.2rem;
+        padding: 5px + round.$radius;
+      }
+    }
+  }
 }

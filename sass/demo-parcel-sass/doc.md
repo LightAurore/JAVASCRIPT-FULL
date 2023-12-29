@@ -21,8 +21,6 @@ Structure de code
 - Installer Parcel dans le dossier
   "" npm i parcel ""
 
-
-
   Ecrire le code des fichierss html et css
   Ajouter avec une balise link:css vers le fichier SASS
   ....
@@ -30,11 +28,14 @@ Structure de code
   " dev: npx parcel src/index.html
   prod: npx parcel build src/index.html --dist-dir build
 
-
   {
-    "name": "demo-parcel-sass",
-    "scripts":{
-        "start" : "parcel src/index.html --open",
-        "build": "parcel build src/index.html --dist-dir build"
-    }
+  "name": "demo-parcel-sass",
+  "scripts":{
+  "start" : "parcel src/index.html --open",
+  "build": "parcel build src/index.html --dist-dir build"
   }
+  }
+
+"scripts": {
+"compile": "sass css/main.scss css/main.css --watch"
+}

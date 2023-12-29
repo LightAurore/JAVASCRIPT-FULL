@@ -1,0 +1,4 @@
+@mixin dimPhi($base) {
+  width: $base * 1.618;
+  height: $base;
+}

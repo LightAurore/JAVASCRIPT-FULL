@@ -1,8 +1,7 @@
-@function fois2($nb){
-	$resultat : $nb * 2;
-	@return $resultat;
+@function fois2($nb) {
+  $resultat: $nb * 2;
+  @return $resultat;
 }
-
 
 /*
 
@@ -27,35 +26,31 @@
     https://www.pierre-giraud.com/sass-apprendre-cours-complet/sass-import/
 */
 
-$margin : 0;
+$margin: 0;
 $width: 1000;
-@while($margin < $width/50){
-	$margin: $margin + 1; //Ajouter 1 à la valeur précédente de $margin
+@while ($margin < $width/50) {
+  $margin: $margin + 1; //Ajouter 1 à la valeur précédente de $margin
 }
 
 $base-color: #f8bf26;
 
 @for $i from 1 through 4 {
-	li:nth-child(4n + #{$i}){
-	background-color: lighten($base-color, $i* 5%);
-	}
+  li:nth-child(4n + #{$i}) {
+    background-color: lighten($base-color, $i * 5%);
+  }
 }
 
-@for $i from 1 to 7 
-{
-  .paragraphe-#{$i} 
-  {
-    font-size: 10px*$i;
-    color: rgb(25, 255,$i);
+@for $i from 1 to 7 {
+  .paragraphe-#{$i} {
+    font-size: 10px * $i;
+    color: rgb(20 * $i, 255, $i);
   }
 }
 
 $x: 1;
-@while($x < 7) 
-{
-    .paragraph-#{$x} 
-    {
-        height: ($x * 50)+px;
-    }
-    $x: $x + 1;
+@while ($x < 7) {
+  .paragraph-#{$x} {
+    height: ($x * 50) + px;
+  }
+  $x: $x + 1;
 }

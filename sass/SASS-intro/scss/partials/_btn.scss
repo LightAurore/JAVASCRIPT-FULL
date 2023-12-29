@@ -1,0 +1,5 @@
+@mixin bgcSh($color) {
+  background-color: $color;
+  border: none;
+  box-shadow: 0 -5px 10px darken($color, 50);
+}

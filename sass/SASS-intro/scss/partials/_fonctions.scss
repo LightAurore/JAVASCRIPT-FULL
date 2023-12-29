@@ -1,0 +1,20 @@
+@function add($var1, $var2) {
+  $var3: $var1 + $var2;
+  @return $var3;
+}
+
+@function diff($var1) {
+  $var2: 255 - $var1;
+  @return $var2;
+}
+
+@function minder($numbers...) {
+  $min: null;
+  @each $number in $numbers {
+    @if $min == null or $number < $min {
+      $min: $number;
+    }
+  }
+  @return $min;
+}
+

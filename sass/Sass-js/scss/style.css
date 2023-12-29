@@ -41,32 +41,32 @@ li:nth-child(4n+4) {
 
 .paragraphe-1 {
   font-size: 10px;
-  color: rgb(25, 255, 1);
+  color: rgb(20, 255, 1);
 }
 
 .paragraphe-2 {
   font-size: 20px;
-  color: rgb(25, 255, 2);
+  color: rgb(40, 255, 2);
 }
 
 .paragraphe-3 {
   font-size: 30px;
-  color: rgb(25, 255, 3);
+  color: rgb(60, 255, 3);
 }
 
 .paragraphe-4 {
   font-size: 40px;
-  color: rgb(25, 255, 4);
+  color: rgb(80, 255, 4);
 }
 
 .paragraphe-5 {
   font-size: 50px;
-  color: rgb(25, 255, 5);
+  color: rgb(100, 255, 5);
 }
 
 .paragraphe-6 {
   font-size: 60px;
-  color: rgb(25, 255, 6);
+  color: rgb(120, 255, 6);
 }
 
 .paragraph-1 {
@@ -107,7 +107,7 @@ body {
   justify-content: center;
   width: 100vw;
   min-height: 200vh;
-  background-color: rgb(106, 194, 160);
+  background-color: rgb(85, 119, 212);
   margin: 0 14px;
   padding: 12px;
 }
@@ -131,28 +131,6 @@ nav ul li {
   height: 35px;
 }
 
-.carrees {
-  width: 400px;
-  height: 400px;
-  margin: 20px auto;
-}
-
-.carrees .carrees__anim {
-  width: 33%;
-  height: 33%;
-  background-color: #f7ba14;
-  float: left;
-  animation: shrink 1.3s infinite ease-in-out;
-}
-
-@keyframes shrink {
-  0%, 70%, 100% {
-    transform: scale3D(1, 1, 1);
-  }
-  35% {
-    transform: scale3D(0, 0, 1);
-  }
-}
 article {
   width: 80%;
   margin-inline: auto;
@@ -200,7 +178,7 @@ img {
   align-items: center;
   padding: 2rem;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-  background-color: #00800d;
+  background-color: #00801a;
 }
 .card:hover {
   filter: blur(1px);
@@ -277,6 +255,11 @@ footer span {
 footer #lineDrawing {
   width: 100%;
   height: 200px;
+}
+
+.bouton {
+  color: #0de835;
+  border: 5px solid #36f459;
 }
 
 /*# sourceMappingURL=style.css.map */

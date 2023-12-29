@@ -1,0 +1,121 @@
+// defining a mixin
+@mixin basic-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// using a mixin inside another mixin
+@mixin inline-list {
+  @include basic-list;
+  li {
+    display: inline-block;
+    margin: 6px;
+    left: -2px;
+    right: 2em;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+/* -------- Mixins with Arguments --------  */
+@mixin customtextstyle($color, $size: 12px) {
+  color: $color;
+  font-size: $size;
+  font-weight: 400;
+}
+
+/* ------ Mixins with Arbitrary Arguments --------  */
+@mixin custom-input($height, $selectors...) {
+  @for $i from 0 to length($selectors) {
+    #{nth($selectors, $i + 1)} {
+      padding: 20px;
+      height: $height;
+      // generating different border-radius for all
+      border-radius: $i * 8px;
+    }
+  }
+}
+
+/* mixin and if */
+@mixin borderstyle($color, $round: false) {
+  border-color: $color;
+
+  @if $round {
+    border-radius: 5px;
+    border: 2px solid;
+  }
+}
+
+/*  Theme   */
+@mixin theme-colors($light-theme: true) {
+  @if $light-theme {
+    background-color: $light-background;
+    color: $light-text;
+  } @else {
+    background-color: $dark-background;
+    color: $dark-text;
+  }
+}
+
+@mixin text-effect($val) {
+  @if $val == danger {
+    color: red;
+  } @else if $val == alert {
+    color: yellow;
+  } @else if $val == success {
+    color: green;
+  } @else {
+    color: black;
+  }
+}
+
+@mixin border-stroke($val) {
+  @if $val == light {
+    border: $light;
+  } @else if $val == medium {
+    border: $medium;
+  } @else if $val == heavy {
+    border: $heavy;
+  } @else {
+    border: $none;
+  }
+}
+
+/*
+	@error <expression>
+*/
+@mixin setcssfloat($property, $floatvalue) {
+  @if $floatvalue !=left or $floatvalue !=right {
+    @error "Property #{$property} must be either left or right.";
+  }
+}
+
+/*
+@warm
+*/
+
+$known-prefixes: webkit, moz, ms, o;
+
+@mixin prefix($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+    @if not index($known-prefixes, $prefix) {
+      @warn "Unknown prefix #{$prefix}.";
+    }
+
+    -#{$prefix}-#{$property}: $value;
+  }
+  #{$property}: $value;
+}
+
+/*
+    @debug
+*/
+@mixin div-padding($x, $y) {
+    $z : $x + $y;
+    padding: $z * 1px;
+    @debug "width is: #{$z}";
+}
+
