@@ -1,106 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/favicon.png"
-      type="image/x-icon"
-    />
-    <title>Jeu des paires</title>
-    <link rel="stylesheet" href="./dist/css/styles.css" />
-  </head>
-  <body>
-    <header>
-      <figure>
-        <img src="./assets/images/logo-1.png" />
-      </figure>
-      <h1>JEU DES PAIRES</h1>
-    </header>
-    <main>
-      <section>
-        <div class="niveau-contenair">
-          <span>Niveau : </span>
-          <span id="niveau">Moyen</span>
-        </div>
-        <div class="score-contenair">
-          <span>Votre score : </span>
-          <span id="score">0</span>
-        </div>
-      </section>
 
-      <section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+  <title>Jeu des paires</title>
+  <link rel="stylesheet" href="./dist/css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <figure>
+      <img src="./assets/images/logo-1.png" />
+    </figure>
+    <h1>JEU DES PAIRES</h1>
+  </header>
+  <main>
+    <section class="score__section">
+      <div class="niveau-container">
+        <span>Niveau : </span>
+        <span id="niveau">Moyen</span>
+      </div>
+      <div class="score-container">
+        <span>Votre score : </span>
+        <span id="score">0</span>
+      </div>
+    </section>
+
+    <section class="jeu__section">
+      <div class="jeu__section--div">
         <div>
           <select name="niveau" id="choix-niveaux">
-            <option value="" aria-readonly="true" selected>
-              Choisir un niveau
-            </option>
             <option value="1">Faible</option>
-            <option value="2">Moyen</option>
+            <option value="2" selected>Moyen</option>
             <option value="3">Fort</option>
           </select>
           <button id="jouer">Jouer</button>
           <button id="arreter">Arrêter</button>
         </div>
+      </div>
 
-        <article id="cartes-container">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </article>
-        <!-- <article id="cartes-container"></article> -->
-        
+      <article id="cartes-container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </article>
+      <!-- <article id="cartes-container"></article> -->
+
+      <div class="jeu__section--div">
         <div>
           <button id="rejouer">Rejouer</button>
           <button id="initialiser">Réinitialiser</button>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section>
-        <div class="erreur-contenair">
-          <span>Erreur : </span>
-          <span id="erreur">0</span>
-        </div>
-        <div class="coups-container">
-          <span>Coups : </span>
-          <span id="coups">0</span>
-        </div>
-        <div class="temps-container">
-          <span>temps : </span>
-          <span id="minute-seconde">00 : 00</span>
-        </div>
-      </section>
-    </main>
+    <section class="compteurs__section">
+      <div class="erreur-container">
+        <span>Erreur : </span>
+        <span id="erreur">0</span>
+      </div>
+      <div class="coups-container">
+        <span>Coups : </span>
+        <span id="coups">0</span>
+      </div>
+      <div class="temps-container">
+        <span>temps : </span>
+        <span id="minute-seconde">00 : 00</span>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-      <p>
-        "Créer, c'est dépasser les fondements confortables de la discipline
-        scientifique que nous pratiquons tous les jours."
-        <cite>Alexander Grothendieck</cite>
-      </p>
-    </footer>
-  </body>
-  <script src="./dist/js/app.js"></script>
+  <footer>
+    <p>
+      "Créer, c'est dépasser les fondements confortables de la discipline
+      scientifique que nous pratiquons tous les jours."
+      <cite>Alexander Grothendieck</cite>
+    </p>
+  </footer>
+</body>
+<script type="module" src="./dist/js/app.js"></script>
+
 </html>

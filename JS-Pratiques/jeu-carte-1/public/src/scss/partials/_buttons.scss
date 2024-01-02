@@ -1,0 +1,21 @@
+$bgc-btn: #11f653;
+$text-btn: hwb(0 52% 48%);
+$shadow-btn: #c5adb1;
+$border-btn: #d4ff08;
+
+$hover-btn: #08faff;
+$actif-btn: #ff8408;
+
+%btn {
+  background-color: $bgc-btn;
+  color: $text-btn;
+  border-radius: 26px;
+  box-shadow: 0 0 12px $shadow-btn;
+  border: 2px solid $border-btn;
+}
+
+%btn-hover {
+  background-color: $hover-btn;
+  color: $text-btn;
+  box-shadow: none;
+}

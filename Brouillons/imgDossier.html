@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <template>
+        <div class="_game-provider-logos">
+            <div class="container-fluid">
+                <b-img-lazy v-for="image in images" :key="image" :src="image" fluid />
+            </div>
+        </div>
+    </template>
+
+    <script>
+        export default {
+            name: 'FooterGameProviders',
+            computed: {
+                images() {
+                    const path = require.context('./../assets/images/footer/game-providers', false, /\.png$/)
+                    return path.keys().map(path)
+                }
+            }
+        }
+        // 
+        export * from 'user.png'
+        export * from 'team.jpg'
+
+        // 
+        import { user, team } from 'static/images'
+
+        // 
+        const images = require.context('../images/static', true)
+        const imagePath = (name) => images(name, true)
+
+        // then within your component
+        console.log(imagePath('./user.png')) // it's relative to context
+
+        //
+        const importViewScripts = (page) => page.keys().forEach(page);
+
+        document.addEventListener("turbolinks:load", () => {
+            importViewScripts(require.context("../src/", true, /\.js$/));
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+.jeu__section {
+  position: relative;
+  min-height: 50vh;
+  width: 100%;
+  flex: 1;
+
+  & > .jeu__section--div {
+    position: absolute;
+    inset: 50%;
+    transform: translate(-50%, -50%);
+    @include flex-centrer;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    height: 100%;
+    width: 100%;
+
+    z-index: 10;
+
+    &:nth-of-type(2) {
+      display: none;
+    }
+  }
+
+  & > article {
+    width: 100%;
+    flex: 1;
+  }
+}
+
+.jeu__section--div {
+  & > div {
+    @include flex-centrer;
+    justify-content: space-evenly;
+    width: 100vh;
+    height: 50vh;
+    border-radius: 6px;
+    background-color: #08ffba;
+
+    & > * {
+      width: 150px;
+      height: 50px;
+      font-size: 1.4rem;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      @extend %btn;
+
+      &:hover {
+        @extend %btn-hover;
+      }
+    }
+  }
+}

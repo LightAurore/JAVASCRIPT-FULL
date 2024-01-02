@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/YOUR_PATH/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>CSS Fonctions</title>
+    <link type="text/css" rel="stylesheet" href="./styleCss.css" />
+  </head>
+
+	<body">
+    <header id="headEntete">
+      <h1>CSS : functions ou methods modèles</h1>
+    </header>
+    <main>
+      <header>
+        <h2>Les fonctions dans CSS</h2>
+      </header>
+
+        <section>
+          <h2>Les variables</h2>
+          <ul>
+            <li>
+              <article>
+                <h3>:root</h3>
+                <div>
+                  <p></p>
+                  <p></p>
+                </div>
+                <p></p>
+              </article>
+            </li>
+			<li>
+        <article>
+          <h3>var()</h3>
+          <div>
+            <p></p>
+            <p></p>
+          </div>
+          <p></p>
+        </article>
+      </li>
+            <li>
+              <article>
+                <h3>attr()</h3>
+                <div>
+                  <p>attr(attribute-name)</p>
+                  <p></p>
+                </div>
+                <p>a:after {content: " (" attr(href) ")";}</p>
+              </article>
+            </li>
+          </ul><!-- article>h3+div>p*2^p -->
+        </section>
+        
+        
+		<section>
+      <h2>width et height</h2>
+		<ul>
+			<li>
+        
+      <article>
+        <h3>clamp()</h3>
+        <div>
+          <p>clamp(MIN, VAL, MAX) équivaut à max(MIN, min(VAL, MAX)))</p>
+          <p>La fonction clamp() calcule une valeur tout en la limitant entre deux valeurs extrêmes. </p>
+        </div>
+        <p>width: clamp(200px, 50%, 100% - 200px);</p>
+      </article>
+      </li>
+			<li>
+        <article>
+          <h3>calc()</h3>
+          <div>
+            <p>calc(expression)</p>
+            <p>Opérations simples concernant les longueurs et tailles </p>
+          </div>
+          <p>width : calc(100% - 1em); <br>calc((100px - 10px - 200px) * 2); <br>left : calc(100% / 2 - 2 * 1em - var(--taille) * 1px);</p>
+        </article>
+      </li>
+      <li>
+        <article>
+          <h3>min()</h3>
+          <div>
+            <p>min(val-min,...,val-max)</p>
+            <p></p>
+          </div>
+          <p>width: min(75ch, 50%);</p>
+        </article>
+      </li>
+      <li>
+        <article>
+          <h3>max()</h3>
+          <div>
+            <p>max(val-max,...,val-min)</p>
+            <p></p>
+          </div>
+          <p>padding: var(--blockPadding) max(2rem, 50vw - var(--contentWidth) / 2);<br>width: max(45ch, 50%);<br>
+            font-size: max(min(0.5vw, 0.5em), 1rem);
+          </p>
+        </article>
+      </li>
+			<li>counter()</li>
+			<li>counters()</li>
+			<li>element()</li>
+			<li>path()</li>
+			
+			<li>symbols()</li><!-- article>h3+div>p*2^p -->
+      
+		</ul>
+    </section>
+    <section>
+      <h2>GRID</h2>
+      <ul>
+        <li>
+          <article>
+            <h3>minmax()</h3>
+            <div>
+              <p> 
+                minmax(min, max)
+                
+              </p>
+              <p>La fonction minmax() définit une dimension comprise entre deux valeurs, pour le dimensionnement des colonnes et des lignes d'une grille.</p>
+            </div>
+            <p>
+              grid-auto-columns :
+                minmax(min-content, max-content)
+                <br>
+                grid-auto-columns :
+                minmax(100px, 500px)
+                <br>
+                grid-template-columns: minmax(100px, 200px) 1fr 1fr;
+            </p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>repeat()</h3>
+            <div>
+              <p>repeat()</p>
+              <p></p>
+            </div>
+            <p>
+              grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+            </p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>fit-content()</h3>
+            <div>
+              <p>fit-content(8ch)</p>
+              <p></p>
+            </div>
+            <p>grid-template-columns: fit-content(8ch) fit-content(8ch) 1fr;</p>
+          </article>
+          
+
+        </li>
+      </ul><!-- article>h3+div>p*2^p -->
+    </section>
+    </main>
+
+    <footer id="footPied"></footer>
+  </body>
+<script src ="scriptCss.js"></script>
+
+</html>
