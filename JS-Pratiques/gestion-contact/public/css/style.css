@@ -1,3 +1,18 @@
+:root {
+  --bgc: #8b8b8b;
+  --text: #5d5d5d;
+
+  --txt-h2: #766f64;
+
+  --bgc-table: #ffffd4;
+
+  --bgc-btn: lighten(#00561b);
+  --bgc-btn-erase: lighten(#842e1b);
+
+  --shadow: #606060;
+  --border: #7f7f7f;
+}
+
 main {
   flex: 1 !important;
 }
@@ -6,6 +21,6 @@ section {
   width: 45% !important;
 }
 
-header{
-    background-image: url("../../../images/oiseaux/paon-bleu.jpg");
+header {
+  background-image: url("../../../images/oiseaux/paon-bleu.jpg");
 }
