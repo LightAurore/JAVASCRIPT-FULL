@@ -1,0 +1,11 @@
+main {
+  flex: 1 !important;
+}
+
+section {
+  width: 45% !important;
+}
+
+header{
+    background-image: url("../../../images/oiseaux/paon-bleu.jpg");
+}

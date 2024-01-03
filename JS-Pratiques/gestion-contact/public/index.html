@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,34 +11,50 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/main.js" defer></script>
 </head>
+
 <body class="">
-    <nav class="navbar ">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <img class="logo" src="" alt="">
-            <ul class="d-flex">
-                <li class="" id="onglet-1"><a href="#"></a>Agenda</li>
-                <li class="" id="onglet-2"><a href="#"></a>Contact</li>
-                <li class="" id="onglet-3"><a href="#"></a>User</li>
-                <li class="" id="onglet-4"><a href="#"></a>Connexion</li>
-            </ul>
+            <a class="navbar-brand" href="#">
+                Mon Agenda
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">RDV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Notes</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    Urgences
+                </span>
+            </div>
         </div>
     </nav>
 
-    <header class="">
-        <h1>Mon Agenda</h1>
+    <header class="text-center w-25 mx-auto my-2">
     </header>
 
-    <main class="m-4 flex-grow-1">
-        <h2>Enregistrement d'un nouveau contact</h2>
+    <main class="m-1 flex-grow-1 row gap-0.1">
 
-        <section class="nouveau-contact card p-4">
-            <div class="row mb-4" style="--bs-columns: 18; --bs-gap: .5rem;">
-                <label class="col-3" for="lastname">Nom</label>
-                <input class="rounded-2 border-0.1 p-1 col-6" type="text" id="lastname">
-            </div>
+        <section class="nouveau-contact w-50 card p-4">
+            <h2>Enregistrement d'un nouveau contact</h2>
             <div class="row mb-4" style="--bs-columns: 4; --bs-gap: 5rem;">
                 <label class="col-3" for="firstname">Prénom</label>
                 <input class="col-6 rounded-2 border-0.1 p-1" type="text" id="firstname">
+            </div>
+            <div class="row mb-4" style="--bs-columns: 18; --bs-gap: .5rem;">
+                <label class="col-3" for="lastname">Nom</label>
+                <input class="rounded-2 border-0.1 p-1 col-6" type="text" id="lastname">
             </div>
             <div class="row mb-4">
                 <label class="col-3" for="birthday">Date de Naissance</label>
@@ -53,16 +70,16 @@
             </div>
         </section>
 
-        <section class="d-flex">
+        <section class="d-flex w-50 card p-4">
             <h2 class="">Mes contacts</h2>
-            <table class="">
+            <table class="w-100 border">
                 <thead>
                     <tr class="">
-                        <th>id</th>
-                        <th>NomPrénom</th>
-                        <th>Prénom</th>
-                        <th>Date d'anniversaire</th>
-                        <th>N° Téléphone</th>
+                        <th class="border p-2 bg-info">id</th>
+                        <th class="border p-2 bg-info">Prénom</th>
+                        <th class="border p-2 bg-info">Nom</th>
+                        <th class="border p-2 bg-info">Date d'anniversaire</th>
+                        <th class="border p-2 bg-info">N° Téléphone</th>
                     </tr>
                 </thead>
                 <tbody id="liste-contact" class="">
@@ -74,8 +91,9 @@
     </main>
 
     <footer class="h-48 w-100 bg-warning">
-zs
+        zs
     </footer>
-    
+
 </body>
+
 </html>
