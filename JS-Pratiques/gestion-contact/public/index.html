@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <script src="./dist/js/bootstrap.bundle.min.js"></script>
+    <title>Gestion de contacts</title>
+    <!-- Mes fichiers -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+</head>
+<body class="">
+    <nav class="navbar ">
+        <div class="container-fluid">
+            <img class="logo" src="" alt="">
+            <ul class="d-flex">
+                <li class="" id="onglet-1"><a href="#"></a>Agenda</li>
+                <li class="" id="onglet-2"><a href="#"></a>Contact</li>
+                <li class="" id="onglet-3"><a href="#"></a>User</li>
+                <li class="" id="onglet-4"><a href="#"></a>Connexion</li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="">
+        <h1>Mon Agenda</h1>
+    </header>
+
+    <main class="m-4 flex-grow-1">
+        <h2>Enregistrement d'un nouveau contact</h2>
+
+        <section class="nouveau-contact card p-4">
+            <div class="row mb-4" style="--bs-columns: 18; --bs-gap: .5rem;">
+                <label class="col-3" for="lastname">Nom</label>
+                <input class="rounded-2 border-0.1 p-1 col-6" type="text" id="lastname">
+            </div>
+            <div class="row mb-4" style="--bs-columns: 4; --bs-gap: 5rem;">
+                <label class="col-3" for="firstname">Prénom</label>
+                <input class="col-6 rounded-2 border-0.1 p-1" type="text" id="firstname">
+            </div>
+            <div class="row mb-4">
+                <label class="col-3" for="birthday">Date de Naissance</label>
+                <input class="col-6 rounded-2 border-0.1 p-1" type="date" id="birthday">
+            </div>
+            <div class="row mb-4">
+                <label class="col-3" for="phoneNumber">Numéro de téléphone</label>
+                <input class="col-6 rounded-2 border-0.1 p-1" type="tel" id="phoneNumber">
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-4">
+                <button type="button" class="btn btn-outline-info me-md-2" id="enregisterContact">Enregistrer</button>
+                <button type="button" class="btn btn-outline-danger" id="effacerContact">Supprimer</button>
+            </div>
+        </section>
+
+        <section class="d-flex">
+            <h2 class="">Mes contacts</h2>
+            <table class="">
+                <thead>
+                    <tr class="">
+                        <th>id</th>
+                        <th>NomPrénom</th>
+                        <th>Prénom</th>
+                        <th>Date d'anniversaire</th>
+                        <th>N° Téléphone</th>
+                    </tr>
+                </thead>
+                <tbody id="liste-contact" class="">
+
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer class="h-48 w-100 bg-warning">
+zs
+    </footer>
+    
+</body>
+</html>

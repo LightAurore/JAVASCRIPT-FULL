@@ -21,5 +21,8 @@ let p4 = new Promise((resolve, reject) => {
 });
 
 Promise.all([p4, p2, p3])
-  .then((value) => console.log(value))
-  .catch((error) => console.log(error.message));
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error.message))
+  .finally(() => {
+    console.log('état final');
+  });
