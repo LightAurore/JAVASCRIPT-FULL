@@ -5,6 +5,7 @@ const firstname = document.getElementById("firstname"),
   phoneNumber = document.getElementById("phoneNumber"),
   btn_enregistrer_contact = document.getElementById("enregisterContact"),
   btn_effacer_contact = document.getElementById("effacerContact"),
+  
   contacts = [
     {
       id: "id_1",
@@ -53,6 +54,7 @@ let indexBase = contacts.length;
 const a_z = (e) => (
   e.sort((e, t) => (e.nom < t.nom ? -1 : e.nom > t.nom ? 1 : 0)), e
 );
+
 function displayContact(e) {
   const t = document.getElementById("liste-contact");
   t.innerHTML = "";
@@ -72,6 +74,7 @@ function displayContact(e) {
     t.appendChild(n);
   }
 }
+
 function New_contact() {
   return new Promise((e, t) => {
     firstname.value && lastname.value && birthday.value && phoneNumber.value
@@ -79,7 +82,9 @@ function New_contact() {
       : t("Les champs ne sont pas juste");
   });
 }
+
 displayContact(contacts);
+
 const Calc_Age = (e) => {
     const t = new Date(e.value),
       n = new Date(),
@@ -117,6 +122,8 @@ const Calc_Age = (e) => {
         : t("les deux cases (nom et prénom) ne sont pas remplis");
     });
 let contact_index;
+
+
 const isInList = (e) =>
     new Promise((t, n) => {
       let a;
@@ -140,6 +147,7 @@ const isInList = (e) =>
   Delete_Contact = (e) => {
     contacts.splice(e, 1);
   };
+  
 btn_enregistrer_contact.addEventListener("click", async () => {
   try {
     await New_contact(),

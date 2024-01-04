@@ -6,9 +6,6 @@
 
   --bgc-table: #ffffd4;
 
-  --bgc-btn: lighten(#00561b);
-  --bgc-btn-erase: lighten(#842e1b);
-
   --shadow: #606060;
   --border: #7f7f7f;
 }
