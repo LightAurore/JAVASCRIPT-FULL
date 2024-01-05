@@ -7,6 +7,7 @@ const selectCountry = document.getElementById('country');
 const btnSearch = document.getElementById('btn-search');
 const resultat = document.getElementById('resultat');
 
+
 btnSearch.addEventListener('click', async() => {
     const response = await axios.get(`https://api.agify.io/?name=${inputPrenom.value}&country_id=${selectCountry.value}`);
 
