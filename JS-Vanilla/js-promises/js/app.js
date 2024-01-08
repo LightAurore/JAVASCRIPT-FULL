@@ -41,7 +41,7 @@ countValue1
 /* API */
 
 const employees = {
-  employe1: {
+  employee1: {
     name: "Paul Kirk",
     age: 26,
   },

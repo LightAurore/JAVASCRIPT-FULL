@@ -3,6 +3,7 @@
 
 //! Step 1 : Je dois créer mon objet xhr qui me sert à envoyer une requête
 const xhr = new XMLHttpRequest();
+console.log(xhr);
 
 //! Step 4 : Ajout d'une fonction à exécuter lorsque l'évènement onreadystatechange se déclenche
 xhr.onreadystatechange = () => {

@@ -8,7 +8,7 @@ let p2 = new Promise((resolve, reject) => {
   setTimeout(() => reject(new Error("P2 Error")), 2000);
 });
 let p3 = new Promise((resolve, reject) => {
-  setTimeout(() => resolve("Resolve P3"), 500);
+  setTimeout(() => resolve("Resolve P3"), 1500);
 });
 
 /* Any */
