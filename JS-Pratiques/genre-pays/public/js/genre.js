@@ -5,7 +5,7 @@ const input_prenom = document.getElementById('prenom');
 const input_pays = document.getElementById('pays');
 
 const btn_chercher = document.getElementById('chercher-prob-pays');
-const afficherPrenomPays = document.getElementById('affiche-proba-pays');
+const afficheChien = document.getElementById('affiche-imgs');
 
 const imgGrand = document.getElementById('img-grand');
 
@@ -58,10 +58,10 @@ btn_chercher.addEventListener('click', async () => {
     try {
         for (let i = 0; i < 24; i++) {
             const donnees = await fetchApi(api);
-            Creer_gallerie(donnees, afficherPrenomPays);
+            Creer_gallerie(donnees, afficheChien);
         }
 
-        const mesImgs = Get_Src_img("affiche-proba-pays");
+        const mesImgs = Get_Src_img("affiche-imgs");
     }
     catch(err) {
         console.log(err);
