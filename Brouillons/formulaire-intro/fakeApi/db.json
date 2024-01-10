@@ -1,0 +1,19 @@
+{
+    "user" : [
+        {
+            "id" : 1,
+            "firstname" : "Yoko",
+            "lastname" : "kurama",
+            "email": "y.kurma@gmail.com",
+            "password" : "41f25r5"
+        }
+        
+    ],
+    "dogs": [
+            {
+                "id" : 1,
+                "name" : "spoke",
+                "owners" : 5
+            }
+    ]
+}

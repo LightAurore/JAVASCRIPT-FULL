@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les formulaires</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="mains.js" defer></script>
+</head>
+<body>
+    <!-- method : GET -> Toutes les données du formulaire passent dans l'url, 255 char max'
+                  POST -> Un objet est crée au submit -->
+    <!-- Les données sont récupérées via le name de vos input -->
+    <form name="registerForm" method="POST">
+        <div>
+            <input name="lastname" type="text" placeholder="Votre nom" required >
+        </div>
+
+        <div>
+            <input  name="firstname" type="text" placeholder="Votre prénom">
+        </div>
+
+        <div>
+            <input name="email" type="email" placeholder="Votre email" required>
+        </div>
+
+        <div>
+            <input type="password" name="password" placeholder="Votre mot de passe">
+        </div>
+
+        <div>
+            <input type="password" name="confirmpassword" placeholder="Confirmer votre mot de passe">
+            <span id="pwd-error" style="color:darkred"></span>
+        </div>
+
+        <input name="sendForm" type="submit" value="Créer mon compte" disabled>
+        <input type="reset" value="Remettre à zero tous les champs">
+        <input type="button" value="Bah c'est juste un bouton'">
+
+        <button>Un bouton qui submit</button> 
+        <!-- Attention, pas défaut, la balise button, si mise dans une balise form devient un type submit -->
+        <button type="button">Un simple bouton</button>
+    </form>
+</body>
+</html>
