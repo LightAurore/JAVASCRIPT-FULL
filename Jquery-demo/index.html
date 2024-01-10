@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/brand/button-1.ico" type="image/x-icon">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>jquery demo</title>
+
+    <style>
+        img {
+            width: 150px;
+        }
+
+        footer {
+            height: 250px;
+            margin-top: 12px;
+            background-color: cornflowerblue;
+        }
+    </style>
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><img src="" alt=""></div>
+        <ul>
+            <li>Syntaxe</li>
+            <li>Function</li>
+            <li>Events</li>
+            <li>Variables</li>
+            <li>Conditions</li>
+            <li>Boucles</li>
+        </ul>
+        <div class="search"><input type="text"><button></button></div>
+    </nav>
+    <header>
+        <h1>Introduction à Jquery</h1>
+        <button>click !</button>
+    </header>
+    <main>
+        <section class="syntaxe">
+            <code>
+                <!-- les notations équivalentes -->
+                <!--  -->
+                window.jQuery();
+                jquery();
+
+                window.$();
+                $();
+            </code>
+            <h2>
+
+            </h2>
+            <code>
+                $(document).ready(function(){
+                    $("p").hide();
+                })
+            </code>
+        </section>
+        <section>
+            <p>If you click on me, I will disappear.</p>
+            <p>Click me away!</p>
+            <p>Click me too!</p>
+        </section>
+        <section>
+            <p id="p1">Enter this paragraph.</p>
+        </section>
+        <section>
+            <span id="result">&nbsp;</span>
+            <div style="background-color:blue;"></div>
+            <div style="background-color:rgb(15,99,30);"></div>
+            <div style="background-color:#123456;"></div>
+            <div style="background-color:#f11;"></div>
+            <img src="./assets/images/oiseaux/1800.jpg" alt="">
+        </section>
+
+        <section>
+            <div><input type="text"></div>
+        </section>
+        <section id="ajax-container">
+            <h2>AJAX LOAD 1</h2>
+            <button id="btn-ajax">data</button>
+            <article id="ajax-data"></article>
+
+        </section>
+        <section id="ajax-container">
+            <h2>AJAX-LOAD 2</h2>
+            <button id="btn-ajax-2">data</button>
+            <article id="ajax-data-2"></article>
+
+        </section>
+        <section id="ajax-container">
+            <h2>AJAX-GET</h2>
+            <button id="btn-ajax-get">data</button>
+            <article id="ajax-data-get"></article>
+
+        </section>
+        <section id="ajax-container">
+            <h2>AJAX-POST</h2>
+            <button id="btn-ajax-get">data</button>
+            <article id="ajax-data-get"></article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>footer</p>
+    </footer>
+
+</body>
+<script src="./js/ajax.js"></script>
+
+</html>

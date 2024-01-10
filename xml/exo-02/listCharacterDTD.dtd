@@ -1,0 +1,7 @@
+	<!ELEMENT listCharacter (Character)>
+	<!ELEMENT Character (Name, FirstName?, Class, Level)>
+	<!ATTLIST Character key ID #REQUIRED>
+	<!ATTLIST Character brother IDREF #IMPLIED>
+	<!ELEMENT FirstName (#PCDATA)>
+	<!ELEMENT Class (#PCDATA)>
+	<!ELEMENT Level (#PCDATA) >

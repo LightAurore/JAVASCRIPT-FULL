@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- Types -->
+    <xs:simpleType name="date-format">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="dd/mm/yyyy" />
+            <xs:enumeration value="mm/dd/yyyy" />
+            <xs:enumeration value="yyyy/mm/dd" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="gender">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="m" />
+            <xs:enumeration value="f" />
+            <xs:enumeration value="x" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Elements -->
+    <xs:element name="name">
+        <xs:complexType>
+            <xs:attribute name="firstname" type="xs:string" use="required" />
+            <xs:attribute name="lastname" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="birthdate">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="format" type="date-format" />
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="author">
+        <xs:complexType>
+            <xs:all>
+                <xs:element ref="name" />
+                <xs:element ref="birthdate" />
+                <xs:element name="gender" type="gender"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="serie">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="number" type="xs:integer" />
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="book">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="title" type="xs:string" />
+                <xs:element ref="author" />
+                <xs:element name="genre" type="xs:string" />
+                <xs:element name="publication" type="xs:integer" />
+                <xs:element ref="serie" minOccurs="0" />
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="books">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="book" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>

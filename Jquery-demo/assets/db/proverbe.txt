@@ -1,0 +1,31 @@
+'encoding: "utf-8"'
+
+La phronesis (du grec ancien : φρόνησις / phrónēsis) est un concept philosophique. Employé en particulier dans l'Éthique à Nicomaque d'Aristote1, ce terme a été traduit par « prudence » par Jules Tricot. Richard Bodéüs, en 2004, a opté pour la traduction par « sagacité ». En anglais, ce concept est le plus souvent traduit par practical wisdom (« sagesse pratique ») par opposition à la « sagesse contemplative ou théorétique »2 bien que le mot « prudence » soit aussi parfois utilisé. Le concept de « phronesis »3 est particulièrement complexe lorsqu'on entre dans les détails, et suscite encore bien des débats parmi les commentateurs, il s'agirait de discerner. 
+
+<div>
+Les trois mouvements fondamentaux de l'existence :
+    1.  poíesis 
+    2.  práxis 
+    3.  theoría
+
+</div>
+la prudence, vertu morale par opposition aux vertus intellectuelles, indique une rationalité dite (d’après Tricot) « prudentielle ». Elle a pour condition nécessaire mais non suffisante l'habileté, qui est la « puissance capable de faire les choses tendant au but que nous nous proposons et de les atteindre » 11. Autrement dit, elle a besoin de cette puissance qu'est l'habileté, mais ne se confond pas avec celle-ci, car « nous appelons habiles les hommes prudents aussi bien que les roués » 7. 
+
+La φρόνησις / phrónēsis selon Aristote est donc la vertu (arété) de la faculté d'opiner de l'âme, qui se distingue de la faculté de raison10. Ceci parce que la faculté d'opiner, comme la prudence, a rapport au contingent, c'est-à-dire à la sphère des actions humaines, et non au nécessaire ou à l'universel. Il ne s’agit pas de spéculation mais de délibération de l'eudémonisme pour le choix de ce qui est moralement désirable et de la saisie prudente de son propre avantage.
+
+La définition aristotélicienne rattachée à l’éthique est celle-ci 7 : « La phronésis est une disposition pratique, une manière d'être habituelle (en grec : ἕξις πρακτική / héxis praktikḗ), accompagnée de règle vraie (orthos logos), capable d'agir dans la sphère de ce qui est bon ou mauvais pour l'être humain »8. Ramenée à sa signification courante, c’est-à-dire au sens que ce mot avait avant Platon, elle devient « la pénétration éthique », élément parmi beaucoup d’autres dans l’analyse du caractère moral.
+
+sophia, noûs, arété, praxis, technè, doxa, pathoî, philia, 
+
+La technè est une manière d'être concernée par les choses et les principes de la production, 
+
+la theoria est une manière d'être concernée par les principes éternels, 
+
+la phronesis est une manière d'être concernée par sa vie, et ainsi, par la vie de tous les autres. 
+
+La délibération est la manière par laquelle la nature phronétique du Dasein se manifeste. 
+
+Cette vertu s'attache ainsi aux actes contingents, c'est-à-dire relativement au bon agir. 
+
+
+source : "https://fr.wikipedia.org/wiki/Phronesis"

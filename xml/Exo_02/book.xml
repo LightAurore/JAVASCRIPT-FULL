@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE books SYSTEM "book.dtd"> 
+<books>
+    <book>
+        <title>Le Nom du vent</title>
+        <author>
+            <name firstname="Patrick" lastname="Rothfuss" />
+            <birthdate format="eu">06/06/1973</birthdate>
+            <gender>m</gender>
+        </author>
+        <genre>Fantasy</genre>
+        <publication>2007</publication>
+        <serie number="1">Chronique du tueur de roi</serie>
+    </book>
+    <book>
+        <title>Le Petit Prince</title>
+        <author>
+            <name firstname="Antoine" lastname="de Saint-Exupéry" />
+            <birthdate format="eu">29/06/1900</birthdate>
+            <gender>m</gender>
+        </author>
+        <genre>Conte philosophique</genre>
+        <publication>1943</publication>
+    </book>
+    <book>
+        <title>Harry Potter à l’école des sorciers</title>
+        <author>
+            <name firstname="J.K." lastname="Rowling" />
+            <birthdate format="eu">31/07/1965</birthdate>
+            <gender>f</gender>
+        </author>
+        <genre>Fantasy</genre>
+        <publication>1997</publication>
+        <serie number="1">Harry Potter</serie>
+    </book>
+    <book>
+        <title>La Servante écarlate</title>
+        <author>
+            <name firstname="Margaret" lastname="Atwood" />
+            <birthdate format="usa">11/18/1939</birthdate>
+            <gender>f</gender>
+        </author>
+        <genre>Science-fiction dystopique</genre>
+        <publication>1985</publication>
+        <serie number="1">Le Testament</serie>
+    </book>
+    <book>
+        <title>Harry Potter et la chambre des secrets</title>
+        <author>
+            <name firstname="J.K." lastname="Rowling" />
+            <birthdate format="eu">31/07/1965</birthdate>
+            <gender>f</gender>
+        </author>
+        <genre>Fantasy</genre>
+        <publication>1998</publication>
+        <serie number="2">Harry Potter</serie>
+    </book>
+</books>

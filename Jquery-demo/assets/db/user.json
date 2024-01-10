@@ -1,0 +1,44 @@
+[
+    {
+        "name": "aristote",
+        "surname": "sage",
+        "metier": [
+            "philosophe",
+            "polymathe"
+        ],
+        "interets": [
+            "biologie",
+            "physique",
+            "métaphysique",
+            "logique",
+            "poétique",
+            "politique",
+            "rhétorique",
+            "éthique",
+            "économie"
+        ],
+        "categories": [
+            "Définition",
+            "essence",
+            "espèce",
+            "genre",
+            "différence",
+            "prédicat"
+        ],
+        "syllogisme": {
+            "Majeure": "les êtres humains sont mortels.",
+            "Mineure": "les femmes sont des êtres humains.",
+            "Conclusion": "les femmes sont mortelles."
+        },
+        "hobbies": [
+            "enseigner",
+            "eduquer",
+            "raisonner",
+            "voyager"
+        ],
+        "annee": "384-322 av. J.-C.",
+        "isFamous": true,
+        "enfants": 2,
+        "source": "https://fr.wikipedia.org/wiki/Aristote"
+    }
+]
