@@ -1,6 +1,24 @@
+'use strict'
+
+// DOM
+const valeurTerme = document.getElementById('valeur-terme');
+const btn_termes = document.getElementById('btn-termes');
+
+// function
+
+
+
+
+
 let nb1;
+btn_termes.addEventListener('click', () => {
+
+})
+
+
+
 do {
-  nb1 = parseFloat(prompt("Insérer un premier nombre :"));
+  nb1 = parseFloat(valeurTerme.value);
 } while (isNaN(nb1));
 
 let operator;
