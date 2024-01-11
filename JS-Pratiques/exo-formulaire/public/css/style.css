@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+body > *{
+    width: 100%;
+    padding: 12px;
+}
+
+/* Formulaire */
+.formulaire-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    background-color: rgb(119, 118, 118);
+    padding: 24px;
+}
+
+form > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-block: 6px;
+    width: 100%;
+     padding: 0 2px;
+}
+
+input[type="text"],input[type="number"], textarea{
+    width: 100%;
+    height:25px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: 4px;
+   
+}
+
+textarea{
+    height: 125px;
+}
+
+.soumettre-form{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+input[type="reset"],input[type="submit"]{
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 4px;
+    box-shadow: 0 0 4PX greenyellow;
+}
+
+input[type="reset"]:hover,input[type="submit"]:hover{
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+.filtre{
+    background-color: bisque;
+    height: 50px;
+}
+
+
+#gallerie-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    border-top: 2px solid seagreen;
+    padding-top: 6px;
+}
+
+
+/*  */
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: 24px;
+    min-height: calc(400px / 1.618);
+    border: 1px solid green;
+    box-shadow: 0 0 5px green;
+    border-radius: 12px;
+}
+.card > *{
+    padding: 6px;
+    width: 100%;
+}
+
+.card__name{
+    text-align: center;
+    border-bottom: 1px solid greenyellow;
+    margin-bottom: 5px;
+}
+
+.card__main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    padding: 6px;
+    flex-grow: 1;
+}
+
+.card__contain--img{
+    width: 100%;
+}
+.card__contain--img > img{
+    width: 100%;
+}
+
+.card__caontaine--title > ul >li{
+    list-style: none;
+    margin-bottom: 6px;
+}
