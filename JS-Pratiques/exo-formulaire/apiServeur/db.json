@@ -1,0 +1,62 @@
+{
+  "plantes": [
+    {
+      "id": "ecf5",
+      "nom": "Taraxacum officinale",
+      "famille": "Asteraceae",
+      "image": "pissenlit-fleurs.jpg",
+      "active": "taraxasterol",
+      "formule": "C30H50O",
+      "maladie": "dyspepsie",
+      "description": "\n                Le pissenlit est une plante médicinale diurétique et dépurative favorisant la digestion, elle est aussi indiquée dans plusieurs autres maladies. La plante est consommé sous forme de racine et de feuilles notamment en tisane, décoction ou teinture."
+    },
+    {
+      "id": "3efe",
+      "nom": "Cynorhodon",
+      "famille": "Rosaceae",
+      "image": "cynorrhodon-plante_202_177.jpg",
+      "active": "Flavonoïdes",
+      "formule": "C15H10O3",
+      "maladie": "immunitaire",
+      "description": "Plante médicinale riche en vitamine C utilisée pour soigner et prévenir les refroidissements, se présente en général sous forme de tisanes (infusion).\nPlante utilisée également en poudre pour soigner l’arthrose."
+    },
+    {
+      "id": "dafe",
+      "nom": "Gentiane jaune",
+      "famille": "Gentianaceae",
+      "image": "gentiane-jaune_pm.jpg",
+      "active": " Phytostérols",
+      "formule": "C6H10O7",
+      "maladie": "Anorexie",
+      "description": "La gentiane jaune (Gentiana lutea) est une plante médicinale à l’effet amer et digestif utilisée lors de troubles digestifs. La plante est consommée en général sous forme de tisane ou de teinture."
+    },
+    {
+      "id": "9919",
+      "nom": "Guimauve",
+      "famille": "Malvaceae",
+      "image": "guimauve-plante-pm.jpg",
+      "active": "Tanins",
+      "formule": "C76H20O46",
+      "maladie": "Toux grasse et sèche",
+      "description": "La guimauve est une plante utilisée pour son effet médicinal principalement contre la toux et comme hochet de dentition pour les enfants. La guimauve se présente souvent sous forme de tisane (infusion)."
+    },
+    {
+      "id": "b706",
+      "nom": "Poivre de Cayenne",
+      "famille": "Solanaceae",
+      "image": "piment-plante.jpg",
+      "active": "Saponines",
+      "formule": "C30H46O5",
+      "maladie": "Rhumatismes",
+      "description": "Le poivre de Cayenne, appelé aussi simplement piment, est une plante originaire du continent américain qui est utilisée surtout en usage externe contre les rhumatismes comme les douleurs musculaires. Le poivre de Cayenne est consommé généralement sous forme de pommade, emplâtre ou de compresse."
+    }
+  ],
+  "fleurs": [
+    {
+      "id": 1,
+      "nom": "marguérite",
+      "isParfum": true,
+      "pétales": 8
+    }
+  ]
+}

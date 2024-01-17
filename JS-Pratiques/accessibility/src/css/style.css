@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 200vh;
+}
+
+header{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    width: 100%;
+   height: 200px;
+   background-image: linear-gradient(45deg, turquoise, salmon, lightblue);
+
+   font-size: 4rem;
+   font-weight: bolder;
+}
+
+
+main{
+    position: relative;
+}
+
+main > h2{
+    position: sticky;
+    background-color: chocolate;
+    color:chartreuse;
+    top: 0;
+}
+main p{
+    width: 500px;
+}

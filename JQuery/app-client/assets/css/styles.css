@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+li{
+    list-style: none;
+}
+
+body > *{
+    width: 100%;
+}
+
+#encode-zone{
+    width: 500px;
+    MIN-height: 200px;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+}
+#encode-zone  div{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 85%;
+    margin: 10px;
+    height: 50px;
+    margin: 6px auto;
+}
+#encode-zone  div > label{
+    width: 40%;
+}
+#encode-zone  div > input{
+    width: 100%;
+}
+#encode-zone  div > button{
+    width: 150px;
+    height: 25px;
+}
+
+#result-zone{
+    width: 500px;
+    min-height: 200px;
+    border: 1px solid black;
+    margin: 6px auto 0;
+padding: 6px;
+}

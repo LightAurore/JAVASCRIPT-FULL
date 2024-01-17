@@ -1,0 +1,13 @@
+{
+  "name": "api_server",
+  "version": "1.0.0",
+  "description": "Fake API base on JSON Server",
+  "scripts": {
+    "start": "json-server data/db.json"
+  },
+  "author": "Aurélien St",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}

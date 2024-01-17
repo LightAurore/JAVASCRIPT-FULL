@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/js/jquery-3.7.1.js"></script>
+    <!-- <script src="assets/js//jquery-3.7.1.min.js"></script> -->
+
+    <script src="./assets/js/main.js" defer></script>
+    <!-- mon style -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <span>Demo Jquery + Ajax</span>
+    </header>
+    <main>
+        <h1>Liste de personne</h1>
+        <nav id="navigation">
+            <ul>
+                <li><a href="page-form" id="page-form">Formulaire</a></li>
+                <li><a href="page-data" id="page-data">Données</a></li>
+            </ul>
+        </nav>
+        <div id="encode-zone">
+            <h2>Formulaire d'ajout</h2>
+            <form action="" id="form-add-person">
+                <div>
+                    <label for="input-firstname">Prénom</label>
+                    <input type="text" id="input-firstname" required>
+                </div>
+                <div>
+                    <label for="input-lastname">Nom</label>
+                    <input type="text" id="input-lastname" required>
+                </div>
+                <div>
+                    <button type="submit">Ajouter</button>
+                </div>
+            </form>
+
+        </div>
+        <div id="result-zone"></div>
+    </main>
+    
+</body>
+</html>

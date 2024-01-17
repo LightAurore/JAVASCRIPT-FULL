@@ -1,0 +1,86 @@
+
+/*******************************/
+
+/*******************************/
+.btn{
+    display: inline-block;
+    border: 1px solid skyblue;
+    background-color: azure;
+    color: black;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+    padding: 0.5ch;
+    border-radius: 0.5ch;
+    cursor: pointer;
+}
+
+.btn:hover,.btn:focus{
+    background-color: skyblue;
+    border-color: azure;
+}
+
+.btn:active{
+    color: navy;
+}
+
+/*******************************/
+.btn-success{
+    border-color: forestgreen;
+    background-color: chartreuse;
+    color: forestgreen;
+}
+.btn-success:hover,.btn-success:focus{
+    background-color: skyblue;
+    border-color: azure;
+}
+
+.btn-success:active{
+    color: navy;
+}
+/*******************************/
+.btn-warning{
+    border-color: goldenrod;
+    background-color: yellow;
+    color: goldenrod;
+}
+.btn-warning:hover,.btn-warning:focus{
+    background-color: skyblue;
+    color: azure;
+}
+
+.btn-warning:active{
+    color: navy;
+}
+/*******************************/
+.btn-error{
+    border-color: bisque;
+    background-color: red;
+    color: bisque;
+}
+.btn-error:hover,.btn-error:focus{
+    color: red;
+    background-color: bisque;
+}
+
+.btn-error:active{
+    color: navy;
+}
+/*******************************/
+.belle{
+    text-decoration:1px yellow underline;
+    color: #fff0f5;
+    background-color: #2f1b0c;
+}
+/*******************************/
+a{
+    color: #b69e17;
+}
+a:visited{
+    color: rgb(155, 52, 240);
+    font-weight: bolder;
+}
+
+
+
+/*******************************/
