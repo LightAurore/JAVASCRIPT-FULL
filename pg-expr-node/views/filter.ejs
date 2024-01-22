@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postgresql express</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <a href="/"><button class="btn btn-primary">Home</button></a>
+
+    <div class="display-todos container mt-2">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <% if(data.length>0){ %>
+
+                <% for(let i=0; i< data.length;i++){ %>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <%= data[i].date %>
+                                </h5>
+                                <p class="card-text">
+                                    <%= data[i].todo %>
+                                </p>
+                                <p>
+                                    <a href="/delete/<%= data[i].id%>">
+                                        <button class="btn btn-danger m-1">
+                                            <i class="material-icons">delete</i>
+                                        </button>
+                                    </a>
+                                    <a href="/edit/<%= data[i].id%>">
+                                        <button class="btn btn-primary m-1">
+                                            <i class="material-icons">border_color</i>
+                                        </button>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <% } %>
+                        <% } %>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
