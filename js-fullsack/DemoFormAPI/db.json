@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "lastname": "Strimelle",
+      "firstname": "Aurélien",
+      "email": "austri@oui.be",
+      "password": "test1234"
+    },
+    {
+      "lastname": "Beurive",
+      "firstname": "Aude",
+      "email": "a@a.be",
+      "password": "Test1234=",
+      "id": "2"
+    },
+    {
+      "id": "8bd0",
+      "lastname": "holla",
+      "firstname": "hello",
+      "email": "h.holla@gmail.com",
+      "password": "aqzs78"
+    },
+    {
+      "id": "1dc7",
+      "lastname": "freee",
+      "firstname": "zdf",
+      "email": "frfr@vgvgfr.net",
+      "password": "ret123"
+    },
+    {
+      "id": "44ab",
+      "lastname": "gvrzagr",
+      "firstname": "bgrbgrb",
+      "email": "bgbgb@vbervagrfvb.net",
+      "password": "123fff"
+    },
+    {
+      "id": "df9c",
+      "lastname": "gtgtg",
+      "firstname": "gtgtg",
+      "email": "getgtg@gegret.net",
+      "password": "147ttt"
+    },
+    {
+      "id": "a164",
+      "lastname": "rrrf",
+      "firstname": "fveéfr",
+      "email": "vrgvrvg@cfevae.vcd",
+      "password": "aqw147"
+    },
+    {
+      "id": "bdef",
+      "lastname": "fevcfev",
+      "firstname": "vfgevfg",
+      "email": "vfevfgv@bghzbgh.htrgt",
+      "password": "123aqw"
+    }
+  ],
+  "dogs": [
+    {
+      "id": "1",
+      "name": "Regex",
+      "owner": 1
+    }
+  ]
+}

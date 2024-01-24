@@ -20,7 +20,7 @@ const pool = new Pool({
   user: "postgres",
   host: "localhost",
   database: "TodoList",
-  password: "x/m#5,9T_",
+  password: "*********",
   port: "8582",
 });
 
@@ -104,9 +104,22 @@ app.post("/update/:id", async (req, res) => {
 
 //delete
 app.post("/delete/:id", async (req, res) => {
+
+  console.log(req);
   const id = req.params.id;
-  await pool.query(`DELETE FROM todo WHERE id = $1`, [id]);
-  res.redirect("/");
+  console.log(id);
+  try {
+    await pool.query(`DELETE FROM todo WHERE id = $1`, [id]);
+    res.redirect("/");
+  } catch (error) {
+    console.log("Error update todo : ", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+  // console.log(req);
+  // const id = req.params.id;
+  // console.log(id);
+  // await pool.query(`DELETE FROM todo WHERE id = $1`, [id]);
+  // res.redirect("/");
 });
 
 app.listen(PORT, () => console.log(` Server started at port ${PORT}`));
