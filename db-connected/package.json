@@ -1,7 +1,6 @@
 {
-  "name": "pg-expr-node",
+  "name": "db-connected",
   "version": "1.0.0",
-  "description": "",
   "main": "crud.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +14,6 @@
     "express": "^4.18.2",
     "path": "^0.12.7",
     "pg": "^8.11.3"
-  }
+  },
+  "description": ""
 }
