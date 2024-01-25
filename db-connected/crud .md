@@ -20,7 +20,7 @@ const pool = new Pool({
   user: "postgres",
   host: "localhost",
   database: "TodoList",
-  password: "x/m#5,9T_",
+  password: "*********",
   port: "8582",
 });
 
@@ -70,7 +70,7 @@ app.post("/addTodo", async (req, res) => {
       `INSERT INTO todo(todo, date) VALUES($1, $2) RETURNING *`,
       [todo, date]
     );
-    console.log("Mon resultat : " + result);
+    console.log(result);
     res.redirect("/");
   } catch (error) {
     console.log("Error in adding todo");
@@ -104,6 +104,7 @@ app.post("/update/:id", async (req, res) => {
 
 //delete
 app.post("/delete/:id", async (req, res) => {
+
   console.log(req);
   const id = req.params.id;
   console.log(id);
