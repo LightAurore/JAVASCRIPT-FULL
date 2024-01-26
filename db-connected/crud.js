@@ -5,7 +5,7 @@ const app = express();
 const Pool = require("pg").Pool;
 const path = require("path");
 const ejs = require("ejs");
-const PORT = 5501;
+const PORT = 3000;
 
 require("dotenv").config();
 
@@ -19,9 +19,9 @@ require("dotenv").config();
 const pool = new Pool({
   user: "postgres",
   host: "localhost",
-  database: "TodoList",
-  password: "x/m#5,9T_",
-  port: "8582",
+  database: "todoList",
+  password: "b17=x/",
+  port: "5432",
 });
 
 pool.connect((err, client, release) => {
@@ -121,4 +121,4 @@ app.post("/delete/:id", async (req, res) => {
   // res.redirect("/");
 });
 
-app.listen(PORT, () => console.log(` Server started at port ${PORT}`));
+app.listen(PORT, () => console.log(` Server started at porthttp://localhost:${PORT}`));
