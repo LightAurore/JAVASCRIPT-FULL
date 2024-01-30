@@ -281,7 +281,6 @@ FROM products;
 
 /*
 
-
 */
 ### Create Table
 CREATE TABLE cars (

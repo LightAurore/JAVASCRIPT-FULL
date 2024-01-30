@@ -103,7 +103,7 @@ app.post("/update/:id", async (req, res) => {
 });
 
 //delete
-app.post("/delete/:id", async (req, res) => {
+app.delete("/delete/:id", async (req, res) => {
   console.log(req);
   const id = req.params.id;
   console.log(id);
