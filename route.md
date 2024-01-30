@@ -104,3 +104,7 @@ app.listen(5000, () => {
 app.use(express.json())
 app.use('/api/products', products_routes);
 
+
+
+<!-- mongodb -->
+https://developer.mozilla.org/fr/docs/Learn/Server-side/Express_Nodejs/Introduction
