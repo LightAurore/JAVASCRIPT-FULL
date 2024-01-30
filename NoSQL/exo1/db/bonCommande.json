@@ -1,0 +1,50 @@
+{
+	"produit": [
+		{
+			"num_produit": "4444",
+			"nom_produit": "pointe",
+			"matiere": "acier",
+			"dimension": "45",
+			"poids": "20k",
+			"prix": 22
+		},
+		{
+			"num_produit": "4444",
+			"nom_produit": "pointe",
+			"matiere": "acier",
+			"dimension": "45",
+			"poids": "20k",
+			"prix": 22
+		}
+	],
+
+	"client" : [
+		{
+			"num_clt" : "B512",
+			"nom_clt": "Gillet",
+			"addresse" : {
+				"numeéro": 122,
+				"rue" : "ffffff",
+				"ville": "Toulouse"
+			}
+		},
+		{
+			"num_clt" : "B512",
+			"nom_clt": "Gillet",
+			"addresse" : {
+				"numeéro": 122,
+				"rue" : "ffffff",
+				"ville": "Toulouse"
+			}
+		}
+	],
+
+	"commande":{
+		"num_cmd": "vfvfv",
+		"date_cmd": "2023-05-21",
+		"quantité": 22,
+		"num_pdoruit": "4vff",
+		"num_clt": "646"
+	}
+}
+
