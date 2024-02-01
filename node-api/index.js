@@ -66,5 +66,6 @@ app.post("/js/addition", jsonParser, (req, res) => {
 });
 
 app.listen(port, () => {
+  console.log(process.env.LANG.slice(0, 2));
   console.log(`Example app listening on port http://localhost:${port}`);
 });
