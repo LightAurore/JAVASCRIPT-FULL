@@ -16,25 +16,21 @@ app.get("/", async (req, res) => {
 
 //  retourner les images
 //  retourner les styles
-app.use(
-  "/css",
-  express.static(
-    "C:/Users/ambas/Desktop/Brouillon01/JAVASCRIPT-FULL/node-js/css/"
-  )
-);
-app.use(
-  "/images",
-  express.static(
-    "C:/Users/ambas/Desktop/Brouillon01/JAVASCRIPT-FULL/node-js/images/"
-  )
-);
+app.use("/css", express.static(__dirname + "/css/"));
+// app.use(
+//   "/images",
+//   express.static(
+//     "C:/Users/ambas/Desktop/Brouillon01/JAVASCRIPT-FULL/node-js/images/"
+//   )
+// );
+app.use("/images", express.static(__dirname + "/images/"));
 
 // route : /
-app.get('/api/addition', (req,res) => {
-    const parametres = req.query;
+app.get("/api/addition", (req, res) => {
+  const parametres = req.query;
 
-    res.send()
-})
+  res.send();
+});
 
 // start and listen(port, callback) un port
 app.listen(PORT, () => {
