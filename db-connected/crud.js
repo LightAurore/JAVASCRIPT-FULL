@@ -1,11 +1,14 @@
 // https://www.youtube.com/watch?v=f3Q6D28L0ls
-
+/* Express */
 const express = require("express");
 const app = express();
+const PORT = 3000;
+// 
+/* postgreSQL */
 const Pool = require("pg").Pool;
+// 
 const path = require("path");
 const ejs = require("ejs");
-const PORT = 3000;
 
 require("dotenv").config();
 

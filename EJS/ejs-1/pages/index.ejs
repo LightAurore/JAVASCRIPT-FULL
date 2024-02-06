@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fichier ejs </title>
+</head>
+
+<body>
+
+
+
+    <header>
+        <%- include ('templates/header.ejs') %>
+    </header>
+
+    <main>
+
+        <%# // définir une variable ; %>
+            <% var msg="Hello world !" ; %>
+                <h1>
+                    <%= msg %>
+                </h1>
+
+                <%# Ceci est un commentaire; %>
+                    <h1>Hello <%= name %>!</h1>
+                    <ul>
+                        <% for (let i=0; i < data.length; i++) { %>
+                            <li>
+                                <%= data[i] %>
+                            </li>
+                            <% } %>
+                    </ul>
+                    <% if (numberOfNames>= 5) {%>
+                        <p> There are at least 5 people on the list </p>
+                        <% } else { %>
+                            <p> There are less than 5 people on the list</p>
+                            <% } %>
+                                </ul>
+    </main>
+
+</body>
+
+</html>

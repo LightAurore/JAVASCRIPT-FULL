@@ -1,0 +1,11 @@
+a {
+  color: red !important;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  flex-grow: 1;
+}

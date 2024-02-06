@@ -1,0 +1,24 @@
+<%- include('../partials/header'); %>
+    <main>
+        <div class="ui segment">
+            <h1>At least we can see something now</h1>
+            <p>This is visual of templating through EJS</p>
+            <h2>Variable</h2>
+            <p>
+                <%= subheading %>
+            </p>
+            <ul>
+                <% characters.forEach(function(character) { %>
+                    <li class="ui segment">
+                        <strong>
+                            <%= character.name %>
+                        </strong>
+                        is <%= character.designation %> at hogwarts.
+                    </li>
+                    <% }); %>
+            </ul>
+        </div>
+    </main>
+
+
+    <%- include('../partials/footer'); %>

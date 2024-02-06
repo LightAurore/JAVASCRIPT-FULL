@@ -1,0 +1,12 @@
+# Colorier la console
+
+    https://www.npmjs.com/package/chalk/v/5.3.0
+
+# Lire les fichiers ".csv"
+
+    https://www.npmjs.com/package/csv-generate
+    https://www.npmjs.com/package/export-to-csv
+    https://c2fo.github.io/fast-csv/docs/introduction/example/
+
+#Créer un server
+https://www.geeksforgeeks.org/express-js-http-methods/
