@@ -1,10 +1,11 @@
 "use strict";
 
 function getTeachers(obj) {
-  console.log(`Professeur ${obj.firstname} ${obj.lastname}`);
-  let listeProf = obj.map(x => x);
+  // console.log(`Professeur ${obj.firstname} ${obj.lastname}`);
+  console.log(obj)
+  // let listeProf = obj.map(x => x);
 
-  return listeProf;
+  // return listeProf;
 }
 
 // Lire un tableau
