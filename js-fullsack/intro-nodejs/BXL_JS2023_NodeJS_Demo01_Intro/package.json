@@ -1,0 +1,32 @@
+{
+  "name": "demo-01",
+  "version": "0.1.0",
+  "description": "Horloge",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "demo",
+    "node",
+    "DigitalCity"
+  ],
+  "author": "Aurélien",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Formation-JS/BXL_JS2023_NodeJS_Demo01_Intro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Formation-JS/BXL_JS2023_NodeJS_Demo01_Intro/issues"
+  },
+  "homepage": "https://github.com/Formation-JS/BXL_JS2023_NodeJS_Demo01_Intro#readme"
+}

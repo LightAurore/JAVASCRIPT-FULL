@@ -1,0 +1,32 @@
+{
+  "name": "demo-02",
+  "version": "0.1.0",
+  "description": "Demo de l'utilisation des modules",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "demo",
+    "fred",
+    "module"
+  ],
+  "author": "Le groupe JS de Bruxelles formation à Digital City",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Formation-JS/BXL_JS2023_NodeJS_Demo02_Module.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Formation-JS/BXL_JS2023_NodeJS_Demo02_Module/issues"
+  },
+  "homepage": "https://github.com/Formation-JS/BXL_JS2023_NodeJS_Demo02_Module#readme"
+}
