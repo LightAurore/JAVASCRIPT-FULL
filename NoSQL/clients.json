@@ -1,0 +1,167 @@
+[
+  {
+    "_id": {"$oid": "65b3ab3c0bd2271fee7b7110"},
+    "ADRESSE": "23,a. Dumont",
+    "CAT": "C1",
+    "CLIENT_ID": "B112",
+    "COMPTE": 1250,
+    "LOCALITE": "Poitiers",
+    "NOM": "HANSENNEA"
+  },
+  {
+    "_id": {"$oid": "65b3ab3c0bd2271fee7b7111"},
+    "ADRESSE": "23,a. Dumont",
+    "CAT": "C1",
+    "CLIENT_ID": "C123",
+    "COMPTE": -2300,
+    "LOCALITE": "Namur",
+    "NOM": "MERCIER"
+  },
+  {
+    "_id": {"$oid": "65b3ab3c0bd2271fee7b7112"},
+    "ADRESSE": "23,a. Dumont",
+    "CAT": "B2",
+    "CLIENT_ID": "B332",
+    "COMPTE": 0,
+    "LOCALITE": "Geneve",
+    "NOM": "MONTI"
+  },
+  {
+    "_id": {"$oid": "65b3ab3c0bd2271fee7b7113"},
+    "ADRESSE": "23,a. Dumont",
+    "CAT": "C1",
+    "CLIENT_ID": "F010",
+    "COMPTE": 0,
+    "LOCALITE": "Poitiers",
+    "NOM": "TOUSSAINT"
+  },
+  {
+    "_id": {"$oid": "65b3ab3c0bd2271fee7b7114"},
+    "ADRESSE": "23,a. Dumont",
+    "CAT": "B1",
+    "CLIENT_ID": "K111",
+    "COMPTE": 720,
+    "LOCALITE": "Lille",
+    "NOM": "VANBIST",
+    "COMMANDES": "[{NCOM=30178, DATE_COM=Mon May 01 02:00:00 CEST 2017, DETAILS=[{PRODUCT_ID=CS464, QCOM=25}]}]"
+  },
+  {
+    "_id": {"$oid": "65b3ab3c0bd2271fee7b7115"},
+    "ADRESSE": "23,a. Dumont",
+    "CAT": "C1",
+    "CLIENT_ID": "S127",
+    "COMPTE": -4580,
+    "LOCALITE": "Namur",
+    "NOM": "VANDERKA",
+    "COMMANDES": "[{NCOM=30182, DATE_COM=Tue May 02 02:00:00 CEST 2017, DETAILS=[{PRODUCT_ID=PA60, QCOM=20}]}]"
+  },
+  {
+    "_id": {"$oid": "65b3ab3c0bd2271fee7b7116"},
+    "ADRESSE": "23,a. Dumont",
+    "CAT": "B1",
+    "CLIENT_ID": "B512",
+    "COMPTE": -8700,
+    "LOCALITE": "Toulouse",
+    "NOM": "GILLET",
+    "COMMANDES": "[{NCOM=30188, DATE_COM=Wed May 03 02:00:00 CEST 2017, DETAILS=[{PRODUCT_ID=PA60, QCOM=70}, {PRODUCT_ID=PH222, QCOM=92}, {PRODUCT_ID=CS464, QCOM=180}, {PRODUCT_ID=PA45, QCOM=22}]}]"
+  },
+  {
+    "_id": {"$oid": "65b3ab3c0bd2271fee7b7117"},
+    "ADRESSE": "23,a. Dumont",
+    "CAT": "B2",
+    "CLIENT_ID": "B062",
+    "COMPTE": -3200,
+    "LOCALITE": "Namur",
+    "NOM": "GOFFIN"
+  },
+  {
+    "_id": {"$oid": "65b3ab3c0bd2271fee7b7118"},
+    "ADRESSE": "23,a. Dumont",
+    "CAT": "B2",
+    "CLIENT_ID": "C400",
+    "COMPTE": 350,
+    "LOCALITE": "Poitiers",
+    "NOM": "FERARD",
+    "COMMANDES": "[{NCOM=30179, DATE_COM=Thu May 04 02:00:00 CEST 2017, DETAILS=[{PRODUCT_ID=CS262, QCOM=60}, {PRODUCT_ID=PA60, QCOM=30}]}, {NCOM=30184, DATE_COM=Fri May 05 02:00:00 CEST 2017, DETAILS=[{PRODUCT_ID=CS464, QCOM=120}, {PRODUCT_ID=PA45, QCOM=20}]}, {NCOM=30186, DATE_COM=Sat May 06 02:00:00 CEST 2017, DETAILS=[{PRODUCT_ID=PA45, QCOM=3}, {PRODUCT_ID=PA60, QCOM=70}]}]"
+  },
+  {
+    "_id": {"$oid": "65b3ab3c0bd2271fee7b7119"},
+    "ADRESSE": "23,a. Dumont",
+    "CAT": "B1",
+    "CLIENT_ID": "C003",
+    "COMPTE": -1750,
+    "LOCALITE": "Toulouse",
+    "NOM": "AVRON"
+  },
+  {
+    "_id": {"$oid": "65b3ab3c0bd2271fee7b711a"},
+    "ADRESSE": "23,a. Dumont",
+    "CLIENT_ID": "K729",
+    "COMPTE": 0,
+    "LOCALITE": "Toulouse",
+    "NOM": "NEUMAN"
+  },
+  {
+    "_id": {"$oid": "65b3ab3c0bd2271fee7b711b"},
+    "ADRESSE": "23,a. Dumont",
+    "CAT": "B2",
+    "CLIENT_ID": "F011",
+    "COMPTE": 0,
+    "LOCALITE": "Toulouse",
+    "NOM": "PONCELET",
+    "COMMANDES": "[{NCOM=30185, DATE_COM=Sun May 07 02:00:00 CEST 2017, DETAILS=[{PRODUCT_ID=PS222, QCOM=600}, {PRODUCT_ID=CS464, QCOM=260}, {PRODUCT_ID=PA60, QCOM=15}]}]"
+  },
+  {
+    "_id": {"$oid": "65b3ab3c0bd2271fee7b711c"},
+    "ADRESSE": "23,a. Dumont",
+    "CAT": "C1",
+    "CLIENT_ID": "L422",
+    "COMPTE": 0,
+    "LOCALITE": "Namur",
+    "NOM": "FRANCK"
+  },
+  {
+    "_id": {"$oid": "65b3ab3c0bd2271fee7b711d"},
+    "ADRESSE": "23,a. Dumont",
+    "CAT": "B1",
+    "CLIENT_ID": "S712",
+    "COMPTE": 0,
+    "LOCALITE": "Paris",
+    "NOM": "GUILLAUME"
+  },
+  {
+    "_id": {"$oid": "65b3ab3c0bd2271fee7b711e"},
+    "ADRESSE": "23,a. Dumont",
+    "CLIENT_ID": "D063",
+    "COMPTE": -2250,
+    "LOCALITE": "Toulouse",
+    "NOM": "MERCIER"
+  },
+  {
+    "_id": {"$oid": "65b3ab3c0bd2271fee7b711f"},
+    "ADRESSE": "23,a. Dumont",
+    "CAT": "C2",
+    "CLIENT_ID": "F400",
+    "COMPTE": 0,
+    "LOCALITE": "Bruxelles",
+    "NOM": "JACOB"
+  },
+  {
+    "_id": {"$oid": "65b3ab3c0bd2271fee7b7120"},
+    "ADRESSE": "23,a. Dumont",
+    "CAT": "C2",
+    "CLIENT_ID": "F401",
+    "COMPTE": 2523,
+    "LOCALITE": "Bruxelles",
+    "NOM": 1234
+  },
+  {
+    "_id": {"$oid": "65b3ab3c0bd2271fee7b7121"},
+    "ADRESSE": "23,a. Dumont",
+    "CAT": "C2",
+    "CLIENT_ID": "F402",
+    "COMPTE": 0.938,
+    "LOCALITE": "Bruxelles",
+    "NOM": "ARONDI"
+  }
+]
