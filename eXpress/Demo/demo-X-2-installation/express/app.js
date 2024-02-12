@@ -2,8 +2,6 @@ const { PORT }= process.env;
 
 const express = require("express"), app = express();
 
-const morgan = require('morgan');
-
 
 // middleware : App-Lv1  --------------
 const applvlMiddleware = require('./middlewares/applvl.middleware');

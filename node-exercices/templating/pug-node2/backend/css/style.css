@@ -1,0 +1,54 @@
+
+body{
+    background-color: #000;
+    /* color:color-mix(in hsl shorter hue, color percentage, color percentage) */
+    color: bisque;
+    font-family: sans-serif;
+}
+
+div.mois-container{
+    display: flex;
+    margin-block: 20px;
+}
+div.mois-container span{
+    margin-left: 12px;
+    background-color: lavenderblush;
+    color: darkolivegreen;
+    padding: 5px;
+}
+
+h1{
+    color: brown;
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    width: 150px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    border: 2px ridge #40826d;
+    background-color: #5f9ea0;
+    color: #2f1b0c;
+    text-decoration: none;
+    
+}
+
+p.paraph{
+    font-size: 2rem;
+    color: greenyellow;
+    text-shadow: 0 0 2px red;
+}

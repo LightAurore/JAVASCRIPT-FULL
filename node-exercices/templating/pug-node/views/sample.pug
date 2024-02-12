@@ -1,0 +1,35 @@
+html 
+    //- HEAD
+    head 
+        link(rel="stylesheet", href="./css/style.css")
+        title = title 
+    
+    body 
+        h1= message
+
+        //- #{...} permet d'appeler des variables dans une chaîne
+        h2 Auteur | #{user}
+
+        //- h2= title
+        img(src="../img/favicon.png", alt="")
+
+        - const x = 10;
+
+        h2= 2 * x
+
+        p This is just some text
+
+        span avant
+        div= mois
+        span après
+
+        //- Créer une boucle
+        div(class="mois-container")
+            - for(m of mois){
+                br
+                span= m
+            - }
+
+        h3= user.toUpperCase()
+
+
