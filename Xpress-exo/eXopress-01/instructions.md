@@ -2,7 +2,7 @@
 
 ## Theme 
 
-Réaliser une site web pour présenter une destination de voyage
+Réaliser une site web pour présenter une destination de voyage (Pays / Ville / ...)
 
 ## Fonctionalités
  - Une page d'accueil avec une image présentation
