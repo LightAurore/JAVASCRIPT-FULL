@@ -1,0 +1,28 @@
+<%- include('../partials/_header.ejs', {title: "Me contacter"}) %>
+
+<h1>Demo 02 - Templating express</h1>
+<h2>Formulaire de contact</h2>
+
+<form method="post">
+    <% var errorMsg %>
+    <% if(errorMsg)  {%>
+        <div>
+            <span style="color:crimson"><%= errorMsg %></span>
+        </div>
+
+    <% }%>
+
+    <div>
+        <label for="input-email">Courriel</label>
+        <input type="email" name="email" id="input-email">
+    </div>
+    <div>
+        <label for="input-msg">Message</label>
+        <textarea name="message" id="input-msg"></textarea>
+    </div>
+    <div><button type="submit">Envoyer</button></div>
+</form>
+
+
+
+<%- include('../partials/_footer.ejs') %>

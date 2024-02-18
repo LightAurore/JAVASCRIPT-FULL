@@ -1,0 +1,31 @@
+<%- include('../partials/_header.ejs', { title: 'Me contacter' }) %>
+    <main>
+       <form method="post">
+        <div id="container-user">
+            <label for="pseudo">Pseudo *</label>
+            <input type="text" id="pseudo" name="pseudo">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div id="message">
+            <label for="category">Raison</label>
+            <select name="category" id="category">
+                <option value="" aria-readonly="">-- SVP, choisissez votre motif --</option>
+                <option value="Info">Info</option>
+                <option value="Devis">Devis</option>
+                <option value="Reclamation">Reclamation</option>
+                <option value="Autres">Autres</option>
+            </select>
+            <label for="message">Votre message</label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div id="boutons">
+            <button type="reset">Effacer</button>
+            <button type="submit">Envoyer</button>
+        </div>
+       </form>
+    </main>
+
+    <%- include('../partials/_footer.ejs') %>
+
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_gallery -->

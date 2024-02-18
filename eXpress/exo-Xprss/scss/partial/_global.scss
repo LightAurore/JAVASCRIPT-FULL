@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 110vh;
+
+    & > *{
+        width: 100%;
+        padding: 48px;
+    }
+}
+// La nav barre
+nav{
+    display: flex;
+    justify-content: space-between;
+
+    .container__logo{
+        width: 150px;
+    }
+
+    .navBar{
+        display: flex;
+
+        & > *{
+            display: grid;
+            place-content: center;
+            width: 150px;
+            height: 50px;
+            margin-inline: 2px;
+            list-style: none;
+            background-color: aqua;
+        }
+    }
+}
+
+// Logo
+.logo{
+    width: 100%;
+}
+// Nav barre
+.nav__onglet{
+    a{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        background-color: burlywood;
+        font-size: 1.5rem;
+    }
+}
+
+// Header
+.main-header{
+    position: relative;
+    height: 600px;
+    background-image: url("/images/banner.jpg");
+
+    h1{
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        padding: 10px;
+        font-weight: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 0.7rem;
+        background-color: #540657af;
+        color: $primary;
+    }
+    h2{
+        position: absolute;
+        top: 60%;
+        left: 15%;
+        padding: 10px;
+        font-size: 3rem;
+        font-family: Helvetica, sans-serif;
+        background-color: #64fadaaa;
+        color: $secondary;
+    }
+}
+
+// carousel
+.img-championnat{
+    // display: flex;
+
+    // flex-wrap: nowrap;
+    // overflow: scroll;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+
+    .mySlides{
+        display: none;
+        // vertical-align: middle;
+    }
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+
+//   Pages
+.destinations{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 15px;
+
+    img{
+        width: 250px;
+    }
+}

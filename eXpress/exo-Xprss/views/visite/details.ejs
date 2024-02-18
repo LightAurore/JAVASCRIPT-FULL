@@ -1,0 +1,25 @@
+<%- include('../partials/_header.ejs', { title: 'Visite' }) %>
+
+<h2><%= data.name %></h2>
+<address>
+    <!-- rue machin 123,
+    cp : 45wxx4555
+    ville: Bangkok
+    pays: Thaïland -->
+
+    <%= data.location%>
+    
+</address>
+<h3>Description</h3>
+<p>
+    <%= data.description %>
+</p>
+<img src="/images/photo.jpg" alt="">
+
+<div>
+    <span>Prix : <b><%= data.price %></b> </span>
+    <span>image-logo</span>
+    <span>Durée de vol : <b><%= data.duration %></b></span>
+</div>
+
+<%- include('../partials/_footer.ejs') %>

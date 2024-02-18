@@ -1,0 +1,20 @@
+    <% const css = `
+    
+    <style>
+        h1{
+            color: hotpink
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+` %>
+    
+    <%- include('../partials/_header.ejs', {title: "Home"}) %>
+
+    <h1>Demo 02 - Templating express</h1>
+    <h2>Index</h2>
+    <p>Nous sommes <%= now %></p>
+
+    <a href="/contactme">Me contacter</a>
+
+    <%- include('../partials/_footer.ejs') %>

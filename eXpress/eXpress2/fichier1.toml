@@ -1,0 +1,43 @@
+# Ceci est un document TOML.
+
+type de données
+
+chaînes de caractères ;
+nombres entiers ;
+nombres à virgule flottante ;
+booléens ;
+dates et heures ;
+tableaux ;
+dictionnaires.
+
+title = "Exemple de fichier TOML"
+
+[owner]
+name = "Tom Preston-Werner"
+dob = 1979-05-27T07:32:00-08:00 # Les dates et heures forment un type natif
+
+[database]
+server = "192.168.1.1"
+ports = [ 8001, 8001, 8002 ]
+connection_max = 5000
+enabled = true
+
+[servers]
+
+  # L'indentation (tabulations et/ou espaces) est autorisée mais pas obligatoire
+  [servers.alpha]
+  ip = "10.0.0.1"
+  dc = "eqdc10"
+
+  [servers.beta]
+  ip = "10.0.0.2"
+  dc = "eqdc10"
+
+[clients]
+data = [ ["gamma", "delta"], [1, 2] ]
+
+# Les sauts de ligne sont acceptables à l’intérieur des tableaux
+hosts = [
+  "alpha",
+  "omega"
+]

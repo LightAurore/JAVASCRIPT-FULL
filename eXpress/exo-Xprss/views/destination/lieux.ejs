@@ -1,0 +1,25 @@
+<%- include('../partials/_header.ejs', { title: 'Destination' }) %>
+    <main>
+        <h2>Nos destinations</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, omnis.
+        </p>
+        <ul class="destinations">
+            <% data.forEach( (lieu) => { %>
+            <li class="responsive">
+                <article class="gallery">
+                    <div>
+                        <a target="_blank" href="/detail/:<%= lieu.id%>">
+                            <img src="/images/photo.jpg" alt="Cinque Terre" width="600" height="400">
+                        </a>
+                        <h3><%= lieu.name %></h3>
+                        <p class="desc">
+                            <%= lieu.shortDescription %>
+                        </p>
+                    </div>
+                </article>
+            </li>
+            <% } ) %>
+        </ul>
+    </main>
+    <%- include('../partials/_footer.ejs') %>
