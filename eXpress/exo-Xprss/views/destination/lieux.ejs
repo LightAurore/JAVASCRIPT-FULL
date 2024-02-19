@@ -9,8 +9,8 @@
             <li class="responsive">
                 <article class="gallery">
                     <div>
-                        <a target="_blank" href="/detail/:<%= lieu.id%>">
-                            <img src="/images/photo.jpg" alt="Cinque Terre" width="600" height="400">
+                        <a target="_self" href="/detail/<%= lieu.id%>">
+                            <img src="/images/<%= lieu.thumbnail %>" alt="Cinque Terre" width="600" height="400">
                         </a>
                         <h3><%= lieu.name %></h3>
                         <p class="desc">
@@ -19,6 +19,7 @@
                     </div>
                 </article>
             </li>
+            
             <% } ) %>
         </ul>
     </main>

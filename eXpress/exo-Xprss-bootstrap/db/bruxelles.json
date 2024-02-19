@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "name": "Grand-Place de Bruxelles",
+        "location": "Grand-Place - 1000 Bruxelles",
+        "description": "La Grand-Place est la place centrale de Bruxelles. Mondialement renommée pour sa richesse ornementale.",
+        "shortDescription": "Place centrale de Bruxelles.",
+        "image": "image_grandplace.jpg",
+        "thumbnail": "miniature_grandplace.jpg",
+        "duration": "1 heure",
+        "price": "Gratuit"
+    },
+    {
+        "id": 2,
+        "name": "Atomium",
+        "location": "Place de l'Atomium 1 B-1020 BRUXELLES",
+        "description": "L'Atomium est un monument de Bruxelles, construit à l'occasion de l'Exposition universelle de 1958 et représentant la maille conventionnelle du cristal de fer.",
+        "shortDescription": "Monument emblématique de Bruxelles.",
+        "image": "image_atomium.jpg",
+        "thumbnail": "miniature_atomium.jpg",
+        "duration": "2 heures",
+        "price": "15 euros"
+    },
+    {
+        "id": 3,
+        "name": "Manneken Pis",
+        "location": "Rue du Chêne 19, 1000 Bruxelles",
+        "description": "Le Manneken Pis est une statue en bronze d'un petit garçon nu en train d'uriner, située au cœur de Bruxelles.",
+        "shortDescription": "Célèbre statue d'un petit garçon.",
+        "image": "image_mannekenpis.jpg",
+        "thumbnail": "miniature_mannekenpis.jpg",
+        "duration": "30 minutes",
+        "price": "Gratuit"
+    },
+    {
+        "id": 4,
+        "name": "Musées royaux des Beaux-Arts de Belgique",
+        "location": "Rue de la Régence 3, 1000 Bruxelles-Ville",
+        "description": "Les Musées royaux des Beaux-Arts de Belgique conservent quelque 20.000 œuvres, allant du XVème siècle à nos jours.",
+        "shortDescription": "Musée d'art à Bruxelles.",
+        "image": "image_musee.jpg",
+        "thumbnail": "miniature_musee.jpg",
+        "duration": "3 heures",
+        "price": "10 euros"
+    },
+    {
+        "id": 5,
+        "name": "Parc du Cinquantenaire",
+        "location": "Avenue de la Renaissance 1000 Bruxelles, Belgique",
+        "description": "Le parc du Cinquantenaire est un parc urbain de Bruxelles où se trouvent plusieurs musées.",
+        "shortDescription": "Parc urbain à Bruxelles.",
+        "image": "image_parc.jpg",
+        "thumbnail": "miniature_parc.jpg",
+        "duration": "1 heure",
+        "price": "Gratuit"
+    },
+    {
+        "id": 6,
+        "name": "Palais royal de Bruxelles",
+        "location": "Rue Brederode, 16 1000 Bruxelles",
+        "description": "Le Palais royal de Bruxelles est la résidence officielle du roi des Belges. Il n'y habite pas, mais le palais est où le roi exerce ses fonctions de chef d'État.",
+        "shortDescription": "Résidence officielle du roi des Belges.",
+        "image": "image_palais.jpg",
+        "thumbnail": "miniature_palais.jpg",
+        "duration": "1 heure",
+        "price": "Gratuit"
+    },
+    {
+        "id": 7,
+        "name": "Musée Horta",
+        "location": "Rue Américaine 27, 1060 Saint-Gilles",
+        "description": "Le musée Horta est un musée consacré à l'architecte Victor Horta et à l'Art nouveau. Il est situé dans la maison personnelle et le studio de Victor Horta.",
+        "shortDescription": "Musée dédié à Victor Horta.",
+        "image": "image_horta.jpg",
+        "thumbnail": "miniature_horta.jpg",
+        "duration": "1 heure",
+        "price": "10 euros"
+    },
+    {
+        "id": 8,
+        "name": "Centre belge de la bande dessinée",
+        "location": "Rue des Sables 20, 1000 Bruxelles",
+        "description": "Le Centre belge de la bande dessinée est un musée consacré à la bande dessinée belge. Il est situé dans un bâtiment Art nouveau conçu par Victor Horta.",
+        "shortDescription": "Musée de la bande dessinée.",
+        "image": "image_bande.jpg",
+        "thumbnail": "miniature_bande.jpg",
+        "duration": "2 heures",
+        "price": "10 euros"
+    },
+    {
+        "id": 9,
+        "name": "Cathédrale de Bruxelles",
+        "location": "Parvis Sainte-Gudule, 1190 Bruxelles",
+        "description": "La Cathédrale de Bruxelles, également connue sous le nom de Cathédrale Saint-Michel et Sainte-Gudule, est une cathédrale gothique située sur le boulevard de l'Impératrice.",
+        "shortDescription": "Cathédrale gothique à Bruxelles.",
+        "image": "image_cathedrale.jpg",
+        "thumbnail": "miniature_cathedrale.jpg",
+        "duration": "1 heure",
+        "price": "Gratuit"
+    },
+    {
+        "id": 10,
+        "name": "Musée Magritte",
+        "location": "Place Royale 1 1000 Brussels",
+        "description": "Le musée Magritte est un musée d'art dédié à l'œuvre du surréaliste belge René Magritte.",
+        "shortDescription": "Musée dédié à René Magritte.",
+        "image": "image_magritte.jpg",
+        "thumbnail": "miniature_magritte.jpg",
+        "duration": "2 heures",
+        "price": "10 euros"
+    }
+]
