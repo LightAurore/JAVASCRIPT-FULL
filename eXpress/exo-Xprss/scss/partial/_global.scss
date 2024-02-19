@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -20,9 +28,11 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color:darken($color: #f18ad2, $amount: 40) ;
 
     .container__logo{
-        width: 150px;
+        width: 75px;
     }
 
     .navBar{
@@ -32,10 +42,11 @@ nav{
             display: grid;
             place-content: center;
             width: 150px;
-            height: 50px;
             margin-inline: 2px;
             list-style: none;
             background-color: aqua;
+            color: orangered;
+            border-radius: 24px;
         }
     }
 }
@@ -52,7 +63,7 @@ nav{
         padding: 10px;
         text-align: center;
         text-decoration: none;
-        background-color: burlywood;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 1.5rem;
     }
 }
@@ -62,6 +73,9 @@ nav{
     position: relative;
     height: 600px;
     background-image: url("/images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 
     h1{
         position: absolute;
@@ -84,6 +98,12 @@ nav{
         background-color: #64fadaaa;
         color: $secondary;
     }
+}
+
+// Main
+main{
+    min-height: 50vh;
+    flex: 1;
 }
 
 // carousel
@@ -127,5 +147,163 @@ nav{
 
     img{
         width: 250px;
+        height: auto;
+    }
+}
+
+
+// detail
+.container-card{
+
+    h2{
+        width: 80%;
+        height: 75px;
+        text-align: center;
+        font-size: 45px;
+        font-family: fantasy;
+        background-color: rgb(178, 237, 100);
+        margin-bottom: 5px;
+    }
+}
+.card{
+    display: flex;
+    width: 80%;
+    padding-inline: 24px;
+    border-left: 2px ridge yellow ;
+    border-right: 2px ridge yellow ;
+
+    .donnee{
+        width: 50%;
+    }
+}
+.card-image{
+    width: 566px;
+
+    .image{
+        width: 100%;
+    }
+}
+
+.detail-prix{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 5px;
+    margin: 0 auto;
+    background-color: #8d7c7c;
+
+    & > *{
+        display: flex;
+        height: 100px;
+        background-color: #fff;
+        text-align: center;
+        place-items: center;
+        place-content: center;
+    }
+
+}
+
+
+// Formulaire
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 620px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 0.5px solid black;
+    background-color: rgb(167, 192, 240);
+
+    & > * {
+        width: 100%;
+        margin: 5px;
+        margin-block: 12px;
+    }
+
+    label{
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+}
+
+.container-user{
+    display: flex;
+    flex-direction: column;
+
+    & > *{
+        width: 100%;
+    }
+}
+
+#message{
+    display: flex;
+    flex-direction: column;
+
+    & > *{
+        width: 100%;
+    }
+}
+
+#boutons{
+    display: flex;
+    justify-content: space-evenly;
+    button{
+        width: 150px;
+        height: 35px;
+        font-size: 1.5rem;
+        border-radius: 20px;
+        color: rgb(6, 28, 48);
+        outline: none;
+        border: none;
+
+        &:hover{
+            opacity: 80%;
+            box-shadow: 0 0 2px #000;
+        }
+        
+    }
+
+    button[type="reset"]{
+            background-color: #a52a2a;
+    }
+
+    button[type="submit"]{
+            background-color: #18e756;}
+}
+
+// Destination
+.destinations{
+    margin: 0 auto;
+}
+.gallery{
+    background-color: rgb(207, 243, 231);
+    flex: 1;
+
+    .desc{
+        flex: 1;
+        height: 50px;
+    }
+}
+
+
+// Footer
+footer{
+    height: 250px;
+    background-color: chocolate;
+}
+
+.pied-page{
+    display: flex;
+    justify-content: space-around;
+    height: 25px;
+    background-color: #000;
+    color: #fff;
+
+    .cgu{
+        display: flex;
+
+        p{
+            margin-inline: 10px;
+        }
     }
 }

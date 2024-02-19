@@ -1,0 +1,12 @@
+
+nav{
+  background-color: cornflowerblue !important;
+}
+
+#main-header{
+  background-image: url("/public/images/banner.jpg");
+}
+
+main{
+  flex: 1;
+}

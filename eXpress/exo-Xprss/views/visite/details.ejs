@@ -1,22 +1,30 @@
 <%- include('../partials/_header.ejs', { title: 'Visite' }) %>
 
-<h2><%= data.name %></h2>
-<address>
-    <!-- rue machin 123,
-    cp : 45wxx4555
-    ville: Bangkok
-    pays: Thaïland -->
+<article class="container-card">
+    <h2><%= data.name %></h2>
+    <div class="card">
+        <div class="donnee">
+            <address>
+                <!-- rue machin 123,
+                cp : 45wxx4555
+                ville: Bangkok
+                pays: Thaïland -->
 
-    <%= data.location%>
-    
-</address>
-<h3>Description</h3>
-<p>
-    <%= data.description %>
-</p>
-<img src="/images/photo.jpg" alt="">
+                <%= data.location%>
+                
+            </address>
+            <h3>Description</h3>
+            <p>
+                <%= data.description %>
+            </p>
+        </div>
+        <figure class="card-image">
+            <img class="image" src="/images/<%= data.image %>" alt="">
+        </figure>
+    </div>
+</article>
 
-<div>
+<div class="detail-prix">
     <span>Prix : <b><%= data.price %></b> </span>
     <span>image-logo</span>
     <span>Durée de vol : <b><%= data.duration %></b></span>
