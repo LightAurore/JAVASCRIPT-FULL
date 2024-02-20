@@ -2,9 +2,9 @@
 function renderSessionMiddleware(){
     return (req, res, next) => {
         //  si on veut utiliser res.render au lieu de res.renderWithSession
-        // const backupRender = res.render;
+        res.backupRender = res.render;
     
-        res.renderWithSession = (view, data, callback)=>{
+        res.render = (view, data, callback)=>{
             let dataWithSession;
             if(data){
                 dataWithSession = {
@@ -17,7 +17,7 @@ function renderSessionMiddleware(){
                 }
             }
     
-            res.render(view, data, callback);
+            res.backupRender(view, dataWithSession, callback);
         }   
     
         next();

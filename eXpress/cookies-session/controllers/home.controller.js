@@ -19,12 +19,12 @@ const homeController = {
     },
     protected:(req, res) => {
         // Test si l'utilisateur est connecté
-        if(req.session.isLog){
+        if(!req.session.isLog){
             res.redirect('/login');
             return;
         }
 
-        if(req.session.user?.role === "Admin"){
+        if(req.session.user?.role !== "Admin"){
             res.redirect('/error');
             return;
         }
