@@ -1,0 +1,113 @@
+[
+    {
+        "id": 1,
+        "name": "Rawai Muay Thai camp",
+        "location": "Khao Lak",
+        "description": "",
+        "shortDescription": "",
+        "url": "https://www.rawaimuaythai.com/camp-de-muay-thai-en-thailande/",
+        "image": "rawai.jpg",
+        "thumbnail": "rawaiTh.jpg",
+        "duration": "8h30",
+        "price": "$2500"
+    },
+    {
+        "id": 2,
+        "name": "Thaphae Gym",
+        "location": "Chiang Mai",
+        "description": "Un centre pour l'exercice, le comba, un vrai combat,  l'auto-défense mais un bon endroit pour s'entraîner et toucher la culture du Muay thai",
+        "shortDescription": "Camps sportifs & Cliniques",
+        "image": "thapheaTh.jpg",
+        "thumbnail": "thapheaTh.jpg",
+        "duration": "10h00",
+        "price": "$3100"
+    },
+    {
+        "id": 3,
+        "name": "Sitmonchai Muay Thai gym",
+        "location": "Bangkok",
+        "description": "Une salle de gym avec un établissement de qualité, les entraîneurs sont expérimentés, des athètes de haut niveau et des champions, et une disponibilité d'entraîneurs personnels",
+        "shortDescription": "Une destination pour s'entraîner au Muay Thaï à Bangkok",
+        "image": "sitmonchai.jpg",
+        "thumbnail": "sitmonchaiTh.jpg",
+        "duration": "5h06",
+        "price": "$4500"
+    },
+    {
+        "id": 4,
+        "name": "AKA Thailand Muay Thai",
+        "location": "",
+        "description": "",
+        "shortDescription": "",
+        "image": "aka.jpg",
+        "thumbnail": "akaTh.jpg",
+        "duration": "7h50",
+        "price": "$5800"
+    },
+    {
+        "id": 5,
+        "name": "YOKKAO Training Center ",
+        "location": "Bangkok",
+        "description": "",
+        "shortDescription": "",
+        "image": "yokkao.jpg",
+        "thumbnail": "yokkaoTh.jpg",
+        "duration": "6h30",
+        "price": "$6000"
+    },
+    {
+        "id": 6,
+        "name": "Diamond Muay Thai",
+        "location": "Ko Phangan",
+        "description": "",
+        "shortDescription": "",
+        "image": "diamond.jpg",
+        "thumbnail": "diamondTh.jpg",
+        "duration": "5h45",
+        "price": "$6410"
+    },
+    {
+        "id": 7,
+        "name": "Khongsittha Muay Thai",
+        "location": "Bangkok",
+        "description": "",
+        "shortDescription": "",
+        "image": "khongsittha.jpg",
+        "thumbnail": "khongsitthaTh.jpg",
+        "duration": "6h21",
+        "price": "$9500"
+    },
+    {
+        "id": 9,
+        "name": "Bangarang Muay Thai & Fitness Gym",
+        "location": "Mae Rim",
+        "description": "",
+        "shortDescription": "",
+        "image": "bangarang.jpg",
+        "thumbnail": "bangarangTh.jpg",
+        "duration": "2h00",
+        "price": "$25000"
+    },
+    {
+        "id": 11,
+        "name": "Koh Mak Gym The Phoenix Arises",
+        "location": "Ko Mak",
+        "description": "",
+        "shortDescription": "",
+        "image": "kohmak.jpg",
+        "thumbnail": "kohmakTh.jpg",
+        "duration": "5h25",
+        "price": "$5460"
+    },
+    {
+        "id": 12,
+        "name": "Muay Thai Sangha",
+        "location": "Mae Taeng",
+        "description": "",
+        "shortDescription": "",
+        "image": "sangha.jpg",
+        "thumbnail": "sanghaTh.jpg",
+        "duration": "7h30",
+        "price": "$3600"
+    }
+]

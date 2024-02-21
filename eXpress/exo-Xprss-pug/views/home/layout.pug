@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+    block head
+        head
+            title= pageTitle
+            link(rel="stylesheet", href="css/styles.css")
+            script(type='text/javascript')
+            script(type='text/javascript', src='js/scripts.js')
+    body
+        block navigation 
+            nav(class="navBar") 
+                a(href="home/index.pug", class="logo") 
+                    img(src="images/logo.png", alt="logo")
+                ul
+                    li
+                        a(href="home/index.pug") Home
+                    li
+                        a(href="destination/lieux.pug") Destination
+                    li
+                        a(href="message/contact.pug") Contact
+
+    block header 
+        header 
+            h1 Surya 
+                b  Muay Thaï
+            h2 Centre sportif
+    
+    block content
+        main 
+            h4 Séjour sportif en Thailand pour se ressourcer en pratiquant de la Muay Thaï
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui, asperiores similique eligendi earum ut nobis. Cumque enim deserunt quam quod necessitatibus veniam amet nihil, totam voluptatum, labore pariatur provident?
+
+    block foot 
+        footer 
+            span destination 
+            span copyright  
+            span 12h00 
