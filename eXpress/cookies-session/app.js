@@ -5,6 +5,7 @@ const {PORT, NODE_ENV, SESSION_SECRET } = process.env;
 const express = require("express"), app = express();
 
 // imports 
+const morgan = require('morgan')
 const session = require("express-session");
 const homeRouter = require("./routes/home.router");
 const authRouter = require("./routes/auth.router");
@@ -21,16 +22,20 @@ app.set("views","./views");
 
 // middlewares
 app.use(express.urlencoded({ extended: true }));
+app.use(morgan(':method : url :status - :response-time ms'));
 
-// 
-// app.use(express.static("public"));
+// utiliser le dossier "public"
+app.use(express.static("public"));
 
+
+// Express - Session
 app.use(session({
     resave: true,
     saveUninitialized: true,
     secret: SESSION_SECRET
 }));
-
+// modifie la methode "render"
+// objectif ajouter la "session" dans les controllers
 app.use(renderSessionMiddleware())
 
 
