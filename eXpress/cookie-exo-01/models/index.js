@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const chalk = require("chalk");
 
-const dbColorSuccess = chalk.rgb(55, 0, 40);
+const dbColorSuccess = chalk.rgb(55, 250, 40);
 const dbColorError = chalk.rgb(210, 69, 69);
 
 function connectToDb(){

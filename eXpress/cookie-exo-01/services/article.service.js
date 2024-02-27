@@ -7,8 +7,9 @@ const articleService = {
      * @param {{title: string, slug : string[], desc: string?, content : string}} article
      */
     create: async ({title, slug, desc, tag,content}) =>{
+        let slugCustom = slug || title;
 
-        let slugFinal = slug.toLowerCase().trim().replaceAll(/\s+/g, "-");
+        let slugFinal = slugCustom.toLowerCase().trim().replaceAll(/[^\w\d]+/g, "-"); // /[^\w\d]+/g   /\s+/g
 
         // checke si le slug existe déjà
         const articleExists = await Article.findOne({ 

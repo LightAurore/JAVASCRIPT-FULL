@@ -8,6 +8,8 @@
     - morgan
     - ejs
     - nodemon
+    - morgan : Logger de requête
+    - yup : validateur de données
 
 
 ## Structure
@@ -41,3 +43,16 @@ views       [Génération du visuel]
     
     
 npm i nanoid
+
+
+# validation de données :
+joi, zod, yup, superstruct, express-validator
+
+# comparateur de package :
+https://npmtrends.com/
+
+
+bcrypt
+
+argon2
+

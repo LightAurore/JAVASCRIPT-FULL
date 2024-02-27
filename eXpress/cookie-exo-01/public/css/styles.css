@@ -47,12 +47,19 @@ h1{
     background-color: rgb(188, 180, 243);
 }
 
+
+
 body > main{
     padding: 1ch;
     flex-grow: 1;
 }
 
 /* Nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 nav > ul{
     display: flex;
     flex-direction: row;
@@ -62,13 +69,16 @@ nav > ul{
     margin: 0;
     gap: 2ch;
 
-    background-color: #000;
+    /* background-color: #000; */
+}
+nav > ul >li{
+    margin: 5px;
 }
 
 nav a {
     color: rgb(113, 111, 250);
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bolder;
     font-family: aquire ,supercharge, Verdana, Geneva, Tahoma, sans-serif;
 
@@ -88,3 +98,44 @@ footer{
     color: #f1f1f1;
 }
 
+
+/* Article form */
+.article-form {
+    width: 680px;
+    margin: 0 auto;
+}
+.article-form > h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.article-form > div:not(:last-child){
+    margin-bottom: 0.5ch;
+}
+.article-form > div > label{
+    font-size: 1.1em;
+}
+.article-form > div > label::after{
+    content: ':';
+    margin-left: 0.3ch;
+}
+
+.article-form > div > input, .article-form > div > textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid rgb(4, 12, 85);
+    border-radius: 0.2em;
+    padding: 3px;
+}
+.article-form > div > input:focus, .article-form > div > textarea:focus{
+    border-width: 2px;
+    padding: 2px;
+}
+.article-form > div > textarea{
+    resize: none;
+    min-height: 20em;
+}
+
+.article-form .error{
+    color: crimson;
+    font-style: italic;
+}

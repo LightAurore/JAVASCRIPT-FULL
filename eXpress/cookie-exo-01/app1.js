@@ -3,10 +3,12 @@ require('dotenv').config({override: true});
 
 // Imports
 const express = require('express');
-// require("express-async-errors");
+require("express-async-errors");
 const morgan = require('morgan');
 const session = require('express-session');
 const homeRouter = require('./routes/home.router');
+const articleRouter = require('./routes/article.router');
+const memberRouter = require('./routes/member.router');
 const chalk = require("chalk");
 
 
@@ -38,9 +40,11 @@ app.use(session({
 
 //  - Routing
 app.use(homeRouter);
+app.use(articleRouter)
+app.use(memberRouter)
 
 // 
-const connectToDb = require('./models')
+const connectToDb = require('./models');
 connectToDb();
 
 
