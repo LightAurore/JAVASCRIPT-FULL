@@ -1,3 +1,5 @@
+const memberService = require("../services/member.service");
+
 const memberController = {
     login: async (req,res)=>{
         res.render('member/login');
@@ -13,8 +15,8 @@ const memberController = {
         //! TODO Ajouter un validator (yup)
 
         const data = req.body;
-
-        if(memberService.usernameExists(data.username)){
+        
+        if(!memberService.usernameExists(data.username)){
             //! TODO Redirect to register page
             
             res.redirect('/member/register');

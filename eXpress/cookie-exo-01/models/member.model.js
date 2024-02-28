@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-
 const memberSchema = mongoose.Schema({
     username: {
         type: String,
@@ -27,10 +26,10 @@ const memberSchema = mongoose.Schema({
         trim:true,
         minLength: 5
     },
-    collection: 'Member',
-    timestamp: true
+    collection: "Member",
+    timestamps: true
 })
 
 
-const Member = mongoose.model('Member', memberSchema);
+const Member = mongoose.model("Member", memberSchema);
 module.exports = Member;
