@@ -9,11 +9,12 @@ const memberService = {
     register: async ({username,firstname, lastname,password}) => {
 
         const pwdHash = await argon2.hash(password);
+
         const memberCreated = new Member({
             username,
             firstname,
             lastname,
-            password
+            password : pwdHash
         });
 
         await memberCreated.save();
