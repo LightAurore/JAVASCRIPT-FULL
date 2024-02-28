@@ -2,18 +2,21 @@ const authController = {
     register: (req, res) => {
          res.resetStatus(501);
     },
+
     register_post: (req, res) => {
         res.resetStatus(501);
     },
+
     login: (req, res) => {
         res.render("auth/login")
     },
+
     login_post: (req, res) => {
         // récupérer les données du body 
         const { username, password } = req.body;
 
         // test (basique) les credentials
-        if(['zaza', 'bathy'].find(name => name === username?.toLowerCase()) !== 'zaza' || password !== "test1234="){
+        if(['zaza', 'balthy'].find(name => name === username?.toLowerCase()) !== 'zaza' || password !== "test1234="){
             const viewData = {
                 errorMessage : "Les credentials sont invalides"
             }
@@ -24,13 +27,14 @@ const authController = {
         // TODO Gestion de la session
         req.session.user = {
             name: username,
-            role: "Admin"
+            role:username.toLowerCase() === "balthy" ? "Admin" : "User"
         }
 
         req.session.isLog = true;
 
         res.redirect('/');
     },
+
     logout: (req, res) => {
         //  TODO Clear la session
         req.session.destroy();

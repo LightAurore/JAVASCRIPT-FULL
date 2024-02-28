@@ -1,0 +1,141 @@
+
+/* Font */
+@font-face {
+    font-family: "aquire";
+    src: url("../font/aquire/Aquire-BW0ox.otf");
+}
+
+@font-face {
+    font-family: "supercharge";
+    src: url("../font/supercharge/Supercharge-JRgPo.otf");
+}
+
+@font-face {
+    font-family: "Quantum";
+    src: url("../font/quantum-font/Quantum-eZOXg.ttf");
+}
+  
+/* Général */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: darkblue;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fff;
+
+    border-radius: 6px;
+}
+
+h1{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    padding-block: 12px;
+    margin-block: 12px;
+    letter-spacing: 4px;
+    text-align: center;
+
+    border-top: 1px solid #6e06f7;
+    border-bottom: 10px double #000;
+
+    background-color: rgb(188, 180, 243);
+}
+
+
+
+body > main{
+    padding: 1ch;
+    flex-grow: 1;
+}
+
+/* Nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+nav > ul{
+    display: flex;
+    flex-direction: row;
+
+    list-style: none;
+    padding: 1rem 2ch;
+    margin: 0;
+    gap: 2ch;
+
+    /* background-color: #000; */
+}
+nav > ul >li{
+    margin: 5px;
+}
+
+nav a {
+    color: rgb(113, 111, 250);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: aquire ,supercharge, Verdana, Geneva, Tahoma, sans-serif;
+
+    /* gradient */
+    background: -webkit-linear-gradient(#eee, #c011f5, rgb(18, 240, 240));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+}
+
+footer{
+    text-align: center;
+    background-color: darkblue;
+    color: #f1f1f1;
+}
+
+
+/* Article form */
+.article-form {
+    width: 680px;
+    margin: 0 auto;
+}
+.article-form > h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.article-form > div:not(:last-child){
+    margin-bottom: 0.5ch;
+}
+.article-form > div > label{
+    font-size: 1.1em;
+}
+.article-form > div > label::after{
+    content: ':';
+    margin-left: 0.3ch;
+}
+
+.article-form > div > input, .article-form > div > textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid rgb(4, 12, 85);
+    border-radius: 0.2em;
+    padding: 3px;
+}
+.article-form > div > input:focus, .article-form > div > textarea:focus{
+    border-width: 2px;
+    padding: 2px;
+}
+.article-form > div > textarea{
+    resize: none;
+    min-height: 20em;
+}
+
+.article-form .error{
+    color: crimson;
+    font-style: italic;
+}

@@ -1,0 +1,51 @@
+<%- include('../partials/_header.ejs') %>
+
+<% var error; %>
+
+<h1>Article</h1>
+
+
+
+<form method="post" class="article-form">
+    <h2>Formulaire d'ajout</h2>
+    <div>
+        <label for="input-title">Titre</label>
+        <input name="title" type="text" id="input-title" value="<%= data['title']%>">
+        <% if(error && error['title']) {%>
+        <span class="error" id="error-title"><%= error['title']%></span>
+        <% } %>
+    </div>
+    <div>
+        <label for="input-slug">Slug</label>
+        <input name="slug" type="text" id="input-slug" value="<%= data['slug']%>">
+        <% if(error && error['slug']) {%>
+        <span class="error" id="error-slug"><%= error['slug']%></span>
+        <% } %>
+    </div>
+    <div>
+        <label for="input-tag">Tags</label>
+        <input name="tag[0]" type="text" id="input-tag" value="<%= data['tag[0]']%>">
+        <% if(error && error['tag']) { %>
+        <span class="error" id="error-tag"><%= error['tag']%></span>
+        <% } %>
+    </div>
+    <div>
+        <label for="input-desc">Description</label>
+        <input name="description" type="text" id="input-desc" value="<%= data['description']%>">
+        <% if(error && error['desc']) {%>
+        <span class="error" id="error-desc"><%= error['desc']%></span>
+        <% } %>
+    </div>
+    <div>
+        <label for="input-content">Contenu</label>
+        <textarea name="content" id="input-content" cols="30" rows="10"></textarea>
+        <% if(error && error['contents']) {%>
+        <span class="error" id="error-content"><%= error['contents']%></span>
+         <% } %>
+    </div>
+    <div>
+        <button type="submit">Ajouter</button>
+    </div>
+</form>
+
+<%- include('../partials/_footer.ejs') %>

@@ -2,13 +2,15 @@ const homeController = {
     index: (req, res) => {
         const today = new Date().toLocaleDateString('fr-be');
 
-        console.log(req.session)
-
+        
         const viewData = {
             today,
             username: req.session.user?.name,
             session: req.session
+        
         }
+        console.log("------------------------------")
+        console.log(req.session)
         res.render('home/index', viewData);
     },
     about: (req, res) => {
@@ -17,7 +19,7 @@ const homeController = {
     error:(req,res) =>{
         res.render('home/error');
     },
-    protected:(req, res) => {
+    protected: (req, res) => {
         // Test si l'utilisateur est connecté
         if(!req.session.isLog){
             res.redirect('/login');
