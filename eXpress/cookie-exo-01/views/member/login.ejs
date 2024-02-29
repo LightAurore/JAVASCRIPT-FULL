@@ -1,22 +1,25 @@
-<%- include('../partials/_header.ejs') %>
+<%- include('../partial/_header.ejs') %>
+<% 
+var errorMessage;
+var data;
+%>
 
 <h1>Se connecter</h1>
-
-<form method="post" class="article-form">
-    <h2>Formulaire d'ajout</h2>
+<form method="POST">
     <div>
         <label for="input-username">Pseudo</label>
-        <input name="username" type="text" id="input-username">
+        <input id="input-username" name="username" type="text" value="<%= data?.username %>">
     </div>
     <div>
         <label for="input-pwd">Mot de passe</label>
-        <input name="password" type="password" id="input-pwd">
+        <input id="input-pwd" name="password" type="password">
     </div>
-    
     <div>
         <button type="submit">Login</button>
+        <% if(errorMessage) { %>
+            <span class="error"><%= errorMessage %></span>
+        <% } %>
     </div>
 </form>
 
-
-<%- include('../partials/_footer.ejs') %>
+<%- include('../partial/_footer.ejs') %>

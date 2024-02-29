@@ -1,34 +1,37 @@
-<%- include('../partials/_header.ejs') %>
+<%- include('../partial/_header.ejs') %>
+<%
+var errorMessage;
+var data;
+%>
 
-<h1>S'inscrire'</h1>
-
-<form method="post" class="article-form">
-    <h2>Formulaire d'ajout</h2>
+<h1>S'inscrire</h1>
+<form method="POST">
     <div>
         <label for="input-username">Pseudo</label>
-        <input name="username" type="text" id="input-username">
+        <input id="input-username" name="username" type="text" value="<%= data?.username %>">
     </div>
     <div>
         <label for="input-firstname">Prénom</label>
-        <input name="firstname" type="text" id="input-firstname">
+        <input id="input-firstname" name="firstname" type="text" value="<%= data?.firstname %>">
     </div>
     <div>
         <label for="input-lastname">Nom</label>
-        <input name="lastname" type="text" id="input-lastname">
+        <input id="input-lastname" name="lastname" type="text" value="<%= data?.lastname %>">
     </div>
     <div>
         <label for="input-pwd">Mot de passe</label>
-        <input name="password" type="password" id="input-pwd">
+        <input id="input-pwd" name="password" type="password">
     </div>
     <div>
         <label for="input-confirm">Confirmation</label>
-        <input name="confirm" type="password" id="input-confirm">
+        <input id="input-confirm" name="confirm" type="password">
     </div>
-    
     <div>
         <button type="submit">Login</button>
+        <% if(errorMessage) { %>
+            <span class="error"><%= errorMessage %></span>
+        <% } %>
     </div>
 </form>
 
-
-<%- include('../partials/_footer.ejs') %>
+<%- include('../partial/_footer.ejs') %>

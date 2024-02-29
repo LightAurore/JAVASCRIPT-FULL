@@ -11,7 +11,7 @@ const { MONGO_URI } = process.env;
 
 
 // Initialisation de la connection vers MongoDB
-mongoose.connect(MONGO_URI)
+mongoose.connect(MONGO_URI, { })
 .then(() => {
     console.log(dbColorSuccess('Connection to MongoDB is successfull'));
 })

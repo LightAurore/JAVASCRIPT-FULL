@@ -22,10 +22,11 @@ const memberSchema = mongoose.Schema({
     },
     password: {
         type: String,
-        require: true,
-        trim:true,
-        minLength: 5
-    },
+        require: true
+    }
+    
+},
+{
     collection: "Member",
     timestamps: true
 })

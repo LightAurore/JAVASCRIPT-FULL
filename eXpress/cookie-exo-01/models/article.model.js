@@ -7,8 +7,13 @@ const commentSchema = new mongoose.Schema({
       require: true,
       trim: true,
       minLength: 1,
-      maxLength: 255,
+      maxLength: 500,
    },
+   author: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Member',
+        required: true
+    },
    rating:{
       type: Number,
       require: true,
@@ -25,13 +30,18 @@ const commentSchema = new mongoose.Schema({
 })
 
 // Définition du schema des données
-const articleSchema = new mongoose.Schema({ 
+const articleSchema = mongoose.Schema({ 
      title : {
         type: String,
         require: true,
         trim:true,
         minLength: 5
      },
+     author: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Member',
+        required: true
+    },
      slug : {
         type: String,
         require: true,
@@ -44,7 +54,7 @@ const articleSchema = new mongoose.Schema({
         require: false,
         maxLength: 200
      },
-     contents : {
+     content: {
         type: String,
         require: true,
         trim:true,
