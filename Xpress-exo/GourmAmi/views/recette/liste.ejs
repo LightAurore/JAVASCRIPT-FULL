@@ -1,0 +1,48 @@
+<%- include('../partials/_header.ejs')  %>
+<%- include('../partials/_navigation.ejs')  %>
+<%- include('../partials/_banner.ejs')  %>
+<%- include('../partials/_addRecipe.ejs')  %>
+
+<h1>Liste de recettes</h1>
+
+<div id="caterories">cat</div>
+<main id="accueil">
+        <aside id="show-members">users</aside>
+        <section id="container__recettes">
+            
+            <% for(const rec of viewData){ %>
+            <article id="recette-dernier_ajout">
+                <div id="box-recette-ajout">
+                    <a href="<%= rec.detailUrl %>">
+                        <img src="<%= rec.imgUrl %>" alt="">
+                    </a>
+                    <h2 id="recette-name"><%= rec.name %></h2>
+                    <p id="recette-short-desc">
+                        <%= rec.desc %>
+                    </p>
+                    <div id="recette-text-content">
+                        <span id="recette-author-name">
+                            <%= rec.author %>
+                        </span>
+                        <span id="recette-publication-date">
+                            <%= rec.date %>
+                        </span>
+                    </div>
+                </div>
+            </article>
+             <%}%>
+        </section> 
+        
+   </main>
+    <div id="pagination">
+            <a href="#" class="left">&laquo;</a>
+            <a href="#" class="page-link">1</a>
+            <a class="active" href="#" class="page-link">2</a>
+            <a href="#" class="page-link">3</a>
+            <a href="#" class="page-link">4</a>
+            <a href="#" class="page-link">5</a>
+            <a href="#" class="page-link">6</a>
+            <a href="#" class="right">&raquo;</a>
+          </div> 
+<script src="/js/nav.js"></script>
+<%- include('../partials/_footer.ejs')  %>

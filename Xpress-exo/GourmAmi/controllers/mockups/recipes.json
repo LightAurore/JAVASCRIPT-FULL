@@ -1,0 +1,28 @@
+[
+    {
+        "id":1,
+        "recipeName": "Poulet rôti aux herbes",
+        "category": "",
+        "description": "vfvfgvfgvrg",
+        "shortDescription": "vfvfazvrfvfrvr",
+        "image": "chicken.jpg",
+        "thumbnail": "chicken.jpg",
+        "ingredient": ["poulet", "champignons", "sel", "poivre","huile d'olive", "paprika", "oignon", "ail", "herbes aromatiques"],
+        "step": ["découper le poulet", "préparer les condiments", "épicer le poulet","mettre le poulet dans le four"],
+        "author":"dev",
+        "datePublication": "12-12-2025"
+    },
+    {
+        "id":2,
+        "recipeName": "Pork au riz avec des saveurs orientales",
+        "category": "",
+        "description": "vfgzvbgfbvg",
+        "shortDescription": "bvgzbgbgfbzf",
+        "image": "pork-riz.jpg",
+        "thumbnail": "pork-riz.jpg",
+        "ingredient": ["poulet", "champignons", "sel", "poivre","huile d'olive", "paprika", "oignon", "ail", "herbes aromatiques"],
+        "step": ["découper le poulet", "préparer les condiments", "épicer le poulet","mettre le poulet dans le four"],
+        "author":"dev",
+        "datePublication": "12-12-2025"
+    }
+]
