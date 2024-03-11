@@ -1,0 +1,33 @@
+<%- include('../partial/_header.ejs') %>
+
+<!--  -->
+<% /* L'article   */ %>
+
+<h1><%= article.title %></h1>
+<h2><%= article.author.firstname %> <%= article.author.lastname %></h2>
+
+<p><%= article.content %></p>
+
+<form action="/article/add-comment" id="comment-form">
+    <h3 aria-label="input-comment">Ajouter un commentaire</h3>
+    <textarea name="comment" id="input-comment" cols="30" rows="10"></textarea>
+    <br>
+    <input type="hidden" name="slug" value="<%= article.slug %>" >
+    <button type="submit">Envoyer</button>
+    <span><%= message %></span>
+</form>
+<br>
+<div id="comment-list">
+    <div>
+        <h4>Della Duck - 29/02/2024</h4>
+        <p>Ceci est un commentaire</p>
+    </div>
+    <div>
+        <h4>Balthazar Picsou - 01/0/2024</h4>
+        <p>Next ?</p>
+    </div>
+</div>
+
+
+
+<%- include('../partial/_footer.ejs') %>

@@ -1,33 +1,22 @@
-const mongoose = require("mongoose");
-const chalk = require("chalk");
+const mongoose = require('mongoose');
 
-const dbColorSuccess = chalk.rgb(55, 250, 40);
-const dbColorError = chalk.rgb(210, 69, 69);
-
-function connectToDb(){
+function connectDb() {
     
-// Récupération de l'URI depuis les variables d'env
-const { MONGO_URI } = process.env;
-
-
-// Initialisation de la connection vers MongoDB
-mongoose.connect(MONGO_URI)
-.then(() => {
-    console.log(dbColorSuccess('Connection to MongoDB is successfull'));
-})
-.catch((err) => {
-    console.log(dbColorError('Connection to MongoDB on error'));
-    console.error(err);
-})
-
-// Récupération des instances de connection
-// const db = mongoose.connection;
-
+    // Récuperation de l'URI de connection depuis les variables d'env
+    const { MONGO_URI } = process.env;
+    
+    // Initialisation de la connexion vers MongoDB
+    mongoose.connect(MONGO_URI, {  })
+    .then(() => {
+        console.log('Connection to MongoDB is successful !');
+    })
+    .catch((e) => {
+        console.log('Connection to MongoDb on error !');
+        console.error(e);
+    });
+    
+    // Récuperation de l'instance de connexion
     return mongoose.connection;
 }
 
-
-module.exports = connectToDb;
-
-
-// process.exit();   // ça coupe le server
+module.exports = connectDb;
