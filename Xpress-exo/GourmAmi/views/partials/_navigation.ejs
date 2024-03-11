@@ -1,0 +1,34 @@
+<nav id="nav-bar">
+    <div id="menu-onglet">
+        <ul class="top-menu" id="myMenu">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/liste">Les recettes</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">contact</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li class="icon"><a href="javascript:void(0);" onclick="myFunction">
+            <img src="icons/menu-burger.svg" alt=""></a></li>
+        </ul>
+    </div>
+    <div id="register">
+        <a href="/" id="logo-site">
+            <img src="icons/logo-g-a.png" alt="logo" id="logo">
+            <h1 id="logo-name">Gourm Amis</h1>
+        </a>
+        <form action="" id="search-recette">
+            <input type="search">
+            <button><img src="icons/search.svg" alt=""></button>
+        </form>
+        <% /* Utilisation de la variable "locals" pour manipuler la session */ %>
+        <ul id="member-opt">
+            <% if(locals.session?.user) { %>
+            <li><a href="/notice"><img src="icons/bell.svg" alt="notification" title="notification"></a></li>
+            <li><a href="/profil"><img src="icons/user.svg" alt="user" title="user-name"></a></li>
+            <li><a href="/logout"><img src="icons/sign-out-alt.svg" alt="Déconnexion" title="Déconnexion"></a></li>
+            <% } else { %>
+            <li><a href="/login"><img src="icons/sign-in-alt.svg" alt="Connexion" title="Connexion"> </a></li>
+            <li><a href="/register"><img src="icons/link-slash.svg" alt="Inscription" title="Inscription"></a></li>
+            <% } %>
+        </ul>
+    </div>
+</nav>

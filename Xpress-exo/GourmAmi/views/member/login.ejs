@@ -1,0 +1,38 @@
+<%- include('../partials/_header.ejs')  %>
+<%- include('../partials/_navigation.ejs')  %>
+<%- include('../partials/_banner.ejs')  %>
+
+<% 
+var errorMessage;
+var data;
+%>
+
+<h1>Connexion</h1>
+
+<main>
+        <form id="form-login" method="post">
+            <div>
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" id="username" name="username" value="<%= data?.username %>">
+            </div>
+            <div>
+                <label for="user-password">Mot de passe</label>
+                <input type="password" id="user-password" name="password">
+            </div>
+            <div>
+                <button type="submit">Connexion</button>
+                <% if(errorMessage) { %>
+                    <span class="error"><%= errorMessage %></span>
+                <% } %>
+            </div>
+        </form>
+        <div>
+            <span>Non inscrit, cliquez sur le lien</span>
+            <a href="/register"><button>S'inscrire</button></a>
+        </div>
+        
+</main>
+   
+    
+
+<%- include('../partials/_footer.ejs')  %>

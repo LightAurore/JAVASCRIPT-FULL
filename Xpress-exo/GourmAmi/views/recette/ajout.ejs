@@ -1,0 +1,59 @@
+<%- include('../partials/_header.ejs')  %>
+<%- include('../partials/_navigation.ejs')  %>
+<%- include('../partials/_banner.ejs')  %>
+
+<% var error; %>
+<h1>Formulaire d'ajout de recette</h1>
+
+<main>
+    <h2>Ajouter une recette</h2>
+    <form id="ajout-rec" method="post">
+        <div>
+            <label for="recipe-name">Nom de la recette</label>
+            <input type="text" id="recipe-name" name="recipename">
+        </div>
+        <div>
+            <label for="input-slug">Slug</label>
+            <input id="input-slug" name="slug" type="text" value="<%= data['slug'] %>">
+            <% if(error && error['slug']) { %>
+                <span class="error" id="error-slug"><%= error['slug'] %></span>
+            <% } %>
+        </div>
+        <div>
+            <label for="input-tag">Thème</label>
+            <input id="input-tag" name="tag[0]" type="text" value="<%= data['tag[0]'] %>">
+            <% if(error && error['tag']) { %>
+                <span class="error" id="error-tag"><%= error['tag'] %></span>
+            <% } %>
+        </div>
+        <div>
+            <label for="recipe-img"></label>
+            <input type="file" id="recipe-img" name="recipeimg" accept=".jpg, .jpeg, .png">
+        </div>
+        <div>
+            <label for="recipe-shortDesc">short Description</label>
+            <textarea name="recipeshortdesc" id="recipe-shortDesc" cols="30" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="recipe-desc">Description</label>
+            <textarea name="recipedesc" id="recipe-desc" cols="30" rows="10"></textarea>
+        </div>
+        
+        <div>
+            <label for="ingredients">Ingredients</label>
+            <input type="text" id="ingredient" name="ingredient">
+            <!-- <button id="ajout-ingredient">ajouter</button> -->
+        </div>
+        <div>
+            <label for="step">Etape</label>
+            <input type="text" id="step" name="step">
+            <!-- <button id="ajout-step">ajouter</button> -->
+        </div>
+
+        <button type="submit">Ajouter</button>
+    </form>
+</main>
+   
+    
+
+<%- include('../partials/_footer.ejs')  %>

@@ -22,10 +22,19 @@ const memberSchema = mongooose.Schema({
     },
     password: {
         type: String,
+<<<<<<< HEAD
         required: true
     }
 }, {
     collection: 'Member',
+=======
+        require: true
+    }
+    
+},
+{
+    collection: "Member",
+>>>>>>> e3bc91a4173909219e50c32aa479023c37704b5e
     timestamps: true
 });
 

@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+@font-face {
+    font-family: "DancingScript";
+    src: url("./assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+} */
+
+@layer base{
+    *{
+        @apply p-0 m-0 box-border text-lime-800; 
+    }
+
+    body{
+        @apply w-full min-h-screen bg-orange-200 text-slate-100;
+    }
+
+    body > * {
+        @apply w-full;
+    }
+
+
+    nav{
+        @apply flex-col w-full bg-[#00b3f5];
+    }
+
+    li{
+        @apply list-none;
+    }
+
+    a{
+        @apply no-underline text-center;
+    }
+    h1{
+        @apply text-lime-800;
+    }
+
+    h2{
+        @apply text-black;
+    }
+
+    main{
+        @apply min-h-screen;
+    }
+
+    footer{
+        @apply h-24 bg-[#8ea2c6];
+    }
+
+    #cgu{
+        @apply h-12 bg-[#370028] text-[#c8ffd7] text-center;
+    }
+
+    form{
+        @apply flex flex-col p-4;
+
+    }
+    form > div{
+        @apply flex flex-col w-full my-2 mx-auto;
+    }
+    form > div button{
+        @apply w-48 bg-amber-200 rounded-xl;
+    }
+}
+
+@layer components{
+     /* Pagination links */
+     #pagination{
+        @apply text-black w-full mx-auto;
+     }
+    #pagination a {
+        @apply text-black p-2 transition-colors rounded-full;
+  }
+  
+  /* Style the active/current link */
+  #pagination a.active {
+    @apply bg-yellow-300;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  #pagination a:hover:not(.active) {
+    @apply bg-[#dddddd];
+} 
+}
+
+@layer utilities{
+
+    /* logo */
+    #logo-site{
+        @apply flex items-center;
+    }
+    #logo{
+        @apply h-28;
+    }
+    #logo-name{
+        @apply font-black text-3xl;
+    }
+    #nav-bar > div{
+        @apply flex w-full;
+    }
+
+    #nav-bar > div li> a > img, #search-recette img{
+        @apply w-5;
+    }
+    /* pages */
+    #menu-onglet > ul{
+        @apply flex w-full justify-start bg-[#26c4ec] overflow-hidden;
+    }
+    #menu-onglet > ul > li{
+        @apply mx-1 p-2 text-[#6c0277] bg-[#8ea2c6] hover:bg-[#ff0921];
+    }
+    #menu-onglet > ul > li > a{
+        @apply text-2xl text-center;
+    }
+
+    /* Inscription */
+    #form-join{
+        @apply w-1/4 my-4 mx-auto border-2 border-neutral-950 bg-green-100 rounded-lg;
+    }
+    /* connexion */
+    #form-login{
+        @apply flex flex-col w-1/4 p-3 my-4 mx-auto border-2 border-neutral-950 bg-green-100 rounded-lg;
+
+    }
+    #form-login > div{
+        @apply flex flex-col w-full my-2 mx-auto;
+    }
+    #form-login > div button{
+        @apply w-48 bg-amber-200 p-1 my-1 mx-auto rounded-xl;
+    }
+    #register{
+        @apply justify-between items-center px-4 h-28;
+    }
+
+    #register > * {
+        @apply flex;
+    }
+    #register > ul > li {
+        @apply mx-2;
+    }
+
+    /* banner */
+    #banner{
+        @apply h-52 bg-amber-200 flex justify-center items-center bg-fixed bg-[url('/images/banner.jpg')];
+    }
+    #banner > div{
+        @apply h-16 p-2 bg-white flex-col;
+    }
+    #banner > div > h2{
+        @apply font-black tracking-widest bg-[url('/images/banner.jpg')] text-[#154876];
+    }
+    #add-recipe{
+        @apply w-1/4 h-12 bg-[#fdcf41] text-center rounded-xl m-2 font-black;
+    }
+    /* bouton ajout de recette */
+
+
+    /* main */
+    main{
+        @apply bg-[#cbabcd];
+    }
+
+    #accueil{
+        @apply grid grid-cols-[20%_75%];
+    }
+    #caterories{
+        @apply w-full h-36 bg-red-800 rounded-triangle;
+    }
+    main #show-members{
+        @apply h-full bg-[#bcde52] border-solid;
+    }
+
+
+    /* Article */
+    #container__recettes{
+        @apply w-full grid grid-cols-2 gap-2;
+    }
+    #container__recettes > article{
+        @apply w-11/12 grid place-content-center place-items-center border p-2;
+    }
+
+
+    /*  */
+    #bon-plat{
+        @apply h-52;
+    }
+
+    /* Ajouter une recette */
+    #ajout-rec{
+        @apply w-2/3 flex flex-col;
+    }
+    #ajout-rec > div{
+        @apply w-full p-2 flex flex-col;
+    }
+}

@@ -1,0 +1,60 @@
+<%- include('../partials/_header.ejs')  %>
+<%- include('../partials/_navigation.ejs')  %>
+<%- include('../partials/_banner.ejs')  %>
+
+<%- include('../partials/_addRecipe.ejs')  %>
+
+<% var viewDayData%>
+<% var viewNewData%>
+
+
+
+<div id="caterories">cat</div>
+<main id="accueil">
+        <aside id="show-members">users</aside>
+        <section id="container__recettes">
+            <article id="recette-dernier_ajout">
+                <div id="box-recette-ajout">
+                    <a href="<%= viewNewData.detailUrl %>">
+                        <img src="<%= viewNewData.imgUrl %>" alt="">
+                    </a>
+                    <h2 id="recette-name"><%= viewNewData.name %></h2>
+                    <p id="recette-short-desc">
+                        <%= viewNewData.desc %>
+                    </p>
+                    <div id="recette-text-content">
+                        <span id="recette-author-name">
+                            <%= viewNewData.author %>
+                        </span>
+                        <span id="recette-publication-date">
+                            <%= viewNewData.date %>
+                        </span>
+                    </div>
+                </div>
+            </article>
+                 
+            <article id="recette-jour">
+                <div id="box-recette-jour">
+                    <a href="<%= viewDayData.detailUrl %>">
+                        <img src="<%= viewDayData.imgUrl %>" alt="">
+                    </a>
+                    <h2 id="recette-name-jour"><%= viewDayData.name %></h2>
+                    <p id="recette-short-desc-jour">
+                        <%= viewDayData.desc %>
+                    </p>
+                    <div id="recette-text-content-jour">
+                        <span id="recette-author-name-jour">
+                            <%= viewDayData.author %>
+                        </span>
+                        <span id="recette-publication-date-jour">
+                            <%= viewDayData.date %>
+                        </span>
+                    </div>
+                </div>
+            </article>
+        </section> 
+</main>
+   
+    
+
+<%- include('../partials/_footer.ejs')  %>

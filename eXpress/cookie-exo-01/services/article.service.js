@@ -9,8 +9,12 @@ const articleService = {
      */
     create: async ({ title, author, slug, tag, desc, content }) => {
 
+<<<<<<< HEAD
         const slugCustom = slug?.trim() || title;
         let slugFinal = slugCustom.toLowerCase().trim().replaceAll(/[^\w\d]/g, '-');
+=======
+        let slugFinal = slugCustom.toLowerCase().trim().replaceAll(/[^\w\d]/g, "-"); // /[^\w\d]+/g   /\s+/g
+>>>>>>> e3bc91a4173909219e50c32aa479023c37704b5e
 
         // Check si le slug existe
         const articleExists = await Article.findOne({
@@ -39,7 +43,12 @@ const articleService = {
 
         return articleCreated;
     },
+<<<<<<< HEAD
 
+=======
+    
+    
+>>>>>>> e3bc91a4173909219e50c32aa479023c37704b5e
     /**
      * Permet d'ajouter un commentaire à un article
      * @param {string} slug 

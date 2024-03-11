@@ -1,0 +1,46 @@
+<%- include('../partials/_header.ejs')  %>
+<%- include('../partials/_navigation.ejs')  %>
+<%- include('../partials/_banner.ejs')  %>
+
+<%
+var errorMessage;
+var data;
+%>
+
+<h1>Inscription</h1>
+
+<main>
+    <form method="post" id="form-join">
+        <div>
+            <label for="input-username">Pseudo</label>
+            <input type="text" id="input-username" name="username" value="<%= data?.username %>">
+        </div>
+        <div>
+            <label for="input-firstname">Prénom</label>
+            <input type="text" id="input-firstname" name="firstname" value="<%= data?.firstname %>">
+        </div>
+        <div>
+            <label for="input-lastname">Nom</label>
+            <input type="text" id="input-lastname" name="lastname" value="<%= data?.lastname %>">
+        </div>
+        <div>
+            <label for="input-pwd">Mot de passe</label>
+            <input type="password" id="input-pwd" name="password">
+        </div>
+        <div>
+            <label for="confirm-pwd">Confirmer le mot de passe</label>
+            <input type="password" id="confirm-pwd" name="confirm">
+        </div>
+        <div>
+            <button type="submit" >S'inscrire</button>
+            <% if(errorMessage) { %>
+                <span class="error"><%= errorMessage %></span>
+            <% } %>
+        </div>
+    </form>
+        
+</main>
+   
+    
+
+<%- include('../partials/_footer.ejs')  %>

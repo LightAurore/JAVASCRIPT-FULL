@@ -1,0 +1,73 @@
+<%- include('../partials/_header.ejs')  %>
+<%- include('../partials/_navigation.ejs')  %>
+<%- include('../partials/_banner.ejs')  %>
+<%- include('../partials/_addRecipe.ejs')  %>
+
+
+<% var data; %>
+
+<h1>Détails de recettes</h1>
+
+<main>
+    <fieldset>
+        <legend>
+            <h2><%= name %></h2>
+        </legend>
+        <figure>
+            <img src="<%= imgUrl %>" alt="">
+        </figure>
+        <h4>
+            <%= desc %>
+        </h4>
+    </fieldset>
+    <div>
+        <h3>ingrédients</h3>
+        <ul>
+            <% for(const elt of ingredient) { %>
+            <li><%= elt %></li>
+            <% } %>
+        </ul>
+        <h3>Description</h3>
+        <p><%= description %></p>
+    </div>
+    <fieldset>
+        <legend>
+            <h3>Préparation</h3>
+        </legend>
+        <dl>
+            <% for(const [key, value] of step.entries()) { %>
+                <dt>Etape <%= key %></dt>
+                <dd><%= value %></dd>
+            <% } %>
+          </dl>
+    </fieldset>
+    <hr>
+
+<% /* Commentaire de l'article */ %>
+<% /* TODO Refactor with CSS */ %>
+<form id="comment-form" method="post" action="/recette/add-comment">
+    <h3 aria-label="input-comment">Ajouter un commentaire :</h3>
+    <textarea id="input-comment" name="comment">
+         <% <!--= data.comment  --> %>
+    </textarea>
+    <br>
+    <input type="hidden" name="slug" value="<%= slug %>">
+    <button type="submit">Envoyer</button>
+    <span><!-- %= message % --></span>
+</form>
+<br>
+<div id="comment-list">
+    <!-- % for(const comment of recipe.comments) { % -->
+        <div>
+            <h4><!--%= comment.author.firstname + ' ' + comment.author.lastname %!--> - <!--%= comment.createdAt.toLocaleString('fr') %!--></h4>
+            <p><!--%= comment.message %!--></p>
+        </div>
+    <!--% } %!-->
+</div>
+
+
+</main>
+   
+    
+
+<%- include('../partials/_footer.ejs')  %>
