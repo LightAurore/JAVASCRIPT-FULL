@@ -71,7 +71,7 @@ const viewData = recipes.map(data =>{
         // 
         const userId = req.session.user?.id;  // res.locals.session.user?.id;
         if(!userId) {
-            res.redirect('/member/login');
+            res.redirect('/login');
             return;
         }
         // Donnée initial du form

@@ -50,7 +50,7 @@ const memberController = {
          };
  
          // Redirection vers la page d'accueil
-         res.redirect('/');
+         res.redirect('/ajout');
     },
 
     logout: async (req,res) =>{
