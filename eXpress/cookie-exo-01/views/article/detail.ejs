@@ -1,11 +1,41 @@
+<<<<<<< HEAD
+<%- include('../partial/_header.ejs') %>
+
+<!--  -->
+<% /* L'article   */ %>
+=======
 
 <%- include('../partial/_header.ejs') %>
+>>>>>>> e3bc91a4173909219e50c32aa479023c37704b5e
 
 <h1><%= article.title %></h1>
 <h2><%= article.author.firstname %> <%= article.author.lastname %></h2>
 
 <p><%= article.content %></p>
 
+<<<<<<< HEAD
+<form action="/article/add-comment" id="comment-form">
+    <h3 aria-label="input-comment">Ajouter un commentaire</h3>
+    <textarea name="comment" id="input-comment" cols="30" rows="10"></textarea>
+    <br>
+    <input type="hidden" name="slug" value="<%= article.slug %>" >
+    <button type="submit">Envoyer</button>
+    <span><%= message %></span>
+</form>
+<br>
+<div id="comment-list">
+    <div>
+        <h4>Della Duck - 29/02/2024</h4>
+        <p>Ceci est un commentaire</p>
+    </div>
+    <div>
+        <h4>Balthazar Picsou - 01/0/2024</h4>
+        <p>Next ?</p>
+    </div>
+</div>
+
+=======
+>>>>>>> e3bc91a4173909219e50c32aa479023c37704b5e
 
 
 <%- include('../partial/_footer.ejs') %>

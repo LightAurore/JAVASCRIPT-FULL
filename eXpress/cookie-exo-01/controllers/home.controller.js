@@ -1,13 +1,14 @@
 const articleService = require("../services/article.service");
-const motSignalerTool = require("../tools/motSignale.tool");
-
 
 const homeController = {
+
     index: async (req, res) => {
 
-        /*
-        {
+        console.log(req.session.user?.name ?? 'Non connecté');
 
+<<<<<<< HEAD
+        res.render('home/index');
+=======
             const article = {
                 title: "Demo MongoDb + Mongoose",
                 slug: "demo-mongodb-mongoose",
@@ -37,7 +38,9 @@ const homeController = {
         console.log(req.session.user?.name ?? 'Non connecté');
 
         res.render('home/index');        
+>>>>>>> e3bc91a4173909219e50c32aa479023c37704b5e
     }
+
 };
 
 module.exports = homeController;

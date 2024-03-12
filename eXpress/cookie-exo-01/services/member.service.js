@@ -1,5 +1,5 @@
-const argon2 = require('argon2');
-const Member = require('../models/member.model');
+const argon2 = require("argon2");
+const Member = require("../models/member.model");
 
 const memberService = {
 

@@ -1,4 +1,4 @@
-const yup = require("yup");
+const yup = require('yup');
 
 const articleValidator = yup.object().shape({
     title: yup.string()
@@ -12,9 +12,21 @@ const articleValidator = yup.object().shape({
     content: yup.string()
                 .min(10, 'Le contenu doit faire au moins 10 caracteres !')
                 .required('Le contenu est obligatoire')                    
+<<<<<<< HEAD
+});
+
+const articleCommentValidator = yup.object().shape({
+    comment: yup.string()
+                .max(1000)
+                .required(),
+    slug: yup.string()
+                .required()
+=======
+>>>>>>> e3bc91a4173909219e50c32aa479023c37704b5e
 });
 
 
 module.exports = {
-    articleValidator
+    articleValidator,
+    articleCommentValidator
 };

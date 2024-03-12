@@ -1,29 +1,34 @@
-const { nanoid } = require('nanoid');
-const Article = require('../models/article.model');
+const { nanoid } = require("nanoid");
+const Article = require("../models/article.model");
 
 const articleService = {
+
     /**
-     * 
-     * @param {{title: string, slug : string[], desc: string?, content : string}} article
+     * Permet d'ajouter un article
+     * @param {{ title: string, author: string, slug: string, tag: string[], desc: string?, content: string }} article 
      */
-    create: async ({title, slug, desc, tag,content}) =>{
-        let slugCustom = slug || title;
+    create: async ({ title, author, slug, tag, desc, content }) => {
 
+<<<<<<< HEAD
+        const slugCustom = slug?.trim() || title;
+        let slugFinal = slugCustom.toLowerCase().trim().replaceAll(/[^\w\d]/g, '-');
+=======
         let slugFinal = slugCustom.toLowerCase().trim().replaceAll(/[^\w\d]/g, "-"); // /[^\w\d]+/g   /\s+/g
+>>>>>>> e3bc91a4173909219e50c32aa479023c37704b5e
 
-        // checke si le slug existe déjà
-        const articleExists = await Article.findOne({ 
+        // Check si le slug existe
+        const articleExists = await Article.findOne({
             slug: slugFinal
         });
 
-        // - un article trouvé avec le slug -> Modifier le slug
-        if(articleExists){
+        // - Un article trouvé avec le slug -> Modifier le slug
+        if(articleExists) {
             const slugSufix = nanoid(5);
             slugFinal = slugFinal + '-' + slugSufix;
-            // TODO idéallement, il faut recheck le slug ;)
+            // TODO Idéalement, il faut recheck le slug ;)
         }
-
-        // création de l'article via le model de Mongoose
+        
+        // Création de l'article via le model de Mongoose
         const articleCreated = new Article({
             title,
             author,
@@ -31,17 +36,19 @@ const articleService = {
             tag,
             desc: desc || content.slice(0, 100),
             content
-
         })
 
+        // Invocation de la métohde "save" pour enregistrer en DB
         await articleCreated.save();
-
-        // console.log(articleCreated);
 
         return articleCreated;
     },
+<<<<<<< HEAD
+
+=======
     
     
+>>>>>>> e3bc91a4173909219e50c32aa479023c37704b5e
     /**
      * Permet d'ajouter un commentaire à un article
      * @param {string} slug 

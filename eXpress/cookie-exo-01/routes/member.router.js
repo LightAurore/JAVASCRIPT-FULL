@@ -1,5 +1,6 @@
 const memberController = require('../controllers/member.controller');
 
+
 const memberRouter = require('express').Router();
 
 memberRouter.get('/member/login', memberController.login);

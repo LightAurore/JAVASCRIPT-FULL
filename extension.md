@@ -20,7 +20,23 @@ mongoDB
 
 postgresql
 
-projet manager
+auto rename tag
+
+Better comments
+
+blockman- highlight nested
+
+ESLint
+
+git extension pack
+
+git graph
+
+git history
+
+gitignore
+
+gitlens - git supercharged
 
 Image previeuw
 
@@ -38,11 +54,17 @@ MongoDB for vs code
 
 Mustache syntax
 
+open in github, bitbucket, gitlab, 
+
+postgreSQL
+
 Prettier code formatter
 
 project manager
 
-rainbow
+rainbow csv
+
+tabnine
 
 Quokka.js
 
