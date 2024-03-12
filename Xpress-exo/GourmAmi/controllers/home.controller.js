@@ -1,5 +1,10 @@
+const Member = require('../models/member.model');
+
 const recipeService = require('../services/recipe.service');
+
 const recipeCardTool = require('../tools/recipeCard.tool');
+const { memberRegisterValidator } = require('../validators/member.validator');
+
 const mockup = require('./mockups/recipes.json');
 
 const homeController = {
@@ -27,6 +32,24 @@ const homeController = {
     },
     dashboard: async (req, res)=>{
         res.render('home/dashboard');
+    },
+    chat: async (req, res)=>{
+
+        // obtenir les données de la session
+        // Récuperation du Member via les credentials
+        const member = req.session.user;
+        if(!member){
+            res.redirect('/login')
+        }
+
+        const user = {
+            name : member.name,
+            id: member.id
+        }
+        
+        
+
+        res.render('home/chat', { ...user });
     }
 }
 

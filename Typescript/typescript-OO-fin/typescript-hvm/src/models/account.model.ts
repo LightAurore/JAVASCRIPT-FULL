@@ -38,7 +38,7 @@ export class CurrentAccount extends Account {
     }
 
     withDraw(amount: number) {
-        if (this.Balance - amount < -this.creditLine) return
+        if ((this.Balance - amount) < -(this.creditLine)) return
 
         super.withDraw(amount)
     }
