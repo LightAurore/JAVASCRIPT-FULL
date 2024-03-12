@@ -66,6 +66,19 @@
 }
 
 @layer components{
+
+    /* Boutons */
+    button{ 
+        @apply bg-[#067790] text-white font-black rounded-2xl p-2 m-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300;
+    }
+
+    button[type="reset"]{ 
+        @apply bg-[#ff2277] hover:bg-fuchsia-600;
+    }
+
+    button[type="submit"]{ 
+        @apply bg-[#11ffcc] bg-violet-500;
+    }
      /* Pagination links */
      #pagination{
         @apply text-black w-full mx-auto;

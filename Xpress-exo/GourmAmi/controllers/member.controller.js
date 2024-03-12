@@ -1,4 +1,5 @@
 const memberService = require("../services/member.service");
+
 const { memberRegisterValidator, memberLoginValidator } = require("../validators/member.validator");
 
 const memberController = {
@@ -63,7 +64,6 @@ const memberController = {
     },
     register_POST: async (req,res) =>{
         // validation de body
-        
         let data;
         try {
             data = await memberRegisterValidator.validate(req.body, {abortEarly: false});
