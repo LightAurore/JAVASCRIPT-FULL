@@ -4,7 +4,7 @@ import personController from '../controllers/person.controller.js';
 // Router pour les endpoints de "person"
 const personRouter = Router();
 
-// //? V1 - Routes individuelles
+{// //? V1 - Routes individuelles
 // personRouter.get('/', personController.getAll);
 // personRouter.post('/', personController.add);
 // personRouter.all('/', (req, res) => res.sendStatus(405));
@@ -13,7 +13,7 @@ const personRouter = Router();
 // personRouter.put('/:id', personController.update);
 // personRouter.delete('/:id', personController.delete);
 // personRouter.all('/:id', (req, res) => res.sendStatus(405));
-
+}
 //? V2 - Routes chainées avec un préfix
 personRouter.route('/')
     .get(personController.getAll)
