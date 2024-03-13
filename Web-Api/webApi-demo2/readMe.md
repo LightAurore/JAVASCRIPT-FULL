@@ -33,7 +33,7 @@ Gestion d'équipe pour des activités sportives
         - [POST] /team
         - [GET] /team/:id
         - [PUT] /team/:id
-        - [DELETE] /team
+        - [DELETE] /team/:id
         - [PATCH] /team/:id/addPlayer
         - [PATCH] /team/:id/removePlayer
 

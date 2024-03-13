@@ -15,7 +15,7 @@ const playerValidator= yup.object().shape({
 
 /**
  * Modèle joueur pour l'update
- * @typedef {Object} Player
+ * @typedef {Object} PlayerData
  * @property {string} firstname 
  * @property {string} lastname
  */

@@ -54,7 +54,7 @@ const playerController = {
      * @summay Modification d'un joueur
      * @tags Player
      * @param {string} email.path - Player's email
-     * @params {PlayerData} request.body.required - PlayerData - application/json
+     * @param {PlayerData} request.body.required - PlayerData - application/json
      * @return 204 - Success
      * @return 422 - Invalid data
      */
@@ -64,7 +64,6 @@ const playerController = {
 
         try {
             await playerService.update(email, data);
-
             res.sendStatus(204);
         } catch (error) {
             res.status(400).json({errorMessage: error.message});
