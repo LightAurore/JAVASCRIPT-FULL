@@ -55,6 +55,16 @@ const teamController = {
     },
 
     // 
+    /**
+     * PUT /api/teams - recevra toutes les équipes
+     * @summay Modifier une équipe
+     * @tags Team
+     * @param {id} req.params.id - Team's Id
+     * @param {data} req.body
+     * @return {TeamData} 200 - Team - application/json
+     * @return 204
+     * @return 400 - Not found
+     */
     update: async (req, res) => {
         const id = req.params.id;
         const data = req.body;

@@ -51,7 +51,7 @@ const memberController = {
          };
  
          // Redirection vers la page d'accueil
-         res.redirect('/ajout');
+         res.redirect('/');
     },
 
     logout: async (req,res) =>{
