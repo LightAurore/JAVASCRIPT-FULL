@@ -23,15 +23,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(homeRouter);
 
 
-
-
-
-
-
-
-
-
-
 //  Server 
 app.listen(PORT, ()=>{
     console.log(`Server started on port ${PORT} and url http://localhost:${PORT}`)
