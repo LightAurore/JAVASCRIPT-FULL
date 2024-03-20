@@ -52,7 +52,7 @@ const playerController = {
     /**
      * PUT /api/player/{email}
      * @summay Modification d'un joueur
-     * @tags Player
+     * @tags PlayerData
      * @param {string} email.path - Player's email
      * @params {PlayerData} request.body.required - PlayerData - application/json
      * @return 204 - Success

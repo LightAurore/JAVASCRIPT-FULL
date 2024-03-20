@@ -853,7 +853,9 @@ button[type="submit"] {
   --tw-bg-opacity: 1;
   background-color: rgb(253 230 138 / var(--tw-bg-opacity));
   background-image: url('/images/banner.jpg');
+  background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 #banner > div {
