@@ -1,5 +1,6 @@
 'use strict'
 
+const dicoRouter = require('./routes/dico.router.js');
 const homeRouter = require('./routes/home.router.js')
 
 require('dotenv').config();
@@ -21,6 +22,7 @@ app.use(express.static('./public'));
 app.use(express.urlencoded({ extended: true }));
 
 app.use(homeRouter);
+app.use(dicoRouter);
 
 
 //  Server 
