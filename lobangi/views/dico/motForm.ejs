@@ -1,0 +1,104 @@
+<%- include('../partials/_head.ejs',{title: "mot"}) %>
+
+<%- include('../partials/_header.ejs') %>
+
+<%- include('../partials/_navbar.ejs') %>
+
+<h1>mot</h1>
+
+<main class="main-mot">
+<h2>Formulaire de mot</h2>
+
+<form class="mot-form" method="post">
+    <fieldset>
+        <legend>Nature du mot</legend>
+        <div>
+            <label for="mot">Nouveau mot</label>
+            <input type="text" id="nouveau-mot" name="nouveaumot">
+        </div>
+
+        <div>
+            <label for="classe-mot">Classe du mot</label>
+            <select name="classemot" id="classe-mot" required>
+                <option value="">-- Choisissez la classe du mot</option>
+                <option value="adjectif">Adjectif</option>
+                <option value="adverbe">Adverbe</option>
+                <option value="conjonction">Conjonction</option>
+                <option value="determinant">Déterminant</option>
+                <option value="interjection">Interjection</option>
+                <option value="nom">Nom</option>
+                <option value="preposition">Préposition</option>
+                <option value="pronom">Pronom</option>
+                <option value="verbe">Verbe</option>
+            </select>
+        </div> 
+
+        <div>
+            <label for="forme-mot">Nouveau mot</label>
+            <select name="formemot" id="forme-mot">
+                <option value="">-- Choisisez la forme du mot --</option>
+                <option value="simple">Simple</option>
+                <option value="compose">Composé</option>
+                <option value="derive">Dérivé</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="genre-mot">Nouveau mot</label>
+            <select name="genremot" id="genre-mot" required>
+                <option value="">-- Choisisez la genre du mot --</option>
+                <option value="feminin">Féminin</option>
+                <option value="masculin">Masculin</option>
+                <option value="neutre">Neutre</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="singulier-mot">Nombre mot singulier</label>
+            <input type="text" id="singulier-mot" name="singuliermot">
+
+            <label for="pluriel-mot">Nombre mot pluriel</label>
+            <input type="text" id="pluriel-mot" name="plurielmot">
+        </div>
+
+        <div>
+            <label for="phonetique-mot">Phonétique mot</label>
+            <input type="text" id="phonetique-mot" name="phonetiquemot">
+        </div>
+
+        <div>
+            <label for="prononciation-mot">Prononciation mot</label>
+            <input type="text" id="prononciation-mot" name="prononciationmot">
+        </div>
+        
+        <div>
+            <label for="etymologie-mot">Etymologie mot</label>
+            <input type="text" id="etymologie-mot" name="etymologiemot">
+        </div>
+
+
+        <div>
+            <label for="synonyme-mot">Synonyme mot</label>
+            <input type="text" id="synonyme-mot" name="synonymemot">
+        </div>
+
+        <div>
+            <label for="contraire-mot">Contraire mot</label>
+            <input type="text" id="contraire-mot" name="contrairemot">
+        </div>
+
+        <div>
+            <label for="definition-mot">Définition mot</label>
+            <textarea name="definitionmot" id="definition-mot" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <label for="exemple-mot">Exemple mot</label>
+            <textarea name="exemplemot" id="exemple-mot" cols="30" rows="10"></textarea>
+        </div>
+
+    </fieldset>
+</form>
+</main>
+
+<%- include('../partials/_footer.ejs') %>

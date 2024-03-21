@@ -22,15 +22,15 @@
     }
 ]
 → classe : [
-    'le nom',
+    'le nom', 
     'l’adjectif',
     'le verbe',
     'l’adverbe',
     'le déterminant',
-    'le pronom',
+    'le pronom', 
     'la préposition',
-    'la conjonction',
-    'l’interjection'
+    'la conjonction', 
+    'l’interjection' 
 ]
 → sens : 
     [
