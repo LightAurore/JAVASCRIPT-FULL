@@ -17,19 +17,16 @@
   "license": "ISC",
   "dependencies": {
     "argon2": "^0.40.1",
+    "chalk": "^4.1.2",
     "dotenv": "^16.4.4",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-<<<<<<< HEAD
-    "mongoose": "^8.2.2"
-=======
     "express-async-errors": "^3.1.1",
     "express-session": "^1.18.0",
     "mongoose": "^8.2.2",
     "morgan": "^1.10.0",
     "nanoid": "^5.0.6",
     "yup": "^1.4.0"
->>>>>>> da78670a302f44cecb3ea99f5e9eaef5e495681a
   },
   "devDependencies": {
     "nodemon": "^3.0.3"

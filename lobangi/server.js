@@ -1,10 +1,12 @@
 'use strict'
 
+const connectDb = require('./models/index.js');
 const dicoRouter = require('./routes/dico.router.js');
 const ecoRouter = require('./routes/eco.router.js');
 const homeRouter = require('./routes/home.router.js');
 const littRouter = require('./routes/litt.router.js');
-const magRouter = require('./routes/mag.router.js');
+const magRouter = require('./routes/mag.router.js');const testRouter = require('./routes/test.router.js');
+
 
 require('dotenv').config();
 
@@ -29,7 +31,12 @@ app.use(dicoRouter);
 app.use(ecoRouter);
 app.use(littRouter);
 app.use(magRouter);
+app.use(testRouter);
 
+
+
+// Connection à la base de données
+connectDb();
 
 //  Server 
 app.listen(PORT, ()=>{
