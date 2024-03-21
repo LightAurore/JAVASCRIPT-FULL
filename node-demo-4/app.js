@@ -25,7 +25,7 @@ const routes = {
     '/contact': async function index(req, res){
         // console.log('Route / Contact');
         if(req.method === "POST"){
-            
+            // const b
         }
 
         const html = await ejs.renderFile('./views/contact.ejs');
@@ -35,7 +35,7 @@ const routes = {
     }
 }
 
-function readPostData(){
+function readPostData(req){
     return new Promise((resolve) =>{
         let data  = '';
 
