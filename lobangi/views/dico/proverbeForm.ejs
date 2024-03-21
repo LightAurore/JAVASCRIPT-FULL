@@ -1,0 +1,38 @@
+<%- include('../partials/_head.ejs',{title: "proverbe"}) %>
+
+<%- include('../partials/_header.ejs') %>
+
+<%- include('../partials/_navbar.ejs') %>
+
+<h1>Proverbe</h1>
+
+<main class="main-proverbe">
+<h2>Formulaire de proverbe</h2>
+
+<form class="proverbe-form" method="post">
+    <fieldset>
+        <legend>Origine</legend>
+        <div>
+            <label for="pays">Pays</label>
+            <input type="text" id="pays" name="pays" value="Congo, RDC" required>
+        </div>
+        <div>
+            <label for="region">Région</label>
+            <input type="text" id="region" name="region" required>
+        </div>
+        <div>
+            <label for="ethnie">Nom</label>
+            <input type="text" id="ethnie" name="ethnie">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>proverbe</legend>
+        <div>
+            <label for="proverbe">Texte</label>
+            <textarea name="proverbe" id="proverbe" cols="30" rows="10" class="content-proverbe"></textarea>
+        </div>
+    </fieldset>
+</form>
+</main>
+
+<%- include('../partials/_footer.ejs') %>

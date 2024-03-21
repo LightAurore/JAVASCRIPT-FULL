@@ -1,0 +1,38 @@
+<%- include('../partials/_head.ejs',{title: "expression"}) %>
+
+<%- include('../partials/_header.ejs') %>
+
+<%- include('../partials/_navbar.ejs') %>
+
+<h1>expression</h1>
+
+<main class="main-expression">
+<h2>Formulaire de expression</h2>
+
+<form class="expression-form" method="post">
+    <fieldset>
+        <legend>Origine</legend>
+        <div>
+            <label for="pays">Pays</label>
+            <input type="text" id="pays" name="pays" value="Congo, RDC" required>
+        </div>
+        <div>
+            <label for="region">Région</label>
+            <input type="text" id="region" name="region" required>
+        </div>
+        <div>
+            <label for="ethnie">Nom</label>
+            <input type="text" id="ethnie" name="ethnie">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>expression</legend>
+        <div>
+            <label for="expression">Texte</label>
+            <textarea name="expression" id="expression" cols="30" rows="10" class="content-expression"></textarea>
+        </div>
+    </fieldset>
+</form>
+</main>
+
+<%- include('../partials/_footer.ejs') %>

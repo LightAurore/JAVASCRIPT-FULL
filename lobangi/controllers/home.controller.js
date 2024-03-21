@@ -5,20 +5,18 @@ const homeController = {
 		res.render('home/index')
 	},
 
-	dictionnaire: async (req, res) =>{
-		res.render('home/dictionnaire')
+	about: async (req, res) => {
+		res.render('home/about')
 	},
 
-	litterature: async (req, res) => {
-		res.render('home/litterature')
+	faq: async (req, res) => {
+		res.render('home/faq')
+
 	},
 
-	magazine: async (req, res) => {
-		res.render('home/magazine')
-	},
+	contact: async (req, res) => {
+		res.render('home/contact')
 
-	economie: async (req, res) =>{
-		res.render('home/economie')
 	}
 
 }

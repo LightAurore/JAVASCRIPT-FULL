@@ -1,87 +1,52 @@
 const mongoose = require('mongoose');
 
-
 const motSchema = mongoose.Schema({
-    mot: {
+    mot : {
         type: String,
-        required: true,
-        trim: true,
-        minLength: 1,
-        maxLength: 100
     },
-
-    genre:{
-        type: String,
-        required: true,
-        trim: true,
-        minLength: 1,
-        maxLength: 100
+    classe : {
+        type: '',
     },
-
-    nombre:{
-        type: String,
-        required: true,
-        trim: true,
-        minLength: 1,
-        maxLength: 100
+    forme : {
+        type: '',
     },
-    classe:{
-        type: String,
-        required: true,
-        trim: true,
-        minLength: 1,
-        maxLength: 100
+    genre : {
+        type: '',
     },
-
-    fonction:{
-        type: String,
-        required: true,
-        trim: true,
-        minLength: 1,
-        maxLength: 100
+    nombre : {
+        type: '',
     },
-
-    type:{
-        type: String,
-        required: true,
-        trim: true,
-        minLength: 1,
-        maxLength: 100
+    phonetique : {
+        type: '',
     },
-    
-    definitions:[{
-        type: String,
-        required: true,
-        trim: true,
-        minLength: 1,
-        maxLength: 100
-    }],
-    
-    synonymes:[{
-        type: String,
-        required: true,
-        trim: true,
-        minLength: 1,
-        maxLength: 100
-    }],
-    
-    classe:{
-        type: String,
-        required: true,
-        trim: true,
-        minLength: 1,
-        maxLength: 100
+    prononciation : {
+        type: '',
     },
-
-},
-
-{
-    collection: 'Mot',
-    timestamps: true
-})
-
-// Créer le modèle de données
-const Mot = mongoose.model('Mot', motSchema);
-
-// Exporter le modèle de données "Mot"
-module.exports = Mot;
+    etymologie : {
+        type: '',
+    },
+    synonyme : {
+        type: '',
+    },
+    contraire : {
+        type: '',
+    },
+    sens : {
+        type: '',
+    },
+    exemple : {
+        type: '',
+    },
+    traduction: {
+        type: '',
+    },
+    citation: {
+        type: '',
+    },
+    expression: {
+        type: ' ',
+    },
+    proverbe: {
+        type: '',
+    }
+}) 

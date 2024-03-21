@@ -1,6 +1,10 @@
 'use strict'
 
-const homeRouter = require('./routes/home.router.js')
+const dicoRouter = require('./routes/dico.router.js');
+const ecoRouter = require('./routes/eco.router.js');
+const homeRouter = require('./routes/home.router.js');
+const littRouter = require('./routes/litt.router.js');
+const magRouter = require('./routes/mag.router.js');
 
 require('dotenv').config();
 
@@ -21,15 +25,10 @@ app.use(express.static('./public'));
 app.use(express.urlencoded({ extended: true }));
 
 app.use(homeRouter);
-
-
-
-
-
-
-
-
-
+app.use(dicoRouter);
+app.use(ecoRouter);
+app.use(littRouter);
+app.use(magRouter);
 
 
 //  Server 

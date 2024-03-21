@@ -156,7 +156,7 @@
 
     /* banner */
     #banner{
-        @apply h-52 bg-amber-200 flex justify-center items-center bg-fixed bg-[url('/images/banner.jpg')];
+        @apply h-52 bg-amber-200 flex justify-center items-center bg-fixed bg-[url('/images/banner.jpg')] bg-no-repeat bg-cover;
     }
     #banner > div{
         @apply h-16 p-2 bg-white flex-col;

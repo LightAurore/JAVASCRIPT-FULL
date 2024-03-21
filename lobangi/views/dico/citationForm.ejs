@@ -1,0 +1,49 @@
+<%- include('../partials/_head.ejs',{title: "citation"}) %>
+
+<%- include('../partials/_header.ejs') %>
+
+<%- include('../partials/_navbar.ejs') %>
+
+<h1>Citation</h1>
+
+<main class="main-citation">
+<h2>Formulaire de citation</h2>
+
+<form class="citation-form" method="post">
+    <fieldset>
+        <legend>Auteur</legend>
+        <div>
+            <label for="pseudo-author">Pseudo</label>
+            <input type="text" id="pseudo-author" name="pseudoauteur" required>
+        </div>
+        <div>
+            <label for="firstname-author">Prénom</label>
+            <input type="text" id="firstname-author" name="prenomauteur" required>
+        </div>
+        <div>
+            <label for="lastname-author">Nom</label>
+            <input type="text" id="lastname-author" name="nomauteur">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Citation</legend>
+        <div>
+            <label for="citation">Texte</label>
+            <textarea name="citation" id="citation" cols="30" rows="10" class="content-citation"></textarea>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Contexte événementiel</legend>
+        <div>
+            <label for="contexte"></label>
+            <textarea name="contexte" id="contexte" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for=""></label>
+            <input type="date" name="" id="">
+        </div>
+    </fieldset>
+</form>
+</main>
+
+<%- include('../partials/_footer.ejs') %>
