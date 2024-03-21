@@ -3,7 +3,7 @@
 
 ## mot
 ```
-→ motId : 
+→ motId : automatiser
 → mot : 
 → forme : ['variable', invariable]
 → genre : ['masculin', 'feminin', 'neutre']
