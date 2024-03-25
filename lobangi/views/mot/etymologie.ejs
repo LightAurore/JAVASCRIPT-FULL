@@ -1,0 +1,23 @@
+<%- include('../partials/_head.ejs',{title: "mot"}) %>
+
+<%- include('../partials/_header.ejs') %>
+
+<%- include('../partials/_navbar.ejs') %>
+
+<h1>mot</h1>
+
+<main class="main-mot">
+<h2>Formulaire de mot</h2>
+
+<form class="mot-form" method="post">
+        <fieldset>
+        <!-- étape -->
+        <div>
+            <label for="etymologie-mot">Etymologie mot</label>
+            <input type="text" id="etymologie-mot" name="etymologiemot">
+        </div>
+    </fieldset>
+</form>
+</main>
+
+<%- include('../partials/_footer.ejs') %>

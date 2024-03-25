@@ -5,6 +5,17 @@
 ```
 → motId : automatiser
 → mot : 
+→ classe : [
+    'le nom', 
+    'l’adjectif',
+    'le verbe',
+    'l’adverbe',
+    'le déterminant',
+    'le pronom', 
+    'la préposition',
+    'la conjonction', 
+    'l’interjection' 
+]
 → forme : ['variable', invariable]
 → genre : ['masculin', 'feminin', 'neutre']
 → nombre : ['pluriel', 'singulier']
@@ -21,17 +32,7 @@
         explication :
     }
 ]
-→ classe : [
-    'le nom', 
-    'l’adjectif',
-    'le verbe',
-    'l’adverbe',
-    'le déterminant',
-    'le pronom', 
-    'la préposition',
-    'la conjonction', 
-    'l’interjection' 
-]
+
 → sens : 
     [
         {

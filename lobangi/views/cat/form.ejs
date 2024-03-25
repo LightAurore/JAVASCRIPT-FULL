@@ -1,0 +1,30 @@
+<%- include('../partials/_head.ejs',{title: "cat"}) %>
+
+<%- include('../partials/_header.ejs') %>
+
+<%- include('../partials/_navbar.ejs') %>
+
+<h1>Citation</h1>
+
+<main class="main-citation">
+<h2>Formulaire de chat</h2>
+
+<form class="citation-form" method="post">
+    <fieldset>
+        <legend>Chat</legend>
+        <div>
+            <label for="cat-id">Id</label>
+            <input type="number" id="cat-id" name="id" required value="<%= data['id'] %>">
+        </div>
+        <div>
+            <label for="firstname">Prénom</label>
+            <input type="text" id="firstname" name="name" required value="<%= data['name'] %>">
+        </div>
+    </fieldset>
+    <div>
+        <button type="submit">Ajouter</button>
+    </div>
+</form>
+</main>
+
+<%- include('../partials/_footer.ejs') %>

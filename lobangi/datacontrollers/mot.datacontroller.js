@@ -1,8 +1,9 @@
 
 
-const motController = {
+const motDatacontroller = {
     index: async(req, res) => {
-        res.sendStatus(501)
+        const mots = await motService.getAll();
+        res.render('mot/index', {mots})
     },
 
     getWord: async(req, res) =>{
@@ -21,3 +22,5 @@ const motController = {
         res.sendStatus(501)
     },
 }
+
+module.exports = motDatacontroller;

@@ -1,52 +1,104 @@
 const mongoose = require('mongoose');
 
 const motSchema = mongoose.Schema({
+    // base
     mot : {
         type: String,
+        required:true,
+        trim: true,
+        minLength: 1
     },
     classe : {
-        type: '',
+        type: String,
+        required:true,
+        trim: true,
+        maxLength: 20
     },
     forme : {
-        type: '',
+        type: String,
+        required:true,
+        trim: true,
+        maxLength: 20
     },
     genre : {
-        type: '',
+        type: String,
+        required:true,
+        trim: true,
+        maxLength: 20
     },
     nombre : {
-        type: '',
+        type: String,
+        required:true,
+        trim: true,
+        minLength: 1
     },
     phonetique : {
-        type: '',
+        type: String,
+        required:true,
+        trim: true,
+        minLength: 1
     },
-    prononciation : {
-        type: '',
-    },
-    etymologie : {
-        type: '',
-    },
-    synonyme : {
-        type: '',
-    },
-    contraire : {
-        type: '',
-    },
-    sens : {
-        type: '',
-    },
+
+    // étape
+    prononciation : [{
+        type: String,
+    }],
+    // étape
+    etymologie : [{
+        type: String,
+    }],
+    // étape
+    synonyme : [{
+        type: String,
+    }],
+    // étape
+    contraire : [{
+        type: String,
+    }],
+    // étape
+    sens : [{
+        type: String,
+        required:true,
+        trim: true,
+        minLength: 1
+    }],
     exemple : {
-        type: '',
+        type: String,
+        required:true,
+        trim: true,
+        minLength: 1
     },
-    traduction: {
-        type: '',
+
+
+    // étape data externes
+    traductions: {
+        type: traductionSchema,
+        default: []
     },
+    // étape
     citation: {
-        type: '',
+        type: citationSchema,
+        default: []
     },
+
+    // étape
     expression: {
-        type: ' ',
+        type: expressionSchema,
+        default: []
     },
+    // étape
     proverbe: {
-        type: '',
+        type: proverbeSchema,
+        default: []
     }
-}) 
+},
+{
+    collection: 'Mot',
+    timestamps: true
+}
+
+) 
+
+const Mot = mongoose.model('Mot',motSchema);
+
+module.exports = Mot;
