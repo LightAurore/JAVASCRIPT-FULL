@@ -1,0 +1,75 @@
+<h2>Formulaire de définition</h2>
+
+<form class="mot-form" method="post">
+    <!-- nature du mot -->
+        <!-- mot -->
+        <div>
+            <label for="mot">Mot</label>
+            <input type="text" id="nouveau-mot" name="mot" required value=<%= mot %>>
+        </div>
+        <!-- classe -->
+        <div>
+            <label for="classe-mot">Classe du mot</label>
+            <select name="classe" id="classe-mot" required>
+                <option value="">-- Choisissez la classe du mot</option>
+                <option value="adjectif">Adjectif</option>
+                <option value="adverbe">Adverbe</option>
+                <option value="conjonction">Conjonction</option>
+                <option value="determinant">Déterminant</option>
+                <option value="interjection">Interjection</option>
+                <option value="nom">Nom</option>
+                <option value="preposition">Préposition</option>
+                <option value="pronom">Pronom</option>
+                <option value="verbe">Verbe</option>
+            </select>
+        </div> 
+        <!-- forme -->
+        <div>
+            <label for="forme-mot">Forme du mot</label>
+            <select name="forme" id="forme-mot">
+                <option value="">-- Choisisez la forme du mot --</option>
+                <option value="simple">Simple</option>
+                <option value="compose">Composé</option>
+                <option value="derive">Dérivé</option>
+            </select>
+        </div>
+        <!-- genre -->
+        <div>
+            <label for="genre-mot">Genre du mot</label>
+            <select name="genre" id="genre-mot" required>
+                <option value="">-- Choisisez la genre du mot --</option>
+                <option value="feminin">Féminin</option>
+                <option value="masculin">Masculin</option>
+                <option value="neutre">Neutre</option>
+            </select>
+        </div>
+        <!-- pluriel -->
+        <div>
+
+            <label for="pluriel-mot">Pluriel du mot</label>
+            <input type="text" id="pluriel-mot" name="pluriel">
+        </div>
+        <!-- origine -->
+        <div>
+            <label for="origine-mot">Origine mot</label>
+            <input type="text" id="origine-mot" name="origine">
+        </div>
+        <!-- sens -->
+        <div>
+            <label for="sens-mot">Définition du mot</label>
+            <textarea name="sensContent" id="sens-mot" cols="30" rows="10"></textarea>
+        </div>
+        <!-- étymologie -->
+        <div>
+            <label for="etymologie-mot">Etymologie du mot</label>
+            <textarea name="etymologie" id="etymologie-mot" cols="30" rows="10"></textarea>
+        </div>
+        <!-- exemple -->
+        <div>
+            <label for="exemple-mot">Phrase avec le mot</label>
+            <textarea name="sensExemple" id="exemple-mot" cols="30" rows="10"></textarea>
+        </div>
+    <div>
+        <button type="submit">submit</button>
+    </div>
+</form>
