@@ -1,0 +1,93 @@
+
+
+
+main.main-mot{
+    display: flex;
+    padding:0 6px;
+    flex: 1;
+    background-color: $motBgcMain;
+
+    section{
+        width: 50%;
+        border: 2px solid $motBorderSection;
+    }
+    section:first-child{
+        margin-right: 6px;
+    }
+}
+main.main-mot h2{
+    width: 100%;
+    color: white;
+   text-align: center;
+   padding-block: 6px;
+}
+main.main-mot + footer{
+    color: #0ff;
+    background-color: black;
+}
+
+.mot-form{
+    width: 100%;
+    padding: 5px 20px;
+}
+
+
+.mot-form div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 12px;
+    
+    background-color: $motBgcForm;
+    
+    label{
+        color: #4e1609;
+        font-weight: 900;
+        font-size: 1.2rem;
+    }
+
+    button[type="submit"]{
+        width: 200px;
+        height: 35px;
+        align-self: center;
+        background-color: #604dff;
+        color: #ffe74d;
+        font-size: 1.2rem;
+        font-weight: 600;
+        font-family: Helvetica, sans-serif;
+        letter-spacing: 2px;
+        border: none;
+        border-radius: 20px;
+
+        &:hover{
+            color: #604dff;
+            background-color: #ffe74d;
+            box-shadow: -2px 2px 4px #b67823;
+        }
+    }
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #26c4ec;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+  }
+  
+  .tablink:hover {
+    background-color: #9370db;
+  }
+
+.tabcontent {
+    color: white;
+    // background-color: $motBgcForm;
+    display: none;
+    height: 100%;
+  }
