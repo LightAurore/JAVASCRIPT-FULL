@@ -8,7 +8,7 @@ function connectDb(){
             console.log('Connection to MongoDb is successful !')
         })
         .catch((e)=>{
-            console.warning('Connection to MongoDb on error');
+            console.warn('Connection to MongoDb on error');
             console.error(e);
         })
 
