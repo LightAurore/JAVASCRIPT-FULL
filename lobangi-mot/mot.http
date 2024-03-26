@@ -1,0 +1,23 @@
+require('dotenv').config();
+const PORT = process.env.PORT;
+
+GET http://localhost:8282/mot
+
+GET http://localhost:8282/mot/new
+POST http://localhost:8282/mot/new
+
+GET http://localhost:8282/mot/def
+POST http://localhost:8282/mot/def
+
+GET http://localhost:8282/mot/syno
+POST http://localhost:8282/mot/syno
+
+GET http://localhost:8282/mot/anto
+POST http://localhost:8282/mot/anto
+
+GET http://localhost:8282/mot/prono
+POST http://localhost:8282/mot/prono
+
+GET http://localhost:8282/mot/trad
+POST http://localhost:8282/mot/trad
+
