@@ -1,0 +1,42 @@
+
+
+.list-item{
+    display: flex;
+    place-content: center;
+    width: 100%;
+    border: 4px ridge darkgoldenrod;
+} 
+
+
+.item-finished{
+    background-color: lightgreen;
+}
+
+.list-item article{
+    display: flex;
+    width: 100%;
+}
+
+.list-item > article > section,
+.list-item > article > aside{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 12px;
+}
+.list-item > article > section{
+    background-color: cornflowerblue;
+}
+
+.list-item > article > aside{
+    align-items: center;
+}
+
+.list-item > article > aside > button{
+    width: 100px;
+    background-color: brown;
+    margin: 12px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: -2px 2px 6px blue;
+}
