@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import { useId, useState } from "react";
+import style from './form-style.module.css'
 
 
-const TodoForm = ({setTask, task}) => {
+const TodoForm = ({setTask}) => {
     const id = useId();
     const uuId = 'Id-' + (Math.random().toString(36)).replace(" ","-");
-
 
     const [inputs, setInputs] = useState({
         nom: '', desc: '', prior: ''
@@ -15,12 +15,11 @@ const TodoForm = ({setTask, task}) => {
         e.preventDefault();
 
         const data = {
-            id: 'data-' + uuId,
+            id: 'item-' + uuId,
             nom: inputs.nom,
             desc: inputs.desc,
             prior: inputs.prior
         }
-
 
         setTask(data);
 
@@ -39,9 +38,9 @@ const TodoForm = ({setTask, task}) => {
  
 
     return (
-        <div>
+        <div className={style['form-container']}>
             <h3>Ajouter une nouvelle tâche</h3>
-            <form className="todo-form" onSubmit={handleSubmit}>
+            <form className={style["form-todo"]} onSubmit={handleSubmit}>
                 <section>
                     <label htmlFor={id + '-name'}>Nom</label>
                     <input type="text" id={id + '-name'} name="nom" required value={inputs.nom} onChange={handleInput} />

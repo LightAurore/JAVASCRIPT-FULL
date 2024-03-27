@@ -2,11 +2,28 @@ import PropTypes from 'prop-types';
 
 import ListTasks from '../list-tasks/list-tasks.jsx';
 
-const DisplayList = ({getTask, tasks}) => {
+import style from './display-style.module.css'
+import { useState } from 'react';
+
+
+const DisplayList = ({data, getTask}) => {
+
+    const [itemId, setItemid] = useState('');
+    const [action, setAction] = useState('');
+
+    const handlerDataArray = (onButton, TaskId) => {
+        setItemid(TaskId);
+        setAction(onButton);
+
+        getTask(action, itemId); 
+        // console.log("-----data debut-------");
+        // console.log(onButton, TaskId);
+        // console.log("-----data fin -------");
+    }
 
     return (
 
-        <div className="display-list">
+        <div className={style["display-list"]}>
             <h3>Liste de tâches</h3>
             <header>
                 <h4>Tâche</h4>
@@ -15,8 +32,8 @@ const DisplayList = ({getTask, tasks}) => {
                 <h4>Terminé</h4>
             </header>
 
-            <ul>
-                <ListTasks />
+            <ul className={style["container-list"]} >
+                <ListTasks onDisplay ={handlerDataArray} data= {data} />
             </ul>
             
         </div>
@@ -24,12 +41,12 @@ const DisplayList = ({getTask, tasks}) => {
 }
 
 ListTasks.defaultProps = {
-    tasks: [],
+    data: [],
     getTask: () => {}
 }
 
 ListTasks.propTypes = {
-    tasks: PropTypes.array,
+    data: PropTypes.array,
     getTask: PropTypes.func
 }
 
