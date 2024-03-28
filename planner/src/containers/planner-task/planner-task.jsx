@@ -9,18 +9,28 @@ const PlannerTask = () => {
 const [tasks, setTasks] = useState([]);
 
 const handleGetTask = (action, itemId) => {
-
+    // bvdbvijhngbu
+console.log('Action planner');
+console.log(action, itemId);
+console.log('action, itemId');
     if(action === "finished"){
         const index = IndexarrayUtils(tasks,itemId);
         tasks[index].isFinished = true;
+        console.log("Finish");
+        console.log(tasks[index].isFinished);
+        setTasks(tasks)
 
     }else if(action === "erased"){
         const index = IndexarrayUtils(tasks,itemId);
-        const itemerased = tasks.splice(index,index+1);
-
-        console.log(itemerased)
-        console.log(tasks)
+        console.log("index : " + index);
+        const itemerased = tasks.splice(index, 1);
+        const copy = [...tasks]
         setTasks(tasks)
+        // window.location.reload();
+        console.log(1);
+        console.log(itemerased)
+        console.log(2);
+        console.log(copy)
     }
 }
     
@@ -41,6 +51,8 @@ const handleGetTask = (action, itemId) => {
         <h2>Plannification de tâches</h2>
             <TodoForm setTask ={handleSetTask} />
             <DisplayList  getTask ={handleGetTask} data = {tasks} />
+
+            <hr />
         </>
     )
 }

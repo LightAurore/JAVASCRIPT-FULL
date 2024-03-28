@@ -12,16 +12,30 @@ const DisplayList = ({data, getTask}) => {
     const [action, setAction] = useState('');
 
     const handlerDataArray = (onButton, TaskId) => {
+        
         setItemid(TaskId);
+        
         setAction(onButton);
 
-        getTask(action, itemId); 
-        // console.log("-----data debut-------");
-        // console.log(onButton, TaskId);
-        // console.log("-----data fin -------");
+        if(onButton === "erased"){
+            console.log("1° " + action);
+        }else if(onButton === "finished"){
+            console.log("1° " + action);
+        }else{
+            console.log('Pas d\'action');
+        }
+
+        console.log("---- Resultat button ----");
+        console.log(onButton, TaskId)
+        getTask(onButton, TaskId); 
+        console.log("---- Resultat button ----");
+        console.log(onButton, TaskId)
+
+        setItemid('');
+        setAction('');
     }
 
-    return (
+    return (data) ?  (
 
         <div className={style["display-list"]}>
             <h3>Liste de tâches</h3>
@@ -37,6 +51,8 @@ const DisplayList = ({data, getTask}) => {
             </ul>
             
         </div>
+    ) : (
+        <></>
     )
 }
 

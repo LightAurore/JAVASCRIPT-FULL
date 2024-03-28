@@ -5,20 +5,28 @@ import style from './list-style.module.css'
 
 const ListTasks = ({data, onDisplay}) =>{
 
-    const [item, setItem] = useState('');
+    // const [item, setItem] = useState('');
 
     // const id = useId();
 
     const handlerErase = (taskId) => {
         // console.log(taskId);
-        setItem('erased');
-        onDisplay(item, taskId)
+        // const etat = "erased";
+        // setItem(etat);
+        onDisplay("erased", taskId);
+        console.log('2° erased : ' + taskId);
+
+        taskId= '';
     }
     
     const handlerFinished = (taskId) => {
         // console.log(taskId);
-        setItem('finished');
-        onDisplay(item, taskId)
+        // const etat = "finished";
+        // setItem(etat);
+        console.log('2° finished : ' + taskId);
+        onDisplay("finished", taskId)
+        
+        taskId= '';
     }
 
     // console.log(3);
@@ -30,11 +38,12 @@ const ListTasks = ({data, onDisplay}) =>{
    
     // console.log(5);
 
-    const myTasks = maListe.map((task, index) => {
+    return (
+        maListe.map((task, index) => {
         // console.log(task.isFinished);
         // console.log(task.id);
         
-    return (task.isFinished) ? (
+        return (task.isFinished) ? (
             <li className={style['list-item']+' '+ style['item-finished']} key={task.id}>
                 <article>
                     <section>
@@ -44,8 +53,8 @@ const ListTasks = ({data, onDisplay}) =>{
                         </p>
                     </section>
                     <aside>
-                        <button onClick={() => handlerFinished(task.id)} disabled={task.isFinished}>Terminer</button>
-                        <button onClick={() => handlerErase(task.id)} disabled={task.isFinished}>Supprimer</button>
+                        <button onClick={(e) => handlerFinished(task.id)} disabled={task.isFinished}>Terminer</button>
+                        <button onClick={(e) => handlerErase(task.id)} disabled={task.isFinished}>Supprimer</button>
                     </aside>
                 </article>
             </li>
@@ -59,15 +68,14 @@ const ListTasks = ({data, onDisplay}) =>{
                         </p>
                     </section>
                     <aside>
-                        <button onClick={() => handlerFinished(task.id)} disabled={task.isFinished}>Terminer</button>
-                        <button onClick={() => handlerErase(task.id)} disabled={task.isFinished}>Supprimer</button>
+                        <button onClick={(e) => handlerFinished(task.id)} disabled={task.isFinished}>Terminer</button>
+                        <button onClick={(e) => handlerErase(task.id)} disabled={task.isFinished}>Supprimer</button>
                     </aside>
                 </article>
         </li>
     )
     })
-
-    return myTasks;
+)
 
 }
 
