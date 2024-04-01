@@ -42,7 +42,7 @@ const ListTasks = ({data, onDisplay}) =>{
         maListe.map((task, index) => {
         // console.log(task.isFinished);
         // console.log(task.id);
-        
+    /*     
         return (task.isFinished) ? (
             <li className={style['list-item']+' '+ style['item-finished']} key={task.id}>
                 <article>
@@ -74,6 +74,23 @@ const ListTasks = ({data, onDisplay}) =>{
                 </article>
         </li>
     )
+     */
+    return (!task.isFinished) && (
+        <li className={style['list-item']+' '+ style['item-finished']} key={task.id}>
+            <article>
+                <section>
+                    <h4>{task.nom}</h4>
+                    <p>
+                    {task.desc}
+                    </p>
+                </section>
+                <aside>
+                    <button onClick={(e) => handlerFinished(task.id)} disabled={task.isFinished}>Terminer</button>
+                    <button onClick={(e) => handlerErase(task.id)} disabled={task.isFinished}>Supprimer</button>
+                </aside>
+            </article>
+        </li>
+)
     })
 )
 
