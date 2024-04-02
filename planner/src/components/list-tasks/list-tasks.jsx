@@ -5,34 +5,17 @@ import style from './list-style.module.css'
 
 const ListTasks = ({data, onDisplay}) =>{
 
-    // const [item, setItem] = useState('');
-
-    // const id = useId();
-
     const handlerErase = (taskId) => {
-        // console.log(taskId);
-        // const etat = "erased";
-        // setItem(etat);
         onDisplay("erased", taskId);
-        console.log('2° erased : ' + taskId);
 
         taskId= '';
     }
     
     const handlerFinished = (taskId) => {
-        // console.log(taskId);
-        // const etat = "finished";
-        // setItem(etat);
-        console.log('2° finished : ' + taskId);
         onDisplay("finished", taskId)
         
         taskId= '';
     }
-
-    // console.log(3);
-    // console.log(data);
-    // console.log(typeof tasks);
-    // console.log(4);
 
     const maListe = data;
    
@@ -40,14 +23,13 @@ const ListTasks = ({data, onDisplay}) =>{
 
     return (
         maListe.map((task, index) => {
-        // console.log(task.isFinished);
-        // console.log(task.id);
-        
         return (task.isFinished) ? (
             <li className={style['list-item']+' '+ style['item-finished']} key={task.id}>
                 <article>
                     <section>
                         <h4>{task.nom}</h4>
+                        {console.log(task.prior)}
+                         <span>{(task.prior === '4') ? 'urgent' : ''} </span>
                         <p>
                         {task.desc}
                         </p>
@@ -62,7 +44,8 @@ const ListTasks = ({data, onDisplay}) =>{
         <li className={style['list-item']} key={task.id}>
                 <article>
                     <section>
-                        <h4>{task.nom}</h4>
+                        <h4>{task.nom} </h4>
+                        <span>{(task.prior === '4') ? 'urgent' : ''} </span>
                         <p>
                         {task.desc}
                         </p>
@@ -88,10 +71,10 @@ ListTasks.defaultProps = {
 ListTasks.prototype = {
     data: PropTypes.arrayOf(PropTypes.shape({
         isFinished: PropTypes.bool.isRequired,
-        id: PropTypes.string,
+        id: PropTypes.string.isRequired,
         nom: PropTypes.string.isRequired,
-        desc: PropTypes.string,
-        prior: PropTypes.string
+        desc: PropTypes.string.isRequired,
+        prior: PropTypes.string.isRequired
     })),
     onDisplay: PropTypes.func
 }

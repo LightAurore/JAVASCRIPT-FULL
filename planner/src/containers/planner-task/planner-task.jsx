@@ -1,50 +1,53 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
+
+import { v4 as uuid4 } from "uuid";
+
 import DisplayList from "../../components/display-list/display-list.jsx";
 import TodoForm from "../../components/todo-form/todo-form.jsx";
 import { IndexarrayUtils } from "../../components/utils/index-array.utils.js";
 
+
+
+// 
+// import { promises as fs } from 'fs'
 
 const PlannerTask = () => {
 
 const [tasks, setTasks] = useState([]);
 
 const handleGetTask = (action, itemId) => {
-    // bvdbvijhngbu
-console.log('Action planner');
-console.log(action, itemId);
-console.log('action, itemId');
     if(action === "finished"){
         const index = IndexarrayUtils(tasks,itemId);
         tasks[index].isFinished = true;
-        console.log("Finish");
-        console.log(tasks[index].isFinished);
-        setTasks(tasks)
+        setTasks([...tasks])
 
     }else if(action === "erased"){
         const index = IndexarrayUtils(tasks,itemId);
-        console.log("index : " + index);
-        const itemerased = tasks.splice(index, 1);
+        tasks.splice(index, 1);
         const copy = [...tasks]
-        setTasks(tasks)
+        setTasks(copy)
         // window.location.reload();
-        console.log(1);
-        console.log(itemerased)
-        console.log(2);
-        console.log(copy)
     }
 }
+
+
     
-    const handleSetTask = (task) => {
+const handleSetTask = useCallback((task) => {
+        // const myId = 'Id-' + (Math.random().toString(36)).replace(" ","-");
+
+
         task['isFinished'] = false;
+        // task['id'] = 'item-' + myId;
+        task['id'] = 'item-' + uuid4();
+
+        console.log(task);
+        
         tasks.push(task);
         const copy = [...tasks];
         
         setTasks(copy);
-        // console.log(1);
-        // console.log(tasks);
-        // console.log(2);
         task = {};
-    }
+    }, []);
 
     return (
         <>

@@ -17,25 +17,13 @@ const DisplayList = ({data, getTask}) => {
         
         setAction(onButton);
 
-        if(onButton === "erased"){
-            console.log("1° " + action);
-        }else if(onButton === "finished"){
-            console.log("1° " + action);
-        }else{
-            console.log('Pas d\'action');
-        }
-
-        console.log("---- Resultat button ----");
-        console.log(onButton, TaskId)
         getTask(onButton, TaskId); 
-        console.log("---- Resultat button ----");
-        console.log(onButton, TaskId)
 
         setItemid('');
         setAction('');
     }
 
-    return (data) ?  (
+    return (data.length !== 0) ?  (
 
         <div className={style["display-list"]}>
             <h3>Liste de tâches</h3>

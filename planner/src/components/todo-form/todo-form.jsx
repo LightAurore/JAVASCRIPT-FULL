@@ -1,21 +1,21 @@
 import PropTypes from 'prop-types';
 import { useId, useState } from "react";
 import style from './form-style.module.css'
+import PriorityEnum from '../../enum/priority.enum.js';
 
 
 const TodoForm = ({setTask}) => {
     const id = useId();
-    const uuId = 'Id-' + (Math.random().toString(36)).replace(" ","-");
+  
 
     const [inputs, setInputs] = useState({
-        nom: '', desc: '', prior: ''
+        nom: '', desc: '', prior: PriorityEnum.normal
     })
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
         const data = {
-            id: 'item-' + uuId,
             nom: inputs.nom,
             desc: inputs.desc,
             prior: inputs.prior
@@ -24,7 +24,7 @@ const TodoForm = ({setTask}) => {
         setTask(data);
 
         setInputs({
-            nom: '', desc: '', prior: ''
+            nom: '', desc: '', prior: PriorityEnum.normal
         })
 
     }
@@ -48,17 +48,18 @@ const TodoForm = ({setTask}) => {
 
                 <section>
                     <label htmlFor={id + '-des'}>Description</label>
-                    <textarea name="desc" id={id + '-des'} cols="30" rows="10" required value={inputs.desc} onChange={handleInput} />
+                    <textarea name="desc" id={id + '-des'} cols="30" rows="10" value={inputs.desc} onChange={handleInput} />
                 </section>
 
                 <section>
                     <label htmlFor={id + '-prior'}>Priorité</label>
                     <article>
-                        <select name="prior" id={id + '-prior'} required value={inputs.prior} onChange={handleInput} >
+                        <select name="prior" id={id + '-prior'} value={inputs.prior} onChange={handleInput} >
                             <option value="" readOnly> --- niveau de priorité --- </option>
-                            <option value="normal">Normal</option>
-                            <option value="important">Important</option>
-                            <option value="urgent">Urgent</option>
+                            <option value={PriorityEnum.low}>Faible</option>
+                            <option value={PriorityEnum.normal}>Normal</option>
+                            <option value={PriorityEnum.high}>Haute</option>
+                            <option value={PriorityEnum.urgent}>Urgent</option>
                         </select>
                         <input type="submit" value="Ajouter" />
                     </article>
@@ -78,8 +79,8 @@ TodoForm.defaultProps= {
 
 TodoForm.propTypes = {
     nom: PropTypes.string.isRequired,
-    desc: PropTypes.string.isRequired,
-    prior: PropTypes.string.isRequired,
+    desc: PropTypes.string,
+    prior: PropTypes.string,
     setTask: PropTypes.func
 }
 

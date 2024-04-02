@@ -19,4 +19,4 @@
 ##  https://www.freshworks.com/fr/freshservice/priority-matrix/
 
 
-## 
+ ## path intellisense (extension) ↠ Pour activer l'autocomplétion (nb: il faut desactiver l'autocomplétion de vscode)

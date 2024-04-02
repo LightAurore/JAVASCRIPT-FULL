@@ -7,6 +7,10 @@
     border: 4px ridge darkgoldenrod;
 } 
 
+.list-item span{
+    color: crimson;
+} 
+
 
 .item-finished{
     background-color: lightgreen;
