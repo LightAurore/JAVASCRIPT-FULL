@@ -101,7 +101,7 @@ const motController = {
     // 3° synonyme du mot
     addWordSynonyme: async(req, res) => {
         let data = {};
-        res.render('mot/synonyme',{data});
+        res.render('mot/base',{data});
         
     },
     addWordSynonyme_POST: async(req, res) => {
@@ -111,7 +111,7 @@ const motController = {
         } catch (error) {
             console.log(error);
             console.log('diriger vers le mot')
-            res.status(400).render('mot/synonyme');
+            res.status(400).render('mot/base');
         }
         
         const synoAdded = await motService.addSynonyme({
@@ -122,7 +122,7 @@ const motController = {
         console.log('synonyme ajouté')
         if(synoAdded){
             req.body = {};
-            res.render('mot/synonyme', {mot: data.mot});
+            res.render('mot/base', {mot: data.mot});
         }else{
             req.errorAjout = {
                 mot: data.mot, 
@@ -134,7 +134,7 @@ const motController = {
     },
     // 4° contraire du mot
     addWordAntonyme: async(req, res) => {
-        res.render('mot/antonyme');
+        res.render('mot/base');
     },
     addWordAntonyme_POST: async(req, res) => {
         let data = {};
@@ -143,7 +143,7 @@ const motController = {
         } catch (error) {
             console.log(error);
             console.log('diriger vers le mot')
-            res.status(400).render('mot/antonyme');
+            res.status(400).render('mot/base');
         }
         
         const synoAdded = await motService.addAntonyme({
@@ -154,7 +154,7 @@ const motController = {
         console.log('antonyme ajouté')
         if(synoAdded){
             req.body = {};
-            res.render('mot/antonyme', {mot: data.mot});
+            res.render('mot/base', {mot: data.mot});
         }else{
             req.errorAjout = {
                 mot: data.mot, 
@@ -166,7 +166,7 @@ const motController = {
     },
     // 5° contraire du mot
     addWordMeaning: async(req, res) => {
-        res.render('mot/sens');
+        res.render('mot/base');
     },
     addWordMeaning_POST: async(req, res) => {
         let data = {};
@@ -206,7 +206,7 @@ const motController = {
     
     // 5° contraire du mot
     addWordTranslation: async(req, res) => {
-        res.render('mot/traduction')
+        res.render('mot/base')
     },
     addWordTranslation_POST: async(req, res) => {
         console.log(req.body);
@@ -216,7 +216,7 @@ const motController = {
         } catch (error) {
             console.log(error);
             console.log('diriger vers le mot')
-            res.status(400).render('mot/traduction');
+            res.status(400).render('mot/base');
         }
         console.log(1);
         console.log(data);
@@ -230,7 +230,7 @@ const motController = {
         console.log('traduction ajouté')
         if(tradAdded){
             req.body = {};
-            res.render('mot/traduction', {mot: data.mot});
+            res.render('mot/base', {mot: data.mot});
         }else{
             req.errorAjout = {
                 mot: data.mot, 
