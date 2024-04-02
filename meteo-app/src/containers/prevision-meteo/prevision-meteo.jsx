@@ -5,7 +5,7 @@ import SearchByCountry from "../../components/search-by-country/search-by-countr
 
 const PrevisionMeteo = () => {
 
-    const [country, setCountry] = useState(null);
+    const [country, setCountry] = useState('Wavre');
 
 
     const handleSearchCountry = useCallback((land) => {
@@ -13,12 +13,16 @@ const PrevisionMeteo = () => {
         // console.log(land);
     })
 
+    const handleDisplay = (land) => {
+        setCountry(land?.trim() ? land : null)
+    }
+
     return (
         <div>
             <h1>Prévision de la météo</h1>
             <SearchByCountry onSearch={handleSearchCountry} />
 
-            <MeteoOfCountry country= {country} />
+            <MeteoOfCountry country= {country} onDisplay={handleDisplay} />
         </div>
     )
 }
