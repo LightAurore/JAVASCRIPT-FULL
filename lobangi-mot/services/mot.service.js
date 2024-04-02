@@ -66,6 +66,7 @@ const motService = {
         }
 
         // 
+        console.log('definition');
         const motUpdated = await Mot.updateOne(
             { mot: motData.mot },
             {
@@ -95,6 +96,7 @@ const motService = {
             return false;
         }
         // 
+        console.log('Synonyme');
         const motUpdated = await Mot.updateOne(
             { mot: motData.mot },
             {
@@ -114,6 +116,7 @@ const motService = {
             return false;
         }
         // 
+        console.log('Antonyme');
         const motUpdated = await Mot.updateOne(
             { mot: motData.mot },
             {
@@ -135,7 +138,8 @@ const motService = {
             return false;
         }
 
-        // 
+        //
+        console.log('Prononciation');
         const motUpdated = await Mot.updateOne(
             { mot: motData.mot },
             {
@@ -159,6 +163,7 @@ const motService = {
             return false;
         }
         // 
+        console.log('Traduction');
         const motUpdated = await Mot.updateOne(
             { mot: motData.mot },
             {

@@ -35,6 +35,7 @@ const motController = {
         // objet initial vide
         let data = {};
         try {
+            console.log('REQ BODY');
             console.log(req.body)
             data = await motValidator.noUnknown()
                     .validate(req.body, { abortEarly: false});
@@ -66,6 +67,8 @@ const motController = {
         res.render('mot/prononciation');
     },
     addWordPrononciation_POST: async(req, res) => {
+        console.log('La prononciation');
+
         let data = {};
         try {
             data = await motPrononciationValidator.validate(req.body)
@@ -84,7 +87,7 @@ const motController = {
         console.log('prononciation ajouté')
         if(pronoAdded){
             req.body = {};
-            res.render('mot/new', {mot: data.mot});
+            res.render('mot/base', {mot: data.mot});
         }else{
             req.errorAjout = {
                 mot: data.mot, 
