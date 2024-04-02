@@ -61,11 +61,7 @@ const MeteoOfCountry = ({country, onDisplay}) => {
         console.log(2);
         console.log(country);
         setData(null);
-
-        // const lander = country;
-        // https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={e02bc8fa29msh9d0c33cc8c9507dp1dd155jsn0ee742843e4e}
-
-
+        setLoading(true);
         
         axios.get(`weather?q=${country}&units=metric&appid=19662c6a10adc2f517d9c2172c2b7f8e`,{
             baseURL: 'https://api.openweathermap.org/data/2.5/'
@@ -74,8 +70,7 @@ const MeteoOfCountry = ({country, onDisplay}) => {
         .then((resp) => {
             
             const weather = resp.data;
-            
-        setLoading(true);
+
             setData({
                 name: weather.name,
                 countryCode: weather.sys.country,
@@ -136,11 +131,13 @@ const MeteoOfCountry = ({country, onDisplay}) => {
 
     return (
         <div>
-            la météo de : { country ? country : 'Country' }
+            
             {
                 isLoading ?
                ( <WeatherCard {...data}/>) :
-                (<WeatherError {...error}/>)
+               data ?
+                (<WeatherError {...error}/>) :
+                (<div>hello l'erreur</div>)
             }
         </div>
     )
