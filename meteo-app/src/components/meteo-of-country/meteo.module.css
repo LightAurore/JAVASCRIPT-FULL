@@ -1,0 +1,25 @@
+
+
+.card-meteo{
+    width: 100%;
+    margin-top: 12px auto;
+    padding: 6px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(201, 230, 253);
+}
+
+
+.card-meteo h2 span{
+    color: blue;
+    text-transform: uppercase;
+}
+
+
+
+
+.card-meteo > div{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}

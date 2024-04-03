@@ -1,6 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-// import { GpsTool } from "../../tools/gps.tool";
+
+import style from './meteo.module.css';
+
+
 
 const WeatherCard = ({
     name,
@@ -13,22 +16,35 @@ const WeatherCard = ({
     wind
     }) => {
     
+        const weatherTempOption = {style:'unit', unit:'Celsius'};
 
     return (
-        <article>
+        <article className={style["card-meteo"]}>
+            <div>
+
             <h2>Météo : <span>{name}</span> </h2>
             <h3>{countryCode}</h3>
-            <p>{temperature}</p>
+            </div>
+            <p>{temperature} ° Celsius</p>
             <p>{humidity}</p>
-                <div>
-                <span>Temps général : {condition}</span><br />
-            <p>{description}</p>
-
-                </div>
+                <span>Temps général : {condition}</span>
+            <div>
+                Le temps sera <span>{description}</span>
+            </div>
             <div>
                 <span>Pression atmosphérique : {pressure}</span><br />
-                <span>Vitesse de vent : {wind}</span>
+                <span>Vitesse de vent : {wind} beaufort</span>
             </div>
+            <p>
+                {
+                    ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"][(new Date().getDay()) - 1]
+                }
+                {' '}
+                {
+                //    setInterval( () => { new Date().toLocaleString(undefined,{minimumfractionDigits: 2})} , 10)
+                   new Date().toLocaleString(undefined,{minimumfractionDigits: 2})
+                }
+            </p>
         </article>
     )
 }
@@ -51,7 +67,8 @@ const MeteoOfCountry = ({country, onDisplay}) => {
 
     const [isLoading, setLoading] = useState(false);
     const [data, setData] = useState(null);
-    const [error, setError] = useState(null)
+    const [error, setError] = useState(null);
+    const [listPays, setListPays] = useState([])
 
     // https://developers.google.com/maps/documentation/geocoding/get-api-key
 
@@ -63,15 +80,21 @@ const MeteoOfCountry = ({country, onDisplay}) => {
         setData(null);
         setLoading(true);
         
-        axios.get(`weather?q=${country}&units=metric&appid=19662c6a10adc2f517d9c2172c2b7f8e`,{
+        axios.get(`weather?q=${country}&units=metric&lang=fr&appid=19662c6a10adc2f517d9c2172c2b7f8e`,{
             baseURL: 'https://api.openweathermap.org/data/2.5/'
         }
         )
         .then((resp) => {
             
             const weather = resp.data;
+/* 
+            const sysPays = weather.filter(w => w.name === country)
 
-            setData({
+            console.log(' ----- sysPays -----')
+            console.log(sysPays)
+            console.log('-----------')
+ */
+            const myData = {
                 name: weather.name,
                 countryCode: weather.sys.country,
                 temperature: weather.main.temp,
@@ -80,47 +103,24 @@ const MeteoOfCountry = ({country, onDisplay}) => {
                 condition: weather.weather[0].main,
                 description: weather.weather[0].description,
                 wind: weather.wind.speed
-            })
+            }
+
+            setData(myData);
+            
 
             onDisplay(weather.name)
 
+            console.log('data');
             console.log(data);
         })
         .catch((e) =>{
             console.log("error api");
             setError({err: e.error})
-        })
-        .finally(() => {
             setLoading(false);
         })
+        .finally(() => {
+        })
 
-
-/*         
-        const options = {
-            method: 'GET',
-            url: 'https://weatherapi-com.p.rapidapi.com/current.json',
-            params: {q: '53.1,-0.13'},
-            headers: {
-              'X-RapidAPI-Key': 'e02bc8fa29msh9d0c33cc8c9507dp1dd155jsn0ee742843e4e',
-              'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
-            }
-          };
-
-        const meteo = async ()=>{
-            try {
-              const response = await axios.request('https://weatherapi-com.p.rapidapi.com/current.json');
-              console.log(response.data);
-          } catch (error) {
-              console.error(error);
-          }
-        }
-
-        meteo()
-*/
-        // Geocode
-        // GeocodeToll(zone);
-        // GeogoogleTool()
-        // GpsTool();
 
         console.log(3);
         console.log(country);
@@ -129,8 +129,19 @@ const MeteoOfCountry = ({country, onDisplay}) => {
 
     }, [country])
 
+    const handleFavCities   = () => {
+        if(data && !listPays.includes(data) ){
+
+            setListPays(listPays => [...listPays, data])
+        }
+        console.log('FAVORIS');
+        console.log(listPays);
+    }
+
     return (
         <div>
+            { console.log('---- isLoading ----')}
+            { console.log(isLoading)}
             
             {
                 isLoading ?
@@ -139,6 +150,10 @@ const MeteoOfCountry = ({country, onDisplay}) => {
                 (<WeatherError {...error}/>) :
                 (<div>hello l'erreur</div>)
             }
+            <button onClick={handleFavCities}>Enregistrer la ville</button>
+            <ul>
+                {listPays ?? (listPays.map(data => <WeatherCard {...data}/>))}
+            </ul>
         </div>
     )
 
