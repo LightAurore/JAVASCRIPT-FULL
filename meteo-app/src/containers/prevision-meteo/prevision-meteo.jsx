@@ -18,8 +18,8 @@ const PrevisionMeteo = () => {
     }
 
     return (
-        <div>
-            <h1>Prévision de la météo</h1>
+        <div style={{width: 100 + "%" }}>
+            <h1>Prévision météorologique</h1>
             <SearchByCountry onSearch={handleSearchCountry} />
 
             <MeteoOfCountry country= {country} onDisplay={handleDisplay} />

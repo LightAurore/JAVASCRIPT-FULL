@@ -1,0 +1,35 @@
+
+.land-form{
+    display: flex;
+
+    place-content: center;
+}
+.land-form > div{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 6px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #2e8cc1;
+}
+.land-form input{
+    border: none;
+    outline: none;
+    height: 25px;
+    border-radius: 12px;
+    padding: 6px;
+}
+.land-form input[type="submit"] {
+    width: 100px;
+    border-radius: 4px;
+    margin-top: 6px;
+    color: #ec9612;
+    background-color: chartreuse;
+    padding: 0;
+}
+.land-form input[type="submit"]:hover {
+    color: #7387bd;
+    background-color: #fefc00;
+}

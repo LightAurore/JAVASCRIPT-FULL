@@ -3,6 +3,10 @@ import { useRef } from "react";
 import { useState } from "react";
 import { useId } from "react";
 
+import Proptypes from 'prop-types';
+
+import style from './search.module.css';
+
 
 const SearchByCountry = ({ onSearch }) => {
 
@@ -19,7 +23,7 @@ const SearchByCountry = ({ onSearch }) => {
     const handleSubmit = useCallback((e) => {
         e.preventDefault();
 
-        onSearch(land)
+        onSearch(land.trim())
 
         setLand('');
 
@@ -30,7 +34,7 @@ const SearchByCountry = ({ onSearch }) => {
 
     return (
 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className={style["land-form"]} >
             <div>
                 <label htmlFor={formId}>Entrer le nom du pays</label>
                 <input id={formId} type="text" value={land} onChange={handleLand} ref={searchRef} />
@@ -44,6 +48,10 @@ const SearchByCountry = ({ onSearch }) => {
 
 SearchByCountry.preventDefault = {
     onSearch: () => {}
+}
+
+SearchByCountry.protoType = {
+    onSearch: Proptypes.funct
 }
 
 export default SearchByCountry;
