@@ -1,0 +1,22 @@
+
+.main{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    column-gap: 6px;
+    flex: 1;
+}
+
+.main > * {
+    display: flex;
+    width: 100%;
+}
+
+.main > section{
+    background-color: blueviolet;
+}
+.main > section > *{
+    width: 100%;
+}
+.main > aside{
+    background-color: darkgray;
+}
