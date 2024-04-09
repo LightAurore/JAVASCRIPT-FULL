@@ -1,39 +1,42 @@
 import axios from "axios";
+import { useState } from "react";
 // import 'dotenv/config';
 
 
-const API_KEY = import.meta.env.API_KEY;
 
-const location = "picsou"
 
 
 const VideoSearch = () => {
+    const [video, setVideo] = useState([])
 
     const listVideo = async() => {
-
-        /*
-            https://www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&key=API_KEY
-     &fields=items(id,snippet(channelId,title,categoryId),statistics)&part=snippet,statistics
-
-            https://www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&key=${API_KEY}
-     &part=snippet,statistics&fields=items(id,snippet,statistics)
-
-
-
-        */
-
-       /*  await axios.get(`https://www.googleapis.com/youtube/v3/search/list?q=picsou
-   `, {
-    key: API_KEY,
-    mode: 'cors',
-    headers: {
-        'Access-Control-Allow-Origin':  '*',
-    }
-   }) */
-        await axios.get(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&type=video&part=snippet&maxResults=5&q=${location}`)
+        
+ 
+        await axios.get(`https://www.googleapis.com/youtube/v3/search`,
+        {
+            params:{
+                q: 'picsou',
+                type: 'video',
+                key: import.meta.env.API_KEY,
+                part: 'snippet'
+        }})
         .then(resp => {
-            console.log(resp.status)
-            console.log(resp.fileDetails)
+            const vidData = resp.data.items;
+            for(const key in vidData){
+                const data = {
+                    channel: vidData[key].snippet.channelTitle,
+                    desc: vidData[key].snippet.description,
+                    vidRefId: vidData[key].id.videoId
+                }
+
+                setVideo((video) => [...video, data]);
+            }
+
+            console.log(video);
+
+            /*
+                https://www.youtube.com/watch?v=ZkNG47vgfgY
+            */
         })
         .catch((err) =>{
             console.log(err);
