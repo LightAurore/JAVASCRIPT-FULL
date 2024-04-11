@@ -15,10 +15,10 @@ const HeaderVideo = ({onMiningData}) => {
         //     console.table(item)
         // })
         
+        console.log(data ? data : null);
 
         onMiningData(data);
         
-        console.log(data);
     }
 
 
