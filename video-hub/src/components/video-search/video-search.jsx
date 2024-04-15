@@ -38,7 +38,7 @@ const fakeData = [
 
 
 const VideoSearch = ({onSearchVid}) => {
-    const [video, setVideo] = useState([...fakeData]);
+    const [video, setVideo] = useState(fakeData);
     const [titleVid, setTitleVid] = useState('');
 
     const listVideo = async() => {
@@ -78,11 +78,14 @@ const VideoSearch = ({onSearchVid}) => {
 
     // listVideo()
 
+ 
 
     useEffect(() =>{
         console.log('----- titleVid -----');
         console.log(titleVid);
+        onSearchVid(video);
     },[titleVid])
+
 
     const handleSubmit = useCallback(function(){
 

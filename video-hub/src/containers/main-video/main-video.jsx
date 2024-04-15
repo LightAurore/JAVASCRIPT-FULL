@@ -4,8 +4,9 @@ import VideoList from "../../components/video-list/video-list";
 import style from './main.module.css';
 
 
-const MainVideo = () => {
+const MainVideo = (video) => {
 
+    console.log(video)
 
     return (
         <main className={style["main"]}> 
@@ -18,6 +19,10 @@ const MainVideo = () => {
             
         </main>
     )
+}
+
+MainVideo.defaultProps= {
+    video: []
 }
 
 export default MainVideo;
