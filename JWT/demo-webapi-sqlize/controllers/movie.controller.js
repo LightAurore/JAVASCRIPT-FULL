@@ -11,6 +11,9 @@ const movieController = {
         // 
         movieService.add(req.validateData);
 
+        // 
+        
+
     },
     update: async (req, res) => {
         res.sendStatus(501);

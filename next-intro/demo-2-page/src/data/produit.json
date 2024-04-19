@@ -1,0 +1,15 @@
+{
+    "produits": [
+      {"id": 1, "nom": "Produit A", "prix": 10.99, "categorie": "électronique", "description": "Un gadget électronique innovant pour les amateurs de technologie."},
+      {"id": 2, "nom": "Produit B", "prix": 12.99, "categorie": "jardinage", "description": "Outils de jardinage de haute qualité pour votre espace vert."},
+      {"id": 3, "nom": "Produit C", "prix": 8.99, "categorie": "alimentation", "description": "Produits alimentaires frais et biologiques pour une alimentation saine."},
+      {"id": 4, "nom": "Produit D", "prix": 16.99, "categorie": "beauté", "description": "Cosmétiques naturels pour une beauté au quotidien."},
+      {"id": 5, "nom": "Produit E", "prix": 3.99, "categorie": "bureau", "description": "Fournitures de bureau essentielles pour une organisation optimale."},
+      {"id": 6, "nom": "Produit F", "prix": 7.99, "categorie": "jouets", "description": "Jouets éducatifs et divertissants pour les enfants de tous âges."},
+      {"id": 7, "nom": "Produit G", "prix": 15.99, "categorie": "sport", "description": "Équipement sportif de pointe pour les athlètes passionnés."},
+      {"id": 8, "nom": "Produit H", "prix": 9.99, "categorie": "vêtements", "description": "Vêtements à la mode et confortables pour toutes les occasions."},
+      {"id": 9, "nom": "Produit I", "prix": 4.99, "categorie": "animaux", "description": "Accessoires pour animaux de compagnie pour le bien-être de vos compagnons."},
+      {"id": 10, "nom": "Produit J", "prix": 19.99, "categorie": "automobile", "description": "Accessoires automobiles innovants pour améliorer votre expérience de conduite."}
+    ]
+  }
+  

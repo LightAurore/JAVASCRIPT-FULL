@@ -1,0 +1,13 @@
+.header {
+    background-color: cornflowerblue;
+    color: coral;
+}
+
+.header > nav > ul {
+    display: flex;
+    flex-direction: row;
+
+    & > li {
+        padding: 1ch;
+    }
+}
