@@ -23,9 +23,11 @@ NB: Le schema ne représente pas le fonctionnement de NextJS
 
 ## Next Page VS Next App
 Page 
-- Pré-rendu des pages (Static / ) (SSR / CSR)
-        - service side rendering
+- Pré-rendu des pages (SSG / SSR / CSR / ISR)
+        - SSG : Static Site Generation ↝ getStaticProp 
+        - SSR : Server-Side Rendering, service side rendering ↝ getServerSideProps
         - client side rendering
+        - ISR : Incremental Static Regeneration
 - Injection du JS
 - Proxy API intégré
 - Fonctionnalités React : 
