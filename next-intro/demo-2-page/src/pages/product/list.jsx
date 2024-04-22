@@ -1,9 +1,10 @@
+import Layout from "@/containers/layout/layout.jsx";
 import { getProductAll } from "@/services/product.service.js"
 
 // url : /product
 export default function ProductList({ products }){
  return(
-    <main>
+    <Layout>
         <h1>Détail d&apos;un produit</h1>
         <section>
             {products.map(product => (
@@ -12,7 +13,7 @@ export default function ProductList({ products }){
                 </article>
             ))}
         </section>
-    </main>
+    </Layout>
  )
 }
 
