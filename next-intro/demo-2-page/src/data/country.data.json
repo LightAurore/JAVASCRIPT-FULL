@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Belgique",
+        "capital": "Bruxelles"
+    },
+    {
+        "id": 2,
+        "name": "Canada",
+        "capital": "Ottawa"
+    },
+    {
+        "id": 3,
+        "name": "Austalie",
+        "capital": "Canberra"
+    },
+    {
+        "id": 4,
+        "name": "France",
+        "capital": "Paris"
+    }
+]

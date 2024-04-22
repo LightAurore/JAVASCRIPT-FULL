@@ -8,10 +8,23 @@ export const getProductAll = () => {
 }
 
 export const getProductCount = () => {
-    return productData;
+    return productData.length;
 }
 
 export const getProductById = () => {
-    return productData.find(product => product.id === id);
+    return productData.find(p => p.id === id);
 }
 
+export const addProduct = ({name, desc, price}) => {
+    const productAdded = {
+        id: "TEST",
+        name,
+        desc,
+        price
+    }
+
+    productData.push(productAdded);
+
+    return productAdded
+
+}
