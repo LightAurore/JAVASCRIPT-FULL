@@ -41,8 +41,8 @@
 - Feature:
     - Gestion de compte (Utilisateur, Auteur, Admin)
     - Gestion des article (Création, modification, date de publication...)
-    - Newsletter (Pour le dev -> Smtp4Dev)
     - Gestion des petites annonces (Moderation)
+    - Newsletter (Pour le dev -> Smtp4Dev)
     - Donnation
 
 # Moïse
