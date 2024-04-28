@@ -1,0 +1,37 @@
+<%- include('../partials/_head.ejs') %>
+<%- include('../partials/_header.ejs') %>
+<%- include('../partials/_navbar.ejs') %>
+<%- include('../partials/_banner.ejs') %>
+
+<main>
+    
+<% /* L'article */ %>
+<h1><%= article.title %></h1>
+<h2><%= article.author.firstname %> <%= article.author.lastname %></h2>
+<p><%= article.content %></p>
+<hr>
+
+<% /* Commentaire de l'article */ %>
+<% /* TODO Refactor with CSS */ %>
+<form id="comment-form" method="post" action="/article/add-comment">
+    <h3 aria-label="input-comment">Ajouter un commentaire :</h3>
+    <textarea id="input-comment" name="comment"><%= data.comment %></textarea>
+    <br>
+    <input type="hidden" name="slug" value="<%= article.slug %>">
+    <button type="submit">Envoyer</button>
+    <span><%= message %></span>
+</form>
+<br>
+<div id="comment-list">
+    <% for(const comment of article.comments) { %>
+        <div>
+            <h4><%= comment.author.firstname + ' ' + comment.author.lastname %> - <%= comment.createdAt.toLocaleString('fr') %></h4>
+            <p><%= comment.message %></p>
+        </div>
+    <% } %>
+</div>
+
+
+</main>
+
+<%- include('../partials/_footer.ejs') %>

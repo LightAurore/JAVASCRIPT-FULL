@@ -1,0 +1,50 @@
+<%- include('../partials/_head.ejs') %>
+<%- include('../partials/_header.ejs') %>
+<%- include('../partials/_navbar.ejs') %>
+<%- include('../partials/_banner.ejs') %>
+
+<%
+var errorMessage;
+var data;
+%>
+
+<main>
+
+    <form method="post">
+        <h2>Inscription</h2>
+        <div>
+            <label for="input-username">Pseudo</label>
+            <input type="text" name="username" id="input-username" value="username">
+        </div>
+        <div>
+            <label for="input-firstname">Prénom</label>
+            <input type="text" name="firstname" id="input-firstname" value="firstname">
+        </div>
+        <div>
+            <label for="input-lastname">Nom</label>
+            <input type="text" name="lastname" id="input-lastname" value="lastname">
+        </div>
+        <div>
+            <label for="input-email">Email</label>
+            <input type="email" name="email" id="input-email" value="email">
+        </div>
+        <div>
+            <label for="input-pwd">Mot de passe</label>
+            <input type="password" name="password" id="input-pwd" value="password">
+        </div>
+        <div>
+            <label for="input-confirm">Confirmer mot de passe</label>
+            <input type="password" name="confirm" id="input-confirm" value="confirm">
+        </div>
+        <div>
+            <button type="submit">Enregistrer</button>
+            <% if(errorMessage) { %>
+                <span class="error"><%= errorMessage %></span>
+            <% } %>
+        </div>
+        
+    </form>
+    
+</main>
+
+<%- include('../partials/_footer.ejs') %>

@@ -1,0 +1,23 @@
+
+<nav>
+    <ul class="menu">
+        <li class="menu-item"><a href="/"><i></i><b>Accueil</b></a></li>
+        
+        <li class="menu-item"><a href="/article"><i></i><b>Articles</b></a></li>
+        
+        <li class="menu-item"><a href="/about"><i></i><b>A-propos</b></a></li>
+        
+        <li class="menu-item"><a href="/contact"><i></i><b>Contact</b></a></li>
+
+    </ul>
+
+    <ul class="profil">
+        
+        <% if(locals.session?.user) { %>
+        <li class="profil-item"><a href="/customer/logout">se déconnecter</a></li>
+        <% } else { %>
+        <li class="profil-item"><a href="/customer/register">s'inscrire</a></li>
+        <li class="profil-item"><a href="/customer/login">se connecter</a></li>
+        <% } %>
+    </ul>
+</nav>
