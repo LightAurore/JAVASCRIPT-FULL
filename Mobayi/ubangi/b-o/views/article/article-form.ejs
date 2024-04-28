@@ -3,6 +3,15 @@
 <%- include('../partials/_navbar.ejs') %>
 <%- include('../partials/_banner.ejs') %>
 
+<style>
+    textarea{
+        border: 1px solid grey;
+        width: 100%;
+        min-height: 100px;
+        padding: 20px;
+    }
+</style>
+
 <main>
     <% var error; %>
 
@@ -40,7 +49,7 @@
     </div>
     <div>
         <label for="input-content">Contenu</label>
-        <textarea id="input-content" name="content"><%= data['content'] %></textarea>
+        <textarea id="input-content" name="content" class="textarea-autogrow"><%= data['content'] %></textarea>
         <% if(error && error['content']) { %>
             <span class="error" id="error-content"><%= error['content'] %></span>
         <% } %>
@@ -50,5 +59,28 @@
     </div>
 </form>
 </main>
+
+<!-- 
+    <script>
+    // https://www.youtube.com/watch?v=i7RS-VkBzGU
+    class Autogrow extends HTMLTextAreaElement {
+
+        constructor (){
+            super()
+        }
+
+        connecedCallback () {
+            console.log("salut");
+            debugger
+        }
+
+        disconnectedCallback() {
+
+        }
+    }
+
+    customElements.define('textarea-autogrow', Autogrow, {extends: 'textarea'})
+    </script> 
+-->
 
 <%- include('../partials/_footer.ejs') %>
