@@ -1,14 +1,21 @@
 
+import { Outlet } from 'react-router-dom'
 import './App.css'
-import Counter from './components/counter/counter'
-import ArticlePageDetail from './pages/article-page/article-page-detail'
+import Navbar from './components/nav-bar/nav-bar'
+import Header from './containers/header/header'
 
 function App() {
 
   return (
     <>
-      <Counter />
-      <ArticlePageDetail />
+      <Header />
+      <Navbar />
+
+      <main>
+        <Outlet />
+      </main>
+
+
     </>
   )
 }
