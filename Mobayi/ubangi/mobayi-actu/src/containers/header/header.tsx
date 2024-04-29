@@ -1,7 +1,5 @@
 
-
-
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import style from './header.module.css'
 
 
 
@@ -10,7 +8,7 @@ const Header = () => {
     
 
     return (
-        <header>
+        <header className={style['header']}>
 
 
         </header>
