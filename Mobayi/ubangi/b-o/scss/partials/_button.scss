@@ -1,0 +1,31 @@
+
+
+// Bouton standard
+button {
+    width: 156px;
+    height: calc(156px/5);
+    border-radius: calc(156px/10);
+    color: aqua;
+    background-color: chocolate;
+    box-shadow: 2px 2px 4px gray;
+
+    &:active{
+        background-color: aqua;
+        color: chocolate;
+        box-shadow: 2px 2px 0px gray;
+    }
+
+    &:hover{
+        color: aqua;
+        background-color: rgb(199, 118, 60);
+    }
+}
+
+input{
+    background-color: cadetblue;
+    color: aliceblue;
+    margin-bottom: 4px;
+    padding: 6px;
+    font-size: 1.5rem;
+    width: 100%;
+}

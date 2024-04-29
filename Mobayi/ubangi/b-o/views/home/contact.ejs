@@ -1,0 +1,120 @@
+<%- include('../partials/_head.ejs') %>
+<%- include('../partials/_header.ejs') %>
+<%- include('../partials/_navbar.ejs') %>
+<%- include('../partials/_banner.ejs') %>
+<title>Formulaire</title>
+	<style>
+.formbox{
+	width:500px;
+	background:url(fondform2.png) no-repeat center;
+	padding:15px;
+	border-radius:10px;
+	box-shadow: #000 2px 2px 10px;
+	font-family:Arial, Verdana, Tahoma, sans-serif;
+	}
+ fieldset{
+	 width:400px;
+	 padding:20px;
+	 }
+.grille{
+		display: grid;
+	    grid-template-columns: 25% 50%;/* taille des colonnes */
+	    grid-row: 1fr;
+	    align-items: start;
+	    grid-column-gap: .5em;
+	    grid-row-gap: .5em;
+	    border: #F50B0E solid;
+		}
+.premier{
+	   grid-column: 1; /* placement en colonne 1 */
+	   grid-row: 1; /* placement en ligne 1 */
+	   
+	   }
+   .deuxieme{
+	   grid-column: 2; /* placement en colonne 2 */
+	   grid-row: 1; /* placement en ligne 1 */
+	  
+	   }
+	.troisieme{
+		grid-column: 1; /* placement en colonne 1 */
+		grid-row: 2; /* placement en ligne 2 */
+		
+		}
+	.quatrieme{
+		grid-column: 2; /* placement en colonne 2 */
+		grid-row: 2; /* placement en ligne 2 */
+		
+		 }
+		.cinq{
+			grid-column: 1; /* placement en colonne 2 */
+		grid-row: 3; /* placement en ligne 3 */
+		}
+		.six{
+			grid-column: 2; /* placement en colonne 2 */
+		grid-row: 3; /* placement en ligne 3 */
+		}
+		.sept{
+			grid-column: 1; /* placement en colonne 2 */
+		grid-row: 4; /* placement en ligne 4 */
+		}
+		.huit{
+			grid-column: 2; /* placement en colonne 2 */
+		grid-row: 4; /* placement en ligne 4 */
+		}
+		.neuf{
+			grid-column: 1; /* placement en colonne 2 */
+		grid-row: 5; /* placement en ligne 5 */
+		}
+		.dix{
+			grid-column: 2; /* placement en colonne 2 */
+		grid-row: 5; /* placement en ligne 5 */
+		}
+    input:valid{
+        box-shadow: 0 0 2px 1px green;
+        }
+    #effacer{
+	margin-left:120px;
+	}
+</style>
+<main>
+    <div class="formbox">
+        <form accept-charset="utf-8" method="post">
+            <fieldset>
+                <legend>Données de contact</legend>
+
+                <div class="grille">
+                    <div>
+
+                    <label class="premier">Nom :</label>
+                    <input name="nom" type="text" placeholder="votre nom" pattern="[a-zA-Z]{1,}" maxlength="50" required class="deuxieme">
+                </div>
+                <div>
+                    <label class="troisieme">Prénom :</label>
+                    <input name="prenom" type="text" placeholder="votre prénom" pattern="[a-zA-Z]{1,}" maxlength="50" required class="quatrieme">
+                </div>
+                <div>
+                    <label class="cinq">Entreprise :</label>
+                    <input type="text" name="entreprise" style="box-shadow:none" class="six">
+                </div>
+                <div>
+                    <label class="sept">Tel. :</label>
+                    <input type="tel" name="tel" required class="huit">
+                </div>
+                <div>
+                    <label class="neuf">E-mail :</label>
+                    <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required class="dix">
+                </div>
+            </fieldset>
+            <div>
+                <label>Votre demande :</label><br />
+                <textarea cols="35" rows="6" maxlength="100" style="box-shadow:none"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Envoyer" style="box-shadow:none; background-color:#ffffff; border: #F90409 2px solid; color: #0502F9; border-radius:20px 5px; padding:3px ">
+                <input name="effacer" type="reset" id="effacer" value="Effacer">
+            </div>
+        </form>
+    </div>
+</main>
+
+<%- include('../partials/_footer.ejs') %>

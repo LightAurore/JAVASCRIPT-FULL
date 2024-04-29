@@ -1,0 +1,46 @@
+{
+    "name": "ExpressJsExample",
+    "version": "1.0.0",
+    "description": "Express Js Example",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "nodemon server.js"
+    },
+    "author": "Mukesh Singh Thakur",
+    "license": "ISC",
+    "dependencies": {
+      "body-parser": "^1.19.0",
+      "chalk": "^4.0.0",
+      "dotenv": "^8.2.0",
+      "express": "^4.17.1",
+      "http": "0.0.1-security",
+      "http-errors": "^1.7.3",
+      "jsonwebtoken": "^8.5.1",
+      "nodemon": "^2.0.2",
+      "pg": "^8.0.0",
+      "request": "^2.88.2",
+      "sequelize": "^5.21.6"
+    },
+    "devDependencies": {
+      "sequelize-cli": "^5.5.1"
+    },
+    "compilerOptions": {
+      "strict": true,
+      "module": "ESNext", // ES2020
+      "target": "ES2020",
+      "moduleResolution": "Node",
+      "lib": ["DOM", "DOM.Iterable", "ESNext"],
+      "types": ["vite/client"],
+      "jsx": "react-jsx",
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true
+    },
+    "ts-node": {
+      "experimentalSpecifierResolution": "node",
+      "transpileOnly": true,
+      "esm": true
+    }
+  }

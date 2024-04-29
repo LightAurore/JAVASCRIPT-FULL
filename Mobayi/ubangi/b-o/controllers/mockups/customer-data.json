@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "firstname": "Della",
+        "lastname": "Duck",
+        "email": "dal.duck@mobayi.com",
+        "password": "Azerty123.",
+        "profileImg": "people/devil-della.webp",
+        "vocation": "Journaliste"
+    },
+    {
+        "id": 2,
+        "firstname": "Zaza",
+        "lastname": "Vanderquack",
+        "email": "za.vanderqueck@mobayi.com",
+        "password": "Azerty123.",
+        "profileImg": "people/zaza.jpg",
+        "vocation": "Fournisseuse officielle de café pour Della Duck !"
+    }
+]
+
