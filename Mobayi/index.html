@@ -3,22 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+    <title>Mobayi Actu</title>
     <style>
         body{
             min-height: 120vh;
         }
 
         header{
-            background-color: chartreuse;
+            display: flex;
+            justify-content: space-around;
+            background-color: #156525;
             width: 100%;
-            height: 100px;
+            min-height: 100px;
+
+            & > *{
+                width: calc(100%/3);
+            }
+        }
+
+        figure{
+            width: 150px;
+            img{
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Mon site</h1>
+        <figure><img src="./design/grfx/RIVE-logo02.png" alt=""></figure>
+        <menu class="user"></menu>
     </header>
 
     <form action="">
