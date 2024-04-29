@@ -1,0 +1,48 @@
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.home > section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.home > section > article > .box-container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 3px;
+    margin: 0 auto;
+}
+.home > section > article > *{
+    border: 1px solid firebrick;
+    padding: 3px;
+}
+
+.box-1{
+
+}
+.box-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 152px 152px;
+    gap: 2px;
+
+    a{
+        display: flex;
+        background-color: floralwhite;
+        border: 0.1ch solid blueviolet;
+        padding: 6px;
+        width: 100%;
+
+        img{
+            height: 100%;
+            width: 40%;
+        }
+    }
+}
+
