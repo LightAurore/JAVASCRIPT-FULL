@@ -1,11 +1,11 @@
-import LikeDislike from "../../components/liker/like-dislike";
-import ReportWarning from "../../components/report-warning/report-warning";
-import Share from "../../components/share/share";
+import LikeDislike from "../../../components/liker/like-dislike";
+import ReportWarning from "../../../components/report-warning/report-warning";
+import Share from "../../../components/share/share";
 
-import main from './article-page.module.css';
+import main from '../article-page.module.css';
 
 
-const ArticlePageDetail = () => {
+const ArticleDetailPage = () => {
 
 
     return(
@@ -60,4 +60,4 @@ const ArticlePageDetail = () => {
     )
 }
 
-export default ArticlePageDetail;
+export default ArticleDetailPage;
