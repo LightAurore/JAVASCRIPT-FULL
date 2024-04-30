@@ -25,4 +25,30 @@ function hashPassword(pwd){
 hashPassword('aaaa')
 hashPassword('bbbb')
 hashPassword('cccc')
-hashPassword('brt651:bgbtrgb')
+hashPassword('brt651:bgbtrgb');
+
+/*  */
+var nettoyer = (txt) => {
+    var accents = "éèàçâêôîûäëüïö",
+    var voyelles = "aeuio"
+    return [...txt.toLowerCase()].map(c => accents.includes(c) ? voyelles[accents.indexOf(c)] : c).join('').replace(/[â-z]/g, '').toUpperCase();
+}
+
+var $ = (id) => document.createElement('div');
+
+$('clair').addEventListener('keyup', function(){ nettoyer.value = nettoyer(this.value)}, false)
+
+/* Le code de César */
+/**
+ * 
+ * @param {string} c 
+ * @param {number} dec : décallage
+ * @returns 
+ */
+var cesar = (c, dec) => {
+    var alpha = "AZERTYUIOPMLKJHGFDSQWXCVBN".at
+    return alpha[( + dec + alpha.indexOf(c) + 26) % 26]
+}
+
+
+
