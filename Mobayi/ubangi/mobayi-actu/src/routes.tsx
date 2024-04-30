@@ -12,6 +12,12 @@ import RegisterPage from "./pages/customer-page/register-page";
 import ArticleDetailPage from "./pages/article/pages/article-detail.page";
 import ArticleTablePage from "./pages/article/pages/article-table.page";
 import ArticleNotFoundPage from "./pages/errors/article-not-found";
+import NewsPage from "./pages/news/news-page";
+import PoliticPage from "./pages/politic/politic-page";
+import SocietyPage from "./pages/society/society-page";
+import CulturePage from "./pages/culture/culture-page";
+import SciencePage from "./pages/science/science-page";
+import EconomyPage from "./pages/economy/economy-page";
 
 
 export const routes = [
@@ -38,6 +44,30 @@ export const routes = [
             {
                 path: 'article',
                 element: <ArticlePage />,
+            },
+            {
+                path: 'news',
+                element: <NewsPage />
+            },
+            {
+                path: 'politic',
+                element: < PoliticPage />
+            },
+            {
+                path: 'society',
+                element: <SocietyPage />
+            },
+            {
+                path: 'culture',
+                element: <CulturePage />
+            },
+            {
+                path: 'science',
+                element: <SciencePage />
+            },
+            {
+                path: 'economy',
+                element: <EconomyPage />
             },
             {
                 path: 'customer',
