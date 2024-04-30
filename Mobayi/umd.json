@@ -1,23 +1,27 @@
 # Schema NoSql json pour MongoDb
 
+## Role Collection
+{
+    "role_id" : ObjectId,
+    "role_name" : string,  // Admin - Author - Censor - Customer
+},
+
+
 ## Customer entity
 {
     "customer_id" : ObjectId,
     "firstname" : String,
     "lastname" : String,
     "img_url" : String,
+    "email" : String,
     "username" : String,
     "password" : String,
     "domain_expert" : String,
-    "role" :{
-        "role_id" : ObjectId,
-        "role_name" : Boolean,  // Admin - Author - Censor - Customer
-    },
+    "role" : ObjectId, // ref: Role
     "createAt" : Date,
     "updateAt" : Date,
     "banned": {
         "isBanned" : Boolean,
-        "isReported" : Boolean,
         "reason": String,
         "createAt" : Date,
         "updateAt" : Date
@@ -35,63 +39,46 @@
         {
             "img_id" : ObjectId,
             "img_url": String,
+            "alt": String,
         }
     ],
-    "body" : String, // Content
-    "author" : ObjectId,
+    "content" : String,
+    "author" : ObjectId, // ref: customer
     "createAt" : Date,
     "updateAt" : Date,
     "isPublished" : Boolean,
     "isVisible" : Boolean,
     "likes" : [
-        {
-            "customer_id" : ObjectId,  // customer_id
-            "createAt" : Date,
-            "updateAt" : Date,
-        }
+        ObjectId  // ref: customer
     ],
     "dislikes" : [
-        {
-            "customer_id" : ObjectId,  // customer_id
-            "createAt" : Date,
-            "updateAt" : Date,
-        }
+        ObjectId,  // ref: customer
     ],
     "reporters" : [
         {
-            "reporter_id" : ObjectId,  // customer_id
-            "reason" : String,
+            "reporter_id" : ObjectId,  // ref: Report_Raison
+            "customer_id": ObjectId,   // ref: customer 
             "createAt" : Date,
-            "updateAt" : Date,
         }
     ],
     "comments" : [
         {
             "comment_id" : ObjectId,
-            "comment" : String,
-            "author" : ObjectId, // customer_id
+            "content" : String,
+            "author" : ObjectId, // ref: customer
             "createAt" : Date,
             "updateAt" : Date,
             "likes" : [
-                {
-                    "customer_id" : ObjectId,  // customer_id
-                    "createAt" : Date,
-                    "updateAt" : Date,
-                }
+                ObjectId,  // ref: customer
             ],
             "dislikes" : [
-                {
-                    "customer_id" : ObjectId,  // customer_id
-                    "createAt" : Date,
-                    "updateAt" : Date,
-                }
+                ObjectId,  // ref: customer
             ],
             "reporters" : [
                 {
                     "reporter_id" : ObjectId, // customer_id
-                    "comment" : String,
+                    "customer_id": ObjectId,   // ref: customer 
                     "createAt" : Date,
-                    "updateAt" : Date,
                 }
             ],
             "isPublished" : Boolean,
@@ -123,19 +110,21 @@
     "company_name" : String,
     "company_email" : String,
     "company_numeric" : String,
-    "isBanned" : Boolean,
-    "reason" : String,
     "createAt" : Date,
     "updateAt" : Date,
 }
 
-## Mail Prospect
+## Mail Prospect // Si le temps ♥
 {
-    "prospect_id" : ObjectId,
-    "prospect_id" : ObjectId,
+    "mail_id" : ObjectId,
+    "prospect_id" : ObjectId, // ref: Prospect
     "subject" : String,
     "content" : String,
-    "files" : String,
+    "files" : [{
+        name: string,
+        content:  // https://fr.wikipedia.org/wiki/Binary_large_object
+
+    }],
     "createAt" : Date,
     "updateAt" : Date,
 }
@@ -149,33 +138,29 @@
     "category": String,
     "theme": String,
     "images" : [
-        "img_url": String,
+        {
+            "img_id" : ObjectId,
+            "img_url": String,
+            "alt": String, 
+        }
     ],
-    "body" : String, // Content
+    "content" : String,
     "author" : ObjectId,
     "createAt" : Date,
     "updateAt" : Date,
     "isPublished" : Boolean,
     "likes" : [
-        {
-            "customer_id" : ObjectId,  // customer_id
-            "createAt" : Date,
-            "updateAt" : Date,
-        }
+        ObjectId  // ref: customer
     ],
     "dislikes" : [
-        {
-            "customer_id" : ObjectId,  // customer_id
-            "createAt" : Date,
-            "updateAt" : Date,
-        }
+        ObjectId,  // ref: customer
     ],
+    
     "reporters" : [
         {
-            "reporter_id" : ObjectId,  // customer_id
-            "reason" : String,
+            "reporter_id" : ObjectId,  // ref: Report_Raison
+            "customer_id": ObjectId,   // ref: customer 
             "createAt" : Date,
-            "updateAt" : Date,
         }
     ],
     
@@ -190,19 +175,15 @@
         "updateAt" : Date,
         "isSubscribed" : Boolean,
         "subscribed" : [
-            {
-                "customer_id" : ObjectId,
-                "email" : String,
-                "createAt" : Date,
-                "updateAt" : Date,
-            }
+            ObjectId,   // ref: customer 
+                        // V2: Stocker l'historique en plus
         ]
         
     }
 ]
 
 
-## WordGame
+## WordGame // A faire vraiment si tu te fais chier durant une nuit blanche (ou apres le tfe :p)
 [
     {
         "game_id": ObjectId,
@@ -221,34 +202,19 @@
                 "player_id": ObjectId, // customer_id
                 "player_name": String,
                 "createAt": Date,
-                "updateAt": Date,
-                "isReady": Boolean,
-                "isPlaying": Boolean,
-                "score": Number,
-                "level": Number,
+                "best": {
+                    score: Number,
+                    level: Number,
+                    dificulty: string,
+                },
+                "last": {
+                    score: Number,
+                    level: Number,
+                    dificulty: string,
+                },
             }
-        ],
-        "isPublished": Boolean,
-        "isFinished": Boolean,
+        ]
     }
 ]
 
-## History_game
-
-{
-    "game_id": ObjectId,
-    "game_name": String,
-    "player_id": ObjectId, // customer_id
-    "player_name": String,
-    "createAt": Date,
-    "updateAt": Date,
-    "score": Number,
-    "level": [
-        {
-            "level_name": String,
-            "level_id": ObjectId,
-            "step": Number,
-        }
-    ]
-}
 
