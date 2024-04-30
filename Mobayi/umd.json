@@ -1,0 +1,254 @@
+# Schema NoSql json pour MongoDb
+
+## Customer entity
+{
+    "customer_id" : ObjectId,
+    "firstname" : String,
+    "lastname" : String,
+    "img_url" : String,
+    "username" : String,
+    "password" : String,
+    "domain_expert" : String,
+    "role" :{
+        "role_id" : ObjectId,
+        "role_name" : Boolean,  // Admin - Author - Censor - Customer
+    },
+    "createAt" : Date,
+    "updateAt" : Date,
+    "banned": {
+        "isBanned" : Boolean,
+        "isReported" : Boolean,
+        "reason": String,
+        "createAt" : Date,
+        "updateAt" : Date
+    }
+}
+
+## Article entity
+{
+    "article_id" : ObjectId,
+    "title" : String,
+    "slug" : String,
+    "category": String,
+    "theme": String,
+    "images" : [
+        {
+            "img_id" : ObjectId,
+            "img_url": String,
+        }
+    ],
+    "body" : String, // Content
+    "author" : ObjectId,
+    "createAt" : Date,
+    "updateAt" : Date,
+    "isPublished" : Boolean,
+    "isVisible" : Boolean,
+    "likes" : [
+        {
+            "customer_id" : ObjectId,  // customer_id
+            "createAt" : Date,
+            "updateAt" : Date,
+        }
+    ],
+    "dislikes" : [
+        {
+            "customer_id" : ObjectId,  // customer_id
+            "createAt" : Date,
+            "updateAt" : Date,
+        }
+    ],
+    "reporters" : [
+        {
+            "reporter_id" : ObjectId,  // customer_id
+            "reason" : String,
+            "createAt" : Date,
+            "updateAt" : Date,
+        }
+    ],
+    "comments" : [
+        {
+            "comment_id" : ObjectId,
+            "comment" : String,
+            "author" : ObjectId, // customer_id
+            "createAt" : Date,
+            "updateAt" : Date,
+            "likes" : [
+                {
+                    "customer_id" : ObjectId,  // customer_id
+                    "createAt" : Date,
+                    "updateAt" : Date,
+                }
+            ],
+            "dislikes" : [
+                {
+                    "customer_id" : ObjectId,  // customer_id
+                    "createAt" : Date,
+                    "updateAt" : Date,
+                }
+            ],
+            "reporters" : [
+                {
+                    "reporter_id" : ObjectId, // customer_id
+                    "comment" : String,
+                    "createAt" : Date,
+                    "updateAt" : Date,
+                }
+            ],
+            "isPublished" : Boolean,
+            "isVisible" : Boolean
+        }
+    ]
+}
+
+## Report_reason
+[
+    {
+        "report_reason_id" : ObjectId,
+        "description" : {
+            "reason": string,
+            "gravity": string
+        },
+        "createAt" : Date,
+        "updateAt" : Date,
+    }
+]
+
+## Prospect
+{
+    "prospect_id" : ObjectId,
+    "firstname" : String,
+    "lastname" : String,
+    "email" : String,
+    "phone" : String,
+    "company_name" : String,
+    "company_email" : String,
+    "company_numeric" : String,
+    "isBanned" : Boolean,
+    "reason" : String,
+    "createAt" : Date,
+    "updateAt" : Date,
+}
+
+## Mail Prospect
+{
+    "prospect_id" : ObjectId,
+    "prospect_id" : ObjectId,
+    "subject" : String,
+    "content" : String,
+    "files" : String,
+    "createAt" : Date,
+    "updateAt" : Date,
+}
+
+
+## Advertisment entity
+{
+    "advert_id" : ObjectId,
+    "title" : String,
+    "slug" : String,
+    "category": String,
+    "theme": String,
+    "images" : [
+        "img_url": String,
+    ],
+    "body" : String, // Content
+    "author" : ObjectId,
+    "createAt" : Date,
+    "updateAt" : Date,
+    "isPublished" : Boolean,
+    "likes" : [
+        {
+            "customer_id" : ObjectId,  // customer_id
+            "createAt" : Date,
+            "updateAt" : Date,
+        }
+    ],
+    "dislikes" : [
+        {
+            "customer_id" : ObjectId,  // customer_id
+            "createAt" : Date,
+            "updateAt" : Date,
+        }
+    ],
+    "reporters" : [
+        {
+            "reporter_id" : ObjectId,  // customer_id
+            "reason" : String,
+            "createAt" : Date,
+            "updateAt" : Date,
+        }
+    ],
+    
+}
+
+## Newsletter entity
+[
+    {
+        "newsletter_id" : ObjectId, // category_id
+        "name" : String, // category  name
+        "createAt" : Date,
+        "updateAt" : Date,
+        "isSubscribed" : Boolean,
+        "subscribed" : [
+            {
+                "customer_id" : ObjectId,
+                "email" : String,
+                "createAt" : Date,
+                "updateAt" : Date,
+            }
+        ]
+        
+    }
+]
+
+
+## WordGame
+[
+    {
+        "game_id": ObjectId,
+        "game_name": String,
+        "createAt": Date,
+        "updateAt": Date,
+        "level": [
+            {
+                "level_id": ObjectId,
+                "level_name": String,
+                "step": Number
+            }
+        ],
+        "players" :[
+            {
+                "player_id": ObjectId, // customer_id
+                "player_name": String,
+                "createAt": Date,
+                "updateAt": Date,
+                "isReady": Boolean,
+                "isPlaying": Boolean,
+                "score": Number,
+                "level": Number,
+            }
+        ],
+        "isPublished": Boolean,
+        "isFinished": Boolean,
+    }
+]
+
+## History_game
+
+{
+    "game_id": ObjectId,
+    "game_name": String,
+    "player_id": ObjectId, // customer_id
+    "player_name": String,
+    "createAt": Date,
+    "updateAt": Date,
+    "score": Number,
+    "level": [
+        {
+            "level_name": String,
+            "level_id": ObjectId,
+            "step": Number,
+        }
+    ]
+}
+
