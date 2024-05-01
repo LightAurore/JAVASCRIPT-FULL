@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import style from "./top-nav.module.css"
 
 
 const Topnav = () => {
@@ -7,9 +6,8 @@ const Topnav = () => {
 
 
     return(
-        <nav className={style["topnav"]}>
-
-            <ul className={style["profil"]}>
+        <nav>
+            <ul className="profil">
                     
                     
                     <li className="profil-item">

@@ -4,9 +4,7 @@
 }
 .nav-bar > ul{
     display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
     font-size: 1.5rem;
 }
 .nav-bar > ul > li{
