@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptographie</title>
+
+    <style>
+
+        body{
+            padding: 12px;
+        }
+
+        main{
+            width: 60%;
+            margin: 0 auto;
+        }
+        .btn-group{
+            display: flex;
+
+            > *{
+                margin: 2px;
+            }
+        }
+
+        section{
+            display: flex;
+            gap: 20px;
+        }
+
+        #nb-char{
+            width: 40px;
+            height: 40px;
+            box-shadow: inset 0 0 2px grey;
+            background-color: rgba(128, 128, 128, 0.256);
+            color: darkblue;
+        }
+
+    </style>
+</head>
+<!--  https://www.youtube.com/watch?v=3ax4V7Q4yXc -->
+<body>
+
+    <main>
+        <div class="container">
+            <section class="ecrire-txt">
+                <textarea class="txt-brut" name="txtbrut" id="txt-brut" cols="50" rows="10" value=""></textarea>
+                <textarea class="txt-clear" name="txtclear" id="txt-clear" cols="80" rows="10" value="" readonly></textarea>
+            </section>
+            <div class="btn-group">
+                <span id="nb-char"></span>
+                <button id="coder">Coder</button>
+                <button id="decoder">Décoder</button>
+            </div>
+            <section>
+                <textarea name="result" id="txt-result" cols="95" rows="10"></textarea>
+                <textarea name="analyse" id="analyse" cols="35" rows="10"></textarea>
+            </section>
+            <section>
+                <div id="sortie">
+
+                </div>
+            </section>
+        </div>
+    </main>
+    
+</body>
+<script src="./coder.js"></script>
+<script src="./decoder.js"></script>
+</html>
