@@ -1,0 +1,37 @@
+{
+    "nav": {
+        "home": "Yambi",
+        "news": "Sango",
+        "politic": "Kokonza",
+        "society": "Mboka",
+        "culture": "Elengeli",
+        "science": "Nganga",
+        "economy": "Nkita"
+    },
+    "profil":{
+        "username": "Nom d'utilisateur",
+        "password": "Mot de passe",
+        "login": "Se connecter", 
+        "logout": "Se déconnecter",
+        "register": "S'inscrire",
+        "forgetpwd": "Mot de passe oublié",
+        "registered": "Si tu n'est pas inscrit"
+    },
+
+    "customer":{
+        "login": "Login", 
+        "logout": "Logout",
+        "register": "Register",
+        "notify": "Notify"
+    },
+
+    "home": {
+        "title": "Home"
+    },
+    "about": {
+        "title": "About"
+    },
+    "error": {
+        "notFound": "Error 404 - Not found"
+    }
+}

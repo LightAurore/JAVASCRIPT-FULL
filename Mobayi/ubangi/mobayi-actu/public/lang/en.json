@@ -1,0 +1,39 @@
+{
+    
+    "nav": {
+        "home": "Home",
+        "news": "News",
+        "politic": "Politic",
+        "society": "Society",
+        "culture": "Culture",
+        "science": "Science",
+        "economy": "Economy"
+    },
+
+    "customer":{
+        "login": "Login", 
+        "logout": "Logout",
+        "register": "Register",
+        "notify": "Notify"
+    },
+
+    "profil":{
+        "username": "Username",
+        "password": "Password",
+        "login": "Log in", 
+        "logout": "Log out",
+        "register": "Register",
+        "forgetpwd": "Forgot your password",
+        "registered": "If you are not registered"
+    },
+
+    "home": {
+        "title": "Home"
+    },
+    "about": {
+        "title": "About"
+    },
+    "error": {
+        "notFound": "Error 404 - Not found"
+    }
+}

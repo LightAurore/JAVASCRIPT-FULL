@@ -1,0 +1,39 @@
+{
+
+    "nav": {
+        "home": "Da",
+        "news": "Sia",
+        "politic": "Gbia",
+        "society": "Kodoro",
+        "culture": "Kode",
+        "science": "Yingaye",
+        "economy": "Ngenza"
+    },
+
+    "profil":{
+        "username": "Nom d'utilisateur",
+        "password": "Mot de passe",
+        "login": "Se connecter", 
+        "logout": "Se déconnecter",
+        "register": "S'inscrire",
+        "forgetpwd": "Mot de passe oublié",
+        "registered": "Si tu n'est pas inscrit"
+    },
+
+    "customer":{
+        "login": "Gagon", 
+        "logout": "Sigi",
+        "register": "Sungo",
+        "notify": "Notify"
+    },
+
+    "home": {
+        "title": "Home"
+    },
+    "about": {
+        "title": "About"
+    },
+    "error": {
+        "notFound": "Error 404 - Not found"
+    }
+}
