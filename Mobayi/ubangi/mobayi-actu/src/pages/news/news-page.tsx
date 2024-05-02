@@ -1,5 +1,4 @@
-import CategoryPage from "../../components/category-page/category-page";
-import NewsletterCategory from "../../components/newsletter-cat/newsletter-cat";
+import CategoryPage from "../../containers/category-page/category-page";
 
 const NewsPage = () => {
 
@@ -8,9 +7,8 @@ const NewsPage = () => {
         <>
         <div>
             <h2>News</h2>
-            <NewsletterCategory />
         </div>
-         <CategoryPage />
+            <CategoryPage />
 
         </>
     )

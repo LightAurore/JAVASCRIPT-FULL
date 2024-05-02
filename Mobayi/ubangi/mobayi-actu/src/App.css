@@ -5,13 +5,11 @@
 
 main{
   flex: 1;
-  width: 100%;
   width: 80%;
   margin: 0 auto;
   padding: 12px;
   min-height: 500px;
 
   border-left: 4px solid #4e1609;
-  border-right: 4px solid #4e1609;
 }
 

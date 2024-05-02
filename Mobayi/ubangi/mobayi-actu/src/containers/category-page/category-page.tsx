@@ -1,17 +1,21 @@
 import style from "./category-page.module.css";
 
 import imgUrl from './ai-generated-8491587_1280.jpg';
+import CategoryRubric from "../../components/category-rubric/category-rubric";
+import NewsletterCategory from "../../components/newsletter-cat/newsletter-cat";
+import { Link } from "react-router-dom";
 
 const CategoryPage = () => {
 
 
-
     return(
         <>
-            <h2>Category</h2>
+
+            <CategoryRubric />
+            <NewsletterCategory />
 
             <section className={style["articles-container"]}>
-                <div>
+                <Link to={'article/1'} className={style["main-article"]}>
                     <figure>
                         <img src={imgUrl} alt="image" />
                         <figcaption>
@@ -21,25 +25,25 @@ const CategoryPage = () => {
                             </p>
                         </figcaption>
                     </figure>
-                </div>
+                </Link>
 
                 <div>
-                    <article>
+                    <Link to={'article/1'}>
                         <img src={imgUrl} alt="image" />
                         <h3>Mon slug, une petite description de l'article</h3>
-                    </article>
-                    <article>
+                    </Link>
+                    <Link to={'article/1'}>
                         <img src={imgUrl} alt="image" />
                         <h3>Mon slug, une petite description de l'article</h3>
-                    </article>
-                    <article>
+                    </Link>
+                    <Link to={'article/1'}>
                         <img src={imgUrl} alt="image" />
                         <h3>Mon slug, une petite description de l'article</h3>
-                    </article>
-                    <article>
+                    </Link>
+                    <Link to={'article/1'}>
                         <img src={imgUrl} alt="image" />
                         <h3>Mon slug, une petite description de l'article</h3>
-                    </article>
+                    </Link>
 
                 </div>
             </section>

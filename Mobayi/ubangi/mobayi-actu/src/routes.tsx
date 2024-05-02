@@ -42,12 +42,27 @@ export const routes = [
                 element: <NotFoundPage />
             },
             {
-                path: 'article',
-                element: <ArticlePage />,
-            },
-            {
                 path: 'news',
                 element: <NewsPage />
+                // ,
+                // children: {
+                //     path: 'article',
+                //     element: <ArticlePage />,
+                //     children: [
+                //         {
+                //             index: true,
+                //             element: <ArticlePage />
+                //         },
+                //         {
+                //             path: ':articleId',
+                //             element: <ArticleDetailPage />
+                //         },
+                //         {
+                //             path: 'not-found',
+                //             element: <ArticleNotFoundPage />
+                //         }
+                //     ]
+                // },
             },
             {
                 path: 'politic',
@@ -79,7 +94,7 @@ export const routes = [
                 children: [
                     {
                         index: true,
-                        element: <ArticleTablePage />
+                        element: <ArticlePage />
                     },
                     {
                         path: ':articleId',

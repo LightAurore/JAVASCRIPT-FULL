@@ -1,4 +1,4 @@
-import CategoryPage from "../../components/category-page/category-page";
+import CategoryPage from "../../containers/category-page/category-page";
 
 const PolicyPage = () => {
 

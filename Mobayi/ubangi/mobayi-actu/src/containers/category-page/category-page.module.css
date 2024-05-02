@@ -32,8 +32,8 @@
     }
 }
 .articles-container div:nth-child(2){
-    display: grid;
-    grid-template-columns: repeat(4, calc(100% / 4));
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
 
     > * {
