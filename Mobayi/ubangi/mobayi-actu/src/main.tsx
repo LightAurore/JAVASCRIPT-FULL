@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 
 // Use Internationalization-framework (i18next)
-import './lang/i18n.js';
+import './lang/i18n.ts';
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { routes } from './routes.tsx'

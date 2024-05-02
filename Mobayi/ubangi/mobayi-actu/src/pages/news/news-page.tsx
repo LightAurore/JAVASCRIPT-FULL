@@ -1,9 +1,18 @@
+import CategoryPage from "../../components/category-page/category-page";
+import NewsletterCategory from "../../components/newsletter-cat/newsletter-cat";
 
 const NewsPage = () => {
 
 
     return(
-        <h2>News</h2>
+        <>
+        <div>
+            <h2>News</h2>
+            <NewsletterCategory />
+        </div>
+         <CategoryPage />
+
+        </>
     )
 }
 

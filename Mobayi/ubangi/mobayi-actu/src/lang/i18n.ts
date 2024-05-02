@@ -15,5 +15,6 @@ i18next
             loadPath: import.meta.env.VITE_I18N_BACKEND_URL + '/{{lng}}.json'
         }
     })
+console.log(import.meta.env.VITE_I18N_BACKEND_URL);
 
 export default i18next;

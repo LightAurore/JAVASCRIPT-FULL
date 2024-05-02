@@ -10,6 +10,8 @@ main{
   margin: 0 auto;
   padding: 12px;
   min-height: 500px;
-  background-color: cornflowerblue;
+
+  border-left: 4px solid #4e1609;
+  border-right: 4px solid #4e1609;
 }
 

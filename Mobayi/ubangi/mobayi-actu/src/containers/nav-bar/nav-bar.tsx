@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
 
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <nav className={styles["nav-bar"]}>
@@ -36,28 +36,6 @@ const Navbar = () => {
             </ul>
 
         </nav>
-
-
-            // <nav>
-            //     <ul className="menu">
-            //         <li className="menu-item">
-            //             <Link to="/"><b>Accueil</b></Link>
-            //         </li>
-                    
-            //         <li className="menu-item">
-            //             <Link to="article"><b>Articles</b></Link>
-            //         </li>
-                    
-            //         <li className="menu-item">
-            //             <Link to="about"><b>A-propos</b></Link>
-                    
-            //         </li>
-                    
-            //         <li className="menu-item">
-            //             <Link to="contact"><b>Contact</b></Link>
-            //         </li>
-
-            //     </ul>
 
             
   
