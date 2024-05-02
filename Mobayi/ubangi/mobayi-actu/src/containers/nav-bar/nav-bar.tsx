@@ -1,36 +1,37 @@
 
 import { Link } from 'react-router-dom';
 import styles from './nav-bar.module.css'
+import { useTranslation } from 'react-i18next';
 
 
 
 const Navbar = () => {
 
-    
+    const {t} = useTranslation();
 
     return (
         <nav className={styles["nav-bar"]}>
             <ul>
                 <li>
-                    <Link to="/">Accueil</Link>
+                    <Link to="/">{t('nav.home')}</Link>
                 </li>
                 <li>
-                    <Link to="news">Actualités</Link>
+                    <Link to="news">{t('nav.news')}</Link>
                 </li>
                 <li>
-                    <Link to="policy">Politique</Link>
+                    <Link to="politic">{t('nav.politic')}</Link>
                 </li>
                 <li>
-                    <Link to="society">Société</Link>
+                    <Link to="society">{t('nav.society')}</Link>
                 </li>
                 <li>
-                    <Link to="culture">Culture</Link>
+                    <Link to="culture">{t('nav.culture')}</Link>
                 </li>
                 <li>
-                    <Link to="science">Science</Link>
+                    <Link to="science">{t('nav.science')}</Link>
                 </li>
                 <li>
-                    <Link to="economy">Economie</Link>
+                    <Link to="economy">{t('nav.economy')}</Link>
                 </li>
             </ul>
 
