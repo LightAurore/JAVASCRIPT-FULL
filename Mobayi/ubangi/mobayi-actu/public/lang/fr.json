@@ -8,6 +8,23 @@
         "science": "Science",
         "economy": "Economie"
     },
+   
+    "category": {
+        "home": "Accueil",
+        "news": "Actualité",
+        "politic": "Politique",
+        "society": "Société",
+        "culture": "Culture",
+        "science": "Science",
+        "economy": "Economie"
+    },
+    "news":{
+        "local":"Locale",
+        "regional":"Régionale",
+        "national":"Nationale",
+        "international":"Internationale"
+    },
+   
 
     "customer":{
         "login": "Connexion", 

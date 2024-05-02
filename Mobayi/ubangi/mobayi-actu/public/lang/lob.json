@@ -8,6 +8,15 @@
         "science": "Nganga",
         "economy": "Nkita"
     },
+    "category": {
+        "home": "Yambi",
+        "news": "Sango",
+        "politic": "Kokonza",
+        "society": "Mboka",
+        "culture": "Elengeli",
+        "science": "Nganga",
+        "economy": "Nkita"
+    },
     "profil":{
         "username": "Nom d'utilisateur",
         "password": "Mot de passe",

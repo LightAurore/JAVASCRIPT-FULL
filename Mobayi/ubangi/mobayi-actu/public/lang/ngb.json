@@ -9,6 +9,15 @@
         "science": "Yingaye",
         "economy": "Ngenza"
     },
+    "category": {
+        "home": "Da",
+        "news": "Sia",
+        "politic": "Gbia",
+        "society": "Kodoro",
+        "culture": "Kode",
+        "science": "Yingaye",
+        "economy": "Ngenza"
+    },
 
     "profil":{
         "username": "Nom d'utilisateur",
