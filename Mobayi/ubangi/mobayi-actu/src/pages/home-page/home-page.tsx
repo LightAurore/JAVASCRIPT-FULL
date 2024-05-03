@@ -4,11 +4,19 @@ import { useTranslation } from 'react-i18next';
 // local
 import CategoryAccueil from '../../containers/category-accueil/category-accueil';
 import { category_title } from './category';
-import style from './home.module.css'
+import style from './home.module.css';
+import getQuotes from '../../hooks/useAxios';
 
 
 const HomePage = () => {
     const categories = category_title;
+
+    const data = getQuotes();
+
+    console.log("---------------------------------------------");
+    
+    console.log(data);
+    
 
     const { t } = useTranslation();
 

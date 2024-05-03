@@ -3,7 +3,7 @@ import { useState } from "react";
 // https://iconoir.com/
 const LikeDislike = () => {
 
-    const [like, setLike] = useState<boolean>(true)
+    const [like, setLike] = useState<boolean>(false)
 
     return(
         <>

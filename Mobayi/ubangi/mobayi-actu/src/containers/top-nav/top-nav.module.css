@@ -5,6 +5,10 @@
     background-color: #2c75ff;
 }
 
+.topnav select{
+    background-color: aquamarine;
+}
+
 .option {
     display: flex;
     flex-direction: row;
@@ -12,7 +16,7 @@
     font-size: 1em;
     height: 2em;
     align-items: center;
-    background-color: rgb(217, 239, 195);
+    /* background-color: rgb(217, 239, 195); */
 
     img {
         height: 100%;
@@ -24,12 +28,20 @@
     display: flex;
 
     li{
-        margin: 6px;
-        padding: 4px;
+        margin: 2px;
+        padding: 8px;
         background-color: rgb(25,0,255);
+        border-radius: 4px;
+        
+        &:hover{
+                background-color: rgb(25,0,155);
+                color: azure;
+            }
 
         a{
             color: azure;
+
+            
         }
     }
 }

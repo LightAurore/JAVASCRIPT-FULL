@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const ReportWarning = () => {
 
-    const [report, setReport] = useState<boolean>(true)
+    const [report, setReport] = useState<boolean>(false)
 
     return(
         <>

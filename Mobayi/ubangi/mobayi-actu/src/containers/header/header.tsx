@@ -13,13 +13,13 @@ const Header = () => {
 
     return (
         <header className={style['header']}>
-            <Link to="#" className={style["local-actu"]}>
+            <Link to={"/news"} className={style["local-actu"]}>
                 <img src={vagues2} alt="" />
             </Link>
-            <Link to="#" className={style['logo']}>
+            <Link to={"/"} className={style['logo']}>
                 <img src={logoUrl} alt="Mobayi Actu" />
             </Link>
-            <Link to="#" className={style["don"]}>
+            <Link to={"/donate"} className={style["don"]}>
                 <span>Faire un don</span>
             </Link>
 

@@ -18,6 +18,7 @@ import SocietyPage from "./pages/society/society-page";
 import CulturePage from "./pages/culture/culture-page";
 import SciencePage from "./pages/science/science-page";
 import EconomyPage from "./pages/economy/economy-page";
+import DonatePage from "./pages/donate/donate-page";
 
 
 export const routes = [
@@ -34,6 +35,10 @@ export const routes = [
                 element: <AboutPage />
             },
             {
+                path: 'donate',
+                element: <DonatePage />
+            },
+            {
                 path: 'contact',
                 element: <ContactPage />
             },
@@ -44,25 +49,13 @@ export const routes = [
             {
                 path: 'news',
                 element: <NewsPage />
-                // ,
-                // children: {
-                //     path: 'article',
-                //     element: <ArticlePage />,
-                //     children: [
-                //         {
-                //             index: true,
-                //             element: <ArticlePage />
-                //         },
-                //         {
-                //             path: ':articleId',
-                //             element: <ArticleDetailPage />
-                //         },
-                //         {
-                //             path: 'not-found',
-                //             element: <ArticleNotFoundPage />
-                //         }
-                //     ]
-                // },
+                ,
+                children: [
+                    {
+                        path: 'article/:articleId',
+                        element: <ArticleDetailPage />
+                    }
+                ]
             },
             {
                 path: 'politic',

@@ -20,7 +20,6 @@
     height: 250px;
     
     img{
-        background-color: aquamarine;
         display: block;
         width: 100%;
         flex: 1;

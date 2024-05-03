@@ -15,7 +15,7 @@ const CategoryPage = () => {
             <NewsletterCategory />
 
             <section className={style["articles-container"]}>
-                <Link to={'article/1'} className={style["main-article"]}>
+                <Link to={'/article/1'} className={style["main-article"]}>
                     <figure>
                         <img src={imgUrl} alt="image" />
                         <figcaption>
@@ -28,19 +28,19 @@ const CategoryPage = () => {
                 </Link>
 
                 <div>
-                    <Link to={'article/1'}>
+                    <Link to={'/article/1'}>
                         <img src={imgUrl} alt="image" />
                         <h3>Mon slug, une petite description de l'article</h3>
                     </Link>
-                    <Link to={'article/1'}>
+                    <Link to={'/article/1'}>
                         <img src={imgUrl} alt="image" />
                         <h3>Mon slug, une petite description de l'article</h3>
                     </Link>
-                    <Link to={'article/1'}>
+                    <Link to={'/article/1'}>
                         <img src={imgUrl} alt="image" />
                         <h3>Mon slug, une petite description de l'article</h3>
                     </Link>
-                    <Link to={'article/1'}>
+                    <Link to={'/article/1'}>
                         <img src={imgUrl} alt="image" />
                         <h3>Mon slug, une petite description de l'article</h3>
                     </Link>

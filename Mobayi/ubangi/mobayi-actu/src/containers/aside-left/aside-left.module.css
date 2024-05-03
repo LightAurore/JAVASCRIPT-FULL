@@ -4,6 +4,6 @@
     top: 36px;
     width: 100%;
     height: fit-content;
-    background-color: cornflowerblue;
+    box-shadow: 0 0 6px grey;
 
 }

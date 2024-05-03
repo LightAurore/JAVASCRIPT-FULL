@@ -1,3 +1,4 @@
+import { useParams } from "react-router-dom";
 import LikeDislike from "../../../components/liker/like-dislike";
 import ReportWarning from "../../../components/report-warning/report-warning";
 import Share from "../../../components/share/share";
@@ -6,6 +7,11 @@ import main from '../article-page.module.css';
 
 
 const ArticleDetailPage = () => {
+
+    const { articleId } = useParams();
+
+    console.log(articleId);
+    
 
 
     return(
