@@ -4,12 +4,16 @@
     flex-direction: column;
     width: 80%;
     min-height: fit-content;
-    padding: 12px;
     margin: 0 auto;
-
-    border: 1px solid gray;
+    background-color: antiquewhite;
 }
-.main-article__detail > figure{
+
+.main-article__detail > fieldset{
+    background-color: beige;
+    padding: 12px;
+}
+
+.main-article__detail > fieldset > figure{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -23,6 +27,19 @@
     }
 }
 
+.comments-form{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+.comments-form textarea{
+    width: 100%;
+}
+.comments-form button{
+    width: 200px;
+    height: 25px;
+}
+
 .article-action{
     width: 300px;
     height: auto;
@@ -30,4 +47,8 @@
     justify-content: space-evenly;
     padding: 5px;
     margin: 0 auto;
+}
+
+.comments-customer{
+    padding: 12px;
 }

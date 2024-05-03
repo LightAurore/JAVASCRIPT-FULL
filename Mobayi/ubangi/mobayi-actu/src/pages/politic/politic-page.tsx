@@ -4,10 +4,10 @@ const PoliticPage = () => {
 
 
     return(
-        <>
+        <div>
             <h2>Politic</h2>
          <CategoryPage />
-        </>
+        </div>
     )
 }
 

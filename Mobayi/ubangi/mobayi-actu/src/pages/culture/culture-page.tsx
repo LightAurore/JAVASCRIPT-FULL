@@ -5,10 +5,10 @@ const CulturePage = () => {
 
 
     return(
-        <>
-        <h2>Culture</h2>
-         <CategoryPage />
-        </>
+        <div>
+            <h2>Culture</h2>
+            <CategoryPage />
+        </div>
     )
 }
 

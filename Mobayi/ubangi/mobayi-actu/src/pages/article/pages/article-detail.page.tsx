@@ -9,7 +9,8 @@ const ArticleDetailPage = () => {
 
 
     return(
-        <main className={main["main-article__detail"]}>
+        <div className={main["main-article__detail"]}>
+            <fieldset>
             <h2>
             Le bilan d’une entreprise est une photographie fidèle de sa situation financière à un moment donné, révélant à la fois ses biens (actif) et ses dettes (passif)
             </h2>
@@ -56,7 +57,30 @@ const ArticleDetailPage = () => {
             <p>
                 En somme, le bilan d’entreprise est un outil essentiel pour évaluer la santé financière d’une société et analyser sa rentabilité. Il permet également de comparer l’évolution du patrimoine de l’entreprise sur plusieurs années
             </p>
-        </main>
+            </fieldset>
+            
+            {/* /* Commentaire de l'article */ 
+             /* TODO Refactor with CSS */}
+            <form id="comment-form" method="post" className={main["comments-form"]}>
+                <h3 aria-label="input-comment">Ajouter un commentaire :</h3>
+                <textarea id="input-comment" name="comment">
+                </textarea>
+                <br/>
+                <input type="hidden" name="slug" value="" />
+                <button type="submit">Envoyer</button>
+                <span>message</span>
+            </form>
+            <br/>
+            <div id="comment-list" className={main["comments-customer"]}>
+                
+                    <div>
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aperiam a fugit? Nam accusantium adipisci vel?</p>
+                    </div>
+            </div>
+
+
+        </div>
     )
 }
 

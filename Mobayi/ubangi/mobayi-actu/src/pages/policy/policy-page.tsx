@@ -3,7 +3,7 @@ import CategoryPage from "../../containers/category-page/category-page";
 const PolicyPage = () => {
 
     return(
-        <>
+        <div>
          <h2>Policy</h2>
          <article>
             <h3></h3>
@@ -20,7 +20,7 @@ const PolicyPage = () => {
                 Pie sesame snaps apple pie chupa chups cheesecake tiramisu. Oat cake sugar plum cake candy canes brownie. Liquorice pastry cake jelly carrot cake toffee. Gummi bears marzipan cake lemon drops sesame snaps chupa chups. Sesame snaps bear claw cotton candy gummi bears halvah sweet roll shortbread. Apple pie pastry cookie lemon drops macaroon cheesecake chocolate. Wafer jelly muffin brownie marzipan. Muffin chocolate cake dragée lollipop tootsie roll fruitcake. Cookie candy fruitcake tiramisu candy canes cheesecake. Ice cream cookie chocolate bar topping soufflé. Pie chupa chups croissant tootsie roll lemon drops jelly lollipop lollipop tart. Shortbread pie sweet roll powder fruitcake. Powder soufflé jelly wafer candy fruitcake gummies marshmallow sugar plum.{/*  */}
             </p>
          </article>
-        </>
+        </div>
     )
 }
 

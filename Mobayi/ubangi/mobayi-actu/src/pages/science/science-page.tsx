@@ -4,10 +4,10 @@ const SciencePage = () => {
 
 
     return(
-        <>
+        <div>
             <h2>Science</h2>
             <CategoryPage />
-        </>
+        </div>
     )
 }
 

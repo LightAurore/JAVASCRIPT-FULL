@@ -6,10 +6,10 @@ const SocietyPage = () => {
 
 
     return(
-        <>
+        <div>
             <h2>Society</h2>
             <CategoryPage />
-        </>
+        </div>
     )
 }
 

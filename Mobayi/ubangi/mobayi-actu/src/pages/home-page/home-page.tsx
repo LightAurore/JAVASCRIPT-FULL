@@ -9,18 +9,24 @@ import style from './home.module.css'
 
 const HomePage = () => {
     const categories = category_title;
-    console.log(categories);
 
     const { t } = useTranslation();
 
     const CategoriesTSX = categories.map(
-        cat => <CategoryAccueil                 category= {t(cat.cat)}
+        cat => <CategoryAccueil 
+            category= {t(cat.cat)}
             catNavigation = {cat.cat_nav}
         />
     )
     return (
-        <div className={style["home"]}>
-            {CategoriesTSX}
+        <div>
+            
+
+            <div className={style["home"]}>
+                {CategoriesTSX}
+            </div>
+
+            
         </div>
     )
 }

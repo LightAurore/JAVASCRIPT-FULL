@@ -5,6 +5,9 @@ import sia from './sia-sese.png'
 
 const RegisterPage = () => {
 
+
+    
+
     return(
         <>
             <form className={style["customer-form"]} >

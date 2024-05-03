@@ -4,12 +4,15 @@
 }
 
 main{
-  flex: 1;
+  display: grid;
+  grid-template-columns: 20% 50% 20%;
+  gap: 6px;
   width: 80%;
   margin: 0 auto;
-  padding: 12px;
   min-height: 500px;
 
   border-left: 4px solid #4e1609;
 }
+
+
 

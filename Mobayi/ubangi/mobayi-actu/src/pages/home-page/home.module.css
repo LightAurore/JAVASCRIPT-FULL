@@ -1,5 +1,17 @@
 
+/*  */
+.aside-left{
+    position: sticky;
+    top: 36px;
+    width: 100%;
+    height: fit-content;
+    background-color: cornflowerblue;
 
+}
+
+
+
+/*  */
 .home{
     display: flex;
     flex-direction: column;
@@ -45,4 +57,10 @@
         }
     }
 }
+
+
+
+
+
+
 

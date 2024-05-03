@@ -4,10 +4,10 @@ const EconomyPage = () => {
 
 
     return(
-        <>
-        <h2>Economy</h2>
-         <CategoryPage />
-        </>
+        <div>
+            <h2>Economy</h2>
+            <CategoryPage />
+        </div>
     )
 }
 
