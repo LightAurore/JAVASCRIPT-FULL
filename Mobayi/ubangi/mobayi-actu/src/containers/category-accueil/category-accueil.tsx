@@ -62,7 +62,7 @@ const CategoryAccueil = ({category, catNavigation}) => {
 
 
     return(
-        <section className={style["home-cat"]}>
+    <section className={style["home-cat"]}>
         <Link to={catNavigation}>
             <div>
                 <i>📰</i>
@@ -76,10 +76,10 @@ const CategoryAccueil = ({category, catNavigation}) => {
                     <img src={img1} alt="image" />
                     <div className={style["cat-color"]}>
                         <h4>
-                            Tiramisu jujubes jelly beans dessert lollipop oat cake shortbread shortbread powder.
+                            Tiramisu jujubes jelly beans dessert .
                         </h4>
                         <p>
-                        Croissant dessert cotton candy dessert carrot cake fruitcake toffee chocolate cake pudding. Oat cake pie tootsie roll candy carrot cake chocolate bar cake sweet roll cupcake.
+                        Croissant dessert cotton candy dessert carrot cake fruitcake toffee chocolate cake pudding. 
                         </p>
                     </div>
                 </Link>
@@ -129,14 +129,16 @@ const CategoryAccueil = ({category, catNavigation}) => {
             {
                 fakeNews.map(
                     actu => (
-                    <Link to={'article/1'} className="box-int">
+                    <Link to={'article/1'} className={style["box-int"]}>
                         <img src={img2} alt="" />
+                        <div>
                             <h4>
                                {actu.title}
                             </h4>
                             <p>
                                 {actu.desc}
                             </p>
+                        </div>
                     </Link>
                     )
                 )

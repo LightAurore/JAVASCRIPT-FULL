@@ -50,8 +50,15 @@ const customerLoginValidator = yup.object().shape({
         .required()
 
 });
+const casteAddValidator = yup.object().shape({
+
+    role_name: yup.string()
+        .trim()
+        .required()
+});
 
 module.exports = {
     customerRegisterValidator,
-    customerLoginValidator
+    customerLoginValidator,
+    casteAddValidator
 };

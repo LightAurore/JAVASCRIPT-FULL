@@ -29,6 +29,24 @@ const ArticleDetailPage = () => {
                     <Share />
                 </div>
             </figure>
+            <div className={main["card-footer"]}>
+          <div className={main["card-meta card-meta--views"]}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="EyeOpen">
+              <path d="M21.257 10.962c.474.62.474 1.457 0 2.076C19.764 14.987 16.182 19 12 19c-4.182 0-7.764-4.013-9.257-5.962a1.692 1.692 0 0 1 0-2.076C4.236 9.013 7.818 5 12 5c4.182 0 7.764 4.013 9.257 5.962z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+            2,465
+          </div>
+          <div className={main["card-meta card-meta--date"]}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Calendar">
+              <rect x="2" y="4" width="20" height="18" rx="4" />
+              <path d="M8 2v4" />
+              <path d="M16 2v4" />
+              <path d="M2 10h20" />
+            </svg>
+            Jul 26, 2019
+          </div>
+        </div>
             <h3></h3>
             <p>
                 Il s’agit d’un état de synthèse qui résume ce que l’entreprise possède (ses actifs), ce qu’elle doit (ses passifs) et la valeur nette de l’entreprise (ses capitaux propres) à un instant précis
@@ -77,6 +95,13 @@ const ArticleDetailPage = () => {
                 <span>message</span>
             </form>
             <br/>
+            <div id="comment-list" className={main["comments-customer"]}>
+                
+                    <div>
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aperiam a fugit? Nam accusantium adipisci vel?</p>
+                    </div>
+            </div>
             <div id="comment-list" className={main["comments-customer"]}>
                 
                     <div>

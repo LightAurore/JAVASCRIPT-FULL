@@ -1,0 +1,101 @@
+<%- include('../partials/_head.ejs') %>
+<%- include('../partials/_header.ejs') %>
+<%- include('../partials/_navbar.ejs') %>
+<%- include('../partials/_banner.ejs') %>
+
+<style>
+  li{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 6px;
+  }
+
+  .user-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+
+    img{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: blueviolet;
+    }
+
+    span{
+      display: none;
+      visibility: hidden;
+    }
+
+    h4{
+      width: fit-content;
+      align-content: center;
+      padding-left: 20px;
+      flex: 1;
+    }
+  }
+
+</style>
+
+
+<% 
+  var customers 
+  var listLength
+%>
+
+
+<main>
+    <h2>
+      Liste des utilisateurs
+    </h2>
+
+    <ul class="map-customer">
+      <% for(var i = 0; i < listLength; i++){ %>
+        <li>
+          <div class="user-name">
+            <img src="" alt=<%= customers[i].imgurl %> />
+            <span>
+              <%= customers[i].id %>
+            </span>
+            <h4>
+              <%= customers[i].name %>
+            </h4>
+          </div>
+          
+        </li>
+      <% } %>
+    </ul>
+</main>
+<script>
+  const allCustomers = document.querySelectorAll(".user-name");
+
+  allCustomers.forEach((element, index) => {
+      element.addEventListener('click',(e)=> {
+        const getId = element.querySelector('span').innerText;
+        const id = getId.trim()
+
+
+      window.location.href = `http://localhost:8585/customer/${id}`;
+    })
+}); 
+
+</script>
+
+
+<%- include('../partials/_footer.ejs') %>
+
+<!-- 
+  How to Redirect with JavaScript 
+  
+    👌 window.location.href
+        ⇲ window.location.href = ‘https://exampleURL.com/’;
+
+    👌 location.assign()
+        ⇲ window.location.assign(‘https://www.exampleURL.com/’);
+
+    👌 location.replace()
+        ⇲ window.location.replace('https://www.exampleURL.com/');
+ -->

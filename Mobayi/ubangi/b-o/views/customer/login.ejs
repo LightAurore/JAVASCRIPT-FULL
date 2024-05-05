@@ -5,27 +5,31 @@
 
 <% 
 var errorMessage;
+console.log('login');
 var data;
 %>
 
 <main>
 
-    <form method="post">
+    <form method="post" class="login-form">
         <h2>Connexion</h2>
         <div>
-            <label for="input-username"></label>
+            <label for="input-username">Nom d'utilisateur</label>
             <input type="text" id="input-username" name="username" value="<%= data?.username %>">
         </div>
+        
         <div>
-            <label for="input-pwd"></label>
+            <label for="input-pwd">Mot de passe</label>
             <input type="password" name="password" id="input-pwd" value="<%= data?.password %>">
         </div>
+        
         <div>
             <button type="submit">Se connecter</button>
             <% if(errorMessage) { %>
                 <span class="error"><%= errorMessage %></span>
             <% } %>
         </div>
+        
         <div>
             <span>Si tu n'est inscrit : <a href="/customer/register">inscription</a></span>
         </div>

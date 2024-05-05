@@ -1,48 +1,177 @@
 // Mockup des données (Fake Data)
 const customerService = require('../services/customer.service');
-const { customerRegisterValidator, customerLoginValidator } = require('../validators/customer.validator');
-const customerData = require('./mockups/customer-data.json');
-//     "caste": ["customer", "admin", "censor", "redactor"]
+const roleService = require('../services/role.service');
+const { customerRegisterValidator, customerLoginValidator, casteAddValidator } = require('../validators/customer.validator');
+
 
 const customerController = {
     // admin
-    list: async (req, res) => {
-        const data = {
-            people : customerData.map((customer) => ({
-                firstname : customer.firstname,
-                lastname: customer.lastname,
-                url: `/customer/${customer.id}`
-            }))
-        };
-        res.render('customer/customer-list', data);
+    getAll: async (req, res) => {
+        if(!req.session.isLog) {
+            res.redirect('/customer/login');
+            return;
+        }
+
+        // if(req.session.user.role !== 'Censor') {
+        //     res.redirect('/error404');
+        //     return;
+        // }
+
+        const customers = await customerService.getAll();
+        console.log(customers);
+
+        const listLength = customers.length;
+
+        res.render('customer/list', {customers, listLength});
     },
 
-    detail: async (req, res) => {
-        const id = parseInt(req.params.id);
-        const customer = customerData.find(p => p.id === id);
+    getOneById: async (req, res) => {
+        const id = req.params.id;
+        console.log("1. controller");
+        console.log(id);
+
+        // const customerName = await customerService.getOne("qsqs");
+
+        const customer = await customerService.getOne(id);
+
+        console.log('Sortie de service');
+        console.log(customer);
 
         if(!customer) {
             res.render('customer/customer-notfound');
             return;
         }
         
-        const data = {
-            customer: {
-                ...customer,
-                profileUrl: `/files/images/${customer.profileImg}`
-            }
-        };
-        res.render('customer/customer-detail', data);
-    },
-    
-    delete: async (req, res) => {
-        res.sendStatus(501);
-    },
-    bloqued: async (req, res) => {
-        res.sendStatus(501);
+        // const data = {
+        //     customer: {
+        //         ...customer,
+        //         profileUrl: `/files/images/${customer.profileImg}`
+        //     }
+        // };
+
+        res.render('customer/detail', {...customer});
     },
 
-    // user
+    addRole: async (req, res) =>{
+
+        //"caste": ["customer", "admin", "censor", "redactor"]
+
+        // Si on n'est pas connecté → Redirection sur la page login
+        /* const userId = req.session.user?.id;  // res.locals.session.user?.id;
+        console.log(userId);
+        if(!userId) {
+            res.redirect('/customer/login');
+            return;
+        }
+ */
+        // Donnée initial du form
+        const data= {};
+        // Rendu du formulaire
+        res.render('customer/caste-form', { data });
+    },
+    
+    addRole_POST: async (req, res) => {
+
+        // Si on n'est pas connecté → Erreur !
+        /* const userId = req.session.user?.id;
+        if(!userId) {
+            res.sendStatus(400);
+            return;
+        }
+ */
+        
+        let data;
+        try {
+            data = await casteAddValidator
+                            .noUnknown()
+                            .validate(req.body, { abortEarly: false });
+        }
+        catch(error) {
+            //! Création d'un objet error sur base de l'erreur de Yup
+            const validationError= {};
+            for(const fieldError of error.inner) {
+                const path = fieldError.path;
+                const message = fieldError.errors[0];
+                
+                if(!validationError.hasOwnProperty(path)) {
+                    validationError[path] = message;
+                }
+            }
+            
+            res.render('customer/caste-form', {
+                error: validationError,
+                data: req.body
+            });
+            return;
+        }
+        
+         // Save article in DB
+         await roleService.create({
+            role_name: data.role_name
+        });
+
+        // Redirection vers la page accueil (ou page detail)
+        res.redirect('/casting/customer');
+    },
+
+    toggleRole: async (req, res) =>{
+        const id = req.params.id;
+        console.log("1. controller");
+        console.log(id);
+
+        const customer = await customerService.assign(id);
+
+        console.log('Sortie de service');
+        console.log(customer);
+
+        if(!customer) {
+            res.render('customer/customer-notfound');
+            return;
+        }
+        
+        res.render('customer/detail', {...customer});
+    },
+    
+    sendReport: async (req, res) => {
+        res.sendStatus(501);
+    },
+    hidden: async (req, res) => {
+        const id = req.params.id;
+        console.log("1. controller");
+        console.log(id);
+
+        const customer = await customerService.hide(id);
+
+        console.log('Sortie de service');
+        console.log(customer);
+
+        if(!customer) {
+            res.render('customer/customer-notfound');
+            return;
+        }
+        
+        res.render('customer/detail', {...customer});
+    },
+
+    banned: async (req, res) => {
+        const id = req.params.id;
+        console.log("1. controller");
+        console.log(id);
+
+        const customer = await customerService.ban(id);
+
+        console.log('Sortie de service');
+        console.log(customer);
+
+        if(!customer) {
+            res.render('customer/customer-notfound');
+            return;
+        }
+        
+        res.render('customer/detail', {...customer});
+    },
+
+    // customer
     register: async (req, res) =>{
         res.render('customer/register');
     },
@@ -100,6 +229,8 @@ const customerController = {
                 });
                 return;
             }
+
+            console.log(data)
             
             // Récuperation du Member via les credentials
             const customer = await customerService.login(data);
@@ -115,25 +246,31 @@ const customerController = {
                 res.render('customer/login', {...viewData});
                 return;
             } else{
-                const { username, password } = data;
-                console.log(data);
+                // Test (basique) des credentials pour le rôle 
+                // Gestion de la session
+                req.session.user = {
+                    id: customer._id,
+                    name: data.username,
+                    role: customer.role
+                };
 
-                if(['zaza', 'balthy'].find(name => name === username?.toLowerCase())  || password !== 'Test1234=') {
-                    // Test (basique) des credentials pour le rôle 
-                    // Gestion de la session
-                    req.session.user = {
-                        id: customer._id,
-                        name: username,
-                        role: username.toLowerCase() === 'balthy' ? 'Admin' : 'User'
-                    };
+                req.session.isLog = true;
+                
+                /* 
+                // Enregistrer des données dans sessionStorage
+                sessionStorage.setItem("clé", "valeur");
 
-                    req.session.isLog = true;
-                }else {
-                    req.session.user = {
-                        id: customer._id,
-                        name: customer.username
-                    };
-                }
+                // Récupérer des données depuis sessionStorage
+                var data = sessionStorage.getItem("clé");
+
+                // Supprimer des données de sessionStorage
+                sessionStorage.removeItem("clé");
+
+                // Supprimer toutes les données de sessionStorage
+                sessionStorage.clear();
+
+                */
+
             }
             // Redirection vers la page d'accueil
             res.redirect('/');
@@ -148,7 +285,6 @@ const customerController = {
         // Redirection de l'utilisateur
         res.redirect('/');
     }
-
 };
 
 module.exports = customerController;

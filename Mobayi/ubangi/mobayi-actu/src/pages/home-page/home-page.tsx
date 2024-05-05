@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 // local
 import CategoryAccueil from '../../containers/category-accueil/category-accueil';
 import { category_title } from './category';
-import style from './home.module.css';
 import getQuotes from '../../hooks/useAxios';
 
 
@@ -28,13 +27,7 @@ const HomePage = () => {
     )
     return (
         <div>
-            
-
-            <div className={style["home"]}>
-                {CategoriesTSX}
-            </div>
-
-            
+            {CategoriesTSX}
         </div>
     )
 }

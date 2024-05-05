@@ -2,8 +2,10 @@ const homeController = {
 
     index: (req, res) => {
         console.log(req.session.user?.name ?? 'Non connecté');
+
         const data = {
-            now: (new Date()).toLocaleDateString('fr-be')
+            today: (new Date()).toLocaleDateString('fr-be'),
+            username: req.session.user?.name
         };
         res.render('home/index', data);
     },
@@ -13,11 +15,7 @@ const homeController = {
     },
     about: (req, res) => {
 
-        res.render('home/contact');
-    },
-    protected: (req, res) => {
-
-        res.render('home/contact');
+        res.render('home/about');
     },
 
     contact: (req, res) => {
@@ -50,7 +48,55 @@ const homeController = {
     },
 
     error404: (req, res) => {
-        res.sendStatus(501);
+        res.render('home/error404');
+    },
+
+    protected: (req, res) => {
+        // Test si l'utilisateur est connecté
+        
+        if(!req.session.isLog) {
+            res.redirect('/login');
+            return;
+        }
+
+        if(req.session.user.role !== 'Admin') {
+            res.redirect('/error');
+            return;
+        }
+
+        res.render('home/protected');
+    },
+
+    editor: (req, res) => {
+        // Test si l'utilisateur est connecté
+        
+        if(!req.session.isLog) {
+            res.redirect('/login');
+            return;
+        }
+
+        if(req.session.user.role !== 'Editor') {
+            res.redirect('/error');
+            return;
+        }
+
+        res.render('home/editor');
+    },
+
+    censored: (req, res) => {
+        // Test si l'utilisateur est connecté
+        
+        if(!req.session.isLog) {
+            res.redirect('/login');
+            return;
+        }
+
+        if(req.session.user.role !== 'Censor') {
+            res.redirect('/error');
+            return;
+        }
+
+        res.render('home/censored');
     }
 };
 

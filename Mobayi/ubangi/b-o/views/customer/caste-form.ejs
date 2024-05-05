@@ -1,0 +1,35 @@
+<%- include('../partials/_head.ejs') %>
+<%- include('../partials/_header.ejs') %>
+<%- include('../partials/_navbar.ejs') %>
+<%- include('../partials/_banner.ejs') %>
+
+<style>
+ 
+</style>
+
+
+<% 
+  var error
+%>
+
+
+<main>
+    <h2>
+      Liste des utilisateurs
+    </h2>
+    <form  action="/casting/customer" method="post">
+      <label for="input-caste">Créer un role</label>
+  
+      <input type="text" id="input-caste" name="role_name" value="<%= data['role_name'] %>" />
+  
+      <% if(error && error['role_name']) { %>
+        <span class="error" id="error-title"><%= error['role_name'] %></span>
+      <% } %>
+  
+      <button type="submit">Ajouter</button>
+      
+    </form>
+</main>
+
+
+<%- include('../partials/_footer.ejs') %>

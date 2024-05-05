@@ -1,0 +1,99 @@
+<%- include('../partials/_head.ejs') %>
+<%- include('../partials/_header.ejs') %>
+<%- include('../partials/_navbar.ejs') %>
+<%- include('../partials/_banner.ejs') %>
+
+<style>
+  .ident-customer{
+    display: flex;
+    font-display: center;
+    width: 250px;
+    height: 350px;
+    background-color: black;
+    margin: 45px auto;
+
+    
+  }
+
+  .ident-customer article {
+    width: 100%;
+
+    img{
+      width: 100%;
+      height: 200px;
+      background-color: blueviolet;
+    }
+
+    h4{
+      color: whitesmoke;
+      background-color: coral;
+      height: 150px;
+      flex: 1;
+    }
+  }
+
+  
+  .btn-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+
+
+    button{
+      width: 50px;
+      background-color: inherit;
+      border: none;
+      outline-offset: none;
+      box-shadow: none;
+    }
+  }
+
+</style>
+
+<% var customer %>
+
+<main>
+  <section class="ident-customer">
+    <article>
+        <img src="" alt= <%= img_url%> >
+        <h4>
+              <%= username %>
+        </h4>
+        <div class="btn-container">
+          <button title="Donner un role" class="btn-role" onclick= "custumerCaste()" >🛼</button>
+
+          <button title="Envoyer un avertissement" class="btn-msg" onclick= "custumerReport()" >⚠️</button>
+
+          <button title="Cacher" class="btn-hide" onclick= "custumerHidden()" >🧱</button>
+
+          <button title="Effacer" class="btn-erase" onclick= "custumerBanned()" >❌</button>
+        </div>
+    </article>
+  </section>
+    
+</main>
+
+<script>
+  
+  const url = window.location.href;
+  const indexSlash = url.lastIndexOf('/');
+
+  const id = url.split('').slice(indexSlash + 1).join('');
+  console.log(id)
+
+  function custumerCaste(){
+    window.location.assign(`http://localhost:8585/favour/${id}`);
+  }
+  function custumerReport(){
+    alert('hello')
+  }
+  function custumerHidden(){
+    window.location.assign(`http://localhost:8585/hide/${id}`);
+  }
+  function custumerBanned(){
+    window.location.assign(`http://localhost:8585/ban/${id}`);
+  }
+</script>
+
+<%- include('../partials/_footer.ejs') %>

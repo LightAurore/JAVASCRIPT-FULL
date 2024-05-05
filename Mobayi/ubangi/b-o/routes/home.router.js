@@ -7,6 +7,7 @@ const homeRouter = require('express').Router();
 homeRouter.get('/', homeController.index);
 homeRouter.get('/about', homeController.about);
 homeRouter.get('/chat', homeController.chat);
+homeRouter.get('/about', homeController.about);
 homeRouter.get('/contact', homeController.contact);
 homeRouter.get('/protected', homeController.protected);
 homeRouter.get('/error404', homeController.error404);

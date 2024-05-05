@@ -32,7 +32,7 @@ const articleController = {
     addNewArticle: async (req, res) => {
 
         // Si on n'est pas connecté → Redirection sur la page login
-        const userId = req.session.user?.id;  // res.locals.session.user?.id;
+        const userId = res.locals.session.user?.id;  // req.session.user?.id;
         console.log(userId);
         if(!userId) {
             res.redirect('/customer/login');

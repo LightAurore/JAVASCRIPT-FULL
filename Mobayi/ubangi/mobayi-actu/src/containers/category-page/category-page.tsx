@@ -18,13 +18,14 @@ const CategoryPage = () => {
                 <Link to={'/article/1'} className={style["main-article"]}>
                     <figure>
                         <img src={imgUrl} alt="image" />
-                        <figcaption>
+                        </figure>
+                        <div>
                             <h4>Tiramisu jujubes jelly beans dessert lollipop oat cake shortbread shortbread powder. Pastry chocolate biscuit wafer carrot cake shortbread sugar plum.</h4>
                             <p>
                                 Tiramisu jujubes jelly beans dessert lollipop oat cake shortbread shortbread powder. Pastry chocolate biscuit wafer carrot cake shortbread sugar plum.
                             </p>
-                        </figcaption>
-                    </figure>
+                        </div>
+                    
                 </Link>
 
                 <div>

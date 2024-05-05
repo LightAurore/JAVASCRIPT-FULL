@@ -1,14 +1,23 @@
 
 <nav>
     <ul class="menu">
-        <li class="menu-item"><a href="/"><i></i><b>Accueil</b></a></li>
+        <% console.log(locals.session?.user?.role)  %>
         
-        <li class="menu-item"><a href="/article"><i></i><b>Articles</b></a></li>
+        <li class="menu-item"><a href="/"><b>Accueil</b></a></li>
+        <li class="menu-item"><a href="/about"><b>A-propos</b></a></li>
         
-        <li class="menu-item"><a href="/about"><i></i><b>A-propos</b></a></li>
-        
-        <li class="menu-item"><a href="/contact"><i></i><b>Contact</b></a></li>
+        <% if(locals.session?.user?.role === "Admin" || locals.session?.user?.role ===  "Editor") { %>
+            <li class="menu-item"><a href="/article"><b>Articles</b></a></li>
+            
+            <% if(locals.session?.user?.role === "Admin")  { %>
+                <li class="menu-item"><a href="/advert"><b>Advert</b></a></li>
+                
+                <li class="customer"><a href="/customer/all"><b>Les utilisateurs</b></a></li>
 
+            <% } %>
+        <% } %>
+
+        <li class="menu-item"><a href="/contact"><b>Contact</b></a></li>
     </ul>
 
     <ul class="profil">

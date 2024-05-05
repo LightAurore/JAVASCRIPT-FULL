@@ -7,12 +7,12 @@
 },
 
 
-## Customer entity
+// ## Customer collection
 {
     "customer_id" : ObjectId,
     "firstname" : String,
     "lastname" : String,
-    "img_url" : String,
+    "img_url" : String, // Blob
     "email" : String,
     "username" : String,
     "password" : String,

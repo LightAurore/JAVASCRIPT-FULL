@@ -8,9 +8,7 @@ const morgan = require("morgan");
 const renderSessionMiddleware = require("./middlewares/render-session.middleware");
 const loggerMiddleware = require("./middlewares/logger.middleware");
 const session = require("express-session");
-const homeRouter = require("./routes/home.router");
-const articleRouter = require("./routes/article.router");
-const customerRouter = require("./routes/customer.router");
+const routes = require("./routes");
 
 require("dotenv").config();
 // Variables d'environnement
@@ -52,9 +50,7 @@ app.use((req, res, next) => {
 });
 
 // - Routing
-app.use(homeRouter);
-app.use(articleRouter);
-app.use(customerRouter);
+app.use(routes);
 
 // Connexion à la base de donnée MongoDB
 connectDb();

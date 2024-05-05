@@ -19,7 +19,7 @@ const Header = () => {
             <Link to={"/"} className={style['logo']}>
                 <img src={logoUrl} alt="Mobayi Actu" />
             </Link>
-            <Link to={"/donate"} className={style["don"]}>
+            <Link to={"/donate"} className={style["donate"]}>
                 <span>Faire un don</span>
             </Link>
 
