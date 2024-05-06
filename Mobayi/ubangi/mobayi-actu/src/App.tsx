@@ -5,7 +5,7 @@ import Navbar from './containers/nav-bar/nav-bar'
 import Header from './containers/header/header'
 import Footer from './containers/footer/footer'
 import Topnav from './containers/top-nav/top-nav'
-import AsideLeft from './containers/aside-left/aside-left'
+import AsideRight from './containers/aside-right/aside-right'
 
 function App() {
 
@@ -17,7 +17,7 @@ function App() {
       
       <main>
         <Outlet />
-        <AsideLeft />
+        <AsideRight />
       </main>
 
       <Footer />

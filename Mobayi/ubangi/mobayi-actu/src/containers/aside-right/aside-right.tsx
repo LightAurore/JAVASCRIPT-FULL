@@ -1,4 +1,5 @@
 
+import ForeignCurrency from '../../components/foreign-currency/foreign-currency';
 import style from './aside-right.module.css'
 
 const AsideRight = () => {
@@ -17,6 +18,9 @@ const AsideRight = () => {
                         </p>
                     </div>
                 </div>
+                <marquee behavior="" direction="">
+                    <ForeignCurrency />
+                </marquee>
             </aside>
     )
 }

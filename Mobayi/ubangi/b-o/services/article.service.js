@@ -85,6 +85,7 @@ const articleService = {
                 path: 'author',         // Collection lié
                 select: ['username']    // Projection
             });
+            
 
         return articles;
     },

@@ -31,7 +31,8 @@
     "react-select": "^5.8.0",
     "recoil": "^0.7.7",
     "sass": "^1.75.0",
-    "swg": "^1.0.5"
+    "swg": "^1.0.5",
+    "swr": "^2.2.5"
   },
   "devDependencies": {
     "@types/node": "^20.12.8",
