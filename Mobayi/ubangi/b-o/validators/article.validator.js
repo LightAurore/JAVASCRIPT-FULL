@@ -1,6 +1,9 @@
 const yup = require('yup');
 
 const regex = /(?!<script)/
+// pour content
+// 
+// .matches(regex,{excludeEmptyString: true})
 
 const articleValidator = yup.object().shape({
     title: yup.string()
@@ -10,24 +13,26 @@ const articleValidator = yup.object().shape({
              .optional(),
     tag: yup.array().of(yup.string()).compact((t) => t === ''),
     description: yup.string()
-                    .test('is-script', "Le mot à éviter", (value)=> Promise.resolve(value.includes(["<script>","</>"])))
                     .max(200, 'La description ne peut pas faire plus de 200 caracteres 😲'),
     content: yup.string()
-                .matches(regex,{excludeEmptyString: true})
                 .min(10, 'Le contenu doit faire au moins 10 caracteres !')
                 .required('Le contenu est obligatoire')                    
 });
 
 //.matches(b/(?!<script>|</script>)([a-z0-9]+)$, 'La balise html <script> n est pas autorisée')
+// pour comment
+// .test('is-script', "Le mot à éviter", (value)=> Promise.resolve(value.includes(["<script>","</script>"])))
 
 const articleCommentValidator = yup.object().shape({
     comment: yup.string() //
-                .test('is-script', "Le mot à éviter", (value)=> Promise.resolve(value.includes(["<script>","</script>"])))
                 .max(1_000)
                 .required(),
     slug: yup.string()
              .required()
 });
+
+// pour la description
+// .test('is-script', "Le mot à éviter", (value)=> Promise.resolve(value.includes(["<script>","</>"])))
 
 module.exports = {
     articleValidator,

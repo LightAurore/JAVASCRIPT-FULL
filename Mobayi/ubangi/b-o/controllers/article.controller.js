@@ -30,10 +30,9 @@ const articleController = {
     },
 
     addNewArticle: async (req, res) => {
-
         // Si on n'est pas connecté → Redirection sur la page login
         const userId = res.locals.session.user?.id;  // req.session.user?.id;
-        console.log(userId);
+        
         if(!userId) {
             res.redirect('/customer/login');
             return;
@@ -46,10 +45,11 @@ const articleController = {
     },
     
     addNewArticle_POST: async (req, res) => {
-
         // Si on n'est pas connecté → Erreur !
-        const userId = req.session.user?.id;
+        const userId = res.locals.session.user?.id ?? "user n'est pas";
+
         if(!userId) {
+            
             res.sendStatus(400);
             return;
         }
@@ -60,7 +60,8 @@ const articleController = {
                             .noUnknown()
                             .validate(req.body, { abortEarly: false });
 
-            console.log('data', data);
+            
+            
         }
         catch(error) {
             
@@ -103,7 +104,7 @@ const articleController = {
     addCommentToArticle_POST: async (req, res) => {
 
         // Récuperation de l'utilisateur connecté
-        const userId = req.session.user?.id;
+        const userId = res.locals.session.user?.id;
         if(!userId) {
             res.redirect('/customer/login');
             return;

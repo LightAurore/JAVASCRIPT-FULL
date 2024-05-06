@@ -80,13 +80,16 @@ nav > * li {
 }
 
 footer {
-  height: 250px;
+  height: 50px;
   background-color: rgb(5, 35, 35);
   color: aqua;
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   flex: 1;
+  min-height: 50vh;
 }
 
 .container {

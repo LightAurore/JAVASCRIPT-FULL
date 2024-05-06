@@ -3,20 +3,75 @@
 <%- include('../partials/_navbar.ejs') %>
 <%- include('../partials/_banner.ejs') %>
 
-<main>
-    <h1>Liste des articles</h1>
-<a href="/article/new">Créer un article</a>
+<style>
 
-<section class="article-cards">
+        .link-new_article{
+            text-decoration: none;
+            color: rgb(253, 255, 227);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin:0 auto 10px;
+            padding: 10px;
+            background-color: rgb(105, 105, 86);
+            border-radius: 5px;
+        }
+
+       .article-cards {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: 0 auto;
+            border: 1px solid darkblue;
+
+            & > h2{
+                text-align: center;
+
+            }
+        }
+
+        .article-card__head{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+            padding: 6px;
+            background-color: darkblue;
+            color: aliceblue;
+            border-radius: 4px;
+        }
+
+        .article-card{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+            padding: 6px;
+            background-color: cornsilk;
+            border-radius: 4px;
+        }
+</style>
+
+<main>
+    <a class="link-new_article" href="/article/new">Créer un article</a>
+    
+    <section class="article-cards">
+        <h2>Liste des articles</h2>
+
     <% if(articles.length === 0) { %>
         <p>Il n'y pas encore d'articles 😿</p>
     <% } %>
+    <div>
+        <article class="article-card__head">
+            <p class="title">TITRE</p>
+            <p class="author">AUTEUR</p>
+            <p class="desc">DESCRIPTION</p>
+            <p class="update-date">DATE DE MODIFICATION</p>
+        </article>
+    </div>
     <% for(const article of articles) { %>
 
         <a href="/article/detail/<%= article.slug %>">
             <article class="article-card">
                 <p class="title"><%= article.title %></p>
-                <p class="author"><%= article.author %></p>
+                <p class="author"><%= article.author.username %></p>
                 <p class="desc"><%= article.desc %></p>
                 <p class="update-date"><%= article.updatedAt.toLocaleDateString('fr') %></p>
             </article>

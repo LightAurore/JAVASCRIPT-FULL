@@ -110,7 +110,6 @@ const articleService = {
             //     }
             // })
         
-        console.log(article);
         return article;
     }
 
