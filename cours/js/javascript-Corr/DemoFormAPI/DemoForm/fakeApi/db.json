@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "lastname": "Strimelle",
+      "firstname": "Aurélien",
+      "email": "austri@oui.be",
+      "password": "test1234"
+    },
+    {
+      "lastname": "Beurive",
+      "firstname": "Aude",
+      "email": "a@a.be",
+      "password": "Test1234=",
+      "id": 2
+    }
+  ],
+  "dogs": [
+    {
+      "id": 1,
+      "name": "Regex",
+      "owner": 1
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "T-shirt",
+    "price": 15.99,
+    "discount": true
+  },
+  {
+    "id": 2,
+    "name": "Jean",
+    "price": 29.99,
+    "discount": false
+  },
+  {
+    "id": 3,
+    "name": "Chaussures",
+    "price": 45.55,
+    "discount": true
+  },
+  {
+    "id": 4,
+    "name": "Sac à main",
+    "price": 39.99,
+    "discount": false
+  },
+  {
+    "id": 5,
+    "name": "Téléphone portable",
+    "price": 799.99,
+    "discount": true
+  },
+  {
+    "id": 6,
+    "name": "Ordinateur portable",
+    "price": 2000,
+    "discount": false
+  },
+  {
+    "id": 7,
+    "name": "Téléviseur",
+    "price": 599.99,
+    "discount": true
+  },
+  {
+    "id": 8,
+    "name": "Réfrigérateur",
+    "price": 1499.10,
+    "discount": false
+  },
+  {
+    "id": 9,
+    "name": "Lave-linge",
+    "price": 899.50,
+    "discount": true
+  },
+  {
+    "id": 10,
+    "name": "Lave-vaisselle",
+    "price": 699.99,
+    "discount": false
+  },
+  {
+    "id": 11,
+    "name": "Micro-ondes",
+    "price": 100,
+    "discount": true
+  },
+  {
+    "id": 12,
+    "name": "Cafetière",
+    "price": 49.99,
+    "discount": false
+  },
+  {
+    "id": 13,
+    "name": "Bouilloire",
+    "price": 29.50,
+    "discount": true
+  },
+  {
+    "id": 14,
+    "name": "Grille-pain",
+    "price": 20,
+    "discount": false
+  },
+  {
+    "id": 15,
+    "name": "Aspirateur",
+    "price": 199.99,
+    "discount": true
+  },
+  {
+    "id": 16,
+    "name": "Fer à repasser",
+    "price": 49.99,
+    "discount": false
+  },
+  {
+    "id": 17,
+    "name": "Sèche-cheveux",
+    "price": 29.99,
+    "discount": true
+  },
+  {
+    "id": 18,
+    "name": "Lisseur",
+    "price": 39.99,
+    "discount": false
+  },
+  {
+    "id": 19,
+    "name": "Epilateur",
+    "price": 49.99,
+    "discount": true
+  },
+  {
+    "id": 20,
+    "name": "Livre",
+    "price": 19.99,
+    "discount": false
+  }
+]

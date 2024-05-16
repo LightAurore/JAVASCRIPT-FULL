@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+#game-info {
+    margin: 0;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5ch;
+    max-width: 400px;
+    cursor: pointer;
+}
+
+.card {
+    aspect-ratio: 2/3;
+    border: solid 1px slategrey;
+}

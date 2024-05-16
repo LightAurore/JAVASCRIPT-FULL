@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - OOP</title>
+    <script src="assets/js/script03_demo.js" defer></script>
+</head>
+<body>
+    <h1>Orienté objet à Prototype</h1>
+    
+    <h2>Un objet</h2>
+    <p>
+        But => Créer un ensemble lié, sous la forme d'attribut avec une valeur
+    </p>
+
+    <h3>En JS, les objets sont dynamique</h3>
+    <code><pre>
+    // Création d'un objet (Sans prototype)
+    const house = {
+        nbRoom: 42,
+        color: 'hot pink'
+    };
+
+    // Modification d'un attribut
+    house.nbRoom = 4;
+
+    // Ajout d'un attribut
+    house.hasGarden = true;
+    </pre></code>
+
+    <h3>Demo d'un prototype</h3>
+    <p>
+        Création d'un model qui permet de créer des objets.<br>
+        Définir l'ensemble des régles de l'objet (propriétés ? méthodes ?) <br>
+        Un prototype → C'est une fonction
+    </p>
+    <code><pre>
+    function Person(firstname, lastname) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
+    Person.prototype.getFullname = function() {
+        return this.firstname + ' ' + this.lastname;
+    }
+    </pre></code>
+
+    <h3>Demo d'une classe</h3>
+    <p>Ce n'est que du sucre syntaxique</p>
+    <code><pre>
+    class Person {
+        constructor(firstname, lastname) {
+            this.firstname = firstname;
+            this.lastname = lastname;
+        }
+    
+        getFullname() {
+            return this.firstname + ' ' + this.lastname;
+        }
+    }
+    </pre></code>
+
+</body>
+</html>

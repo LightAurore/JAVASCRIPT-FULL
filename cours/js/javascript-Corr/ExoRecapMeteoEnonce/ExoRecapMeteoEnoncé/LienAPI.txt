@@ -1,0 +1,4 @@
+Lien vers la doc de l'API à utiliser :
+https://openweathermap.org/current
+
+Vous devrez créer un compte, vous recevrez un token par mail

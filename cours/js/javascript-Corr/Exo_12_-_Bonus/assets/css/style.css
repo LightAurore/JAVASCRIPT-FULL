@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+#game-info {
+    margin: 0;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5ch;
+    max-width: 400px;
+    cursor: pointer;
+}
+
+.card {
+    aspect-ratio: 2/3;
+}
+
+
+
+  
+.card{
+    background-color: transparent;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  
+  .flipped .content {
+    transform: rotateY(180deg);
+  }
+  
+  .front, .back {
+    border: solid 1px black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  .back {
+    background-image: url('./../images/back-card.png');
+    background-size: cover;
+    color: black;
+  }
+  
+  .front {
+    transform: rotateY(180deg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }

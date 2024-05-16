@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 09 : Les tableaux</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <script src="./assets/scripts/main.js" defer></script>
+</head>
+<body>
+    <h1>Gestion des stagiaires</h1>
+
+    <section>
+        <h2>Ajouter un stagiaire :</h2>
+        <input id="trainee-name" type="text">
+        <button id="trainee-add">Ajouter</button>
+    </section>
+
+    <section>
+        <h2>Fonctionnalités :</h2>
+        <div>
+            <button id="trainees-total">Total stagiaires</button>
+        </div>
+        <div>
+            <select id="sort-option">
+                <option selected value="asc">ASC</option>
+                <option value="desc">DESC</option>
+            </select>
+            <button id="sort">Trier</button>
+        </div>
+        <div>
+            <input id="search-term" type="text">
+            <button id="search">Rechercher</button>
+        </div>
+        <div>
+            <button id="last">Afficher le dernier</button>
+        </div>
+        <div>
+            <button id="char-max">Afficher le caractère le plus présent</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>Résultat :</h2>
+        <div id="result">
+
+        </div>
+    </section>
+</body>
+</html>

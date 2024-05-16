@@ -1,0 +1,7 @@
+.hearts > * {
+    color: rgb(193, 193, 193);
+}
+
+.hearts > .red {
+    color: crimson;
+}

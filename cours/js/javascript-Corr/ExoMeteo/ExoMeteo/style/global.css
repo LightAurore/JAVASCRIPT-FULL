@@ -1,0 +1,217 @@
+/* #region Header */
+html {
+  overflow-x: hidden;
+}
+.logo {
+    max-width: 50px;
+    margin: 5px;
+    margin-right: 15px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(43, 43, 73);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    
+}
+nav a {
+    color : white;
+    margin: 0px 1rem;
+    text-decoration: none;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    color : white;
+    width: 25%;
+    margin-left: 1rem;
+    font-size: 20px;
+}
+/* #endregion */
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+/* #region Polaroids */
+.wrapper {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap : 1rem;
+  }
+  
+img {
+    max-width: 90%;
+}
+
+.polaroids {
+    text-align: center;
+    width: 25%;
+}
+
+@media screen and (max-width : 600px) {
+  .polaroids {
+    width: 45%;
+  }
+}
+
+.polaroids div {
+    font-family: "Permanent Marker";
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 1rem 1rem 2rem 1rem;
+    width: 100%;
+    color: #252323;
+    box-shadow: 0px 1px 5px 0px #656565;
+}
+
+.polaroids div:hover {
+    -moz-opacity: 0.75;
+    -khtml-opacity: 0.75;
+    opacity: 0.75;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=75);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=75);
+    filter:alpha(opacity=75);
+}
+.polaroids div .cityname{
+    font-size: 20px;
+}
+
+/* Pour faire tourner les images */
+/* A partir de la première image, toutes les 5 images sont tournées de deux degrés vers la droite */
+.polaroids:nth-child(5n+1) {
+    transform: rotate(2deg); 
+}
+/* A partir de la troisième image, toutes les 2 images sont tournées de 2 degrès vers la gauche */
+.polaroids:nth-child(2n+3) {
+
+    transform: rotate(-2deg); 
+}
+
+.polaroids img {
+    border: 1px solid #C9C9C9;
+}
+/* #endregion */
+
+/* #region modal */
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.img-modal {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);  
+  }
+  
+  .img-modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .img-modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  .img-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .img-close:hover,
+  .img-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .postcard {
+    width: 70%;
+    height: 80%;
+    margin : auto;
+    border-radius: 15px;
+    background-color: rgb(236, 236, 229);
+    position : relative
+  }
+
+  .postcard-content {
+    position : absolute;
+    top : 10%;
+    width: 55%;
+    height: 80%;
+    border-right: 2px solid black ;
+  }
+
+  .card-txt{
+    padding: 0% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+  }
+
+  .city-name {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .timbre {
+    position: absolute;
+    top : 10%;
+    right: 5%;
+    width: 80px;
+    height: 110px;
+    border: 1px solid black;
+  }
+/* #endregion */

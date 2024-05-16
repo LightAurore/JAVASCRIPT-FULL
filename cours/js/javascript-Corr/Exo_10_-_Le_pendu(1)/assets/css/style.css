@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    margin: auto;
+    gap: 1rem;
+}
+
+h1 {
+    font-family: 'Curlz MT', 'Papyrus' ;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0.5rem auto 1rem;
+} 
+h2 {
+    width: 100%;
+    margin: 0.5rem auto 1rem;
+}
+
+#game-zone, #result-zone {
+    display: flex;
+    flex-direction: column;
+}
+#game-zone {
+    min-width: 300px;
+}
+img {
+    width: 100%;
+}
+
+.letters {
+    font-size: 1.1em;
+}
+.letters > span:not(:first-of-type)::before {
+    content: '';
+    margin: 0.75ch;
+}
+#errors .letters {
+    color: crimson;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+        width: calc(100vw - 2rem);
+        gap: 3rem;
+    }
+    #game-zone, #result-zone {
+        width: 100%;
+        justify-content: stretch;
+    }
+    img {
+        width: 75%;
+    }
+}

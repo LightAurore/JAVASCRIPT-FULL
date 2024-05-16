@@ -1,0 +1,5 @@
+# Tuto 
+https://www.atlassian.com/fr/git/tutorials/saving-changes 
+
+# exercices
+https://learngitbranching.js.org/?locale=fr_FR

@@ -1,0 +1,75 @@
+/* Base ************************************/
+body {
+    box-sizing: border-box;
+    padding-top: 5rem;
+    min-height: 100vh;
+}
+
+main {
+    background-color:royalblue;
+    padding: 1px;
+    box-sizing: border-box;
+    min-height: calc(100vh - 10rem);
+}
+
+header {
+    height: 5rem;
+    background-color: skyblue;
+
+    position: fixed;
+    top: 0;
+
+    width: 100vw;
+}
+
+header > img {
+    height: 75%;
+    position: relative;
+    top: 50%;
+    transform: translate(1ch, -50%);
+}
+
+footer {
+    background-color: blueviolet;
+    color: snow;
+    height: 5rem;
+
+    position: sticky;
+    top: 100%;
+    padding: 1px;
+    box-sizing: border-box;
+}
+footer > p {
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#example {
+    background-color: orange;
+    width: 50vw;
+    height: 50vw;
+    margin: auto;
+}
+
+/* Tablette ************************************/
+@media screen and (min-width:400px) {
+    #example {
+        width: 12rem;
+        height: 12rem;
+        background-color: chartreuse;
+    }
+}
+
+/* Desktop ************************************/
+@media screen and (min-width:1024px) {
+    #example {
+        background-color: antiquewhite;
+    }
+
+    main {
+        width: 1024px;
+        margin: auto;
+    }
+
+}
