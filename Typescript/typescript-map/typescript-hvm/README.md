@@ -18,5 +18,5 @@ tsc -p .
 
 ## Execution
 ```cmd
-npx ts-node-dev --respawn --watch src ./src/index.ts
+ts-node-dev --respawn --watch src ./src/index.ts
 ```

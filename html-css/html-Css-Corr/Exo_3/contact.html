@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Page de contact</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main id="contenu">
+        <h1>Formulaire de contact</h1>
+        <form id="exo" method="post">
+            <fieldset id="form-grp-coord">
+                <legend>Coordonnées</legend>
+                <div class="form-input" id="form-name">
+                    <input type="text" name="lastname" placeholder="Nom" required>
+                    <input type="text" name="firstname" placeholder="Prenom">
+                </div>
+                <div class="form-input" id="form-gender">
+                    <label>Sexe : </label>
+                    <input type="radio" name="gender" id="gender-f" value="f" checked>
+                    <label for="gender-f">Femme</label>
+                    <input type="radio" name="gender" id="gender-h" value="h">
+                    <label for="gender-h">Homme</label>
+                    <input type="radio" name="gender" id="gender-x" value="x">
+                    <label for="gender-x">Autre</label>
+                </div>
+                <div class="form-input" id="form-email">
+                    <input type="email" name="email" placeholder="Courriel">
+                </div>
+                <div class="form-input" id="form-tel">
+                    <input type="tel" name="tel-gsm" placeholder="N° Gsm" required>
+                    <input type="tel" name="tel-fix" placeholder="N° Fixe">
+                </div>
+            </fieldset>
+            <fieldset id="form-grp-need">
+                <legend>Vos besoins</legend>
+                <div class="form-input" id="form-info">
+                    <select name="techno" required>
+                        <option value="" disabled selected>Veuillez selectionner une option</option>
+                        <optgroup label="Front-end">
+                            <option value="html-css">Html/Css</option>
+                            <option value="js">JavaScript</option>
+                            <option value="react">React</option>
+                        </optgroup>
+                        <optgroup label="Back-end">
+                            <option value="node-js">Node JS</option>
+                            <option value="express">Express JS</option>
+                            <option value="php">Php</option>
+                            <option value="asp-net">ASP.Net (C#)</option>
+                            <option value="java-spring">Java Spring</option>
+                        </optgroup>
+                    </select>
+                    <textarea name="message" placeholder="Votre message"></textarea>
+                </div>
+            </fieldset>
+            <div id="form-action">
+                <button type="submit">Envoyer</button>
+                <button type="reset" >Reset</button>
+                <a href="page.html">
+                    <button type="button">Retour au CV</button>
+                </a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

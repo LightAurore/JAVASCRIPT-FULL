@@ -1,0 +1,10 @@
+// ↓ Utilisation des module SASS
+@use 'base';
+
+.app-title {
+  color: darken(base.$primary-color, 10)
+}
+
+.app-logo {
+  width: 100%;
+}

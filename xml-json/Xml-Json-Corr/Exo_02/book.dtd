@@ -1,0 +1,26 @@
+<!ELEMENT books (book*)>
+
+<!ELEMENT book (title, author, genre, publication, serie?)>
+
+<!ELEMENT title (#PCDATA)>
+
+<!ELEMENT author (name, birthdate, gender)>
+
+<!ELEMENT name EMPTY>
+<!ATTLIST name firstname CDATA #REQUIRED>
+<!ATTLIST name lastname CDATA #REQUIRED>
+
+<!NOTATION eu  SYSTEM "dd/mm/yyyy">
+<!NOTATION usa SYSTEM "mm/dd/yyyy">
+<!NOTATION iso SYSTEM "yyyy/mm/dd">
+<!ELEMENT birthdate (#PCDATA)>
+<!ATTLIST birthdate format NOTATION (eu | usa | iso) #REQUIRED>
+
+<!ELEMENT gender (#PCDATA) >
+
+<!ELEMENT genre (#PCDATA)>
+
+<!ELEMENT publication (#PCDATA)>
+
+<!ELEMENT serie (#PCDATA)>
+<!ATTLIST serie number CDATA #REQUIRED>

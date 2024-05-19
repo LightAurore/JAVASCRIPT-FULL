@@ -1,0 +1,18 @@
+
+
+.rubric-nav{
+
+
+  li{
+    width: 150px;
+    background-color: blue;
+    margin-block: 4px;
+    border-radius: 12px;
+
+    a{
+      color: aliceblue;
+      display: grid;
+      place-content: center;
+    }
+  }
+}

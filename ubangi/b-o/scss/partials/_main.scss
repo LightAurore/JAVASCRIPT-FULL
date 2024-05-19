@@ -1,0 +1,62 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 50vh;
+}
+
+
+// bannière
+.banner{
+    background-image: url('/files/images/bannerW.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    color: aqua;
+    display: flex;
+    flex-direction: column;
+        place-content: center;
+        place-items: center;
+        color: chocolate;
+        h1{
+        font-weight: 900;
+        
+        }
+
+    p{
+        place-content: center;
+        background-color: #000000aa;
+        color: rgb(252, 2, 2);
+        padding: 5px;
+        height: 50px;
+        font-size: 2rem;
+    }
+}
+
+
+// Home, la page d'accueil
+.home-page{
+    background-image: url("/files/images/papers.jpg");
+    background-size: contain;
+
+    min-height: 70vh;
+}
+
+
+// page-apropos
+.apropos{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 12px;
+    margin: 0 auto;
+
+    > *{
+        margin-bottom: 12px;
+    }
+}

@@ -1,0 +1,200 @@
+body{
+    background-image: url("../img/abscract.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main-color{
+    background-color: rgb(120, 167, 237);
+}
+
+.second-color{
+    background-color: rgb(59, 70, 87);
+}
+
+p{
+    color: white;
+}
+
+.text-color-blue{
+    color: blue;
+}
+
+/* Regroupement */
+#couleur-dernier-paragraphe, ul > li{
+    color: chartreuse;
+}
+
+div p {
+    color: red;
+}
+
+h3 + p{
+    background-color: rgb(3, 28, 65);
+}
+
+h3 ~ p{
+    background-color: rgb(92, 157, 255);
+}
+
+fieldset legend{
+    color: rgb(208, 19, 19);
+}
+
+h3{
+    text-decoration: underline;
+}
+
+.size-text-50{
+    font-size: 50px;
+}
+
+.size-text-75{
+    font-size: 75px;
+}
+
+.size-text-100{
+    font-size: 100px;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.text-italic{
+    font-style: italic;
+}
+
+.text-align-left{
+    text-align: left;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.text-align-right{
+    text-align: right;
+}
+
+.text-capitalize{
+    text-transform: capitalize;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.text-lowercase{
+    text-transform: lowercase;
+}
+
+.box-content{
+    width: 50%;
+    height: 350px;
+    background-image: url("../gif/onMeVoit.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-content-2{
+    width: 100%;
+    height: 350px;
+    background: url("../gif/onMeVoit.gif") top left no-repeat,
+                url("../gif/onMeVoit.gif") center center no-repeat,
+                url("../gif/onMeVoit.gif") right bottom no-repeat;
+}
+
+.box-small{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+}
+
+.box-left{
+    width: 48%;
+    height: 300px;
+    float: left;
+    background-color: rgba(128, 128, 128, 0.581);
+}
+
+.box-right{
+    width: 48%;
+    height: 300px;
+    float: right;
+    background-color: rgba(128, 128, 128, 0.581);
+}
+
+.box-right-small{
+    width: 48%;
+    height: 110px;
+    float: right;
+    background-color: rgba(128, 128, 128, 0.581);
+}
+
+.margin-left-10{
+    margin-left: 10px;
+}
+.margin-right-10{
+    margin-right: 10px;
+}
+.margin-top-10{
+    margin-top: 10px;
+}
+.margin-bottom-10{
+    margin-bottom: 10px;
+}
+
+.margin-10{
+    margin: 10px 10px;
+}
+
+.padding-left-10{
+    padding-left: 10px;
+}
+.padding-right-10{
+    padding-right: 10px;
+}
+.padding-top-10{
+    padding-top: 10px;
+}
+.padding-bottom-10{
+    padding-bottom: 10px;
+}
+
+.padding-10{
+    padding: 10px 10px;
+}
+
+.border-left{
+    border-left: 3px solid red;
+}
+.border-right{
+    border-right: 3px solid red;
+}
+
+.border-top{
+    border-top: 3px solid red;
+}
+
+.border-bottom{
+    border-bottom: 3px solid red;
+}
+
+.border{
+    border: 3px solid red;
+}
+
+.box-shadow{
+    box-shadow: -5px 15px 50px black;
+}
+
+.text-shadow{
+    text-shadow: -5px 15px 10px black;
+}
+
+p:active
+{
+    background-color: rgb(199, 199, 0);
+}

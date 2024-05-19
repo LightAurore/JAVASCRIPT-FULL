@@ -1,0 +1,11 @@
+variable:
+
+lowerPascalCase : lowerCamelCase :  userName
+lowercase :                         username
+snake_case :                        user_name
+
+kebab-case :                       user-name
+
+CONSTANTE :
+UPPERCASE :                         USERNAME
+UPPER_SNAKE_CASE :                  USER_NAME

@@ -1,0 +1,73 @@
+# exo1
+
+Créer un projet JS pour permettre à l'utilisateur de calculer l'aire et le périmètre d'un cercle, d'un rectangle et d'un triangle rectangle.
+
+Le projet doit être configuré avec npm.
+
+Le calcul doit être réaliser via un module avec les fonctions suivantes : 
+ - perimetre(forme)
+ - aire(forme)
+
+L'objet forme possède des attributs en fonction de sont type : 
+ - Cercle : rayon
+ - Rectangle : hauteur/largeur
+ - Triangle : hauteur/largeur
+ - Carré : cote
+
+#exemple
+const f1 = {
+    type: 'Cercle',
+    rayon: 42
+};
+
+const f2 = {
+    type: 'Rectangle',
+    hauteur: 10,
+    largeur: 2
+};
+
+const f3 = {
+    type: 'Triangle',
+    hauteur: 10,
+    largeur: 2
+};
+
+const r1 = votreModule.perimetre(f1);
+const r2 = votreModule.aire(f2);
+const r3 = votreModule.aire(f3);
+
+
+# exo 2
+# Exo 2 - Les fichiers
+
+Créer un projet NodeJS et le configurer avec NPM.
+Ce projet permettra à l'utilisateur de lire des données d'un fichier JSON et de générer des fichiers CSV avec les données traitées.
+
+## Consigne
+Lire le fichier « student.json » à l'aide du module "fs" ou "fs/promise".
+
+Après avoir lu et converti les données [Tips: JSON.parse(...)]
+Obtenir les données suivantes : 
+ - La liste des profs
+ - La liste des élèves 
+ - La moyenne de chaque section
+
+Une fois les données obtenues, l'utilisateur souhaite la sauvegarder en fichier CSV. 
+Pour réaliser la génération des données en format CSV, utiliser un package. 
+Exemple de package possible : 
+ - https://www.npmjs.com/package/csv-generate
+ - https://www.npmjs.com/package/export-to-csv
+ - https://www.npmjs.com/package/fast-csv
+
+## Exemple
+Fichier « 20240202140352-moyenne.csv »
+----------------
+Section, Moyenne
+1010, 11.66
+1310, 17.5
+1111, 15.5
+----------------
+
+# exo 3
+
+

@@ -1,7 +1,6 @@
 import {Person} from "./person.model";
 
 type CurrentAccountOptions = Partial<{ balance: number, creditLine: number }>
-
 export class CurrentAccount {
     private iban: string;
     private balance: number;

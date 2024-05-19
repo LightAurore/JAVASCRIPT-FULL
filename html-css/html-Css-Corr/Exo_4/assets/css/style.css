@@ -1,0 +1,108 @@
+main {
+    background: hotpink;
+    width: fit-content;
+    padding: 0.5rem;
+    font-family: "Consolas";
+}
+
+caption {
+    font-size: 2rem;
+}
+
+td {
+    width: 4rem;
+    height: 3rem;
+    font-weight: bold;
+}
+
+/*** Exo 01 ************************************************/
+#tab-01 {
+    border-collapse: collapse;
+    background-color: blueviolet;
+}
+
+#tab-01, #tab-01 td {
+    border: 1rem blueviolet solid;
+}
+
+#tab-01 td {
+    text-align: center;
+}
+
+#tab-01 #elem-a {
+    vertical-align: top;
+}
+
+#tab-01 #elem-c {
+    vertical-align: bottom;
+}
+
+#tab-01 #elem-f {
+    background-color: gold;
+}
+
+#tab-01 #elem-g {
+    background-color: cyan;
+}
+
+/*** Exo 02 ************************************************/
+#tab-02 {
+    border-spacing: 0px;
+}
+
+#tab-02 td {
+    border: 1rem red solid;
+}
+
+#tab-02 #elem-a {
+    background-color: chartreuse;
+    vertical-align: bottom;
+    text-align: start;
+}
+
+#tab-02 #elem-b {
+    background-color: gold;
+    vertical-align: top;
+    text-align: center;
+}
+
+#tab-02 #elem-e {
+    background-color: red;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#tab-02 #elem-g {
+    background-color: skyblue;
+    vertical-align: middle;
+    text-align: end;
+}
+
+/*** Exo 03 ************************************************/
+#tab-03 {
+    background-color: chartreuse;
+    border-spacing: 5px;
+}
+#tab-03 td {
+    background-color: crimson;
+    border: crimson 1rem solid;
+    text-align: center;
+    vertical-align: middle;
+    height: 2rem;
+}
+
+#tab-03 #ligne-1 td {
+    background-color: forestgreen;
+}
+
+#tab-03 #ligne-2 td, #tab-03 #ligne-3 td {
+    background-color: goldenrod;
+}
+
+#tab-03 #ligne-3 td:nth-child(even) {
+    background-color: hotpink;
+}
+
+#tab-03 #elem-17 {
+    background-color: aquamarine;
+}

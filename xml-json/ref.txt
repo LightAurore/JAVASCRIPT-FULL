@@ -1,0 +1,3 @@
+https://fr.wikipedia.org/wiki/XPath
+https://jean-luc-massat.pedaweb.univ-amu.fr/ens/xml/04-xpath.html
+https://www.w3schools.com/xml/xpath_examples.asp

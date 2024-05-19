@@ -1,0 +1,58 @@
+-- SELECT ... FROM ...
+
+-- Récupération de tous les étudiants par les colonnes selectionnées
+SELECT
+    first_name, last_name, birth_date, student_id
+FROM
+    student
+    
+-- * : permet de récupérer toutes les colonnes dans l'ordre établit par la table
+SELECT
+    *
+FROM
+    student;
+    
+-- Alias : AS "Nouveau nom"
+
+SELECT
+    student_id AS "Id étudiant",
+    first_name Prénom,
+    last_name "Nom de famille"
+FROM 
+    student;
+
+-- Opérations arithmétiques
+
+SELECT
+    first_name, 
+    last_name,
+    year_result * 5 "Résultat sur 100",
+    5 / 2.0,
+    year_result / student_id
+FROM 
+    student;
+    
+-- Concaténation : CONCAT() ou ||
+
+SELECT
+    last_name || ' ' || first_name "Nom complet",
+    CONCAT(last_name, ' ', first_name) "Nom complet"
+FROM
+    student;
+
+-- DISTINCT : Récupération des lignes sans doublon
+
+SELECT DISTINCT
+    first_name, last_name
+FROM
+    student;
+
+-- SELECT sans FROM
+
+SELECT 'Hello'
+
+
+SELECT
+    last_name, first_name, 'OK' "Appréciation"
+FROM 
+    student

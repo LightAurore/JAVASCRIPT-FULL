@@ -1,0 +1,184 @@
+$color-primary: navy;
+$color-secondary: darkturquoise;
+$color-on-primary: pink;
+$color-on-secondary: plum;
+$color-success: #3D6;
+$color-error: #C03;
+$color-white: whitesmoke;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: $color-primary;
+    font-size: 3rem;
+}
+
+h2 {
+    color: $color-secondary;
+    font-size: 2rem;
+
+    +p {
+        font-style: oblique;
+    }
+
+    &:not(:first-of-type) {
+        margin-top: 0.5rem;
+    }
+}
+
+.btn {
+    padding: 0.5ch 1ch;
+    border: none;
+    border-radius: 0.7em;
+    background-color: $color-primary;
+    color: $color-on-primary;
+    margin: 0.1rem;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &-success,
+    &-error {
+        color: $color-white;
+    }
+
+    &-success {
+        background-color: $color-success;
+    }
+
+    &-error {
+        background-color: $color-error;
+    }
+}
+
+
+$color-link: #0369A1;
+$color-link-hover: darken($color-link, 20);
+$color-link-visited: lighten($color-link, 30);
+
+a {
+    text-decoration: none;
+    color: $color-link;
+
+    &:visited {
+        color: $color-link-visited;
+    }
+
+    &:hover,
+    &:focus {
+        color: $color-link-hover;
+    }
+
+    &:active {
+        font-weight: bold;
+    }
+}
+
+
+// Mobile → moins de 425px (1 elem par ligne)
+// Tablette → 425px & 768px (2 elem par ligne)
+// Desktop → plus de 768px (5 elem par ligne)
+
+$breakpoint-tablet: 425px;
+$breakpoint-desktop: 768px;
+
+#elems {
+    // ↓ Variable SASS local
+    $gap-elem: 0.5ch;
+
+    /* ↓ Variable CSS */
+    --col: 1;
+
+    display: grid;
+    grid-template-columns: repeat(var(--col), 1fr);
+    gap: $gap-elem;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+        --col: 2;
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        --col: 5;
+    }
+
+    .elem {
+        background-color: #CA907E;
+    }
+}
+
+
+#extend-elems {
+
+    .base {
+        background-color: chocolate;
+        color: plum;
+        width: 100px;
+        padding: 1em;
+        text-align: center;
+        border: 0.5ch solid plum;
+        border-radius: 1em;
+    }
+
+    .variant {
+        @extend .base;
+        border-color: gold;
+        color: gold;
+    }
+
+    .other {
+        @extend .base;
+    }
+}
+
+
+@mixin custom-border($color, $size: 5px) {
+    border: $size solid $color;
+    border-radius: 1em;
+}
+
+#mixin-elems {
+
+    #mix1,
+    #mix2 {
+        padding: 1rem;
+        width: 100px;
+    }
+
+    #mix1 {
+        background-color: aqua;
+        @include custom-border(red)
+    }
+
+    #mix2 {
+        background-color: forestgreen;
+        @include custom-border(chartreuse, 10px)
+    }
+}
+
+
+$elem-colors: (
+    aqua, red, forestgreen, plum, navy, gold
+);
+
+@for $jo from 1 through 6 {
+
+    .elem#{$jo} {
+        color: nth($elem-colors, $jo);
+    }
+}
+
+
+$block-sizes: (10, 25, 33, 50, 66, 100);
+
+@each $size in $block-sizes {
+
+    .size-#{$size} {
+        width: percentage($size/100);
+    }
+
+}

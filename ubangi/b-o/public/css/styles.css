@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+img {
+  width: 100%;
+}
+
+.login-form, .register-form {
+  width: 250px;
+  min-height: 350px;
+  margin: 45px auto;
+  padding: 12px;
+  box-shadow: 0 0 12px darkblue;
+  border-radius: 12px;
+}
+
+.login-form div {
+  margin-bottom: 12px;
+}
+
+input {
+  background-color: cadetblue;
+  color: aliceblue;
+  margin-bottom: 4px;
+  padding: 6px;
+  font-size: 1.5rem;
+  width: 100%;
+  border-radius: 4px;
+}
+
+button {
+  width: 156px;
+  height: 31.2px;
+  border-radius: 15.6px;
+  color: aqua;
+  background-color: chocolate;
+  box-shadow: 2px 2px 4px gray;
+}
+button:active {
+  background-color: aqua;
+  color: chocolate;
+  box-shadow: 2px 2px 0px gray;
+}
+button:hover {
+  color: aqua;
+  background-color: rgb(199, 118, 60);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 12px;
+  background-color: azure;
+  height: 100px;
+}
+nav > * {
+  display: flex;
+  flex: 1;
+}
+nav > * li {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  width: 150px;
+  height: 50px;
+  margin: 5px;
+  padding: 6px;
+  border-radius: 8px;
+}
+nav > * li a {
+  color: rgb(131, 153, 3);
+  -webkit-text-stroke-color: black;
+}
+nav > * li:hover {
+  background-color: rgb(246, 255, 196);
+}
+nav > * li:hover a {
+  color: rgb(10, 10, 8);
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 50px;
+  background-color: rgb(5, 35, 35);
+  color: aqua;
+  padding: 10px;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 50vh;
+}
+
+.banner {
+  background-image: url("/files/images/bannerW.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+  color: aqua;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  color: chocolate;
+}
+.banner h1 {
+  font-weight: 900;
+}
+.banner p {
+  place-content: center;
+  background-color: rgba(0, 0, 0, 0.6666666667);
+  color: rgb(252, 2, 2);
+  padding: 5px;
+  height: 50px;
+  font-size: 2rem;
+}
+
+.home-page {
+  background-image: url("/files/images/papers.jpg");
+  background-size: contain;
+  min-height: 70vh;
+}
+
+.apropos {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 12px;
+  margin: 0 auto;
+}
+.apropos > * {
+  margin-bottom: 12px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
+}
+
+.heading {
+  font-size: clamp(2.5rem, 1.0774rem + 3.7936vw, 5.625rem);
+}
+
+/*# sourceMappingURL=styles.css.map */

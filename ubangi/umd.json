@@ -1,0 +1,218 @@
+# Schema NoSql json pour MongoDb
+
+## Role Collection
+{
+    "role_id" : ObjectId,
+    "role_name" : string,  // Admin - Author - Censor - Customer
+},
+
+
+## Customer entity
+{
+    "customer_id" : ObjectId,
+    "firstname" : String,
+    "lastname" : String,
+    "img_url" : String, // Blob
+    "email" : String,
+    "username" : String,
+    "password" : String,
+    "domain_expert" : String,
+    "role" : ObjectId, // ref: Role
+    "createAt" : Date,
+    "updateAt" : Date,
+    "banned": {
+        "isBanned" : Boolean,
+        "reason": String,
+        "createAt" : Date,
+        "updateAt" : Date
+    }
+}
+
+## Article entity
+{
+    "article_id" : ObjectId,
+    "title" : String,
+    "slug" : String,
+    "category": String,
+    "theme": String,
+    "images" : [
+        {
+            "img_id" : ObjectId,
+            "img_url": String,
+            "alt": String,
+        }
+    ],
+    "content" : String,
+    "author" : ObjectId, // ref: customer
+    "createAt" : Date,
+    "updateAt" : Date,
+    "isPublished" : Boolean,
+    "isVisible" : Boolean,
+    "likes" : [
+        ObjectId  // ref: customer
+    ],
+    "dislikes" : [
+        ObjectId,  // ref: customer
+    ],
+    "reporters" : [
+        {
+            "reporter_id" : ObjectId,  // ref: Report_Raison
+            "customer_id": ObjectId,   // ref: customer 
+            "createAt" : Date,
+        }
+    ],
+    "comments" : [
+        {
+            "comment_id" : ObjectId,
+            "content" : String,
+            "author" : ObjectId, // ref: customer
+            "createAt" : Date,
+            "updateAt" : Date,
+            "likes" : [
+                ObjectId,  // ref: customer
+            ],
+            "dislikes" : [
+                ObjectId,  // ref: customer
+            ],
+            "reporters" : [
+                {
+                    "reporter_id" : ObjectId, // customer_id
+                    "customer_id": ObjectId,   // ref: customer 
+                    "createAt" : Date,
+                }
+            ],
+            "isPublished" : Boolean,
+            "isVisible" : Boolean
+        }
+    ]
+}
+
+## Report_reason
+[
+    {
+        "report_reason_id" : ObjectId,
+        "description" : {
+            "reason": string,
+            "gravity": string
+        },
+        "createAt" : Date,
+        "updateAt" : Date,
+    }
+]
+
+## Prospect
+{
+    "prospect_id" : ObjectId,
+    "firstname" : String,
+    "lastname" : String,
+    "email" : String,
+    "phone" : String,
+    "company_name" : String,
+    "company_email" : String,
+    "company_numeric" : String,
+    "createAt" : Date,
+    "updateAt" : Date,
+}
+
+## Mail Prospect // Si le temps ♥
+{
+    "mail_id" : ObjectId,
+    "prospect_id" : ObjectId, // ref: Prospect
+    "subject" : String,
+    "content" : String,
+    "files" : [{
+        name: string,
+        content:  // https://fr.wikipedia.org/wiki/Binary_large_object
+
+    }],
+    "createAt" : Date,
+    "updateAt" : Date,
+}
+
+
+## Advertisment entity
+{
+    "advert_id" : ObjectId,
+    "title" : String,
+    "slug" : String,
+    "category": String,
+    "theme": String,
+    "images" : [
+        {
+            "img_id" : ObjectId,
+            "img_url": String,
+            "alt": String, 
+        }
+    ],
+    "content" : String,
+    "author" : ObjectId,
+    "createAt" : Date,
+    "updateAt" : Date,
+    "isPublished" : Boolean,
+    "likes" : [
+        ObjectId  // ref: customer
+    ],
+    "dislikes" : [
+        ObjectId,  // ref: customer
+    ],
+
+    "reporters" : [
+        {
+            "reporter_id" : ObjectId,  // ref: Report_Raison
+            "customer_id": ObjectId,   // ref: customer 
+            "createAt" : Date,
+        }
+    ],
+
+}
+
+## Newsletter entity
+[
+    {
+        "newsletter_id" : ObjectId, // category_id
+        "name" : String, // category  name
+        "createAt" : Date,
+        "updateAt" : Date,
+        "isSubscribed" : Boolean,
+        "subscribed" : [
+            ObjectId,   // ref: customer 
+                        // V2: Stocker l'historique en plus
+        ]
+
+    }
+]
+
+
+## WordGame // A faire vraiment si tu te fais chier durant une nuit blanche (ou apres le tfe :p)
+[
+    {
+        "game_id": ObjectId,
+        "game_name": String,
+        "createAt": Date,
+        "updateAt": Date,
+        "level": [
+            {
+                "level_id": ObjectId,
+                "level_name": String,
+                "step": Number
+            }
+        ],
+        "players" :[
+            {
+                "player_id": ObjectId, // customer_id
+                "player_name": String,
+                "createAt": Date,
+                "best": {
+                    score: Number,
+                    level: Number,
+                    dificulty: string,
+                },
+                "last": {
+                    score: Number,
+                    level: Number,
+                    dificulty: string,
+                },
+            }
+        ]
+    }
+]

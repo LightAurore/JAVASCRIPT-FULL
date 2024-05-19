@@ -6,9 +6,7 @@ export class Bank {
     private accounts: Map<string, CurrentAccount>;
 
     constructor(name: string, ...accounts: CurrentAccount[]) {
-        this.name = name;  // nom de la banque
-
-        // tableau de comptes
+        this.name = name;
         this.accounts = new Map<string, CurrentAccount>(accounts.map((it) => [it.Iban, it]))
 
         // Alternative

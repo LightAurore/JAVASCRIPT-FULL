@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+dt{
+    width: 130px;
+    text-align: left;
+    font-style: oblique;
+    color: goldenrod;
+    padding: 5px;
+}
+
+dd{
+    margin: 0 0 0 30px;
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    color: goldenrod;
+
+    text-shadow: 1px 1px 2px gold;
+}
+
+h1 + p{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+
+    border-top: 1px solid gold;
+    border-bottom: 1px solid gold;
+    
+    background-color: lightyellow;
+}
+
+#contenu{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    height: 100%;
+    min-width: 650px;
+    overflow-y: auto;
+    overflow-x: none;
+    padding: 50px 30px;
+}
+
+/** Page **************************/
+.cv-desc{
+    width: 50%;
+    float: left;
+}
+
+.cv-info{
+    width: 45%;
+    margin: 2%;
+    float: right;
+    border: 1px solid gold;
+    border-top: none;
+}
+
+#photo{
+    width: 250px;
+    display: block;
+    margin: auto;
+    padding: Opx;
+}
+
+.cv-info li{
+    list-style: circle;
+    text-align: justify;
+}
+
+.cv-info p{
+    padding: 5px 10px;
+    text-align: justify;
+}
+
+#cv-forma{
+    width: 96%;
+}
+
+/** Form **************************/
+textarea {
+    resize: none;
+    overflow-y: scroll;
+}
+
+.form-input:not(:last-child) {
+    margin-bottom: 0.3rem ;
+}
+
+#form-name > input, #form-tel > input {
+    width: calc(50% - 2px);
+}
+
+#form-email > input {
+    width: 100%;
+}
+
+#form-info :nth-child(1) {
+    display: block;
+    float: left;
+    width: 40%;
+    margin-right: 0.5ch;
+}
+
+#form-info :nth-child(2) {
+    width: calc(60% - 0.5ch - 0.5px);
+}
+
+#form-action * {
+    width: 45%;
+    float: left;
+}
+#form-action > button:nth-child(2) {
+    float: right;
+}
+#form-action a {
+    width: 100%;
+    clear: both;
+}
+#form-action a button {
+    width: 100%;
+}

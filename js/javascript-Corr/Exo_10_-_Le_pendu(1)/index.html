@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 10.2 - Le Pendu</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+    <h1>Exo - Le pendu</h1>
+    <main>
+        <div id="game-zone">
+            <div id="mystery-word">
+                <h2>Mot de deviner : </h2>
+                <p class="letters"></p>
+            </div>
+            <div id="errors">
+                <h2>Erreurs : </h2>
+                <p class="letters"></p>
+            </div>
+            <div>
+                <h2>Proposition : </h2>
+                <input id="user-guess" type="text" maxlength="1"> 
+                <button id="btn-guess">Proposer</button>
+                <button id="btn-restart">Recommencer</button>
+            </div>
+        </div>
+        <div id="result-zone">
+            <h2 id="info-game"></h2>
+            <div>
+                <img id="hangman-life" src="assets/images/pendu_0.png" alt="pendu">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

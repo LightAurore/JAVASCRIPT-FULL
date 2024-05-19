@@ -1,0 +1,7 @@
+camelCase
+PascalCase                 UpperCamelCase
+snake_case
+spinal-case                kebab-case
+SCREAMING_SNAKE_CASE
+lowercase
+UPPERCASE

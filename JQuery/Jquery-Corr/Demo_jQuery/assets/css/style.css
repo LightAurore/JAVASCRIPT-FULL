@@ -1,0 +1,81 @@
+.btn {
+    display: inline-block;
+    border: 1px solid skyblue;
+    background-color: azure;
+    color: black;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+    padding: 0.5ch;
+    border-radius: 0.5ch;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: azure;
+    color: skyblue;
+}
+
+.btn:active {
+    color: navy;
+}
+
+/********************/
+
+.btn-success {
+    border-color: forestgreen;
+    color: forestgreen;
+    background-color: chartreuse;
+}
+
+.btn-success:hover {
+    background-color: forestgreen;
+    color: chartreuse;
+}
+
+/********************/
+
+.btn-warning {
+    background-color: yellow;
+    color: goldenrod;
+    border-color: goldenrod;
+}
+
+.btn-warning:hover {
+    background-color: goldenrod;
+    color: yellow;
+
+}
+
+/********************/
+
+.btn-error {
+    background-color: red;
+    color: bisque;
+    border-color: bisque;
+}
+
+.btn-error:hover {
+    background-color: bisque;
+    color: red;
+}
+
+/********************/
+
+.fred {
+    color: lemonchiffon;
+    text-shadow: black 2px 1px 1px;
+}
+
+header {
+    color: moccasin;
+}
+
+
+/********************/
+a {
+    color: hotpink;
+}
+a:visited {
+    color: slateblue;
+}

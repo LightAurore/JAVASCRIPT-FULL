@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Déterminer la configuration de la page -->
+        <meta charset="utf-8">
+        <title>Démonstations-CSS</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <!-- Structure du corps de ma page -->
+        <!-- Ancres -->
+        <fieldset>
+            <legend id="ancres">Ancres</legend>
+            <ul>
+                <li><a href="#lesBalisesTexte">Les balises de texte</a></li>
+                <li><a href="#lesBalisesListe">Les balises liste</a></li>
+                <li><a href="#lesBalisesLien">Les balises de lien</a></li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>HTML</legend>
+            <fieldset>
+                <legend>
+                    <h2 id="lesBalisesTexte">Les balises de texte</h2>
+                </legend>
+    
+                <h3>Les paragraphes</h3>
+                <!-- Les balises de texte -->
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p class="text-color-blue">Ipsum sapiente voluptatem est sit.</p>
+                <p class="text-color-blue">Consequuntur necessitatibus impedit quis eaque!</p>
+                <p id="couleur-dernier-paragraphe">Incidunt adipisci reprehenderit iusto cumque.</p>
+    
+                <hr>
+    
+                <h3>Les titres</h3>
+                <h1>Je suis un titre h1</h1>
+                <h2>Je suis un titre h2</h2>
+                <h3>Je suis un titre h3</h3>
+                <h4>Je suis un titre h4</h4>
+                <h5>Je suis un titre h5</h5>
+                <h6>Je suis un titre h6</h6>
+    
+                <hr>
+    
+                <h3>La mise en valeur</h3> 
+                <!-- Attention au bonnes pratiques -->
+                <strong><p>Je suis un texte à analysé</p></strong>
+                <em><p>Je suis un texte à analysé</p></em>
+                <mark>Je suis un texte à analysé</mark>
+    
+            </fieldset>
+    
+            <!-- Les balises liste -->
+            <fieldset>
+                <legend>
+                    <h2 id="lesBalisesListe">Les balises liste</h2>
+                </legend>
+    
+                <h3>Liste non ordonnée</h3>
+                <ul>
+                    <li>Pomme</li>
+                    <li>Poire</li>
+                    <li>Banane</li>
+                </ul>
+    
+                <h3>Liste ordonnée</h3>
+                <ol>
+                    <li>Pomme</li>
+                    <li>Poire</li>
+                    <li>Banane</li>
+                </ol>
+    
+                <h3>Liste de définitions</h3>
+                <dl>
+                    <dt>Pomme</dt>
+                    <dd>est un fruit.</dd>
+    
+                    <dt>Poire</dt>
+                    <dd>est un autre fruit.</dd>
+    
+                    <dt>Banane</dt>
+                    <dd>Mon 3 ième fruit.</dd>
+                </dl>
+            </fieldset>
+    
+            <!-- Les balises de lien -->
+            <fieldset>
+                <legend>
+                    <h2 id="lesBalisesLien">Les balises de lien</h2>
+                </legend>
+    
+                <ul>
+                    <li> <a href="https://www.google.com/">Google</a></li>
+                    <li><a href="#ancres">Ancres</a></li>
+                </ul>
+                
+            </fieldset>
+    
+            <!-- Les balises images -->
+            <fieldset>
+                <legend>
+                    <h2>Les balises images</h2>
+                </legend>
+    
+                <img src="assets/gif/onMeVoit.gif" alt="Image astérix" title="Image astérix">
+    
+                <figure>
+                    <img src="assets/gif/onMeVoit.gif" alt="Image astérix" title="Image astérix">
+                    <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+                </figure>
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h2>CSS</h2>
+            </legend>
+
+            <fieldset>
+                <legend>
+                    <h3>Sélecteur</h3>
+                </legend>
+
+                <div>
+                    <h3>Sélecteur avancés ( Le sélecteur descendant )</h3>
+                    <p>Permet de cibler toutes les balises “b” se trouvant dans une balise “a”</p>
+                    <p>Permet de cibler toutes les balises “b” se trouvant dans une balise “a”</p>
+                    <p>Permet de cibler toutes les balises “b” se trouvant dans une balise “a”</p>
+                    <p>Permet de cibler toutes les balises “b” se trouvant dans une balise “a”</p>
+                </div>
+    
+                
+                <div>
+                    <h3>Sélecteur avancés ( Le sélecteur de voisin direct )</h3>
+                    <p>Permet de cibler toutes les balises “b” se trouvant dans une balise “a”</p>
+                    <p>Permet de cibler toutes les balises “b” se trouvant dans une balise “a”</p>
+                    <p>Permet de cibler toutes les balises “b” se trouvant dans une balise “a”</p>
+                    <p>Permet de cibler toutes les balises “b” se trouvant dans une balise “a”</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h3>Les propriétés du texte</h3>
+                </legend>
+
+                <h3>La taille</h3>
+
+                <p class="size-text-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="size-text-75">Eius quis temporibus alias. Optio fugit iusto nostrum!</p>
+                <p class="size-text-100">Recusandae animi delectus aperiam dolor, officia consectetur excepturi.</p>
+
+                <h3>Mettre en gras</h3>
+
+                <p class="text-bold size-text-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <h3>Mettre en italic</h3>
+
+                <p class="text-italic size-text-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <h3>Alignement horizontal</h3>
+
+                <p class="text-align-left">Lorem, ipsum.</p>
+                <p class="text-align-center">Ut, in?</p>
+                <p class="text-align-right">Unde, rem.</p>
+
+                <h3>Modifier la casse du texte</h3>
+
+                <p class="text-capitalize">je suis en capitalize</p>
+                <p class="text-uppercase">je suis en uppercase</p>
+                <p class="text-lowercase">JE SUIS EN LOWER CASE</p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h3>La taille des éléments</h3>
+                </legend>
+
+
+                <div class="box-content"></div>
+
+                <h3>option d'arrière plan</h3>
+                <div class="box-content-2"></div>
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h3>Les flottants</h3>
+                </legend>
+
+                <div class="box-left">
+                    <p class="text-align-center">Je suis a gauche</p>
+                </div>
+
+                <div class="box-right-small">
+                    <p class="text-align-center">Je suis a doite</p>
+                </div>
+
+                <div class="box-right-small">
+                    <p class="text-align-center">Je suis a doite</p>
+                </div>
+            </fieldset>
+
+            <fieldset class="main-color">
+                <legend>
+                    <h3>Marge => extérieur</h3>
+                </legend>
+
+                <p class="size-text-50 margin-top-10 second-color">Margin - top</p>
+                <p class="size-text-50 margin-bottom-10 second-color">Margin - bottom</p>
+                <p class="size-text-50 margin-left-10 second-color">Margin - left</p>
+                <p class="size-text-50 margin-right-10 second-color">Margin - right</p>
+
+                <p class="size-text-50 margin-10 second-color">Margin - all</p>
+            </fieldset>
+
+            <fieldset class="main-color">
+                <legend>
+                    <h3>Padding => intérieur</h3>
+                </legend>
+
+                <p class="size-text-50 padding-top-10 second-color">Padding - top</p>
+                <p class="size-text-50 padding-bottom-10 second-color">Padding - bottom</p>
+                <p class="size-text-50 padding-left-10 second-color">Padding - left</p>
+                <p class="size-text-50 padding-right-10 second-color">Padding - right</p>
+
+                <p class="size-text-50 padding-10 second-color">Padding - all</p>
+            </fieldset>
+
+            <fieldset class="main-color">
+                <legend>
+                    <h3>Border</h3>
+                </legend>
+
+                <p class="size-text-50 border-top second-color">Border - top</p>
+                <p class="size-text-50 border-bottom second-color">Border - bottom</p>
+                <p class="size-text-50 border-left second-color">Border - left</p>
+                <p class="size-text-50 border-right second-color">Border - right</p>
+
+                <p class="size-text-50 border second-color">Border - all</p>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h3>Les ombres</h3>
+                </legend>
+                
+                
+                <div class="box-left">
+                    <h3>Box</h3>
+                    <div class="box-small box-shadow"></div>
+                </div>
+
+                <div class="box-right">
+                    <h3>Texte</h3>
+                    <p class="text-shadow">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quos maiores reiciendis porro pariatur ipsum atque accusantium reprehenderit odio repudiandae. Minus praesentium modi harum accusantium animi corporis eius omnis voluptate!</p>
+                </div>
+                
+            </fieldset>
+        </fieldset>
+    </body>
+</html>
